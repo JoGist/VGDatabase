@@ -1,0 +1,18 @@
+%h1 All Reviews of #{@movie.title}
+
+%table#reviews
+    %thead
+        %tr
+            %th User
+            %th Voto
+            %th Commento
+        %tbody
+        - @reviews.each do |review|
+            %tr
+                %td= Moviegoer.find(review.moviegoer_id).name
+                %td= review.potatoes
+                %td= review.comments
+%table#link
+    %tr
+        %th #{link_to 'Previous page', movie_path(@movie)}
+

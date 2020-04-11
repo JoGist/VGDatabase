@@ -1,0 +1,14 @@
+%h2 Login
+
+= form_tag callback_path(), :method => :get do
+
+    = label :user, :name, 'User name'
+    = text_field :user, :name
+
+    = label :user, :password, 'Password'
+    = password_field :user,:password
+
+    = submit_tag 'Login'
+
+%h3 Not a user ? #{link_to 'Sign up', signup_path}
+%h3 Not want to be an user ? #{link_to 'Main page', main_path}
