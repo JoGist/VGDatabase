@@ -1,0 +1,38 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %title Log in - VGDB
+    %link{:href => "res/favicon.png", :rel => "icon"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css", :rel => "stylesheet"}/
+    %link{:href => "./style.css", :rel => "stylesheet"}/
+  %body
+    .form
+      %img{:alt => "VGDatabase", :src => "/res/logo-normal.png"}/
+      %br/
+      %ul.tab-group
+        %li.tab.active
+          %a{:href => "login.html"} Log In
+        %li.tab
+          %a{:href => "register.html"} Sign Up
+      .tab-content
+        %h1 Welcome Back!
+        %form{:action => "/", :method => "post"}
+          .field-wrap
+            %label
+              Email Address
+              %span.req *
+            %input{:autocomplete => "off", :required => "", :type => "email"}/
+          .field-wrap
+            %label
+              Password
+              %span.req *
+            %input{:autocomplete => "off", :required => "", :type => "password"}/
+          %p.forgot
+            %a{:href => "password-forgot.html"} Forgot Password?
+          %br/
+          %button.button.button-block Log In
