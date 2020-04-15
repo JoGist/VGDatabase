@@ -9,30 +9,24 @@
     %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css", :rel => "stylesheet"}/
-    %link{:href => "./style.css", :rel => "stylesheet"}/
   %body
     .form
-      %img{:alt => "VGDatabase", :src => "/res/logo-normal.png"}/
       %br/
       %ul.tab-group
         %li.tab.active
-          %a{:href => "login.html"} Log In
+          #{link_to 'Log in', login_path}
         %li.tab
-          %a{:href => "register.html"} Sign Up
+          #{link_to 'Sign up', signup_path}
       .tab-content
         %h1 Welcome Back!
-        %form{:action => "/", :method => "post"}
+        = form_tag callback_path(), :method => :get do
+          .field-wrap
+            %input{:name => 'user[name]' , :placeholder => 'Email address' , :autocomplete => "off", :required => "", :type => "email"}/
           .field-wrap
             %label
-              Email Address
-              %span.req *
-            %input{:autocomplete => "off", :required => "", :type => "email"}/
-          .field-wrap
-            %label
-              Password
-              %span.req *
-            %input{:autocomplete => "off", :required => "", :type => "password"}/
+            %input{:name => 'user[password]' , :placeholder => 'Password' , :autocomplete => "off", :required => "", :type => "password"}/
           %p.forgot
             %a{:href => "password-forgot.html"} Forgot Password?
           %br/
-          %button.button.button-block Log In
+          %button.button.button-block Log in
+
