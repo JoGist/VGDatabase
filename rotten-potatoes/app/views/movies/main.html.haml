@@ -1,0 +1,20 @@
+%h1 All Movies
+
+%table#movies
+    %thead
+        %tr
+            %th Title
+            %th Rating
+            %th Release Date
+            %th Reviews
+        %tbody
+        - @movies.each do |movie|
+            %tr
+                %td= movie.title
+                %td= movie.rating
+                %td= movie.release_date
+                %td= link_to 'Reviews' , movie_reviews_path(movie)
+
+#{link_to 'Search', search_path} - #{link_to 'Wanto to sign up ?', signup_path}
+
+

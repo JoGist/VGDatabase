@@ -15,5 +15,5 @@
                 %td= movie.release_date
                 %td= link_to "Details", movie_path(movie)
 
-#{link_to 'Add a new movie', new_movie_path} - #{link_to 'Logout', login_path} - #{link_to 'Search', search_path} - #{link_to 'Delete account', delete_path} - #{link_to ' All my reviews' , index_path}
+#{link_to 'Add a new movie', new_movie_path} - #{link_to 'Logout', login_path, :method => :delete} - #{link_to 'Search', search_path} - #{link_to 'Delete account', delete_path} - #{link_to ' All my reviews' , index_path}
 

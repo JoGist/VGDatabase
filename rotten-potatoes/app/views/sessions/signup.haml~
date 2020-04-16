@@ -1,0 +1,48 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %title Register - VGDB
+    %link{:href => "res/favicon.png", :rel => "icon"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css", :rel => "stylesheet"}/
+    %link{:href => "./style.css", :rel => "stylesheet"}/
+  %body
+    .form
+      %ul.tab-group
+        %li.tab
+          #{link_to 'Log In', login_path}
+        %li.tab.active
+          #{link_to 'Sign Up', signup_path}
+      .tab-content
+        %h1 Registration
+        %br/
+        / <h3>Trust us, you won't regret anything ;)</h3>
+        = form_tag :method => :get do
+          .field-wrap
+            %input{:name => 'user[name]', :placeholder => 'Email address' ,:autocomplete => "off", :required => "", :type => "email"}/
+          .field-wrap
+            %input{:name => 'user[name1]' , :placeholder => 'Repeat Email address' ,:autocomplete => "off", :required => "", :type => "email"}/
+          /
+            <div class="top-row">
+            <div class="field-wrap">
+            <label>
+            First Name<span class="req">*</span>
+            </label>
+            <input type="text" required autocomplete="off" />
+            </div>
+            <div class="field-wrap">
+            <label>
+            Last Name<span class="req">*</span>
+            </label>
+            <input type="text"required autocomplete="off"/>
+            </div>
+            </div>
+          .field-wrap
+            %input{:name => 'user[password]' , :placeholder => 'Password' ,:autocomplete => "off", :required => "", :type => "password"}/
+          .field-wrap
+            %input{:name => 'user[password1]', :placeholder => 'Repeat password' ,:autocomplete => "off", :required => "", :type => "password"}/
+          %button.button.button-block{:type => "submit"} Sign up

@@ -14,8 +14,10 @@ skip_before_action :verify_authenticity_token
     def delete
         user_id = session[:user_id]
         Moviegoer.delete(user_id)
+        session.delete[:user_id]
         redirect_to login_path
     end
+
     def deleteAll
         @movies = Movie.all
         @movies.each do |movie|

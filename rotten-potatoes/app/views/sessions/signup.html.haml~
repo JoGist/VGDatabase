@@ -1,0 +1,62 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %title Register - VGDB
+    %link{:href => "res/favicon.png", :rel => "icon"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css", :rel => "stylesheet"}/
+    %link{:href => "./style.css", :rel => "stylesheet"}/
+  %body
+    .form
+      %img{:alt => "VGDatabase", :src => "/res/logo-normal.png"}/
+      %ul.tab-group
+        %li.tab
+          %a{:href => "login.html"} Log In
+        %li.tab.active
+          %a{:href => "register.html"} Sign Up
+      .tab-content
+        %h1 Registration
+        %br/
+        / <h3>Trust us, you won't regret anything ;)</h3>
+        %form{:action => "/", :method => "post"}
+          .field-wrap
+            %label
+              Email Address
+              %span.req *
+            %input{:autocomplete => "off", :required => "", :type => "email"}/
+          .field-wrap
+            %label
+              Username
+              %span.req *
+            %input{:autocomplete => "off", :required => "", :type => "email"}/
+          /
+            <div class="top-row">
+            <div class="field-wrap">
+            <label>
+            First Name<span class="req">*</span>
+            </label>
+            <input type="text" required autocomplete="off" />
+            </div>
+            
+            <div class="field-wrap">
+            <label>
+            Last Name<span class="req">*</span>
+            </label>
+            <input type="text"required autocomplete="off"/>
+            </div>
+            </div>
+          .field-wrap
+            %label
+              Password
+              %span.req *
+            %input{:autocomplete => "off", :required => "", :type => "password"}/
+          .field-wrap
+            %label
+              Repeat password
+              %span.req *
+            %input{:autocomplete => "off", :required => "", :type => "password"}/
+          %button.button.button-block{:type => "submit"} REGISTER

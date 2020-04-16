@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 get '/callback' => 'sessions#create'
 get '/login' => 'sessions#login'
+post '/login' => 'sessions#login'
+delete '/login' => 'sessions#destroy'
 get '/deleteAll' => 'movies#deleteAll'
 get '/settings' => 'movies#settings'
 get '/search' => 'movies#search'
