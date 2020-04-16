@@ -9,8 +9,8 @@ def signing
         password = params[:user][:password]
         name1 = params[:user][:name1]
         password1 = params[:user][:password1]
-        if name == name1 && password == password1
-            @users = Moviegoer.create(:name => name,:provider => password)
+        if password == password1
+            @users = User.create(:email => name, :password => password, :username => name1)
             redirect_to login_path
         else
             redirect_to signup_path
@@ -19,10 +19,10 @@ end
 def create
     name = params[:user][:name]
     password = params[:user][:password]
-    @users = Moviegoer.where(:name => name)
-    @pass = Moviegoer.where(:provider => password)
-    if Moviegoer.exists?(@users)
-        if @users[0].name=='admin' && @pass[0].provider=='69420'
+    @users = User.where(:username => name)
+    @pass = User.where(:password => password)
+    if User.exists?(@users)
+        if @users[0].username=='admin@admin' && @pass[0].password=='69420'
             session[:user_id]= @users[0].id
             redirect_to settings_path
         else

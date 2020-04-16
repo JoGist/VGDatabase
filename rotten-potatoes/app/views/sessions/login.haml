@@ -22,7 +22,7 @@
         %br/
         = form_tag callback_path(), :method => :get do
           .field-wrap
-            %input{:name => 'user[name]' , :placeholder => 'Email address' , :autocomplete => "off", :required => "", :type => "email"}/
+            %input{:name => 'user[name]' , :placeholder => 'User Name' , :autocomplete => "off", :required => "", :type => "text"}/
           .field-wrap
             %label
             %input{:name => 'user[password]' , :placeholder => 'Password' , :autocomplete => "off", :required => "", :type => "password"}/
