@@ -1,5 +1,4 @@
-*.gem
-*.rbc
+# Ignored folders
 /.config
 /rotten-potatoes/.config
 /coverage/
@@ -13,8 +12,16 @@
 /tmp/
 /rotten-potatoes/log/development.log
 
+
+# Ignored files with thosr extensions
+*.gem
+*.rbc
 *.env
 *.env.*
+.dat*
+.repl_history
+*.log
+*.log.*
 
 # Ignore Byebug command history file.
 .byebug_history
@@ -26,7 +33,6 @@ build/
 *.bridgesupport
 build-iPhoneOS/
 build-iPhoneSimulator/
-
 
 ## Documentation cache and generated files:
 /.yardoc/

@@ -33026,3 +33026,11 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 58ms (Views: 7.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-04-16 14:38:37 +0200
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rgiov/.rvm/gems/ruby-2.7.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rgiov/.rvm/gems/ruby-2.7.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (84.6ms)
+Completed 200 OK in 297ms (Views: 243.5ms | ActiveRecord: 0.0ms)
+
+
