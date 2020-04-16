@@ -11,7 +11,7 @@
 /rotten-potatoes/tmp/
 /tmp/
 /rotten-potatoes/log/development.log
-
+/rotten-potatoes/Gemfile.lock
 
 # Ignored files with thosr extensions
 *.gem
@@ -122,3 +122,4 @@ yarn-debug.log*
 !/rotten-potatoes/storage/.keep
 /rotten-potatoes/public/uploads
 rotten-potatoes/log/development.log
+rotten-potatoes/Gemfile.lock
