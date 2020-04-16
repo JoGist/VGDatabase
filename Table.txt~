@@ -1,7 +1,0 @@
-La tabella degli user si chiama User ed è composta da email:string,password:string ed username:string
-
-La tabella delle recensioni si chiama Review ed è composta da id_game:fk,id_user:fk,commento:string e voto:integer
-
-La tabella dei giochi si chima Game ed è composta dal titolo:string,sviluppatore:string,genere:string,piattaforma:string,valutazione:integer,annopubb:integer,cover? e link?
-
-
