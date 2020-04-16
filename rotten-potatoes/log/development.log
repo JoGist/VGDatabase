@@ -32821,6 +32821,7 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 NoMethodError (undefined method `[]' for true:TrueClass):
   
 app/controllers/sessions_controller.rb:38:in `destroy'
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2020-04-16 14:19:29 +0200
   [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -32855,5 +32856,158 @@ Completed 200 OK in 1488ms (Views: 1258.5ms | ActiveRecord: 0.0ms)
 
 
 Completed 200 OK in 889ms (Views: 781.5ms | ActiveRecord: 0.0ms)
+=======
+Started GET "/movies" for ::1 at 2020-04-16 14:15:44 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :set_current_user rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-04-16 14:15:44 +0200
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.haml within layouts/application
+  Rendered sessions/login.haml within layouts/application (12.5ms)
+Completed 200 OK in 303ms (Views: 302.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2020-04-16 14:15:46 +0200
+Processing by SessionsController#signup as HTML
+  Rendering sessions/signup.haml within layouts/application
+  Rendered sessions/signup.haml within layouts/application (15.0ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2020-04-16 14:15:47 +0200
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.haml within layouts/application
+  Rendered sessions/login.haml within layouts/application (24.9ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?utf8=%E2%9C%93&user%5Bname%5D=c%40c&user%5Bpassword%5D=[FILTERED]" for ::1 at 2020-04-16 14:16:30 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"c@c", "password"=>"[FILTERED]"}}
+  [1m[36mMoviegoer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "moviegoers" WHERE "moviegoers"."id" IN (SELECT "moviegoers"."id" FROM "moviegoers" WHERE "moviegoers"."name" = ?) LIMIT ?[0m  [["name", "c@c"], ["LIMIT", 1]]
+  [1m[36mMoviegoer Load (0.2ms)[0m  [1m[34mSELECT "moviegoers".* FROM "moviegoers" WHERE "moviegoers"."name" = ?[0m  [["name", "c@c"]]
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 25ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/movies" for ::1 at 2020-04-16 14:16:30 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/login" for ::1 at 2020-04-16 14:16:35 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7ERVa/crl+mpgJGKrvQebafJ+gOGPNLhejlkSdnEfDYdYAe9xkLdkeEdpQhEMKLfuzgAHa53DqOpyc2hClQQ3g=="}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `destroy' for 59:Integer):
+  
+app/controllers/sessions_controller.rb:37:in `destroy'
+Started DELETE "/login" for ::1 at 2020-04-16 14:16:59 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7ERVa/crl+mpgJGKrvQebafJ+gOGPNLhejlkSdnEfDYdYAe9xkLdkeEdpQhEMKLfuzgAHa53DqOpyc2hClQQ3g=="}
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NoMethodError (undefined method `delete' for 59:Integer):
+  
+app/controllers/sessions_controller.rb:37:in `destroy'
+Started DELETE "/login" for ::1 at 2020-04-16 14:18:43 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7ERVa/crl+mpgJGKrvQebafJ+gOGPNLhejlkSdnEfDYdYAe9xkLdkeEdpQhEMKLfuzgAHa53DqOpyc2hClQQ3g=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 24ms
+
+
+Started GET "/movies" for ::1 at 2020-04-16 14:18:53 +0200
+Processing by MoviesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :set_current_user rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for ::1 at 2020-04-16 14:18:53 +0200
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.haml within layouts/application
+  Rendered sessions/login.haml within layouts/application (10.1ms)
+Completed 200 OK in 34ms (Views: 33.0ms)
+
+
+Started GET "/callback?utf8=%E2%9C%93&user%5Bname%5D=c%40c&user%5Bpassword%5D=[FILTERED]" for ::1 at 2020-04-16 14:18:57 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"c@c", "password"=>"[FILTERED]"}}
+  [1m[36mMoviegoer Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "moviegoers" WHERE "moviegoers"."id" IN (SELECT "moviegoers"."id" FROM "moviegoers" WHERE "moviegoers"."name" = ?) LIMIT ?[0m  [["name", "c@c"], ["LIMIT", 1]]
+  [1m[36mMoviegoer Load (0.1ms)[0m  [1m[34mSELECT "moviegoers".* FROM "moviegoers" WHERE "moviegoers"."name" = ?[0m  [["name", "c@c"]]
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 15ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/movies" for ::1 at 2020-04-16 14:18:57 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/login" for ::1 at 2020-04-16 14:18:58 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WwLUhs2u14MU9GZolPQWXxGlTr53O64vBFVPrFGaoliqJoZQ/Med+1xpUup+MKrtDVS0oF9wcm3XpeZEggrOsA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 27ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/login" for ::1 at 2020-04-16 14:19:00 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WwLUhs2u14MU9GZolPQWXxGlTr53O64vBFVPrFGaoliqJoZQ/Med+1xpUup+MKrtDVS0oF9wcm3XpeZEggrOsA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 25ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/login" for ::1 at 2020-04-16 14:19:01 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WwLUhs2u14MU9GZolPQWXxGlTr53O64vBFVPrFGaoliqJoZQ/Med+1xpUup+MKrtDVS0oF9wcm3XpeZEggrOsA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 25ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/login" for ::1 at 2020-04-16 14:19:24 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WwLUhs2u14MU9GZolPQWXxGlTr53O64vBFVPrFGaoliqJoZQ/Med+1xpUup+MKrtDVS0oF9wcm3XpeZEggrOsA=="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for ::1 at 2020-04-16 14:19:24 +0200
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.haml within layouts/application
+  Rendered sessions/login.haml within layouts/application (16.4ms)
+Completed 200 OK in 34ms (Views: 32.9ms)
+
+
+Started GET "/movies" for ::1 at 2020-04-16 14:19:50 +0200
+Processing by MoviesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :set_current_user rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for ::1 at 2020-04-16 14:19:50 +0200
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.haml within layouts/application
+  Rendered sessions/login.haml within layouts/application (10.4ms)
+Completed 200 OK in 35ms (Views: 34.6ms)
+>>>>>>> 39128713db7b4f63f06a9fcf00f2331892076f55
 
 
