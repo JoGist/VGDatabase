@@ -3,8 +3,7 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "UTF-8"}/
-    %title Log in - VGDB
-    %link{:href => "res/favicon.png", :rel => "icon"}/
+    %title Log in - VGDatabase
     %link{:href => "https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap", :rel => "stylesheet"}/
     %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
@@ -12,6 +11,7 @@
   %body
     .form
       %br/
+      %img(src="logo-normal.png")
       %ul.tab-group
         %li.tab.active
           #{link_to 'Log in', login_path}
@@ -19,6 +19,7 @@
           #{link_to 'Sign up', signup_path}
       .tab-content
         %h1 Welcome Back!
+        %br/
         = form_tag callback_path(), :method => :get do
           .field-wrap
             %input{:name => 'user[name]' , :placeholder => 'Email address' , :autocomplete => "off", :required => "", :type => "email"}/
