@@ -8,10 +8,11 @@
     %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css", :rel => "stylesheet"}/
+    %meta{:content => "YOUR_CLIENT_ID.apps.googleusercontent.com", :name => "google-signin-client_id"}/
   %body
     .form
       %br/
-      %img(src="logo-normal.png")
+      =image_tag ('logo-normal.png')
       %ul.tab-group
         %li.tab.active
           #{link_to 'Log in', login_path}
@@ -22,7 +23,7 @@
         %br/
         = form_tag callback_path(), :method => :get do
           .field-wrap
-            %input{:name => 'user[name]' , :placeholder => 'User Name' , :autocomplete => "off", :required => "", :type => "text"}/
+            %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "off", :required => "", :type => "text"}/
           .field-wrap
             %label
             %input{:name => 'user[password]' , :placeholder => 'Password' , :autocomplete => "off", :required => "", :type => "password"}/
@@ -30,4 +31,32 @@
             %a{:href => "password-forgot.html"} Forgot Password?
           %br/
           %button.button.button-block Log in
+          %br/
+          %table
+            %tr
+              %th
+                /Google OAuth button
+                #my-signin2
+                :javascript
+                  function onSuccess(googleUser) {
+                    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                  }
+                  function onFailure(error) {
+                    console.log(error);
+                  }
+                  function renderButton() {
+                    gapi.signin2.render('my-signin2', {
+                      'scope': 'profile email',
+                      'width': 250,
+                      'height': 50,
+                      'longtitle': true,
+                      'theme': 'dark',
+                      'onsuccess': onSuccess,
+                      'onfailure': onFailure
+                    });
+                  }
+                %script{:async => "", :defer => "defer", :src => "https://apis.google.com/js/platform.js?onload=renderButton"}
+                /end Google OAuth button
+              %th
+                =image_tag ('steam.png')
 
