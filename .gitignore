@@ -122,4 +122,3 @@ yarn-debug.log*
 !/rotten-potatoes/storage/.keep
 /rotten-potatoes/public/uploads
 rotten-potatoes/log/development.log
-rotten-potatoes/log/development.log
