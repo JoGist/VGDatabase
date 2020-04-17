@@ -1,0 +1,12 @@
+%h1 All Games
+
+%table
+    %thead
+        %tr
+            %th Title
+        %tbody
+        - @games.each do |game|
+            %tr
+                %td= game.title
+#{link_to 'Logout', login_path, :method => :delete}
+

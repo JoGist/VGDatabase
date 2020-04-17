@@ -1,2 +1,0 @@
-class Videogioco < ApplicationRecord
-end

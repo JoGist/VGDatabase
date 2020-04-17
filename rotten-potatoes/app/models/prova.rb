@@ -1,2 +1,0 @@
-class Prova < ApplicationRecord
-end
