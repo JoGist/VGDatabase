@@ -22,6 +22,11 @@ html, body {
   place-items: center;*/
 }
 
+footer {
+  text-align: center;
+  bottom: 0;
+}
+
 a {
   text-decoration: none;
   color: #f26657;
@@ -50,14 +55,18 @@ img {
 .tab-group {
   list-style: none;
   padding: 0;
-  margin: 0 0 40px 0;
 }
 
-.tab-group:after {
-  content: "";
-  display: table;
-  clear: both;
+.subtab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 -5px;
 }
+
+.subtab-text {
+  font-size: 14px;
+}
+
 
 .tab-group li a {
   display: block;
@@ -80,6 +89,11 @@ img {
 }
 
 .tab-group .active a {
+  background: #f26657;
+  color: #ffffff;
+}
+
+.active a {
   background: #f26657;
   color: #ffffff;
 }
@@ -210,11 +224,6 @@ textarea {
   text-align: center;
 }
 
-footer {
-  text-align: center;
-  bottom: 0;
-}
-
 .page-content {
   display: grid;
   grid-gap: 1rem;
@@ -223,11 +232,13 @@ footer {
   margin: 0 auto;
   font-family: var(--font-sans);
 }
+
 @media (min-width: 600px) {
   .page-content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (min-width: 800px) {
   .page-content {
     grid-template-columns: repeat(4, 1fr);
@@ -249,11 +260,13 @@ footer {
   background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
+
 @media (min-width: 600px) {
   .card {
     height: 350px;
   }
 }
+
 .card:before {
   content: '';
   position: absolute;
@@ -269,6 +282,7 @@ footer {
   transition: transform calc(var(--d) * 1.5) var(--e), -webkit-transform calc(var(--d) * 1.5) var(--e);
   pointer-events: none;
 }
+
 .card:after {
   content: '';
   display: block;
@@ -287,16 +301,84 @@ footer {
   transition: transform calc(var(--d) * 2) var(--e);
   transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
+
 .card:nth-child(1):before {
   background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 }
+
 .card:nth-child(2):before {
   background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 }
+
 .card:nth-child(3):before {
   background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 }
+
 .card:nth-child(4):before {
+  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(5):before {
+  background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(6):before {
+  background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(7):before {
+  background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(8):before {
+  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(9):before {
+  background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(10):before {
+  background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(11):before {
+  background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(12):before {
+  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(13):before {
+  background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(14):before {
+  background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(15):before {
+  background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(16):before {
+  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(17):before {
+  background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(18):before {
+  background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(19):before {
+  background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.card:nth-child(20):before {
   background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 }
 
@@ -317,6 +399,7 @@ footer {
   transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
   z-index: 1;
 }
+
 .content > * + * {
   margin-top: 1rem;
 }
@@ -346,11 +429,13 @@ footer {
   background-color: black;
   border: none;
 }
+
 .btn:hover {
   background-color: #0d0d0d;
 }
+
 .btn:focus {
-  outline: 1px dashed yellow;
+  outline: 1px dashed #f26657;
   outline-offset: 3px;
 }
 
@@ -364,6 +449,7 @@ footer {
     -webkit-transform: translateY(calc(100% - 4.5rem));
             transform: translateY(calc(100% - 4.5rem));
   }
+
   .content > *:not(.title) {
     opacity: 0;
     -webkit-transform: translateY(1rem);
@@ -374,28 +460,27 @@ footer {
     transition: transform var(--d) var(--e), opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
   }
 
-  .card:hover,
-  .card:focus-within {
+  .card:hover, .card:focus-within {
     -webkit-box-align: center;
             align-items: center;
   }
-  .card:hover:before,
-  .card:focus-within:before {
+
+  .card:hover:before, .card:focus-within:before {
     -webkit-transform: translateY(-4%);
             transform: translateY(-4%);
   }
-  .card:hover:after,
-  .card:focus-within:after {
+
+  .card:hover:after, .card:focus-within:after {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .card:hover .content,
-  .card:focus-within .content {
+
+  .card:hover .content, .card:focus-within .content {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .card:hover .content > *:not(.title),
-  .card:focus-within .content > *:not(.title) {
+
+  .card:hover .content > *:not(.title), .card:focus-within .content > *:not(.title) {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -403,9 +488,7 @@ footer {
             transition-delay: calc(var(--d) / 8);
   }
 
-  .card:focus-within:before, .card:focus-within:after,
-  .card:focus-within .content,
-  .card:focus-within .content > *:not(.title) {
+  .card:focus-within:before, .card:focus-within:after, .card:focus-within .content, .card:focus-within .content > *:not(.title) {
     -webkit-transition-duration: 0s;
             transition-duration: 0s;
   }
@@ -471,7 +554,7 @@ footer {
 
 .sidebar .sidebar__nav .sidebar__nav__link {
 	align-items: center;
-	color: #bbb;
+	color: rgb(255, 255, 255);
 	display: flex;
 
 	text-decoration: none;
@@ -480,7 +563,7 @@ footer {
 
 .sidebar .sidebar__nav .sidebar__nav__link:hover {
 	background-color: rgba(0, 0, 0, 0.15);
-	color: #80f;
+	color: #f26657;
 }
 
 .sidebar .sidebar__nav .sidebar__nav__text {
