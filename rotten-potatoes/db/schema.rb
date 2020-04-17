@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200416190352) do
+ActiveRecord::Schema.define(version: 20200417103811) do
+
+  create_table "gioco_reviews", force: :cascade do |t|
+    t.integer "utente_id"
+    t.integer "gioco_serial_number"
+    t.integer "valutazione"
+    t.string "descrizione"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["gioco_serial_number"], name: "index_reviews_on_videogiocos_id"
+    t.index ["utente_id"], name: "index_reviews_on_user_id"
+  end
 
   create_table "moviegoers", force: :cascade do |t|
     t.string "name"
@@ -41,6 +52,20 @@ ActiveRecord::Schema.define(version: 20200416190352) do
     t.string "email"
     t.string "username"
     t.string "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "videogiocos", force: :cascade do |t|
+    t.integer "serial_number"
+    t.string "titolo"
+    t.string "sviluppatore"
+    t.string "genere"
+    t.string "piattaforma"
+    t.integer "valutazione"
+    t.datetime "anno_pubblicazione"
+    t.string "img_cover"
+    t.string "link_acquisto"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
