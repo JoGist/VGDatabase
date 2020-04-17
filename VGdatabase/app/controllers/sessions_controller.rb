@@ -1,9 +1,10 @@
 class SessionsController < ApplicationController
     skip_before_action :set_current_user
 def login
-
 end
 def signup
+end
+def homepage
 end
 def signing
         name = params[:user][:name]
@@ -28,7 +29,7 @@ def create
             redirect_to settings_path
         else
             session[:user_id]=@users[0].id
-            redirect_to games_path
+            redirect_to homepage_path
         end
     else
         redirect_to login_path
