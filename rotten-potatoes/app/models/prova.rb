@@ -1,0 +1,2 @@
+class Prova < ApplicationRecord
+end
