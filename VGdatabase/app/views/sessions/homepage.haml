@@ -3,19 +3,16 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "UTF-8"}/
-    %title Home - VGDatabase
+    %title Homepage - VGDatabase
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:href => "https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css", :rel => "stylesheet"}/
-    %link{:href => "./style.css", :rel => "stylesheet"}/
-    %link{:href => "./sidebar.css", :rel => "stylesheet"}/
   %body
-    %h1 Welcome back, player!
     %aside.sidebar
       %nav
         %ul.sidebar__nav
           %li
             %a.sidebar__nav__link{:href => "#"}
-              / <img src="res/logo-normal.png" alt="VGDatabase" />
+              =image_tag ('logo-normal.png')
           %li
             %a.sidebar__nav__link{:href => "#"}
               %i.mdi.mdi-home
@@ -41,6 +38,7 @@
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
     / partial:index.partial.html
+    %h1 Welcome back, player!
     %main.page-content
       .card
         .content
@@ -48,27 +46,27 @@
           %p.copy
             Check out all of these gorgeous mountain trips with beautiful views
             of, you guessed it, the mountains
-          %button.btn View Trips
+          %button.btn View info
       .card
         .content
           %h2.title To The Beach
           %p.copy
             Plan your next beach trip with these fabulous destinations
-          %button.btn View Trips
+          %button.btn View info
       .card
         .content
           %h2.title Desert Destinations
           %p.copy It's the desert you've always dreamed of
-          %button.btn Book Now
+          %button.btn View info
       .card
         .content
           %h2.title Explore The Galaxy
           %p.copy
             Seriously, straight up, just blast off into outer space today
-          %button.btn Book Now
+          %button.btn View info
       .card
         .content
           %h2.title Desert Destinations
           %p.copy It's the desert you've always dreamed of
-          %button.btn Book Now
+          %button.btn View info
     / partial
