@@ -15,6 +15,7 @@
 
 html, body {
   height: 100%;
+  /*transform: scale(0.9);*/
   background: #14111f;
   font-family: 'Roboto';
   /*overflow-x: hidden
@@ -61,6 +62,10 @@ img {
 }
 
 .form {
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
   background: rgba(30, 27, 44, 1);
   padding: 40px;
   max-width: 600px;
@@ -196,7 +201,7 @@ textarea {
 
 .field-wrap {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .top-row:after {
@@ -241,7 +246,7 @@ textarea {
 }
 
 .forgot {
-  margin-top: -20px;
+  margin-top: -10px;
   text-align: center;
 }
 
