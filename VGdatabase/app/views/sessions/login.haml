@@ -1,4 +1,4 @@
-!!!
+!!! 
 %html{:lang => "en"}
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
@@ -19,13 +19,15 @@
         %li.tab
           #{link_to 'Sign up', signup_path}
       .tab-content
-        %h1 Welcome Back!
+        %br/ 
+        %br/
+        %br/
+        %h1 Welcome Back! 
         %br/
         = form_tag callback_path(), :method => :get do
           .field-wrap
             %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "off", :required => "", :type => "text"}/
           .field-wrap
-            %label
             %input{:name => 'user[password]' , :placeholder => 'Password' , :autocomplete => "off", :required => "", :type => "password"}/
           %p.forgot
             %a{:href => "password-forgot.html"} Forgot Password?

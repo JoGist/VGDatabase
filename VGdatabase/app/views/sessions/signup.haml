@@ -18,29 +18,16 @@
         %li.tab.active
           #{link_to 'Sign Up', signup_path}
       .tab-content
+        %br/
+        %br/
+        %br/
         %h1 Register now
         %br/
-        / <h3>Trust us, you won't regret anything ;)</h3>
         = form_tag :method => :get do
           .field-wrap
             %input{:name => 'user[name]', :placeholder => 'Email address' ,:autocomplete => "off", :required => "", :type => "email"}/
           .field-wrap
             %input{:name => 'user[name1]' , :placeholder => 'Username' ,:autocomplete => "off", :required => "", :type => "text"}/
-          /
-            <div class="top-row">
-            <div class="field-wrap">
-            <label>
-            First Name<span class="req">*</span>
-            </label>
-            <input type="text" required autocomplete="off" />
-            </div>
-            <div class="field-wrap">
-            <label>
-            Last Name<span class="req">*</span>
-            </label>
-            <input type="text"required autocomplete="off"/>
-            </div>
-            </div>
           .field-wrap
             %input{:name => 'user[password]' , :placeholder => 'Password' ,:autocomplete => "off", :required => "", :type => "password"}/
           .field-wrap

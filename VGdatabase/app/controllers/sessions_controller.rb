@@ -24,7 +24,7 @@ def create
     @users = User.where(:username => name)
     @pass = User.where(:password => password)
     if User.exists?(@users)
-        if @users[0].username=='admin@admin' && @pass[0].password=='69420'
+        if @users[0].username=='admin@admin' && @pass[0].password == '69420'
             session[:user_id]= @users[0].id
             redirect_to settings_path
         else
@@ -35,6 +35,7 @@ def create
         redirect_to login_path
     end
 end
+
 def destroy
     session.delete(:user_id)
     redirect_to login_path
