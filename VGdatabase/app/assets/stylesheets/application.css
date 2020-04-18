@@ -254,25 +254,12 @@ textarea {
   padding: 1rem;
   margin: 1rem;
   width: 250px;
-  left: 6rem;
+  left: 14rem;
   float: left;
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
-}
-
-.demo-card-square.mdl-card:hover {
-  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
-}
-
-.demo-card-square > .mdl-card__title {
-  color: #fff;
-  background: #03a9f4;
-}
-
-.demo-card-square > .mdl-card__accent {
-  background: #ff9800;
 }
 
 @media (min-width: 600px) {
