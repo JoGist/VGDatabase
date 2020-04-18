@@ -43,6 +43,23 @@ img {
   max-height: 100%;
 }
 
+.hidden{
+  visibility: hidden;
+}
+
+.demo-card-square.mdl-card:hover {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+}
+
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background: #03a9f4;
+}
+
+.demo-card-square > .mdl-card__accent {
+  background: #ff9800;
+}
+
 .form {
   background: rgba(30, 27, 44, 1);
   padding: 40px;
@@ -60,7 +77,6 @@ img {
 .subtab-group {
   list-style: none;
   padding: 0;
-  margin-left: 35px;
 }
 
 .subtab-text {
@@ -76,7 +92,7 @@ img {
   color: #a0b3b0;
   font-size: 20px;
   float: left;
-  width: 100%;
+  width: 50%;
   text-align: center;
   cursor: pointer;
   -webkit-transition: 0.5s ease;
@@ -84,11 +100,16 @@ img {
 }
 
 .tab-group li a:hover {
-  background: #f26617;
+  background: #f26657;
   color: #ffffff;
 }
 
 .tab-group .active a {
+  background: #f26657;
+  color: #ffffff;
+}
+
+.tab-group .active a:hover {
   background: #f26657;
   color: #ffffff;
 }
@@ -225,11 +246,7 @@ textarea {
 }
 
 .page-content {
-  position: absolute;
-  overflow: hidden;
-  padding: 1rem;
-  margin: 15px;
-  margin-right: 14rem;
+  margin-left: 12.5em;
 }
 
 .card {
@@ -242,7 +259,6 @@ textarea {
   margin: 1rem;
   width: 250px;
   height: 350px;
-  left: 12.5rem;
   float: left;
   text-align: center;
   color: whitesmoke;
@@ -250,8 +266,10 @@ textarea {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 
-.right{
-  right: 14rem;
+
+
+.clear {
+  clear: both;
 }
 
 .card:before {
@@ -518,12 +536,13 @@ textarea {
   }
 }
 
+
 /* SIDEBAR CSS */
 
 .sidebar {
 	background-color: #333;
 	position: fixed;
-
+  float: left;
 }
 
 .sidebar nav {
@@ -541,15 +560,22 @@ textarea {
 .sidebar .sidebar__nav .sidebar__nav__link {
 	align-items: center;
 	color: rgb(255, 255, 255);
-  display: flex;
+	display: flex;
+
 	text-decoration: none;
 	transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .sidebar .sidebar__nav .sidebar__nav__link:hover {
-	background-color: rgba(0, 0, 0, 0.15);
   color: #f26657;
-  margin-left: -2px;
+  margin-left: 2px;
+}
+
+.sidebar__nav__link_plain {
+  background-color: #333;
+  align-items: center;
+	display: flex;
+  padding: 1em;
 }
 
 .sidebar .sidebar__nav .sidebar__nav__text {
