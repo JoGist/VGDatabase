@@ -569,7 +569,9 @@ textarea {
 .sidebar .sidebar__nav .sidebar__nav__link:hover {
   color: #f26657;
   margin-left: 2px;
+  transition: 0.2s;
   background-color: #222;
+  transition: 0.2s;
 }
 
 .sidebar__nav__link_plain {
