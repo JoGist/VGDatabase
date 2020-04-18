@@ -21,10 +21,10 @@
             %a.sidebar__nav__link{:href => "#"}
               %i.mdi.mdi-library-movie
               %span.sidebar__nav__text My library
-          %ul.subtab-group
-            %li.subtab-text
-              %a.sidebar__nav__link{:href => "#"}
-                %span.sidebar__nav__text  Favorites
+          %li
+            %a.sidebar__nav__link{:href => "#"}
+              %i.mdi.mdi-star
+              %span.sidebar__nav__text  Favorites
           %li
             %a.sidebar__nav__link{:href => "#"}
               %i.mdi.mdi-database-search
@@ -37,10 +37,10 @@
             %a.sidebar__nav__link{:href => "#"}
               %i.mdi.mdi-account-circle
               %span.sidebar__nav__text My account
-          %ul.subtab-group
-            %li.subtab-text
-              %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
-                %span.sidebar__nav__text Log out 
+          %li
+            %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
+              %i.mdi.mdi-logout-variant
+              %span.sidebar__nav__text Log out 
           %li
             %a.sidebar__nav__link{:href => "#"}
               %i.mdi.mdi-information
