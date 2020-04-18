@@ -1,4 +1,5 @@
-/* https://www.rgbtohex.net/ */
+/* https://www.rgbtohex.net/ 
+   https://stackoverflow.com/questions/52283860/draw-circles-on-image-with-css */
 
 *,
 *:before,
@@ -275,6 +276,18 @@ textarea {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 
+.dot {
+  position: absolute;
+  right: 3%;        
+  top: 2%;
+  color: rgb(217, 230, 43);
+  font-size: 1.5em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  /*border-radius: 50%;
+  margin-right: 10%;
+  margin-top: -2.5%;*/
+}
+
 .card:before {
   content: '';
   position: absolute;
@@ -301,7 +314,7 @@ textarea {
   height: 200%;
   pointer-events: none;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(11.7%, rgba(0, 0, 0, 0.009)), color-stop(22.1%, rgba(0, 0, 0, 0.034)), color-stop(31.2%, rgba(0, 0, 0, 0.072)), color-stop(39.4%, rgba(0, 0, 0, 0.123)), color-stop(46.6%, rgba(0, 0, 0, 0.182)), color-stop(53.1%, rgba(0, 0, 0, 0.249)), color-stop(58.9%, rgba(0, 0, 0, 0.32)), color-stop(64.3%, rgba(0, 0, 0, 0.394)), color-stop(69.3%, rgba(0, 0, 0, 0.468)), color-stop(74.1%, rgba(0, 0, 0, 0.54)), color-stop(78.8%, rgba(0, 0, 0, 0.607)), color-stop(83.6%, rgba(0, 0, 0, 0.668)), color-stop(88.7%, rgba(0, 0, 0, 0.721)), color-stop(94.1%, rgba(0, 0, 0, 0.762)), to(rgba(0, 0, 0, 0.79)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.60) 74.1%, rgba(0, 0, 0, 0.65) 78.8%, rgba(0, 0, 0, 0.70) 83.6%, rgba(0, 0, 0, 0.75) 88.7%, rgba(0, 0, 0, 0.8) 94.1%, rgba(0, 0, 0, 0.8) 100%);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: -webkit-transform calc(var(--d) * 2) var(--e);
@@ -317,13 +330,13 @@ textarea {
 }
 
 .card:nth-child(2):before {
-  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Tetris_NES_cover_art.jpg/220px-Tetris_NES_cover_art.jpg);
+  background-image: url(https://cdn02.plentymarkets.com/qozbgypaugq8/item/images/1613/full/PSTR-ZELDA005.jpg);
   width: 250px;
   height: 350px;
 }
 
 .card:nth-child(3):before {
-  background-image: url(https://cdn02.plentymarkets.com/qozbgypaugq8/item/images/1613/full/PSTR-ZELDA005.jpg);
+  background-image: url(https://s1.gaming-cdn.com/images/products/1263/271x377/assetto-corsa-cover.jpg);
   width: 250px;
   height: 350px;
 }
@@ -353,7 +366,7 @@ textarea {
 }
 
 .card:nth-child(8):before {
-  background-image: url(https://s1.gaming-cdn.com/images/products/1263/271x377/assetto-corsa-cover.jpg);
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Tetris_NES_cover_art.jpg/220px-Tetris_NES_cover_art.jpg);
   width: 250px;
   height: 350px;
 }
@@ -458,11 +471,12 @@ textarea {
   line-height: 1.2;
 }
 
-.copy {
+.description {
   font-family: var(--font-serif);
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 1.35;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .btn {
