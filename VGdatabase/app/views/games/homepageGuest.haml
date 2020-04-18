@@ -19,35 +19,19 @@
               %span.sidebar__nav__text Homepage
           %li
             %a.sidebar__nav__link{:href => "#"}
-              %i.mdi.mdi-library-movie
-              %span.sidebar__nav__text My library
-          %li
-            %a.sidebar__nav__link{:href => "#"}
-              %i.mdi.mdi-star
-              %span.sidebar__nav__text  Favorites
-          %li
-            %a.sidebar__nav__link{:href => "#"}
               %i.mdi.mdi-database-search
               %span.sidebar__nav__text Search
           %li
-            %a.sidebar__nav__link{:href => "#"}
-              %i.mdi.mdi-account-multiple
-              %span.sidebar__nav__text Friends
-          %li
-            %a.sidebar__nav__link{:href => "#"}
-              %i.mdi.mdi-account-circle
-              %span.sidebar__nav__text My account
-          %li
             %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
-              %i.mdi.mdi-logout-variant
-              %span.sidebar__nav__text Log out 
+              %i.mdi.mdi-login
+              %span.sidebar__nav__text Log in 
           %li
             %a.sidebar__nav__link{:href => "#"}
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
     / partial:index.partial.html
     %br/
-    %h1 Welcome back, #{@user.username}!
+    %h1 Welcome, please log in!
     %div.page-content
       .card
         .content
