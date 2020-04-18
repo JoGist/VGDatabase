@@ -60,7 +60,7 @@ img {
 .subtab-group {
   list-style: none;
   padding: 0;
-  margin: 0 0 0 -5px;
+  margin-left: 35px;
 }
 
 .subtab-text {
@@ -76,7 +76,7 @@ img {
   color: #a0b3b0;
   font-size: 20px;
   float: left;
-  width: 50%;
+  width: 100%;
   text-align: center;
   cursor: pointer;
   -webkit-transition: 0.5s ease;
@@ -225,12 +225,11 @@ textarea {
 }
 
 .page-content {
-  display: grid;
-  grid-gap: 1rem;
+  position: absolute;
+  overflow: hidden;
   padding: 1rem;
-  max-width: 1024px;
-  margin: 0 auto;
-  font-family: var(--font-sans);
+  margin: 15px;
+  margin-right: 14rem;
 }
 
 .card {
@@ -243,12 +242,16 @@ textarea {
   margin: 1rem;
   width: 250px;
   height: 350px;
-  left: 14rem;
+  left: 12.5rem;
   float: left;
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+.right{
+  right: 14rem;
 }
 
 .card:before {
@@ -515,7 +518,6 @@ textarea {
   }
 }
 
-
 /* SIDEBAR CSS */
 
 .sidebar {
@@ -539,19 +541,18 @@ textarea {
 .sidebar .sidebar__nav .sidebar__nav__link {
 	align-items: center;
 	color: rgb(255, 255, 255);
-	display: flex;
-
+  display: flex;
 	text-decoration: none;
 	transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .sidebar .sidebar__nav .sidebar__nav__link:hover {
 	background-color: rgba(0, 0, 0, 0.15);
-	color: #f26657;
+  color: #f26657;
+  margin-left: -2px;
 }
 
 .sidebar .sidebar__nav .sidebar__nav__text {
-	
 	margin-left: 10px;
 	white-space: nowrap;
 }
