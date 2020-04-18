@@ -13,7 +13,7 @@ post '/signup' => 'sessions#signing'
 get '/delete' => 'games#delete'
 get '/main' => 'games#main'
 get '/index' => 'reviews#index1'
-get 'homepage' => 'sessions#homepage'
+get 'homepage' => 'games#homepage'
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

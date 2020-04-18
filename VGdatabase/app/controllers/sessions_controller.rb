@@ -4,8 +4,6 @@ def login
 end
 def signup
 end
-def homepage
-end
 def signing
         name = params[:user][:name]
         password = params[:user][:password]
