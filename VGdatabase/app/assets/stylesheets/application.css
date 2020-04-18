@@ -248,6 +248,16 @@ textarea {
   margin-left: 12.5em;
 }
 
+.favotite{
+  background-image: url(https://s2.gaming-cdn.com/images/products/442/271x377/minecraft-cover.jpg);
+  width: 24px;
+  height: 24px;
+}
+
+.clear {
+  clear: both;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -263,12 +273,6 @@ textarea {
   color: whitesmoke;
   background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.clear {
-  clear: both;
 }
 
 .card:before {
