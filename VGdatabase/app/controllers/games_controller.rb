@@ -8,6 +8,18 @@ end
 def myLibrary
 end
 
+def search
+end
+
+def friends
+end
+
+def myProfile
+    @user = User.find(session[:user_id]) 
+end
+
+# GUEST PART
+
 def homepageGuest
 end
 

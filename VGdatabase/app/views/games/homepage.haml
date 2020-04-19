@@ -22,19 +22,19 @@
               %i.mdi.mdi-library-movie
               %span.sidebar__nav__text My library
           %li
-            %a.sidebar__nav__link{:href => "#"}
+            %a.sidebar__nav__link{:href => myLibraryFavorites_path, "data-method" => "get"}
               %i.mdi.mdi-star
               %span.sidebar__nav__text  Favorites
           %li
-            %a.sidebar__nav__link{:href => "#"}
+            %a.sidebar__nav__link{:href => search_path, "data-method" => "get"}
               %i.mdi.mdi-database-search
               %span.sidebar__nav__text Search
           %li
-            %a.sidebar__nav__link{:href => "#"}
+            %a.sidebar__nav__link{:href => friends_path, "data-method" => "get"}
               %i.mdi.mdi-account-multiple
               %span.sidebar__nav__text Friends
           %li
-            %a.sidebar__nav__link{:href => "#"}
+            %a.sidebar__nav__link{:href => myProfile_path, "data-method" => "get"}
               %i.mdi.mdi-account-circle
               %span.sidebar__nav__text My account
           %li
