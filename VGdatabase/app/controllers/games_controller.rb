@@ -3,6 +3,7 @@ skip_before_action :verify_authenticity_token
 
     def homepage
         @user = User.find(session[:user_id])
+        @games = Game.all
     end
 
     def myLibrary
@@ -20,10 +21,6 @@ skip_before_action :verify_authenticity_token
 
     def contactUs
 
-    end
-
-    def index
-        @games = Game.all
     end
 
 end
