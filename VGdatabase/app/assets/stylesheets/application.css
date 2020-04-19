@@ -44,6 +44,14 @@ img {
   max-height: 100%;
 }
 
+.left{
+  margin-left: 0px;
+}
+
+.right{
+  margin-right: 0px;
+}
+
 .hidden{
   visibility: hidden;
 }
@@ -236,9 +244,9 @@ textarea {
   -webkit-appearance: none;
 }
 
-.button:hover, .button:focus {
+/*.button:hover, .button:focus {
   background: #f26637;
-}
+}*/
 
 .button-block {
   display: block;
@@ -247,7 +255,7 @@ textarea {
 
 .forgot {
   margin-top: -10px;
-  text-align: center;
+  text-align: justify;
 }
 
 .page-content {
