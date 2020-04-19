@@ -44,12 +44,16 @@ img {
   max-height: 100%;
 }
 
-.left{
-  margin-left: 0px;
+.right{
+  float:right;
+  margin-top: -10px;
+  display:inline-block
 }
 
-.right{
-  margin-right: 0px;
+.left{
+  float:left;
+  margin-top: -10px;
+  display:inline-block
 }
 
 .hidden{
@@ -255,7 +259,7 @@ textarea {
 
 .forgot {
   margin-top: -10px;
-  text-align: justify;
+  display:inline-block
 }
 
 .page-content {

@@ -28,10 +28,10 @@
             %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "off", :required => "", :type => "text"}/
           .field-wrap
             %input{:name => 'user[password]' , :placeholder => 'Password' , :autocomplete => "off", :required => "", :type => "password"}/
-          %p.forgot
-            %a{:href => "password-forgot.html"} Don't want to log in? Explore as Guest
-            %a{:href => "password-forgot.html"} Forgot Password?
+          %a.left{:href => "password-forgot.html"} Don't want to log in? Explore as Guest
+          %a.right{:href => "password-forgot.html"} Forgot Password?
           %br/
+          %br
           %button.button.button-block Log in
           %br/
           %table
