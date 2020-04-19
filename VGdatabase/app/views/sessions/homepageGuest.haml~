@@ -26,7 +26,7 @@
               %i.mdi.mdi-login
               %span.sidebar__nav__text Log in 
           %li
-            %a.sidebar__nav__link{:href => contactUs_path}
+            %a.sidebar__nav__link{:href => "#"}
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
     / partial:index.partial.html
