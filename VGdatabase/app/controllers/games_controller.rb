@@ -8,6 +8,9 @@ end
 def myLibrary
 end
 
+def homepageGuest
+end
+
 def index
     @games = Game.all
 end
