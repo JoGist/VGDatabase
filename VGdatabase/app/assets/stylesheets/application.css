@@ -478,7 +478,7 @@ textarea {
 
 .description {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-style: italic;
   line-height: 1.35;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
