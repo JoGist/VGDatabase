@@ -36,11 +36,11 @@ get '/settings' => 'games#settings'
     #end
 
 resources :games do
-    resources :reviews
-  end
+  resources :reviews
+end
 
 resources :users do
-    resources :reviews
-  end
+  resources :reviews
+end
 
 end

@@ -35,7 +35,6 @@ def create
 end
 
 def homepageGuest
-    session[:user_id]='0'
 end
 
 def contactUsGuest
