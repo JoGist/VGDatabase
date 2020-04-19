@@ -28,7 +28,7 @@
             %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "off", :required => "", :type => "text"}/
           .field-wrap
             %input{:name => 'user[password]' , :placeholder => 'Password' , :autocomplete => "off", :required => "", :type => "password"}/
-          %a.left{:href => "password-forgot.html"} Don't want to log in? Explore as Guest
+          %a.left{:href => homepage_guest_path, "data-method" => "get"} Don't want to log in? Explore as Guest
           %a.right{:href => "password-forgot.html"} Forgot Password?
           %br/
           %br
