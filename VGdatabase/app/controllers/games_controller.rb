@@ -1,27 +1,29 @@
 class GamesController < ApplicationController
 skip_before_action :verify_authenticity_token
 
-def homepage
-    @user = User.find(session[:user_id])
-end
+    def homepage
+        @user = User.find(session[:user_id])
+    end
 
-def myLibrary
-end
+    def myLibrary
+    end
 
-def search
-end
+    def search
+    end
 
-def friends
-end
+    def friends
+    end
 
-def myProfile
-    @user = User.find(session[:user_id])
-end
+    def myProfile
+        @user = User.find(session[:user_id])
+    end
 
-# GUEST PART
+    def contactUs
 
+    end
 
-def index
-    @games = Game.all
-end
+    def index
+        @games = Game.all
+    end
+
 end

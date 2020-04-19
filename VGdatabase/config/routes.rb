@@ -6,7 +6,6 @@ post '/login' => 'sessions#login'
 delete '/login' => 'sessions#destroy'
 get '/search' => 'games#search'
 post '/search' => 'games#searching'
-get '/contactUs' => 'sessions#contactUs'
 get '/signup' => 'sessions#signup'
 post '/signup' => 'sessions#signing'
 
@@ -16,16 +15,18 @@ get '/myLibrary' =>  'games#myLibrary'
 get '/myLibraryFavorites' => 'games#myLibraryFavorites'
 get '/friends' => 'games#friends'
 get '/myProfile' => 'games#myProfile'
+get '/contactUs' => 'games#contactUs'
 get '/delete' => 'games#delete'       #Serve all'user per cancellare il proprio profilo
 
 # Guest routes 
 get '/homepage_guest' => 'sessions#homepageGuest'
+get '/contactUs_guest' => 'sessions#contactUsGuest'
+get '/search_guest' => 'sessions#searchGuest'
 
 # Games routes
 # Qualcosa sulle review
 
 # Admin routes
-
 get '/deleteAll' => 'games#deleteAll'
 get '/settings' => 'games#settings'
 
