@@ -55,6 +55,4 @@
             /%h2.title Mountain View
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}
-            %button.btn View info 
-      
-
+            %a.button.btn{:href => game_path(game), "data-method" => "get"} View info 

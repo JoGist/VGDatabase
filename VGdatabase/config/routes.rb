@@ -16,7 +16,7 @@ get '/myLibraryFavorites' => 'games#myLibraryFavorites'
 get '/friends' => 'games#friends'
 get '/myProfile' => 'games#myProfile'
 get '/contactUs' => 'games#contactUs'
-get '/delete' => 'games#delete'       #Serve all'user per cancellare il proprio profilo
+get '/delete' => 'games#delete'       #Serve all'user per cancellare il proprio profilo 
 
 # Guest routes 
 get '/homepage_guest' => 'sessions#homepageGuest'

@@ -19,8 +19,12 @@ skip_before_action :verify_authenticity_token
         @user = User.find(session[:user_id])
     end
 
-    def contactUs
+    def show
+        id = params[:id]
+        @games = Game.find(id)
+    end
 
+    def contactUs
     end
 
     def settings
