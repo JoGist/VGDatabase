@@ -1,1 +1,36 @@
-%h1 Sei sulla search da Guest
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %title Contact us - VGDatabase
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css", :rel => "stylesheet"}/
+  %body
+    %aside.sidebar
+      %nav
+        %ul.sidebar__nav
+          %li
+            %a.sidebar__nav__link_plain
+              =image_tag ('logo-normal.png')
+          %li
+            %a.sidebar__nav__link{:href => homepage_guest_path, "data-method" => "get"}
+              %i.mdi.mdi-home
+              %span.sidebar__nav__text Homepage
+          %li.active
+            %a.sidebar__nav__link_plain{}
+              %i.mdi.mdi-database-search
+              %span.sidebar__nav__text Search
+          %li
+            %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
+              %i.mdi.mdi-login
+              %span.sidebar__nav__text Log in 
+          %li
+            %a.sidebar__nav__link{:href => contactUs_guest_path, "data-method" => "get"}
+              %i.mdi.mdi-information
+              %span.sidebar__nav__text Contact us
+    / partial:index.partial.html
+    %br/
+    %h1 Search
+    %div.page-content
+ 
