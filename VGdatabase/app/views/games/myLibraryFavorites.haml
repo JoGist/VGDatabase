@@ -42,11 +42,18 @@
               %i.mdi.mdi-logout-variant
               %span.sidebar__nav__text Log out 
           %li
-            %a.sidebar__nav__link{:href => "#"}
+            %a.sidebar__nav__link{:href => contactUs_path, "data-method" => "get"}
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
     / partial:index.partial.html
     %br/
     %h1 Your favorite games
     %div.page-content
+      .card
+        %i.mdi.mdi-star.dot
+        .content
+          /%h2.title To The Beach
+          %p.description Genre: open world, adventure
+          %p.description Platforms: Nintendo Switch, WiiU
+          %button.btn View info
  
