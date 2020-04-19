@@ -1,61 +1,9 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:charset => "UTF-8"}/
-    %title Homepage - VGDatabase
-    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
-    %link{:href => "https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css", :rel => "stylesheet"}/
-  %body
-    %aside.sidebar
-      %nav
-        %ul.sidebar__nav
-          %li
-            %a.sidebar__nav__link_plain_img
-              =image_tag ('logo-normal.png')
-          %li.active
-            %a.sidebar__nav__link_plain{}
-              %i.mdi.mdi-home
-              %span.sidebar__nav__text Homepage
-          %li
-            %a.sidebar__nav__link{:href => myLibrary_path, "data-method" => "get"}
-              %i.mdi.mdi-library-movie
-              %span.sidebar__nav__text My library
-          %li
-            %a.sidebar__nav__link{:href => myLibraryFavorites_path, "data-method" => "get"}
-              %i.mdi.mdi-star
-              %span.sidebar__nav__text  Favorites
-          %li
-            %a.sidebar__nav__link{:href => search_path, "data-method" => "get"}
-              %i.mdi.mdi-database-search
-              %span.sidebar__nav__text Search
-          %li
-            %a.sidebar__nav__link{:href => friends_path, "data-method" => "get"}
-              %i.mdi.mdi-account-multiple
-              %span.sidebar__nav__text Friends
-          %li
-            %a.sidebar__nav__link{:href => myProfile_path, "data-method" => "get"}
-              %i.mdi.mdi-account-circle
-              %span.sidebar__nav__text My account
-          %li
-            %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
-              %i.mdi.mdi-logout-variant
-              %span.sidebar__nav__text Log out 
-          %li
-            %a.sidebar__nav__link{:href => contactUs_path, "data-method" => "get"}
-              %i.mdi.mdi-information
-              %span.sidebar__nav__text Contact us
-    / partial:index.partial.html
-    %br/
-    %h1 Welcome back, #{@user.username}!
-    %div.page-content
-      .card
+.card
         .content
           /%h2.title Mountain View
           %p.description Genre: sandbox
           %p.description Platforms: PC, PS3, PS4, XBOX360, XBOX ONE, Nintendo Switch
-          %a.btn{:href => contactUs_path, "data-method" => "get"}
-            %span Contact us
+          %button.btn View info 
       .card
         %i.mdi.mdi-star.dot
         .content
@@ -147,10 +95,3 @@
           %p.description Genre: driving, adventure
           %p.description Platforms: PC
           %button.btn View info
-      - @games.each do |game|
-        .card
-          .content
-            /%h2.title Mountain View
-            %p.description Genre: #{game.genre}
-            %p.description Platforms: #{game.platform}
-            %button.btn{:href => contactUs_path, "data-method" => "get"} View info 
