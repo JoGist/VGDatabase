@@ -34,6 +34,12 @@ def create
     end
 end
 
+def homepageGuest
+    session[:user_id]='0'
+end
+
+def contactUs
+end
 def destroy
     session.delete(:user_id)
     redirect_to login_path
