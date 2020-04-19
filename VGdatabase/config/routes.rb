@@ -1,22 +1,33 @@
 Rails.application.routes.draw do
+# Shared routes
 get '/callback' => 'sessions#create'
 get '/login' => 'sessions#login'
 post '/login' => 'sessions#login'
 delete '/login' => 'sessions#destroy'
-get '/deleteAll' => 'games#deleteAll'
-get '/settings' => 'games#settings'
 get '/search' => 'games#search'
 post '/search' => 'games#searching'
+get '/contactUs' => 'sessions#contactUs'
 get '/signup' => 'sessions#signup'
 post '/signup' => 'sessions#signing'
-get '/delete' => 'games#delete'
+
+# User routes
 get '/homepage' => 'games#homepage'
-get '/homepage_guest' => 'sessions#homepageGuest'
 get '/myLibrary' =>  'games#myLibrary'
 get '/myLibraryFavorites' => 'games#myLibraryFavorites'
 get '/friends' => 'games#friends'
 get '/myProfile' => 'games#myProfile'
-get '/contactUs' => 'sessions#contactUs'
+get '/delete' => 'games#delete'       #Serve all'user per cancellare il proprio profilo
+
+# Guest routes 
+get '/homepage_guest' => 'sessions#homepageGuest'
+
+# Games routes
+# Qualcosa sulle review
+
+# Admin routes
+
+get '/deleteAll' => 'games#deleteAll'
+get '/settings' => 'games#settings'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 #resources :movies do
@@ -25,5 +36,10 @@ get '/contactUs' => 'sessions#contactUs'
 
 resources :games do
     resources :reviews
-    end
+  end
+
+resources :users do
+    resources :reviews
+  end
+
 end
