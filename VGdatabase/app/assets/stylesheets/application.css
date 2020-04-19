@@ -46,14 +46,12 @@ img {
 
 .right{
   float:right;
-  margin-top: -10px;
-  display:inline-block
+  margin-top: -5px;
 }
 
 .left{
   float:left;
-  margin-top: -10px;
-  display:inline-block
+  margin-top: -5px;
 }
 
 .hidden{
@@ -238,6 +236,8 @@ textarea {
   border-radius: 0;
   padding: 15px 0;
   font-size: 2rem;
+  display: block;
+  width: 100%;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -248,14 +248,10 @@ textarea {
   -webkit-appearance: none;
 }
 
-/*.button:hover, .button:focus {
-  background: #f26637;
-}*/
-
-.button-block {
-  display: block;
-  width: 100%;
+.button:hover, .button:focus {
+  cursor:pointer;
 }
+
 
 .forgot {
   margin-top: -10px;
@@ -652,6 +648,7 @@ textarea {
   align-items: center;
 	display: flex;
   padding: 1em;
+  cursor: pointer;
 }
 
 .sidebar .sidebar__nav .sidebar__nav__text {
