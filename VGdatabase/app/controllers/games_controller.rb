@@ -23,4 +23,7 @@ skip_before_action :verify_authenticity_token
 
     end
 
+    def settings
+    end
+
 end
