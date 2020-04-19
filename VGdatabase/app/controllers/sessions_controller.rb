@@ -24,7 +24,7 @@ def create
     if User.exists?(@users)
         if @users[0].username=='admin' && @pass[0].password == 'admin'
             session[:user_id]= @users[0].id
-            render settings_path
+            redirect_to settings_path
         else
             session[:user_id]=@users[0].id
             redirect_to homepage_path
