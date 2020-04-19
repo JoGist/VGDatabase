@@ -32,8 +32,12 @@ skip_before_action :verify_authenticity_token
 
     def deleteUser
         name = params[:user][:name]
-        @user = User.find(:id => name)
-        @user.destroy
+        @user = User.where(:username => name)[0].id
+        User.delete(@user)
+        @result = 'Deleted'
+        redirect_to settings_path
     end
+
+    def 
 
 end
