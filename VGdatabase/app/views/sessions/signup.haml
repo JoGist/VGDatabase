@@ -1,5 +1,5 @@
 !!!
-%html{:lang => "en"}
+%html{:lang => "en", class: "container"}
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "UTF-8"}/
@@ -8,7 +8,7 @@
     %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css", :rel => "stylesheet"}/
-  %body
+  %body.visible
     .form
       %br/
       =image_tag ('logo-normal.png')

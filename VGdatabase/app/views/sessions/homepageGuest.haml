@@ -1,12 +1,12 @@
 !!!
-%html{:lang => "en"}
+%html{:lang => "en", class: "container"}
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "UTF-8"}/
     %title Homepage - VGDatabase
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:href => "https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css", :rel => "stylesheet"}/
-  %body
+  %body.visible
     %aside.sidebar
       %nav
         %ul.sidebar__nav
@@ -33,99 +33,11 @@
     %br/
     %h1 Welcome, please sign up!
     %div.page-content
-      .card
-        .content
-          /%h2.title Mountain View
-          %p.copy
-            Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains
-          %button.btn View info
-      .card
-        .content
-          /%h2.title To The Beach
-          %p.copy
-            Plan your next beach trip with these fabulous destinations
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Desert Destinations
-          %p.copy 
-            It's the desert you've always dreamed of
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Explore The Galaxy
-          %p.copy
-            Seriously, straight up, just blast off into outer space today
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Mountain View
-          %p.copy
-            Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains
-          %button.btn View info
-      .card
-        .content
-          /%h2.title To The Beach
-          %p.copy
-            Plan your next beach trip with these fabulous destinations
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Desert Destinations
-          %p.copy 
-            It's the desert you've always dreamed of
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Explore The Galaxy
-          %p.copy
-            Seriously, straight up, just blast off into outer space today
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Mountain View
-          %p.copy
-            Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains
-          %button.btn View info
-      .card
-        .content
-          /%h2.title To The Beach
-          %p.copy
-            Plan your next beach trip with these fabulous destinations
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Desert Destinations
-          %p.copy 
-            It's the desert you've always dreamed of
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Explore The Galaxy
-          %p.copy
-            Seriously, straight up, just blast off into outer space today
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Mountain View
-          %p.copy
-            Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains
-          %button.btn View info
-      .card
-        .content
-          /%h2.title To The Beach
-          %p.copy
-            Plan your next beach trip with these fabulous destinations
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Desert Destinations
-          %p.copy 
-            It's the desert you've always dreamed of
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Explore The Galaxy
-          %p.copy
-            Seriously, straight up, just blast off into outer space today
-          %button.btn View info
+      - @games.each do |game|
+        .card
+          /.coverImg =image_tag ('https://s2.gaming-cdn.com/images/products/442/271x377/minecraft-cover.jpg'), :class => "cover"
+          .content
+            %p.description Genre: #{game.genre}
+            %p.description Platforms: #{game.platform}
+            %a.button.btn{:href => game_path(game), "data-method" => "get"} View info 
+
