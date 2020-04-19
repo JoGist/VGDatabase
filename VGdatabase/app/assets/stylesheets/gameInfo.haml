@@ -49,11 +49,37 @@
     %br/
     %h1 Welcome back, #{@user.username}!
     %div.page-content
-      - @games.each do |game|
-        .card
-          /.coverImg =image_tag ('https://s2.gaming-cdn.com/images/products/442/271x377/minecraft-cover.jpg'), :class => "cover"
-          .content
-            %p.description Genre: #{game.genre}
-            %p.description Platforms: #{game.platform}
-            %a.button.btn{:href => game_path(game), "data-method" => "get"} View info 
-
+        .wrapper
+            .product-single
+                .product-gallery
+                .slider-arrows
+                    %i#prev-slide.fa.fa-fw.fa-arrow-circle-o-left
+                    %i#next-slide.fa.fa-fw.fa-arrow-circle-o-right
+                #slider-wrap
+                    %ul.slides
+                    %li
+                        %img{:alt => "", :src => "https://storage.googleapis.com/chydlx/codepen/simple-product-card/yoshi-yarn-1.jpg"}/
+                    %li
+                        %img{:alt => "", :src => "https://storage.googleapis.com/chydlx/codepen/simple-product-card/yoshi-yarn-2.jpg"}/
+                    %ul.nav-dots
+                    %li.active
+                    %li
+                .product-details
+                %h1.product-title Green Mega Yarn Yoshi
+                %h3.product-cost $39.99
+                .product-rating
+                    %ul
+                    %li.fa.fa-fw.fa-lg.fa-star
+                    %li.fa.fa-fw.fa-lg.fa-star
+                    %li.fa.fa-fw.fa-lg.fa-star
+                    %li.fa.fa-fw.fa-lg.fa-star
+                    %li.fa.fa-fw.fa-lg.fa-star-half
+                    %span.product-reviews
+                    %a{:href => "#"} 10 Reviews
+                .product-description
+                    %p Made from actual yarn, Yoshi™ has never been more adorable! Kind-hearted, naturally protective of others, and perpetually hungry, Yoshi™ is always up for adventure...there are so many mysteries to explore and new things to find!
+                .product-cta
+                    %button.product-atc Add to Cart
+                    %button.product-atw Add to Wishlist
+                .product-info
+                    %span.product-sku SKU #12345678
