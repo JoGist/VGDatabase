@@ -5,6 +5,9 @@ def homepage
     @user = User.find(session[:user_id]) 
 end
 
+def myLibrary
+end
+
 def index
     @games = Game.all
 end

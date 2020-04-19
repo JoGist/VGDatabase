@@ -14,12 +14,13 @@ get '/delete' => 'games#delete'
 get '/main' => 'games#main'
 get '/index' => 'reviews#index1'
 get 'homepage' => 'games#homepage'
-
+get 'myLibrary' =>  'games#myLibrary'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 #resources :movies do
     #resources :reviews
     #end
+
 resources :games do
     resources :reviews
     end
