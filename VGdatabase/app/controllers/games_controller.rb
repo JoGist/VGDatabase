@@ -31,13 +31,30 @@ skip_before_action :verify_authenticity_token
     end
 
     def deleteUser
+    end
+
+    def deletingUser
         name = params[:user][:name]
-        @user = User.where(:username => name)[0].id
-        User.delete(@user)
-        @result = 'Deleted'
+        if User.exists?(User.where(:username => name))
+            @user = User.where(:username => name)[0].id
+            User.delete(@user)
+            @result = 'Deleted'
+            redirect_to settings_path
+        end
+        redirect_to deleteUser_path
+    end
+
+    def deleteReviewsGame
+    end
+
+    def deletingReviewsGame
         redirect_to settings_path
     end
 
-    def 
+    def deleteReviewsUser
+    end
 
+    def deletingReviewsUser
+        redirect_to settings_path
+    end
 end

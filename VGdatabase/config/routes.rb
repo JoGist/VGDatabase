@@ -28,7 +28,12 @@ get '/search_guest' => 'sessions#searchGuest'
 
 # Admin routes
 get '/settings' => 'games#settings'
-
+get '/deleteUser' => 'games#deleteUser'
+post '/deleteUser' => 'games#deletingUser'
+get '/deleteReviewsUser' => 'games#deleteReviewsUser'
+post '/deleteReviewsUser' => 'games#deletingReviewsUser'
+get '/deleteReviewsGame' => 'games#deleteReviewsGame'
+post '/deleteReviewsGame' => 'games#deletingReviewsGame'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 #resources :movies do
     #resources :reviews
