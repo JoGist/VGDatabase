@@ -30,4 +30,10 @@ skip_before_action :verify_authenticity_token
     def settings
     end
 
+    def deleteUser
+        name = params[:user][:name]
+        @user = User.find(:id => name)
+        @user.destroy
+    end
+
 end
