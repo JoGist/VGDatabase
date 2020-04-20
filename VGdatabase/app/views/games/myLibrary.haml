@@ -49,6 +49,14 @@
     %br/
     %h1 You have 16 games in your collection
     %div.page-content
+      - @games.each do |game|
+        .card
+          /{:style => "background-image: #{game.cover}"}
+          .content.cardPadding
+            %p.description Genre: #{game.genre}
+            %p.description Platforms: #{game.platform}
+            %a.button.btn{:href => game_path(game), "data-method" => "get"} View info 
+          %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
       .card
         .content
           /%h2.title Mountain View

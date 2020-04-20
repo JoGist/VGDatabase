@@ -7,6 +7,11 @@ skip_before_action :verify_authenticity_token
     end
 
     def myLibrary
+        @games = Game.all
+    end
+
+    def myLibraryFavorites
+        @games = Game.all
     end
 
     def search
@@ -59,9 +64,12 @@ skip_before_action :verify_authenticity_token
     end
 
     def searchGame
+        @games = Game.all
     end
-/
+
+    /
     def searchingGame
+        
         search = params[:search]
         select = SCELTA CATEGORIA
         if  select == 'Platform'
@@ -80,13 +88,12 @@ skip_before_action :verify_authenticity_token
             if Game.exists?(Game.where(:genre => select))
                 @games = Game.where(:genre => select)
             end 
-        end                
+        end            
     end
-/
+    /
 
 
-
-
+    
 #admin
 
     def deleteReviewsGame

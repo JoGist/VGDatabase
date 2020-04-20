@@ -496,6 +496,10 @@ textarea {
   height: 350px;
 }*/
 
+.extraPadding {
+  padding-top: 5rem;
+}
+
 .coverImg {
   width: 250px;
   height: 350px;

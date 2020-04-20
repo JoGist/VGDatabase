@@ -49,11 +49,11 @@
     %br/
     %h1 Your favorite games
     %div.page-content
-      .card
-        %i.mdi.mdi-star.dot
-        .content
-          /%h2.title To The Beach
-          %p.description Genre: open world, adventure
-          %p.description Platforms: Nintendo Switch, WiiU
-          %button.btn View info
- 
+      - @games.each do |game|
+        .card
+          /{:style => "background-image: #{game.cover}"}
+          .content.cardPadding
+            %p.description Genre: #{game.genre}
+            %p.description Platforms: #{game.platform}
+            %a.button.btn{:href => game_path(game), "data-method" => "get"} View info 
+          %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
