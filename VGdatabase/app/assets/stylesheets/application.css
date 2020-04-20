@@ -500,6 +500,10 @@ textarea {
   padding-top: 5rem;
 }
 
+.extraMarginLeft {
+  padding-left: 1rem;
+}
+
 .coverImg {
   width: 250px;
   height: 350px;
