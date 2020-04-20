@@ -312,10 +312,10 @@ textarea {
 
 .page-content {
   margin-left: 12.5em;
-  padding-right: 0.5em;
-  display: inline-block;
-  position: relative;
-  
+}
+
+.rightMargin {
+  padding-right: 1em;
 }
 
 .overflow {
@@ -746,7 +746,7 @@ textarea {
   margin-left: -4px;
 }
 
-.btn-group buttonNA {
+.btn-group a {
   background-color: #444;
   color: white;
   padding: 1.25rem;
@@ -764,7 +764,7 @@ textarea {
   display: inline-block;
 }
 
-.btn-group buttonNA:hover {
+.btn-group a:hover {
   background: #f26657;
   color: #ffffff;
 }
