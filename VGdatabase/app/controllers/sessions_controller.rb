@@ -35,12 +35,23 @@ def create
 end
 
 def homepageGuest
+    @games = Game.all
 end
 
 def contactUsGuest
 end
 
-def searchGuest
+def searchGuestUser
+end
+
+def searchingGuestUser
+    render html: ''
+end
+
+def searchGuestGame
+end
+
+def searchingGuestGame
 end
 
 def destroy

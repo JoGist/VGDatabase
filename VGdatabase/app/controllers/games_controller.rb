@@ -44,6 +44,25 @@ skip_before_action :verify_authenticity_token
         redirect_to deleteUser_path
     end
 
+
+    def searchUser
+    end
+
+    def searchingUser
+    end
+
+    def searchGame
+    end
+
+    def searchingGame
+    end
+
+
+
+
+
+#admin
+
     def deleteReviewsGame
     end
 

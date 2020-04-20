@@ -4,10 +4,13 @@ get '/callback' => 'sessions#create'
 get '/login' => 'sessions#login'
 post '/login' => 'sessions#login'
 delete '/login' => 'sessions#destroy'
-get '/search' => 'games#search'
-post '/search' => 'games#searching'
+get '/searchUser' => 'games#searchUser'
+post '/searchUser' => 'games#searchingUser'
+get '/searchGame' => 'games#searchGame'
+post '/searchGame' => 'games#searchingGame'
 get '/signup' => 'sessions#signup'
 post '/signup' => 'sessions#signing'
+
 
 # User routes
 get '/homepage' => 'games#homepage'
@@ -21,7 +24,10 @@ get '/delete' => 'games#delete'       #Serve all'user per cancellare il proprio 
 # Guest routes 
 get '/homepage_guest' => 'sessions#homepageGuest'
 get '/contactUs_guest' => 'sessions#contactUsGuest'
-get '/search_guest' => 'sessions#searchGuest'
+get '/search_guest_user' => 'sessions#searchGuestUser'
+post '/search_guest_user' => 'sessions#searchingGuestUser'
+get '/search_guest_game' => 'sessions#searchGuestGame'
+post '/search_guest_game' => 'sessions#searchingGuestGame'
 
 # Games routes
 # Qualcosa sulle review
