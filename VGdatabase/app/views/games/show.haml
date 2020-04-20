@@ -50,7 +50,6 @@
     %h1 Game info
     %div.page-content
       %br
-      .wrapper
         %ul
           %li.left
             %img.fullSize{:alt => "Game image cover", :src => "#{@games.cover}"}
@@ -63,4 +62,7 @@
             %h4 Release date: #{@games.release_date}
             %br
             %a.buttonSmall Add to Your list
-            %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"} Purchase
+            %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"}
+              %i.mdi.mdi-amazon
+              %span.sidebar__nav__text BUY 
+

@@ -55,6 +55,7 @@ def searchingGuestUser
 end
 
 def searchGuestGame
+    @games = Game.all
 end
 
 /

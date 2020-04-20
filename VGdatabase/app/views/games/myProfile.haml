@@ -47,6 +47,82 @@
               %span.sidebar__nav__text Contact us
     / partial:index.partial.html
     %br/
-    %h1 #{@user.username}'s profile
+    %h1 Your profile
     %div.page-content
- 
+      %br/
+      .my-account-wrapper
+        /%h2.account-header My Account
+        .account-grid-system
+          .account-grid-item-1
+            .profile-pic-details
+              %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+            .grid-item-details
+              %br/
+              %br/
+              %br/
+              %br/
+              %br/
+              %br/
+              %br/
+              %br/
+              %br/
+              %br/
+              %br/
+              /.profile-complteness
+              /%p.profile-hlp-txt
+              /%span 75 /
+              /100
+            .grid-item-details
+              %p.profile-hyper-links
+                %a{:href => "#"} Edit account info 
+                /save icon when in edit mode
+                %i.mdi.mdi-pencil
+          .account-grid-item-2
+            .grid-item-details
+              %h5.sub-header-details Username:
+              %span #{@user.username}
+            .grid-item-details
+              %h5.sub-header-details Email
+              %span #{@user.email}
+            .grid-item-details
+              %h5.sub-header-details Games in your collection:
+              %span 16
+            .grid-item-details.removed
+              %h5.sub-header-details Password:
+              %span ••••••••
+            .accordian-details.removed
+              %h5.accordian-header
+                Change Password:
+                %span Test1234
+            .grid-item-details
+              %h5.sub-header-details Linked accounts:
+              %br
+              %a
+                %i.mdi.mdi-google
+                %span Google OAuth account
+              %br
+              %br
+              %a
+                %i.mdi.mdi-steam
+                %span Steam OAuth account
+          .account-grid-item-3
+            .grid-item-details
+              %span Friends
+            .grid-item-details
+              %i.mdi.mdi-account-circle
+              %h5.sub-header-details Friend_1
+            .grid-item-details
+              %i.mdi.mdi-account-circle 
+              %h5.sub-header-details Friend_2
+            .grid-item-details
+              %i.mdi.mdi-account-circle
+              %h5.sub-header-details Friend_3
+            .grid-item-details
+              %i.mdi.mdi-account-circle
+              %h5.sub-header-details Friend_4
+            .grid-item-details
+              %i.mdi.mdi-account-circle 
+              %h5.sub-header-details Friend_5
+            .grid-item-details
+              %i.mdi.mdi-account-circle
+              %h5.sub-header-details Friend_6
