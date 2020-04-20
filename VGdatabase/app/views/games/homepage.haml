@@ -50,8 +50,10 @@
     %h1 Welcome back, #{@user.username}!
     %div.page-content
       - @games.each do |game|
-        .card{:style => "background-image: #{game.cover}"}
+        .card
+          /{:style => "background-image: #{game.cover}"}
           .content.cardPadding
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}
             %a.button.btn{:href => game_path(game), "data-method" => "get"} View info 
+          %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}

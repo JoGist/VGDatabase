@@ -71,6 +71,7 @@ img {
 .left{
   float:left;
   margin-top: -5px;
+  list-style-type: none;
 }
 
 .hidden{
@@ -302,6 +303,7 @@ textarea {
 
 .gameInfo {
   margin-left: 27em;
+  list-style-type: none;
 }
 
 .forgot {
@@ -395,6 +397,7 @@ textarea {
 .cover{
   width: 100%;
   height: 100%;
+  margin-left: -250px;
 }
 
 /*.card:nth-child(n):before {
