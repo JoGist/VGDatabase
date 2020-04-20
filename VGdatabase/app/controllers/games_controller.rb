@@ -49,14 +49,40 @@ skip_before_action :verify_authenticity_token
     end
 
     def searchingUser
+        user = params[:username]
+        if User.exists?(User.where(:username => user))
+            @users = User.where(:username => user)[0].id
+            render html: 'user trovato'
+        else
+            render html: 'user non trovato'
+        end
     end
 
     def searchGame
     end
-
+/
     def searchingGame
+        search = params[:search]
+        select = SCELTA CATEGORIA
+        if  select == 'Platform'
+            if Game.exists?(Game.where(:platform => select))
+                @games = Game.where(:platform => select)
+            end
+        elsif select == 'Title'
+            if Game.exists?(Game.where(:title => select))
+                @games = Game.where(:title => select)
+            end
+        elsif select == 'Developer'
+           if Game.exists?(Game.where(:developer => select))
+                 @games = Game.where(:developer => select)
+            end
+        elsif select == 'Genre'
+            if Game.exists?(Game.where(:genre => select))
+                @games = Game.where(:genre => select)
+            end 
+        end                
     end
-
+/
 
 
 
