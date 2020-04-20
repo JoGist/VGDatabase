@@ -7,7 +7,7 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:href => "https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css", :rel => "stylesheet"}/
   %body.visible
-    %aside.sidebar
+    %aside.sidebar.normal
       %nav
         %ul.sidebar__nav
           %li
@@ -50,9 +50,8 @@
     %h1 Welcome back, #{@user.username}!
     %div.page-content
       - @games.each do |game|
-        .card
-          /.coverImg =image_tag ('https://s2.gaming-cdn.com/images/products/442/271x377/minecraft-cover.jpg'), :class => "cover"
-          .content
+        .card{:style => "background-image: #{game.cover}"}
+          .content.cardPadding
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}
             %a.button.btn{:href => game_path(game), "data-method" => "get"} View info 

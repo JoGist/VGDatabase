@@ -10,7 +10,6 @@
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
-  --sidebar-width: 12em;
 }
 
 
@@ -329,18 +328,21 @@ textarea {
 .card {
   position: relative;
   display: flex;
-  -webkit-box-align: end;
-          align-items: flex-end;
+  /*-webkit-box-align: center;
+          align-items: flex-end;*/
   overflow: hidden;
-  padding: 1rem;
   margin: 1rem;
   width: 250px;
   height: 350px;
   float: left;
   text-align: center;
   color: whitesmoke;
-  background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  background-color: var(--cover);
+}
+
+.cardPadding {
+  padding: 1rem;
 }
 
 .dot {
@@ -391,23 +393,23 @@ textarea {
 }
 
 .cover{
-  width: 250px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
 }
 
-.card:nth-child(1):before {
+/*.card:nth-child(n):before {
   background-image: url(https://s2.gaming-cdn.com/images/products/442/271x377/minecraft-cover.jpg);
   width: 250px;
   height: 350px;
 }
 
-.card:nth-child(2):before {
+.card:nth-child(n+2):before {
   background-image: url(https://cdn02.plentymarkets.com/qozbgypaugq8/item/images/1613/full/PSTR-ZELDA005.jpg);
   width: 250px;
   height: 350px;
 }
 
-.card:nth-child(3):before {
+.card:nth-child(n+3):before {
   background-image: url(https://s1.gaming-cdn.com/images/products/1263/271x377/assetto-corsa-cover.jpg);
   width: 250px;
   height: 350px;
@@ -489,7 +491,7 @@ textarea {
   background-image: url(https://s1.gaming-cdn.com/images/products/309/271x377/euro-truck-simulator-2-cover.jpg);
   width: 250px;
   height: 350px;
-}
+}*/
 
 .coverImg {
   width: 250px;
@@ -502,6 +504,7 @@ textarea {
 }
 
 .content {
+  z-index: 1;
   position: relative;
   display: -webkit-box;
   display: flex;
@@ -516,17 +519,10 @@ textarea {
   transition: -webkit-transform var(--d) var(--e);
   transition: transform var(--d) var(--e);
   transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
-  z-index: 1;
 }
 
 .content > * + * {
   margin-top: 1rem;
-}
-
-.title {
-  font-size: 1.3rem;
-  font-weight: bold;
-  line-height: 1.2;
 }
 
 .description {
@@ -638,25 +634,20 @@ textarea {
   text-align: justify;
 }
 
-@media (min-width: 572px) {
-  .main {
-    margin-left: var(--sidebar-width);
-    margin-top: -40px;
-  }
-}
-
-@media (min-width: 992px) {
-  .main {
-    padding: 2.5em;
-  }
-}
-
-
-/* SIDEBAR CSS */
-
 .sidebar {
 	background-color: #333;
-	position: fixed;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  margin-top: -8px;
+}
+
+.normal {
+  width: 12em;
+}
+
+.bigger {
+  width: 17em;
 }
 
 .sidebar nav {
@@ -713,14 +704,6 @@ textarea {
 	justify-content: center;
 }
 
-@media (min-width: 1px) {
-	.sidebar {
-		height: 100vh;
-		left: 0;
-    width: var(--sidebar-width);
-    margin-top: -8px;
-	}
-
 	.sidebar .sidebar__nav {
 		flex-direction: column;
 	}
@@ -740,7 +723,6 @@ textarea {
 	.sidebar .sidebar__nav i {
 		font-size: 2rem;
 	}
-}
 
 .left-4 {
   margin-left: -4px;

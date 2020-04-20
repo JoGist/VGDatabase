@@ -7,16 +7,28 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:href => "https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css", :rel => "stylesheet"}/
   %body.visible
-    %aside.sidebar
+    %aside.sidebar.bigger
       %nav
         %ul.sidebar__nav
           %li
             %a.sidebar__nav__link_plain
               =image_tag ('logo-normal.png')
+          %li
+            %a.sidebar__nav__link{:href => settings_path, "data-method" => "get"}
+              %i.mdi.mdi-home
+              %span.sidebar__nav__text Admin control panel
+          %li
+            %a.sidebar__nav__link{:href => deleteReviewsGame_path, "data-method" => "get"}
+              %i.mdi.mdi-account-multiple
+              %span.sidebar__nav__text Delete reviews of a game 
           %li.active
             %a.sidebar__nav__link_plain{}
-              %i.mdi.mdi-home
-              %span.sidebar__nav__text Control panel
+              %i.mdi.mdi-database-search
+              %span.sidebar__nav__text Delete reviews from user
+          %li
+            %a.sidebar__nav__link{:href => deleteUser_path, "data-method" => "get"}
+              %i.mdi.mdi-account-circle
+              %span.sidebar__nav__text Delete user
           %li
             %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
               %i.mdi.mdi-logout-variant
@@ -24,14 +36,15 @@
           %li
             %a.sidebar__nav__link_plain
               %span.sidebar__nav__text
-    %br/
-    %h1 Admin control panel
+    %br
     %div.page-content
     .form
       .tab-content
         %br/
-        %h1 Delete reviews from a game
+        %h1 Delete reviews from user
         = form_tag :method => :get do
+          .field-wrap
+            %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "off", :required => "", :type => "text"}/
           .field-wrap
             %input{:name => 'game[title]' , :placeholder => 'Game' , :autocomplete => "off", :required => "", :type => "password"}/
           %button.button delete

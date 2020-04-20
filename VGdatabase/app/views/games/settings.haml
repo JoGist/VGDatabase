@@ -7,7 +7,7 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:href => "https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css", :rel => "stylesheet"}/
   %body.visible
-    %aside.sidebar
+    %aside.sidebar.bigger
       %nav
         %ul.sidebar__nav
           %li
@@ -16,15 +16,15 @@
           %li.active
             %a.sidebar__nav__link_plain{}
               %i.mdi.mdi-home
-              %span.sidebar__nav__text Control panel
-          %li
-            %a.sidebar__nav__link{:href => deleteReviewsUser_path, "data-method" => "get"}
-              %i.mdi.mdi-database-search
-              %span.sidebar__nav__text Delete review from user
+              %span.sidebar__nav__text Admin control panel
           %li
             %a.sidebar__nav__link{:href => deleteReviewsGame_path, "data-method" => "get"}
               %i.mdi.mdi-account-multiple
-              %span.sidebar__nav__text Delete games reviews
+              %span.sidebar__nav__text Delete reviews of a game 
+          %li
+            %a.sidebar__nav__link{:href => deleteReviewsUser_path, "data-method" => "get"}
+              %i.mdi.mdi-database-search
+              %span.sidebar__nav__text Delete reviews from user
           %li
             %a.sidebar__nav__link{:href => deleteUser_path, "data-method" => "get"}
               %i.mdi.mdi-account-circle
