@@ -313,6 +313,9 @@ textarea {
 .page-content {
   margin-left: 12.5em;
   padding-right: 0.5em;
+  display: inline-block;
+  position: relative;
+  
 }
 
 .overflow {

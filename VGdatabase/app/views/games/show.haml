@@ -61,6 +61,6 @@
             %h4 Platform: #{@games.platform}
             %h4 Score: #{@games.score}
             %h4 Release date: #{@games.release_date}
-            .product-cta
-              %button.buttonSmall Add to Your list
-              %button.buttonSmall Purchase
+      %div
+      %a.buttonSmall Add to Your list
+      %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"} Purchase
