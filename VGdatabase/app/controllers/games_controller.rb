@@ -32,11 +32,9 @@ skip_before_action :verify_authenticity_token
         @user = User.find(session[:user_id])
     end
 
-    /
     def visitProfile
         @user = User.find(session[:user_id])
     end
-    /
 
     def editProfile
         @user = User.find(session[:user_id])
