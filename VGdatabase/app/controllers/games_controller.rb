@@ -18,6 +18,10 @@ skip_before_action :verify_authenticity_token
         @games = Game.all
     end
 
+    def myLibraryFavoritesEdit
+        @games = Game.all
+    end
+
     def search
     end
 
