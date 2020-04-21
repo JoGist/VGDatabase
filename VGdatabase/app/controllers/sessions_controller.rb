@@ -41,6 +41,9 @@ end
 def forgot_password
 end
 
+def forgot_password_error
+end
+
 def change_password
     email = params[:user][:name]
     password = params[:user][:password]
@@ -52,7 +55,7 @@ def change_password
             redirect_to login_path
         end
     else
-        render html: "Utente non trovato"
+        redirect_to forgot_password_error_path
     end
 end
 
