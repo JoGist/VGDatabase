@@ -7,7 +7,7 @@ skip_before_action :verify_authenticity_token
     end
 
     def myLibrary
-        @games = Game.all
+        @games = Mylibrary.all
     end
 
     def myLibraryFavorites
