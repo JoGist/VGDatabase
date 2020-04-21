@@ -34,6 +34,12 @@
           %br
           %button.button Log in
           %br/
+          #error.overlay
+            .popup
+              %h2 Error
+              %a.close{:href => ""} ×
+              .content
+                Invalid credentials. Please try again
           %table
             %tr
               %th
