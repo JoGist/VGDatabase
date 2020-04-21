@@ -48,6 +48,10 @@
     %br/
     %h1 Your favorite games
     %div.page-content
+      %p
+        %a{:href => editFavorites_path} Edit account info 
+        %i.mdi.mdi-pencil
+    %div.page-content
       - @games.each do |game|
         .card
           %i.mdi.mdi-star.dot
