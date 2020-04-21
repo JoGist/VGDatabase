@@ -14,6 +14,10 @@ skip_before_action :verify_authenticity_token
         @games = Game.all
     end
 
+    def myLibraryEdit
+        @games = Game.all
+    end
+
     def search
     end
 
@@ -23,6 +27,12 @@ skip_before_action :verify_authenticity_token
     def myProfile
         @user = User.find(session[:user_id])
     end
+
+    /
+    def visitProfile
+        @user = User.find(session[:user_id])
+    end
+    /
 
     def editProfile
     end
