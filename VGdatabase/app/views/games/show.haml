@@ -59,7 +59,7 @@
             %h4 Genre: #{@games.genre}
             %h4 Platform: #{@games.platform}
             %h4 Score: #{@games.score}
-            %h4 Release date: #{@games.release_date}
+            %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
             %br
             %a.buttonSmall Add to Your list
             %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"}

@@ -30,8 +30,11 @@ def create
             redirect_to homepage_path
         end
     else
-        redirect_to login_path
+        redirect_to login_error_path
     end
+end
+
+def error_login
 end
 
 def homepageGuest
