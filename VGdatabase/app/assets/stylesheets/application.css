@@ -1031,17 +1031,13 @@ textarea {
   border-bottom: initial;
 }
 
-
-
-
-
 .overlay {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.774);
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
@@ -1052,6 +1048,7 @@ textarea {
 }
 
 .popup {
+  position: fixed;
   margin: 70px auto;
   padding: 20px;
   background: #fff;
@@ -1065,6 +1062,7 @@ textarea {
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
