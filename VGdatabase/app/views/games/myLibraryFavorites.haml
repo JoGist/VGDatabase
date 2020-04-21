@@ -50,6 +50,7 @@
     %div.page-content
       - @games.each do |game|
         .card
+          %i.mdi.mdi-star.dot
           .content.cardPadding
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}

@@ -75,8 +75,12 @@
       /data-trigger has to be saved into a var
       - @games.each do |game|
         .card
+          /{:style => "background-image: #{game.cover}"}
           .content.cardPadding
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}
-            %a.button.btn{:href => game_path(game), "data-method" => "get"} View info 
+            %a.btn{:href => game_path(game), "data-method" => "get"} View info 
+            %a.btn{}
+              %i.mdi.mdi-plus
+              %span.sidebar__nav__text library
           %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
