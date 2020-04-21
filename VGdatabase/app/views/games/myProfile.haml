@@ -45,13 +45,11 @@
             %a.sidebar__nav__link{:href => contactUs_path, "data-method" => "get"}
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
-    / partial:index.partial.html
     %br/
     %h1 Your profile
     %div.page-content
       %br/
       .my-account-wrapper
-        /%h2.account-header My Account
         .account-grid-system
           .account-grid-item-1
             .profile-pic-details
@@ -75,7 +73,6 @@
             .grid-item-details
               %p.profile-hyper-links
                 %a{:href => editProfile_path} Edit account info 
-                /save icon when in edit mode
                 %i.mdi.mdi-pencil
           .account-grid-item-2
             .grid-item-details
