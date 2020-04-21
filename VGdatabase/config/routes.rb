@@ -10,7 +10,8 @@ get '/searchGame' => 'games#searchGame'
 post '/searchGame' => 'games#searchingGame'
 get '/signup' => 'sessions#signup'
 post '/signup' => 'sessions#signing'
-get '/login_error' => 'sessions#error_login'
+get '/login_error' => 'sessions#login_error'
+get '/forgot_password' => 'sessions#forgot_password'
 
 
 # User routes

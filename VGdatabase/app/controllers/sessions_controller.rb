@@ -34,7 +34,7 @@ def create
     end
 end
 
-def error_login
+def login_error
 end
 
 def homepageGuest
