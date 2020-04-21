@@ -27,6 +27,7 @@ get '/myProfile' => 'games#myProfile'
 get '/editProfile' => 'games#editProfile'
 get '/contactUs' => 'games#contactUs'
 get '/delete' => 'games#delete'       #Serve all'user per cancellare il proprio profilo 
+get '/searchResult' => 'games#searchResult'
 
 # Guest routes 
 get '/homepage_guest' => 'sessions#homepageGuest'
@@ -35,6 +36,8 @@ get '/search_guest_user' => 'sessions#searchGuestUser'
 post '/search_guest_user' => 'sessions#searchingGuestUser'
 get '/search_guest_game' => 'sessions#searchGuestGame'
 post '/search_guest_game' => 'sessions#searchingGuestGame'
+get '/show_guest' => 'sessions#showGuest'
+get '/search_result_guest' => 'sessions#searchResultGuest'
 
 # Games routes
 # Qualcosa sulle review

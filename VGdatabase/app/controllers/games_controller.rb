@@ -85,32 +85,25 @@ skip_before_action :verify_authenticity_token
         @games = Game.all
     end
 
-    /
+    
     def searchingGame
-        
         search = params[:search]
-        select = SCELTA CATEGORIA
-        if  select == 'Platform'
-            if Game.exists?(Game.where(:platform => select))
-                @games = Game.where(:platform => select)
+        genre = params[:game][:genre]
+        platform = params[:game][:platform]
+        choice = params[:game][:choice]
+        if choice == 'Title'
+            if Game.exists?(Game.where(:title => search, :platform => platform, :genre => genre))
+                @games = Game.where(:title => search, :platform => platform, :genre => genre)[0].id
+                redirect_to game_path(@games)
             end
-        elsif select == 'Title'
-            if Game.exists?(Game.where(:title => select))
-                @games = Game.where(:title => select)
+        elsif choice == 'Developer'
+           if Game.exists?(Game.where(:developer => search))
+                 @games = Game.where(:developer => search)
+                 render html: ''
             end
-        elsif select == 'Developer'
-           if Game.exists?(Game.where(:developer => select))
-                 @games = Game.where(:developer => select)
-            end
-        elsif select == 'Genre'
-            if Game.exists?(Game.where(:genre => select))
-                @games = Game.where(:genre => select)
-            end 
-        end            
+        end         
     end
-    /
-
-
+    
     
 #admin
 
