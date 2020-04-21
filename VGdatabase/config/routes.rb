@@ -57,7 +57,9 @@ post '/deleteReviewsGame' => 'games#deletingReviewsGame'
 
 resources :games do
   resources :reviews
+  resources :mylibraries
 end
+
 
 resources :users do
   resources :reviews
