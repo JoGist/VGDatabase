@@ -195,6 +195,14 @@ h4 {
   margin: 0 0 40px;
 }
 
+h5 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 10px;
+  text-justify: inter-word;
+}
+
 label {
   position: absolute;
   -webkit-transform: translateY(6px);
@@ -583,12 +591,12 @@ textarea {
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
-  background-color: black;
+  background-color: #333;
   border: none;
 }
 
 .btn:hover {
-  background-color: #0d0d0d;
+  background-color: #222;
 }
 
 .btn:focus {
