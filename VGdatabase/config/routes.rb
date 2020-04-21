@@ -12,6 +12,7 @@ get '/signup' => 'sessions#signup'
 post '/signup' => 'sessions#signing'
 get '/login_error' => 'sessions#login_error'
 get '/forgot_password' => 'sessions#forgot_password'
+post '/forgot_password' => 'sessions#change_password'
 
 
 # User routes

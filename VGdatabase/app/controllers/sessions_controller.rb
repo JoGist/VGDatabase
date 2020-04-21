@@ -37,7 +37,23 @@ end
 def login_error
 end
 
+
 def forgot_password
+end
+
+def change_password
+    email = params[:user][:name]
+    password = params[:user][:password]
+    username = params[:user][:name1]
+    if (User.exists?(User.where(:email => email)))
+        @user = User.where(:email => email)[0]
+        if (@user.username == username)
+            @user.update_attributes!(params[:user].permit(:password))
+            redirect_to login_path
+        end
+    else
+        render html: "Utente non trovato"
+    end
 end
 
 def homepageGuest
