@@ -29,13 +29,14 @@
             %a.sidebar__nav__link{:href => contactUs_guest_path, "data-method" => "get"}
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
-    / partial:index.partial.html
     %br/
     %h1 Welcome, please sign up!
     %div.page-content
+      %a.sortOnly{:href => "#"}
+        %span Sort
+        %i.mdi.mdi-filter-variant
       - @games.each do |game|
         .card
-          /{:style => "background-image: #{game.cover}"}
           .content.cardPadding
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}

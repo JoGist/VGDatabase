@@ -56,6 +56,9 @@
             = select :game, :genre, ['PC', 'PS4', 'XBOX ONE', 'Nintendo Switch']                  
     %div.page-content.extraPadding
       %h4.extraMarginLeft 2 results for "data-trigger" 
+      %a.sortOnly{:href => "#"}
+        %span Sort
+        %i.mdi.mdi-filter-variant
       /data-trigger has to be saved into a var
       - @games.each do |game|
         .card

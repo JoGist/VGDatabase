@@ -48,14 +48,22 @@
     %br/
     %h1 Editing favorites
     %div.page-content
+      %a.sort{:href => "#"}
+        %span Sort
+        %i.mdi.mdi-filter-variant
       %a.editText{:href => myLibraryFavorites_path, "data-method" => "get"}
         %span Stop editing
         %i.mdi.mdi-pencil
     %div.page-content
       - @games.each do |game|
         .card
-          %i.mdi.mdi-star.dot
           .content.cardPadding
-            %a.btn{:href => game_path(game), "data-method" => "get"} View info 
+            %p
+            %p
+            %p
+            %p
+            %a.btn{:href => "#"}
+              %i.mdi.mdi-minus
+              %span.sidebar__nav__text remove
           %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
           

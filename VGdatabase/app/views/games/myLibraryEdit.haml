@@ -48,13 +48,24 @@
     %br/
     %h1 Library edit
     %div.page-content
+      %a.sort{:href => "#"}
+        %span Sort
+        %i.mdi.mdi-filter-variant
       %a.editText{:href => myLibrary_path, "data-method" => "get"}
-        %span End editing
+        %span Stop editing
         %i.mdi.mdi-pencil
       - @games.each do |game|
         .card
+          %a.mdi.mdi-star-outline.dotCard{:href => "#"}
           .content.cardPadding
-            %a.btn{:href => game_path(game), "data-method" => "get"} Remove 
+            %p
+            %p
+            %p
+            %p
+            %a.btn{:href => "#"}
+              %i.mdi.mdi-minus
+              %span.sidebar__nav__text remove
+              /remove the game (hai perso) removes it also from favorites
           %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
       .card
         .content

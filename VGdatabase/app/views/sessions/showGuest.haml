@@ -3,7 +3,7 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "UTF-8"}/
-    %title Favorites - VGDatabase
+    %title Search - VGDatabase
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:href => "https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css", :rel => "stylesheet"}/
   %body.visible
@@ -21,8 +21,8 @@
             %a.sidebar__nav__link{:href => myLibrary_path, "data-method" => "get"}
               %i.mdi.mdi-library-movie
               %span.sidebar__nav__text My library
-          %li.active
-            %a.sidebar__nav__link_plain{}
+          %li
+            %a.sidebar__nav__link{:href => myLibraryFavorites_path, "data-method" => "get"}
               %i.mdi.mdi-star
               %span.sidebar__nav__text  Favorites
           %li
@@ -46,19 +46,28 @@
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
     %br/
-    %h1 Your favorite games
+    %h1 Game info
     %div.page-content
-      %a.sort{:href => "#"}
-        %span Sort
-        %i.mdi.mdi-filter-variant
-      %a.editText{:href => editFavorites_path, "data-method" => "get"}
-        %span Start editing
-        %i.mdi.mdi-pencil
-      - @games.each do |game|
-        .card
-          .content.cardPadding
-            %p.description Genre: #{game.genre}
-            %p.description Platforms: #{game.platform}
-            %a.btn{:href => game_path(game), "data-method" => "get"} View info 
-          %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
-          
+      %br
+        %ul
+          %li.left
+            %img.fullSize{:alt => "Game image cover", :src => "#{@games.cover}"}
+            %br
+            %br
+            %br
+          %li.gameInfo
+            %h2 Title: #{@games.title}
+            %h4 Developer: #{@games.developer}
+            %h4 Genre: #{@games.genre}
+            %h4 Platform: #{@games.platform}
+            %h4 Score: #{@games.score}
+            %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
+            %br
+            %a.buttonSmall{:href => "#"}
+              %i.mdi.mdi-login
+              %span.hidden . 
+              %span.sidebar__nav__text Log in to Add to library 
+            %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"}
+              %i.mdi.mdi-amazon
+              %span.hidden . 
+              %span.sidebar__nav__text BUY 

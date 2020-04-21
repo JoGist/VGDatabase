@@ -63,9 +63,11 @@
             %h4 Score: #{@games.score}
             %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
             %br
-            %a.buttonSmall Add to library
+            %a.buttonSmall{:href => "#"}
+              %i.mdi.mdi-plus
+              %span.hidden . 
+              %span.sidebar__nav__text Log in to Add to library 
             %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"}
               %i.mdi.mdi-amazon
               %span.hidden . 
               %span.sidebar__nav__text BUY 
-

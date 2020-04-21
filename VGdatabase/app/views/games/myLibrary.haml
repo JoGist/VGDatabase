@@ -48,11 +48,16 @@
     %br/
     %h1 You have 16 games in your collection
     %div.page-content
-      %a.editText{:href => editLibrary_path}
-        %span Edit library
+      %a.sort{:href => "#"}
+        %span Sort
+        %i.mdi.mdi-filter-variant
+      %a.editText{:href => editLibrary_path, "data-method" => "get"}
+        %span Start editing
         %i.mdi.mdi-pencil
       - @games.each do |game|
         .card
+          %a.mdi.mdi-star-outline.dotCard{:href => "#"}
+          /if the game is not in your library, the outlined star should appear, otherwise the full one
           .content.cardPadding
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}

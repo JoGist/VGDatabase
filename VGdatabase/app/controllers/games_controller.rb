@@ -39,6 +39,7 @@ skip_before_action :verify_authenticity_token
     /
 
     def editProfile
+        @user = User.find(session[:user_id])
     end
 
     def show

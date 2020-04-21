@@ -72,10 +72,15 @@
             = select :game, :genre, ['PC', 'PS4', 'XBOX ONE', 'Nintendo Switch']                  
     %div.page-content.extraPadding
       %h4.extraMarginLeft 2 results for "data-trigger" 
+      %a.sortOnly{:href => "#"}
+        %span Sort
+        %i.mdi.mdi-filter-variant
       /data-trigger has to be saved into a var
       - @games.each do |game|
         .card
-          /{:style => "background-image: #{game.cover}"}
+          %a.mdi.mdi-star-outline.dotCard{:href => "#"}
+          /only present if the game is in your library and not in favorites
+          /if the game is in favorites, the the full star should appear
           .content.cardPadding
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}
@@ -83,4 +88,5 @@
             %a.btn{}
               %i.mdi.mdi-plus
               %span.sidebar__nav__text library
+              //only present if the game is not in your library
           %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}

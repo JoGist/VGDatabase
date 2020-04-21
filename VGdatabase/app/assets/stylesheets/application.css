@@ -10,6 +10,7 @@
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --starVisible: hidden;
 }
 
 
@@ -92,12 +93,24 @@ img {
   margin-top: -2.6rem;
 }
 
-.editText span {
+.sort {
+  float: right;
+  margin-right: 15rem;
+  margin-top: -2.6rem;
+}
+
+.sortOnly {
+  float: right;
+  margin-right: 5rem;
+  margin-top: -2.6rem;
+}
+
+.editText .sort .sortOnly span {
   color: #f26657;
   font-size: 15px;
 }
 
-.editText i {
+.editText .sort .sortOnly i {
   color: #f26657;
   font-size: 15px;
 }
@@ -403,6 +416,16 @@ textarea {
   margin-top: -2.5%;*/
 }
 
+.dotCard {
+  position: absolute;
+  right: 3%;        
+  top: 2%;
+  color: rgb(217, 230, 43);
+  font-size: 1.5em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  visibility: hidden;
+}
+
 .blinking {
   animation: blinkingText 1s 2 forwards
 }
@@ -659,6 +682,10 @@ textarea {
   .card:hover .content, .card:focus-within .content {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+
+  .card:hover .dotCard {
+    visibility: visible;
   }
 
   .card:hover .content > *:not(.title), .card:focus-within .content > *:not(.title) {
