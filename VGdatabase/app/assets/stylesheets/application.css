@@ -23,6 +23,11 @@ overflow-y:hidden
 overflow-y:visible
 }
 
+.iconBig {
+  font-size: xx-large;
+color:#fff
+}
+
 nav .container {
 overflow-y:visible
 }
@@ -70,8 +75,8 @@ margin-top:-5px;
 list-style-type:none
 }
 
-.hidden {
-visibility:hidden
+.opacity0 {
+opacity: 0
 }
 
 .removed {
@@ -858,7 +863,8 @@ display:flex;
 flex-direction:column;
 border:1px solid #444;
 border-radius:2px;
-width:45%
+width:45%;
+margin-right:12px
 }
 
 .account-grid-item-3 {
@@ -866,7 +872,8 @@ display:flex;
 flex-direction:column;
 border:1px solid #444;
 border-radius:2px;
-width:22%
+width:25%;
+max-width:500px
 }
 
 .grid-item-details {
@@ -987,6 +994,42 @@ right:0;
 background:rgba(0,0,0,0.774);
 transition:opacity 500ms;
 visibility:visible
+}
+
+.overlayImg {
+left:50%;
+margin-left:-123px;
+width:246px;
+height:246px;
+border-radius: 100%;
+background:rgba(0, 0, 0, 0.4);
+display:flex;
+align-items:center;
+justify-content:center;
+position:absolute
+}
+
+.overlayImg:hover {
+background:rgba(0, 0, 0, 0.7);
+transition:ease-in-out 200ms;
+  }
+
+.overlayProfileImg{
+cursor:inherit;
+left:50%;
+margin-left:-123px;
+width:246px;
+height:246px;
+border-radius: 100%;
+display:flex;
+align-items:center;
+justify-content:center;
+position:absolute;
+opacity: 0;
+}
+
+.overlayProfileImg input[type=file]{
+cursor:pointer;
 }
 
 .popup {

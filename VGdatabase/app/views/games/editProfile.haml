@@ -49,74 +49,83 @@
     %h1 Your profile
     %div.page-content
       %br/
-      .my-account-wrapper
-        /%h2.account-header My Account
-        .account-grid-system
-          .account-grid-item-1
-            .profile-pic-details
-              %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-            .grid-item-details
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-            .grid-item-details
-              %p.profile-hyper-links
-                %a{:href => editProfile_path} Save changes 
-                %i.mdi.mdi-content-save
-          .account-grid-item-2
-            .grid-item-details
-              %h5.sub-header-details Username:
-              %span #{@user.username}
-            .grid-item-details
-              %h5.sub-header-details Email
-              %span #{@user.email}
-            .grid-item-details
-              %h5.sub-header-details Games in your collection:
-              %span 16
-            .grid-item-details.removed
-              %h5.sub-header-details Password:
-              %span ••••••••
-            .accordian-details.removed
-              %h5.accordian-header
-                Change Password:
-                %span Test1234
-            .grid-item-details
-              %h5.sub-header-details Linked accounts:
-              %br
-              %a
-                %i.mdi.mdi-google
-                %span Google OAuth account
-              %br
-              %br
-              %a
-                %i.mdi.mdi-steam
-                %span Steam OAuth account
-          .account-grid-item-3
-            .grid-item-details
-              %span Friends
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_1
-            .grid-item-details
-              %i.mdi.mdi-account-circle 
-              %h5.sub-header-details Friend_2
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_3
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_4
-            .grid-item-details
-              %i.mdi.mdi-account-circle 
-              %h5.sub-header-details Friend_5
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_6
+      = form_tag :method => :post do
+        .my-account-wrapper
+          /%h2.account-header My Account
+          .account-grid-system
+            .account-grid-item-1
+              .profile-pic-details
+                .overlayImg
+                  %i.mdi.mdi-pencil.iconBig
+                  .overlayProfileImg
+                    %input{:name => "myfile", :type => "file"}/
+                %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+              .grid-item-details
+                %br/
+                %br/
+                %br/
+                %br/
+                %br/
+                %br/
+                %br/
+                %br/
+                %br/
+                %br/
+                %br/
+              .grid-item-details
+                %p.profile-hyper-links
+                  %a{:href => myProfile_path} Save changes 
+                  %i.mdi.mdi-content-save
+            .account-grid-item-2
+              .grid-item-details
+                %h5.sub-header-details Username:
+                %input{:name => 'user[name]' , :placeholder => @user.username , :autocomplete => "off", :required => "", :type => "text"}/
+              .grid-item-details
+                %h5.sub-header-details Email
+                %input{:name => 'user[name]' , :placeholder => @user.email , :autocomplete => "off", :required => "", :type => "text"}/
+              .grid-item-details
+                %h5.sub-header-details Password:
+                /%span ••••••••
+                %input{:name => 'user[name]' , :placeholder => 'Enter current password' , :autocomplete => "off", :required => "", :type => "text"}/
+                %br
+                %input{:name => 'user[name]' , :placeholder => 'Enter new password' , :autocomplete => "off", :required => "", :type => "text"}/
+                %br
+                %input{:name => 'user[name]' , :placeholder => 'Re-enter new password' , :autocomplete => "off", :required => "", :type => "text"}/
+              .accordian-details.removed
+                %h5.accordian-header
+                  Change Password:
+                  %span Test1234
+              .grid-item-details
+                %h5.sub-header-details Linked accounts:
+                %br
+                %a
+                  %i.mdi.mdi-google
+                  %span Google OAuth account
+                  %a{:href => editProfile_path} remove linked account
+                  %i.mdi.mdi-content-cross
+                %br
+                %br
+                %a
+                  %i.mdi.mdi-steam
+                  %span Steam OAuth account
+            .account-grid-item-3
+              .grid-item-details
+                %span Friends
+              .grid-item-details
+                %i.mdi.mdi-account-circle
+                %h5.sub-header-details Friend_1
+              .grid-item-details
+                %i.mdi.mdi-account-circle 
+                %h5.sub-header-details Friend_2
+              .grid-item-details
+                %i.mdi.mdi-account-circle
+                %h5.sub-header-details Friend_3
+              .grid-item-details
+                %i.mdi.mdi-account-circle
+                %h5.sub-header-details Friend_4
+              .grid-item-details
+                %i.mdi.mdi-account-circle 
+                %h5.sub-header-details Friend_5
+              .grid-item-details
+                %i.mdi.mdi-account-circle
+                %h5.sub-header-details Friend_6
