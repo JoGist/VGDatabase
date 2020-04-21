@@ -37,6 +37,9 @@ end
 def login_error
 end
 
+def forgot_password
+end
+
 def homepageGuest
     @games = Game.all
 end
