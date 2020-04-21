@@ -48,8 +48,8 @@
     %br/
     %h1 Your favorite games
     %div.page-content
-      %p
-        %a{:href => editFavorites_path} Edit account info 
+      %a.editText{:href => editFavorites_path}
+        %span Stop editing
         %i.mdi.mdi-pencil
     %div.page-content
       - @games.each do |game|
@@ -60,3 +60,4 @@
             %p.description Platforms: #{game.platform}
             %a.btn{:href => game_path(game), "data-method" => "get"} View info 
           %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+          

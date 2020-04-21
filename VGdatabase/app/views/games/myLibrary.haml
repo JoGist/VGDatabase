@@ -48,8 +48,8 @@
     %br/
     %h1 You have 16 games in your collection
     %div.page-content
-      %p
-        %a{:href => editLibrary_path} Edit account info 
+      %a.editText{:href => editLibrary_path}
+        %span Edit library
         %i.mdi.mdi-pencil
       - @games.each do |game|
         .card
