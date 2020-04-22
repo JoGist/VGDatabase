@@ -347,6 +347,10 @@ textarea {
   transition: all 0.3s ease-out;
 }
 
+.button:active {
+  cursor: progress;
+}
+
 .box {
   width: 40%;
   margin: 0 auto;
@@ -375,6 +379,10 @@ textarea {
 .button:hover,
 .button:focus {
   cursor: pointer;
+}
+
+.buttonSmall:active { 
+  cursor: progress;
 }
 
 .gameInfo {
@@ -729,9 +737,9 @@ textarea {
   visibility: visible;
 }
 
-/*.sidebarOverlay:active {
-  animation: blinkingText 1s 2;
-}*/
+.sidebarOverlay:hover {
+  cursor: no-drop;
+}
 
 .normal {
   width: 12em;
