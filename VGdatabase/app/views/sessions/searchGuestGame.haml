@@ -39,7 +39,7 @@
             .input-field.first-wrap
               .btn-group.inner
                 %buttonActive.borderLeft Games
-                %a.left-4{:href => searchUser_path, "data-method" => "get"} Users
+                %a.left-4{:href => search_guest_user_path, "data-method" => "get"} Users
             .vl
             .input-field.second-wrap
               %input#search{:name => 'search' ,:placeholder => "Type here to search...", :type => "text"}/
@@ -55,7 +55,7 @@
 
           = select :game, :choice, ['Title','Developer']                
     %div.page-content.extraPadding
-      %h4.extraMarginLeft 2 results for "data-trigger" 
+      %h4.extraMarginLeft 2 results
       %a.sortOnly{:href => "#"}
         %span Sort
         %i.mdi.mdi-filter-variant
