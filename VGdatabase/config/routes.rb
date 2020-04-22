@@ -24,6 +24,7 @@ get '/editLibrary' => 'games#myLibraryEdit'
 get '/editFavorites' => 'games#myLibraryFavoritesEdit'
 get '/friends' => 'games#friends'
 get '/myProfile' => 'games#myProfile'
+get '/visitProfile' => 'games#visitProfile'
 get '/editProfile' => 'games#editProfile'
 get '/contactUs' => 'games#contactUs'
 get '/delete' => 'games#delete'       #Serve all'user per cancellare il proprio profilo 

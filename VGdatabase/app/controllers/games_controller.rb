@@ -26,6 +26,7 @@ skip_before_action :verify_authenticity_token
     end
 
     def friends
+        @user = User.find(session[:user_id])
     end
 
     def myProfile
