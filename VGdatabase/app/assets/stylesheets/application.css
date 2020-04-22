@@ -997,7 +997,21 @@ textarea {
   width: 30%;
   max-width: 300px;
   min-width: 300px;
-  height: 279px;
+  height: 280px;
+  text-align: center;
+  margin-right: 12px;
+}
+
+.account-grid-item-1-alt {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #444;
+  border-radius: 2px;
+  position: relative;
+  width: 30%;
+  max-width: 300px;
+  min-width: 300px;
+  height: 283px;
   text-align: center;
   margin-right: 12px;
 }
@@ -1033,7 +1047,6 @@ textarea {
   cursor: pointer;
   padding: 10px;
   border: none;
-  border-bottom: 1px solid #444;
   background-color: #333;
   color: #f26657;
 }
