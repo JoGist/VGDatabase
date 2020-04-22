@@ -63,7 +63,7 @@
             %h4 Score: #{@games.score}
             %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
             %br
-            %a.buttonSmall{:name => :mylibrary , :href => game_mylibraries_path(@games), "data-method" => "post"}
+            %a.buttonSmall{:name => 'mylibrary', :href => game_mylibraries_path(@games), "data-method" => "post"}
               %i.mdi.mdi-plus
               %span.hidden . 
               %span.sidebar__nav__text Add to library 

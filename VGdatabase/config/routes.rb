@@ -26,9 +26,11 @@ get '/friends' => 'games#friends'
 get '/myProfile' => 'games#myProfile'
 get '/visitProfile' => 'games#visitProfile'
 get '/editProfile' => 'games#editProfile'
+post '/editProfile' => 'games#editingProfile'
 get '/contactUs' => 'games#contactUs'
 get '/delete' => 'games#delete'       #Serve all'user per cancellare il proprio profilo 
 get '/searchResult' => 'games#searchResult'
+get 'deleteUser' => 'games#deleteUser'
 
 # Guest routes 
 get '/homepage_guest' => 'sessions#homepageGuest'

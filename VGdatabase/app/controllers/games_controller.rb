@@ -41,6 +41,21 @@ skip_before_action :verify_authenticity_token
         @user = User.find(session[:user_id])
     end
 
+    def editingProfile
+        username = params[:user][:name]
+        email = params[:user][:email]
+        oldp = params[:user][:oldp]
+        newp = params[:user][:newp]
+        newp1 = params[:user][:newp1]
+        @user = User.find(session[:user_id])
+        if newp1 == newp && oldp == @user.password 
+            @user.update_attributes!(:username => username, :email => email, :password => newp)
+            redirect_to visitProfile_path
+        else
+            redirect_to visitProfile_path
+        end
+    end
+
     def show
         id = params[:id]
         @games = Game.find(id)
@@ -53,17 +68,9 @@ skip_before_action :verify_authenticity_token
     end
 
     def deleteUser
-    end
-
-    def deletingUser
-        name = params[:user][:name]
-        if User.exists?(User.where(:username => name))
-            @user = User.where(:username => name)[0].id
-            User.delete(@user)
-            @result = 'Deleted'
-            redirect_to settings_path
-        end
-        redirect_to deleteUser_path
+        name = session[:user_id]
+        User.delete(name)
+        redirect_to login_path
     end
 
 
@@ -118,5 +125,16 @@ skip_before_action :verify_authenticity_token
 
     def deletingReviewsUser
         redirect_to settings_path
+    end
+
+    def deletingUser
+        name = params[:user][:name]
+        if User.exists?(User.where(:username => name))
+            @user = User.where(:username => name)[0].id
+            User.delete(@user)
+            @result = 'Deleted'
+            redirect_to settings_path
+        end
+        redirect_to deleteUser_path
     end
 end
