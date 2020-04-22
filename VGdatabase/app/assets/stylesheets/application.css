@@ -53,6 +53,17 @@ body {
     1px 1px 0 #000;
 }
 
+.reviewStar {
+    font-size: large;
+    float: left;
+    margin-left: 0.6rem;
+    padding-top: 1.5rem;
+    color: #d9e62b;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+
 .iconBig2:hover {
   /*content: .mdi-star-outline;*/
   text-shadow: 0 0 0 #d9e62b;
@@ -103,6 +114,27 @@ img {
 
 .right2 {
   float: right;
+  margin-top: -5px;
+  list-style-type: none;
+}
+
+.right3 {
+  float: right;
+  margin-top: -472px;
+  list-style-type: none;
+  padding-right: 60px;
+}
+
+.right4 {
+  float: right;
+  padding-right: 10px;
+}
+
+.right5 {
+  float: right;
+  padding-right: 10px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .left {
@@ -233,6 +265,7 @@ h1 {
   color: #fff;
   font-weight: 300;
   margin: 0 0 20px;
+  font-weight: bold;
 }
 
 h2 {
@@ -333,6 +366,10 @@ textarea {
   margin-bottom: 25px;
 }
 
+a:hover {
+  color: #fff
+}
+
 .top-row:after {
   content: "";
   display: table;
@@ -374,7 +411,7 @@ textarea {
 }
 
 .button:hover {
-    border: 2px solid #fff;
+  border: 2px solid #fff;
 }
 
 .box {
@@ -622,6 +659,10 @@ textarea {
   margin-top: 1rem;
 }
 
+.content a:hover {
+  color: #f26657;
+}
+
 .description {
   font-family: var(--font-serif);
   font-size: 1.3rem;
@@ -650,7 +691,7 @@ textarea {
 }
 
 .btn:focus {
-  outline: 1px dashed #f26657;
+  /*outline: 1px dashed #f26657;*/
   outline-offset: 3px;
 }
 
@@ -1365,3 +1406,115 @@ textarea {
   width: 300px;
   position: relative;
 }
+
+.reviewDiv {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #444;
+  border-radius: 2px;
+  width: 1000px;
+  height: 680px;
+  float: left;
+  margin-top: -10px;
+}
+
+.reviewText {
+  margin-top: 80px;
+  text-align: justify;
+  padding: 15px;
+  background-color: #444;
+  border: 1px solid #f26657;
+}
+
+.reviewUser {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  background-color: #333;
+  color: #f26657;
+}
+
+.reviewImg {
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #f26657;
+  float: left;
+}
+
+.reviewUser a {
+  font-size: 24px;
+  cursor: pointer;
+  padding-left: 1.2rem;
+  padding-top: 1.1rem;
+  float: left;
+  color: #fff;
+}
+
+.reviewUser a:hover {
+  cursor: pointer;
+  color: #f26657;
+}
+
+.reviewHeader {
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #f26657;
+}
+
+.reviewHeader h5 {
+  color: #fff;
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.reviewHeader h6 {
+  color: #fff;
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.reviewHeader i {
+  color: #fff;
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.reviewHeader span {
+  cursor: default;
+  color: #fff;
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.reviewHeader h6:hover {
+  color: #f26657;
+}
+
+.reviewHeader i:hover {
+  color: #f26657;
+}
+
+@media (max-width: 2180px) {
+    .right3 {
+        float: left;
+        margin-top: 120px;
+        list-style-type: none;
+        margin-left: -400px;
+        }
+  }
+
+  @media (max-width: 1500px) {
+    .right3 {
+        float: left;
+        margin-top: 0px;
+        list-style-type: none;
+        padding-left: 400px;
+        }
+  }
