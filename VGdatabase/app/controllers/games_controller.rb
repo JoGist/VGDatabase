@@ -48,11 +48,28 @@ skip_before_action :verify_authenticity_token
         newp = params[:user][:newp]
         newp1 = params[:user][:newp1]
         @user = User.find(session[:user_id])
-        if newp1 == newp && oldp == @user.password 
-            @user.update_attributes!(:username => username, :email => email, :password => newp)
-            redirect_to visitProfile_path
+        if username.length==0 && email.length==0 && oldp.length==0
+            redirect_to myProfile_path
+        elsif username.length==0 && email.length==0 && newp.length!=0 && newp==newp1 && oldp==@user.password
+            @user.update_attributes!(:password => newp)
+            redirect_to myProfile_path
+        elsif username.length!=0 && email.length==0 && newp.length!=0 && newp==newp1 && oldp==@user.password
+            @user.update_attributes!(:password => newp, :username => username)
+            redirect_to myProfile_path
+        elsif username.length!=0 && email.length!=0 && newp.length!=0 && newp==newp1 && oldp==@user.password
+            @user.update_attributes!(:password => newp, :username => username, :email => email)
+            redirect_to myProfile_path 
+        elsif username.length!=0 && email.length==0 && oldp.length==0
+            @user.update_attributes!(:username => username)
+            redirect_to myProfile_path        
+        elsif username.length==0 && email.length!=0 && oldp.length==0
+            @user.update_attributes!(:email => email)
+            redirect_to myProfile_path      
+        elsif username.length!=0 && email.length!=0 && oldp.length==0
+            @user.update_attributes!(:email => email, :username => username)
+            redirect_to myProfile_path                                       
         else
-            redirect_to visitProfile_path
+            redirect_to myProfile_path        
         end
     end
 
