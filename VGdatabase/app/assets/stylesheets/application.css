@@ -1069,7 +1069,7 @@ textarea {
 }
 
 .account-grid-item-2 .grid-item-details:hover {
-  cursor: pointer;
+  cursor: default;
 }
 
 .accordian-details {
