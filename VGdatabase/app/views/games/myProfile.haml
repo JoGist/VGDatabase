@@ -73,13 +73,6 @@
             .grid-item-details
               %h5.sub-header-details Games in your collection:
               %span #{Mylibrary.where(:user_id => @user.id).length}
-            .grid-item-details.removed
-              %h5.sub-header-details Password:
-              %span ••••••••
-            .accordian-details.removed
-              %h5.accordian-header
-                Change Password:
-                %span Test1234
             .grid-item-details
               %h5.sub-header-details Linked accounts:
               %br
@@ -110,3 +103,9 @@
             .grid-item-detailsImg
               %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
               %a.sub-header-details{:href => visitProfile_path, "data-method" => "get"} Friend_5
+    -#.overlay
+      .popup
+      %h2 Error
+        %a.close{:href => myProfile_path, "data-method" => "get"} ×
+        .content
+          Unable to save changes, please try again.

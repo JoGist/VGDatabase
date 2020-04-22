@@ -54,9 +54,9 @@
       = form_tag :method => :post do
         .my-account-wrapper
           .account-grid-system
-            .account-grid-item-1
+            .account-grid-item-1-alt2
               .profile-pic-details
-                %a.overlayImg.iconBig
+                .overlayImg.iconBig
                   %i.mdi.mdi-upload
                   %span.hidden _
                   %span edit picture
@@ -83,6 +83,7 @@
                 %input{:name => 'user[newp]' , :placeholder => 'Enter new password' , :autocomplete => "off", :type => "password"}/
                 %br
                 %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "off", :type => "password"}/
+                /%span Last changed password on:
               .grid-item-details
                 %h5.sub-header-details Linked accounts:
                 %br
