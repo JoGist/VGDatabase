@@ -66,4 +66,28 @@
             %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"}
               %i.mdi.mdi-amazon
               %span.hidden . 
-              %span.sidebar__nav__text BUY 
+              %span.sidebar__nav__text BUY
+      %br
+      .my-account-wrapper
+        .account-grid-system
+          .account-grid-item-2
+            .grid-item-details
+              %h5.sub-header-details Username:
+              %span ciao
+            .grid-item-details
+              %h5.sub-header-details Email
+              %span ciao
+            .grid-item-details
+              %h5.sub-header-details Games in your collection:
+              %span 16
+            .grid-item-details
+              %h5.sub-header-details Linked accounts:
+              %br
+              %a
+                %i.mdi.mdi-google
+                %span Google OAuth account
+              %br
+              %br
+              %a
+                %i.mdi.mdi-steam
+                %span Steam OAuth account
