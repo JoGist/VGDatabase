@@ -1,11 +1,7 @@
 !!!
 %html{:lang => "en", class: "container"}
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:charset => "UTF-8"}/
     %title #{@user.username}'s profile - VGDatabase
-    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
-    %link{:href => "https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css", :rel => "stylesheet"}/
   %body.visible
     %aside.sidebar.normal
       %a.sidebarOverlay
@@ -64,10 +60,13 @@
                     %input{:name => "myfile", :type => "file"}/
                 %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
               .grid-item-detailsProfile
-              %button.grid-item-details-button
+              %button.grid-item-details-button-2
                 %p.profile-hyper-links
                   %a Save changes 
                   %i.mdi.mdi-content-save
+              .grid-item-details-button
+                %p.profile-hyper-links
+                  %a{:href => myProfile_path, "data-method" => "get"} Discard changes  x
             .account-grid-item-2
               .grid-item-details
                 %h5.sub-header-details Username
