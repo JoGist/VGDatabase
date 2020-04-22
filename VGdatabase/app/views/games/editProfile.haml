@@ -64,25 +64,25 @@
                     %input{:name => "myfile", :type => "file"}/
                 %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
               .grid-item-detailsProfile
-              .grid-item-details
+              %button.grid-item-details{:href => myProfile_path, "data-method" => "get"}
                 %p.profile-hyper-links
-                  %a{:href => editProfile_path} Save changes 
+                  %a Save changes 
                   %i.mdi.mdi-content-save
             .account-grid-item-2
               .grid-item-details
                 %h5.sub-header-details Username
-                %input{:name => 'user[name]' , :placeholder => @user.username , :autocomplete => "off", :required => "", :type => "text"}/
+                %input{:name => 'user[name]' , :placeholder => @user.username , :autocomplete => "off", :type => "text"}/
               .grid-item-details
                 %h5.sub-header-details Email
-                %input{:name => 'user[email]' , :placeholder => @user.email , :autocomplete => "off", :required => "", :type => "email"}/
+                %input{:name => 'user[email]' , :placeholder => @user.email , :autocomplete => "off", :type => "email"}/
               .grid-item-details
                 %h5.sub-header-details Password
                 /%span ••••••••
-                %input{:name => 'user[oldp]' , :placeholder => 'Enter current password' , :autocomplete => "off", :required => "", :type => "password"}/
+                %input{:name => 'user[oldp]' , :placeholder => 'Enter current password' , :autocomplete => "off", :type => "password"}/
                 %br
-                %input{:name => 'user[newp]' , :placeholder => 'Enter new password' , :autocomplete => "off", :required => "", :type => "password"}/
+                %input{:name => 'user[newp]' , :placeholder => 'Enter new password' , :autocomplete => "off", :type => "password"}/
                 %br
-                %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "off", :required => "", :type => "password"}/
+                %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "off", :type => "password"}/
               .grid-item-details
                 %h5.sub-header-details Linked accounts:
                 %br

@@ -351,6 +351,7 @@ textarea {
 .button {
   border: 0;
   outline: none;
+  
   border-radius: 0;
   padding: 15px 0;
   font-size: 2rem;
@@ -996,7 +997,7 @@ textarea {
   width: 30%;
   max-width: 300px;
   min-width: 300px;
-  height: 280px;
+  height: 279px;
   text-align: center;
   margin-right: 12px;
 }
@@ -1022,6 +1023,7 @@ textarea {
 .grid-item-details {
   cursor: default;
   padding: 10px;
+  border: none;
   border-bottom: 1px solid #444;
   background-color: #333;
   color: #f26657;
