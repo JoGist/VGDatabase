@@ -53,22 +53,12 @@
         .account-grid-system
           .account-grid-item-1
             .profile-pic-details
-              %a{:href => visitProfile_path, "data-method" => "get"}
               %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
             .grid-item-details
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
               %i.mdi.mdi-star-outline.iconBig2.right
             .grid-item-details
               %p.profile-hyper-links
-                %a{:href => '#'} Remove from friends
+                %a{:href => '#'} Add/Remove from friends
                 %i.mdi.mdi-account-remove
           .account-grid-item-2
             .grid-item-details
@@ -94,21 +84,19 @@
           .account-grid-item-3
             .grid-item-details
               %span Friends
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_1
-            .grid-item-details
-              %i.mdi.mdi-account-circle 
-              %h5.sub-header-details Friend_2
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_3
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_4
-            .grid-item-details
-              %i.mdi.mdi-account-circle 
-              %h5.sub-header-details Friend_5
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_6
+            .grid-item-detailsImg
+              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+              %span.sub-header-details Friend_1
+            .grid-item-detailsImg
+              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+              %span.sub-header-details Friend_2
+            .grid-item-detailsImg
+              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+              %span.sub-header-details Friend_3
+            .grid-item-detailsImg
+              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+              %span.sub-header-details Friend_4
+            .grid-item-detailsImg
+              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+              %span.sub-header-details Friend_5
+

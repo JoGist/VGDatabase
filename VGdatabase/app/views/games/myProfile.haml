@@ -54,18 +54,7 @@
           .account-grid-item-1
             .profile-pic-details
               %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-            .grid-item-details
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
-              %br/
+            .grid-item-detailsProfile
               /.profile-complteness
               /%p.profile-hlp-txt
               /%span 75 /
@@ -105,21 +94,19 @@
           .account-grid-item-3
             .grid-item-details
               %span Friends
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_1
-            .grid-item-details
-              %i.mdi.mdi-account-circle 
-              %h5.sub-header-details Friend_2
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_3
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_4
-            .grid-item-details
-              %i.mdi.mdi-account-circle 
-              %h5.sub-header-details Friend_5
-            .grid-item-details
-              %i.mdi.mdi-account-circle
-              %h5.sub-header-details Friend_6
+            .grid-item-detailsImg
+              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+              %a.sub-header-details{:href => visitProfile_path, "data-method" => "get"} Friend_1
+            .grid-item-detailsImg
+              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+              %a.sub-header-details{:href => visitProfile_path, "data-method" => "get"} Friend_2
+              %i.mdi.mdi-star.friendStar
+            .grid-item-detailsImg
+              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+              %a.sub-header-details{:href => visitProfile_path, "data-method" => "get"} Friend_3
+            .grid-item-detailsImg
+              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+              %a.sub-header-details{:href => visitProfile_path, "data-method" => "get"} Friend_4
+            .grid-item-detailsImg
+              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+              %a.sub-header-details{:href => visitProfile_path, "data-method" => "get"} Friend_5

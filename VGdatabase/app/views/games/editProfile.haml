@@ -53,7 +53,6 @@
       %br/
       = form_tag :method => :post do
         .my-account-wrapper
-          /%h2.account-header My Account
           .account-grid-system
             .account-grid-item-1
               .profile-pic-details
@@ -64,18 +63,7 @@
                   .overlayProfileImg
                     %input{:name => "myfile", :type => "file"}/
                 %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-              .grid-item-details
-                %br/
-                %br/
-                %br/
-                %br/
-                %br/
-                %br/
-                %br/
-                %br/
-                %br/
-                %br/
-                %br/
+              .grid-item-detailsProfile
               .grid-item-details
                 %p.profile-hyper-links
                   %a{:href => myProfile_path} Save changes 
@@ -95,44 +83,41 @@
                 %input{:name => 'user[name]' , :placeholder => 'Enter new password' , :autocomplete => "off", :required => "", :type => "text"}/
                 %br
                 %input{:name => 'user[name]' , :placeholder => 'Re-enter new password' , :autocomplete => "off", :required => "", :type => "text"}/
-              .accordian-details.removed
-                %h5.accordian-header
-                  Change Password:
-                  %span Test1234
               .grid-item-details
                 %h5.sub-header-details Linked accounts:
                 %br
                 %a
                   %i.mdi.mdi-google
                   %span Google OAuth account
-                  %a{:href => editProfile_path} remove linked account  X
+                  %a.right2{:href => '#'} x
                 %br
                 %br
                 %a
                   %i.mdi.mdi-steam
                   %span Steam OAuth account
+                  %a.right2{:href => '#'} x
                 %br
                 %br
                 %a
-                  %span DELETE ACCOUNT
+              .grid-item-details
+                %i.mdi.mdi-trash-can
+                %a{:href => '#'} DELETE ACCOUNT
             .account-grid-item-3
               .grid-item-details
                 %span Friends
-              .grid-item-details
-                %i.mdi.mdi-account-circle
-                %h5.sub-header-details Friend_1
-              .grid-item-details
-                %i.mdi.mdi-account-circle 
-                %h5.sub-header-details Friend_2
-              .grid-item-details
-                %i.mdi.mdi-account-circle
-                %h5.sub-header-details Friend_3
-              .grid-item-details
-                %i.mdi.mdi-account-circle
-                %h5.sub-header-details Friend_4
-              .grid-item-details
-                %i.mdi.mdi-account-circle 
-                %h5.sub-header-details Friend_5
-              .grid-item-details
-                %i.mdi.mdi-account-circle
-                %h5.sub-header-details Friend_6
+              .grid-item-detailsImg
+                %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+                %span.sub-header-details Friend_1
+              .grid-item-detailsImg
+                %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+                %span.sub-header-details Friend_2
+              .grid-item-detailsImg
+                %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+                %span.sub-header-details Friend_3
+              .grid-item-detailsImg
+                %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+                %span.sub-header-details Friend_4
+              .grid-item-detailsImg
+                %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+                %span.sub-header-details Friend_5
+

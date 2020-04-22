@@ -43,6 +43,16 @@ body {
     1px 1px 0 #000;
 }
 
+.friendStar {
+  font-size: large;
+  float: left;
+  margin-left: 0.6rem;
+  padding-top: 0.6rem;
+  color: #d9e62b;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
 .iconBig2:hover {
   /*content: .mdi-star-outline;*/
   text-shadow: 0 0 0 #d9e62b;
@@ -87,6 +97,11 @@ img {
 .right {
   float: right;
   margin-top: -5px;
+  padding-top: 11.5rem;
+}
+
+.right2 {
+  float: right;
 }
 
 .left {
@@ -212,6 +227,7 @@ img {
 }
 
 h1 {
+  cursor: default;
   text-align: center;
   color: #fff;
   font-weight: 300;
@@ -219,6 +235,7 @@ h1 {
 }
 
 h2 {
+  cursor: default;
   font-size: 40px;
   color: #fff;
   font-weight: 300;
@@ -226,6 +243,7 @@ h2 {
 }
 
 h3 {
+  cursor: default;
   color: #fff;
   font-weight: 300;
   margin: 0 0 40px;
@@ -234,6 +252,7 @@ h3 {
 }
 
 h4 {
+  cursor: default;
   font-size: 22px;
   color: #fff;
   font-weight: 300;
@@ -241,6 +260,7 @@ h4 {
 }
 
 h5 {
+  cursor: default;
   font-size: 20px;
   color: #fff;
   font-weight: 300;
@@ -381,7 +401,7 @@ textarea {
   cursor: pointer;
 }
 
-.buttonSmall:active { 
+.buttonSmall:active {
   cursor: progress;
 }
 
@@ -938,6 +958,14 @@ textarea {
   cursor: pointer;
 }
 
+.imgSmall {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #f26657;
+  float: left;
+}
+
 .my-account-wrapper {
   display: flex;
   flex-direction: column;
@@ -967,6 +995,8 @@ textarea {
   position: relative;
   width: 30%;
   max-width: 300px;
+  min-width: 300px;
+  height: 280px;
   text-align: center;
   margin-right: 12px;
 }
@@ -990,10 +1020,41 @@ textarea {
 }
 
 .grid-item-details {
+  cursor: default;
   padding: 10px;
   border-bottom: 1px solid #444;
   background-color: #333;
   color: #f26657;
+}
+
+.grid-item-detailsProfile {
+  padding: 10px;
+  padding-bottom: 14rem;
+  border-bottom: 1px solid #444;
+  background-color: #333;
+  color: #f26657;
+}
+
+.grid-item-detailsImg {
+  padding: 8px;
+  border-bottom: 1px solid #444;
+  background-color: #333;
+  color: #f26657;
+  padding: 10px;
+}
+
+.grid-item-detailsImg span {
+  cursor: default;
+  padding-left: 1rem;
+  padding-top: 0.8rem;
+  float: left;
+}
+
+.grid-item-detailsImg a {
+  cursor: pointer;
+  padding-left: 1rem;
+  padding-top: 0.8rem;
+  float: left;
 }
 
 .grid-item-details:last-child {
@@ -1024,7 +1085,7 @@ textarea {
   font-size: 14px;
   font-weight: 600;
   color: #696f7e;
-  margin: 0;
+  margin-bottom: 5;
 }
 
 .profile-complteness {
