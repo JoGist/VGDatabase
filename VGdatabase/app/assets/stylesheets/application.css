@@ -1029,6 +1029,21 @@ textarea {
   color: #f26657;
 }
 
+.grid-item-details-button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #444;
+  background-color: #333;
+  color: #f26657;
+}
+
+.grid-item-details-button:hover {
+  cursor: pointer;
+  background-color: #222;
+  color: #f26657;
+}
+
 .grid-item-detailsProfile {
   padding: 10px;
   padding-bottom: 14rem;

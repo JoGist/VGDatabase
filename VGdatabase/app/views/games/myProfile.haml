@@ -59,9 +59,9 @@
               /%p.profile-hlp-txt
               /%span 75 /
               /100
-            .grid-item-details
+            .grid-item-details-button
               %p.profile-hyper-links
-                %a{:href => editProfile_path} Edit account info 
+                %a{:href => editProfile_path, "data-method" => "get"} Edit account info 
                 %i.mdi.mdi-pencil
           .account-grid-item-2
             .grid-item-details
