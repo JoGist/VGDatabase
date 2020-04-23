@@ -450,6 +450,20 @@ a:hover {
   border: none;
 }
 
+.buttonSmall-null {
+  cursor: default;
+  margin-top: 4.6rem;
+  margin-right: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f26657;
+  border: none;
+}
+
 .button:hover,
 .button:focus {
   cursor: pointer;
@@ -700,11 +714,6 @@ a:hover {
 .btn:hover {
   background-color: #222;
   border: 1px solid #fff;
-}
-
-.btn:focus {
-  /*outline: 1px dashed #f26657;*/
-  outline-offset: 3px;
 }
 
 @media (hover: hover) and (min-width: 600px) {

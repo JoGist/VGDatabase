@@ -60,10 +60,14 @@
             %h4 Score: #{@games.score}
             %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
             %br
-            %a.buttonSmall{:href => game_mylibraries_path(@games), "data-method" => "post"}
-              %i.mdi.mdi-plus
-              %span.hidden . 
-              %span.sidebar__nav__text Add to library 
+            - if @library.exists?(:game_id => @games)
+              %a.buttonSmall-null
+                %span.sidebar__nav__text Already in library
+            - else
+              %a.buttonSmall{:href => game_mylibraries_path(@games), "data-method" => "post"}
+                %i.mdi.mdi-plus
+                %span.hidden . 
+                %span.sidebar__nav__text Add to library 
             %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"}
               %i.mdi.mdi-amazon
               %span.hidden . 
