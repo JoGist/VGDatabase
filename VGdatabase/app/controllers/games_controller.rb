@@ -134,11 +134,23 @@ skip_before_action :verify_authenticity_token
     def deleteReviewsGame
     end
 
+    def deleteReviewsGame_success
+    end
+
+    def deleteReviewsGame_error
+    end
+
     def deletingReviewsGame
         redirect_to settings_path
     end
 
     def deleteReviewsUser
+    end
+
+    def deleteReviewsUser_success
+    end
+
+    def deleteReviewsUser_error
     end
 
     def deletingReviewsUser

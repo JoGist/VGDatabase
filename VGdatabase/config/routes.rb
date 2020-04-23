@@ -46,14 +46,21 @@ get '/search_result_guest' => 'sessions#searchResultGuest'
 
 # Admin routes
 get '/settings' => 'games#settings'
+
 get '/deletingUser' => 'games#deletingUser'
 post '/deletingUser' => 'games#deletingAdminUser'
 get '/deletingUser_success' => 'games#deletingUser_success'
 get '/deletingUser_error' => 'games#deletingUser_error'
+
 get '/deleteReviewsUser' => 'games#deleteReviewsUser'
 post '/deleteReviewsUser' => 'games#deletingReviewsUser'
+get '/deleteReviewsUser_success' => 'games#deleteReviewsUser_success'
+get '/deleteReviewsUser_error' => 'games#deleteReviewsUser_error'
+
 get '/deleteReviewsGame' => 'games#deleteReviewsGame'
 post '/deleteReviewsGame' => 'games#deletingReviewsGame'
+get '/deleteReviewsGame_success' => 'games#deleteReviewsGame_success'
+get '/deleteReviewsGame_error' => 'games#deleteReviewsGame_error'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 #resources :movies do
     #resources :reviews
