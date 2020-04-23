@@ -31,6 +31,7 @@ get '/contactUs' => 'games#contactUs'
 get '/searchResult' => 'games#searchResult'
 get '/deleteUser' => 'games#deleteUser'   #Serve all'user per cancellare il proprio profilo
 
+
 # Guest routes 
 get '/homepage_guest' => 'sessions#homepageGuest'
 get '/contactUs_guest' => 'sessions#contactUsGuest'
