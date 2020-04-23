@@ -61,7 +61,7 @@
             .content.cardPadding
               %p.description Genre: #{@games.genre}
               %p.description Platforms: #{@games.platform}
-              %a.btn{:href => game_path(game), "data-method" => "get"} View info 
+              %a.btn{:href => game_path(game.game_id), "data-method" => "get"} View info 
               %a.btn{}
                 %i.mdi.mdi-plus
                 %span.sidebar__nav__text library
