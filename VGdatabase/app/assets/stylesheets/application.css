@@ -458,6 +458,7 @@ a:hover {
 .gameInfo {
   margin-left: 27em;
   list-style-type: none;
+  width: 455px; 
 }
 
 .forgot {
@@ -1499,10 +1500,6 @@ textarea {
   border: 1px solid #444;
   background-color: #333;
   color: #f26657;
-}
-
-.reviewDetails {
-  text-align: left;
 }
 
 .reviewHeader a{
