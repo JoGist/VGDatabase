@@ -47,23 +47,23 @@
       %br
         %ul
           %li.left
-            %img.fullSize{:alt => "Game image cover", :src => "#{@games.cover}"}
+            %img.fullSize{:alt => "Game image cover", :src => "#{@game.cover}"}
             %br
             %br
             %br
           %li.gameInfo
-            %h2 Title: #{@games.title}
-            %h4 Developer: #{@games.developer}
-            %h4 Genre: #{@games.genre}
-            %h4 Platform: #{@games.platform}
-            %h4 Score: #{@games.score}
-            %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
+            %h2 Title: #{@game.title}
+            %h4 Developer: #{@game.developer}
+            %h4 Genre: #{@game.genre}
+            %h4 Platform: #{@game.platform}
+            %h4 Score: #{@game.score}
+            %h4 Release date: #{@game.release_date.strftime('%d %B %Y')}
             %br
             %a.buttonSmall{:href => "#"}
               %i.mdi.mdi-login
               %span.hidden . 
               %span.sidebar__nav__text Log in to Add to library 
-            %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"}
+            %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@game.title}&i=videogames", :target => "_blank"}
               %i.mdi.mdi-amazon
               %span.hidden . 
               %span.sidebar__nav__text BUY 
