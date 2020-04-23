@@ -11,4 +11,22 @@ class MylibrariesController < ApplicationController
         @mylibrary.save!
         redirect_to myLibrary_path
     end
+
+    def destroy
+        id = params[:id]
+		@mygame = Mylibrary.find(id)
+		@mygame.destroy
+    end
+
+    def update
+        id = params[:id]
+        @mygame = Mylibrary.find(id)
+        if @mygame.favorite == "false"
+            @mygame.update_attributes!(:favorite => "true")
+            redirect_to myLibrary_path
+        else
+            @mygame.update_attributes!(:favorite => "false")   
+            redirect_to myLibrary_path
+        end
+    end
 end

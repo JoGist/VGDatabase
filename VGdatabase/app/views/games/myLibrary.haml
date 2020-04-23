@@ -56,7 +56,10 @@
           - @games = Game.find(game.game_id)
           /%h2 Il gioco cercato ha id #{@games.id}, si chiama #{@games.title} ed appartiene a #{@user.username} 
           .card
-            %a.mdi.mdi-star-outline.dotCard{:href => "#"}
+            - if (game.favorite == "true")
+              %a.mdi.mdi-star.dot
+            - else             
+              %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "put"}
             /only present if the game is in your library and not in favorites
             /if the game is in favorites, the the full star should appear
             .content.cardPadding

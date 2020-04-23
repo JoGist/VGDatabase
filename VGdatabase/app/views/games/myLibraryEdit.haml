@@ -49,116 +49,20 @@
         %span Sort
         %i.mdi.mdi-filter-variant
       %a.editText{:href => myLibrary_path, "data-method" => "get"}
-        %span Save changes
+        %span Exit
         %i.mdi.mdi-content-save
-      - @games.each do |game|
-        .card
-          %a.mdi.mdi-star-outline.dotCard{:href => "#"}
-          .content.cardPadding
-            %p
-            %p
-            %p
-            %p
-            %a.btn{:href => "#"}
-              %i.mdi.mdi-minus
-              %span.sidebar__nav__text remove
-              /remove the game (hai perso) removes it also from favorites
-          %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
-      .card
-        .content
-          /%h2.title Mountain View
-          %p.description Genre: sandbox
-          %p.description Platforms: PC, PS3, PS4, XBOX360, XBOX ONE, Nintendo Switch
-          %button.btn View info
-      .card
-        %i.mdi.mdi-star.dot
-        .content
-          /%h2.title To The Beach
-          %p.description Genre: open world, adventure
-          %p.description Platforms: Nintendo Switch, WiiU
-          %button.btn View info
-      .card
-        %i.mdi.mdi-star-outline.dot
-        .content
-          /%h2.title Desert Destinations
-          %p.description Genre: driving, simulation
-          %p.description Platforms: PC
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Explore The Galaxy
-          %p.description Genre: shooter
-          %p.description Platforms: PC, PS4, XBOX ONE
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Mountain View
-          %p.description Genre: sandbox
-          %p.description Platforms: Nintendo Switch
-          %button.btn View info
-      .card
-        .content
-          /%h2.title To The Beach
-          %p.description Genre: action, adventure
-          %p.description Platforms: PS4
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Desert Destinations
-          %p.description Genre: action, shooter
-          %p.description Platforms: PC, PS3, PS4, XBOX360, XBOX ONE
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Explore The Galaxy
-          %p.description Genre: weeb
-          %p.description Platforms: everything
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Mountain View
-          %p.description Genre: simulation
-          %p.description Platforms: PC, PS4, XBOX ONE
-          %button.btn View info
-      .card
-        .content
-          /%h2.title To The Beach
-          %p.description Genre: VR, action
-          %p.description Platforms: PC
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Desert Destinations
-          %p.description Genre: action, adventure
-          %p.description Platforms: Nintendo Switch
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Explore The Galaxy
-          %p.description Genre: platform
-          %p.description Platforms: PC, PS4, XBOX ONE, Nintendo Switch
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Mountain View
-          %p.description Genre: sandbox, simulation
-          %p.description Platforms: PC, PS4, XBOX ONE, Nintendo Switch
-          %button.btn View info
-      .card
-        .content
-          /%h2.title To The Beach
-          %p.description Genre: action
-          %p.description Platforms: PC, PS4, XBOX ONE, Nintendo Switch
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Desert Destinations
-          %p.description Genre: action, co-op
-          %p.description Platforms: PC, PS4, XBOX ONE, Nintendo Switch
-          %button.btn View info
-      .card
-        .content
-          /%h2.title Explore The Galaxy
-          %p.description Genre: driving, adventure
-          %p.description Platforms: PC
-          %button.btn View info
+      - @mylibrary.each do |game|
+        - if (game.user_id == @user.id) 
+          - @games = Game.find(game.game_id)
+          .card
+            %a.mdi.mdi-star-outline.dotCard{:href => "#"}
+            .content.cardPadding
+              %p
+              %p
+              %p
+              %p
+              %a.btn{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "delete"}
+                %i.mdi.mdi-minus
+                %span.sidebar__nav__text remove
+                /remove the game (hai perso) removes it also from favorites
+            %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}

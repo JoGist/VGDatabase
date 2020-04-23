@@ -52,15 +52,17 @@
         %span Save changes
         %i.mdi.mdi-content-save
     %div.page-content
-      - @games.each do |game|
+      - @mylibrary.each do |game|
+        - if (game.user_id == @user.id) 
+          - @games = Game.find(game.game_id)
         .card
           .content.cardPadding
             %p
             %p
             %p
             %p
-            %a.btn{:href => "#"}
+            %a.btn{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "put"}
               %i.mdi.mdi-minus
-              %span.sidebar__nav__text remove
-          %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+              %span.sidebar__nav__text remove from favourites
+          %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
           

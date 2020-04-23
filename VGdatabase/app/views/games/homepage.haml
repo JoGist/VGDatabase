@@ -50,7 +50,10 @@
       - @games.each do |game|
         - if @library.exists?(:game_id => game.id)
           .card
-            %a.mdi.mdi-star-outline.dotCard{:href => "#"}
+            - if (@library.where(:game_id => game.id)[0].favorite == "true")
+              %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            - else             
+              %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
             /only present if the game is in your library and not in favorites
             /if the game is in favorites, the the full star should appear
             .content.cardPadding
@@ -63,7 +66,10 @@
             %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
         - elsif @library.exists?(:game_id => game.id) && game.favorite == 'true'
           .card
-            %a.mdi.mdi-star.dotCard{:href => "#"}
+            - if (@library.where(:game_id => game.id)[0].favorite == "true")
+              %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            - else             
+              %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
             .content.cardPadding
               %p.description Genre: #{game.genre}
               %p.description Platforms: #{game.platform}
