@@ -50,11 +50,21 @@
       %a.editText{:href => editFavorites_path, "data-method" => "get"}
         %span Start editing
         %i.mdi.mdi-pencil
-      - @games.each do |game|
-        .card
-          .content.cardPadding
-            %p.description Genre: #{game.genre}
-            %p.description Platforms: #{game.platform}
-            %a.btn{:href => game_path(game), "data-method" => "get"} View info 
-          %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+      - @library.each do |game|
+        - if (game.user_id == @user.id && game.favorite == 'true') 
+          - @games = Game.find(game.game_id)
+          /%h2 Il gioco cercato ha id #{@games.id}, si chiama #{@games.title} ed appartiene a #{@user.username} 
+          .card
+            %a.mdi.mdi-star-outline.dotCard{:href => "#"}
+            /only present if the game is in your library and not in favorites
+            /if the game is in favorites, the the full star should appear
+            .content.cardPadding
+              %p.description Genre: #{@games.genre}
+              %p.description Platforms: #{@games.platform}
+              %a.btn{:href => game_path(game), "data-method" => "get"} View info 
+              %a.btn{}
+                %i.mdi.mdi-plus
+                %span.sidebar__nav__text library
+                //only present if the game is not in your library
+            %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
           
