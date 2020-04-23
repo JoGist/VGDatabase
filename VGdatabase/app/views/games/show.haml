@@ -74,12 +74,12 @@
               %span.sidebar__nav__text BUY
           %div.right3
             .reviewHeader
+              - if (@review.exists?(:user_id => @user))
+                %a{:href => "#"}
+                  %h6.right5 Edit review
+                  %i.mdi.mdi-pencil.right5
               %a{:href => "#"}
-                /add route
-                %h6.right5 Edit review
-                %i.mdi.mdi-pencil.right5
-                %h6.right5 Add /
-                %i.mdi.mdi-plus.right5
+                %h6.right5 Add a review
               %h5 Reviews
             .reviewDiv
               .reviewUser
