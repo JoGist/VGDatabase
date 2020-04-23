@@ -18,16 +18,22 @@ def signing
 end
 def create
     name = params[:user][:name]
+    username = params[:user][:name1]
     password = params[:user][:password]
-    @users = User.where(:username => name)
-    @pass = User.where(:password => password)
-    if User.exists?(@users)
-        if @users[0].username=='admin' && @pass[0].password == 'admin'
-            session[:user_id]= @users[0].id
-            redirect_to settings_path
-        else
-            session[:user_id]=@users[0].id
+    if User.exists?(User.where(:username => name))
+        @users = User.where(:username => name)[0]
+        if @users.username=='admin'
+            if @users.password == 'admin'
+                session[:user_id]= @users.id
+                redirect_to settings_path
+            else
+                redirect_to login_error_path 
+            end
+        elsif @users.username == name && @users.password == password
+            session[:user_id]=@users.id
             redirect_to homepage_path
+        else
+            redirect_to login_error_path
         end
     else
         redirect_to login_error_path
