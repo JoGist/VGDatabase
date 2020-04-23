@@ -42,7 +42,13 @@
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
     %br/
-    %h1 Your favorite games
+    - @lunghezza = @library.where(:user_id => @user.id).length
+    - if @lunghezza==0
+      %h1 You don't have any game in your favorites
+    - elsif @lunghezza==1
+      %h1 You have #{@lunghezza} game in your favorites
+    -else
+      %h1 You have #{@lunghezza} games in your favorites
     %div.page-content
       %a.sort{:href => "#"}
         %span Sort
