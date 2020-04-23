@@ -1004,12 +1004,28 @@ a:hover {
   border-bottom-right-radius: 10px;
 }
 
+.s003 form .inner-form .input-field.third-wrap .btn-search svg:hover {
+  color: #555;
+}
+
 .imgSize {
   font-size: 35px;
   color: #f26657;
   text-align: center;
   padding-right: 15px;
   cursor: pointer;
+}
+
+.searchBar {
+  font-size: 35px;
+  color: #f26657;
+  text-align: center;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.searchBar:hover {
+  color: #fff;
 }
 
 .imgSmall {
@@ -1469,22 +1485,28 @@ textarea {
   color: #f26657;
 }
 
-.reviewHeader h5 {
+.reviewHeader a{
   color: #fff;
+}
+
+.reviewHeader a:hover{
+  color: #f26657;
+}
+
+
+.reviewHeader h5 {
   margin-top: 5px;
   font-size: 24px;
   font-weight: bold;
 }
 
 .reviewHeader h6 {
-  color: #fff;
   margin-top: 5px;
   font-size: 24px;
   font-weight: bold;
 }
 
 .reviewHeader i {
-  color: #fff;
   margin-top: 5px;
   font-size: 24px;
   font-weight: bold;
@@ -1492,18 +1514,9 @@ textarea {
 
 .reviewHeader span {
   cursor: default;
-  color: #fff;
   margin-top: 5px;
   font-size: 24px;
   font-weight: bold;
-}
-
-.reviewHeader h6:hover {
-  color: #f26657;
-}
-
-.reviewHeader i:hover {
-  color: #f26657;
 }
 
 @media (max-width: 2180px) {
