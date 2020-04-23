@@ -47,7 +47,7 @@ get '/search_result_guest' => 'sessions#searchResultGuest'
 # Admin routes
 get '/settings' => 'games#settings'
 get '/deletingUser' => 'games#deletingUser'
-post '/deletingUser' => 'games#deleteUser'
+#post '/deletingUser' => 'games#deleteUser'
 get '/deleteReviewsUser' => 'games#deleteReviewsUser'
 post '/deleteReviewsUser' => 'games#deletingReviewsUser'
 get '/deleteReviewsGame' => 'games#deleteReviewsGame'

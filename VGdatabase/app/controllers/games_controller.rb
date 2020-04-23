@@ -145,7 +145,10 @@ skip_before_action :verify_authenticity_token
         redirect_to settings_path
     end
 
-    def deletingUser
+    def deletingEnd
+    end
+
+    def cazzo
         name = params[:user][:name]
         if User.exists?(User.where(:username => name))
             @user = User.where(:username => name)[0].id
