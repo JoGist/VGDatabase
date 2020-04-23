@@ -9,7 +9,6 @@ class MylibrariesController < ApplicationController
         @mylibrary.user_id = @user.id
         @mylibrary.game_id = @games.id
         @mylibrary.save!
-        redirect_to game_path(game_id)
-        end
+        redirect_to myLibrary_path
     end
 end

@@ -7,7 +7,8 @@ skip_before_action :verify_authenticity_token
     end
 
     def myLibrary
-        @games = Mylibrary.all
+        @library = Mylibrary.all
+        @user = User.find(session[:user_id])
     end
 
     def myLibraryFavorites
