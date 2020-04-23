@@ -1,0 +1,44 @@
+!!!
+%html{:lang => "en", class: "container"}
+  %head
+    %title Admin - VGDatabase
+  %body.visible
+    %aside.sidebar.bigger
+      %nav
+        %ul.sidebar__nav
+          %li
+            %a.sidebar__nav__link_plain
+              =image_tag ('logo-normal.png')
+          %li
+            %a.sidebar__nav__link{:href => settings_path, "data-method" => "get"}
+              %i.mdi.mdi-home
+              %span.sidebar__nav__text Admin control panel
+          %li.active
+            %a.sidebar__nav__link_plain{}
+              %i.mdi.mdi-account-multiple
+              %span.sidebar__nav__text Delete reviews of a game 
+          %li
+            %a.sidebar__nav__link{:href => deleteReviewsUser_path, "data-method" => "get"}
+              %i.mdi.mdi-database-search
+              %span.sidebar__nav__text Delete reviews from user
+          %li
+            %a.sidebar__nav__link{:href => deletingUser_path, "data-method" => "get"}
+              %i.mdi.mdi-account-circle
+              %span.sidebar__nav__text Delete user
+          %li
+            %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
+              %i.mdi.mdi-logout-variant
+              %span.sidebar__nav__text Log out 
+          %li
+            %a.sidebar__nav__link_plain
+              %span.sidebar__nav__text
+    %br/
+    %div.page-content
+    .form
+      .tab-content
+        %br/
+        %h1 Delete reviews of a game 
+        = form_tag :method => :get do
+          .field-wrap
+            %input{:name => 'game[title]' , :placeholder => 'Game' , :autocomplete => "off", :required => "", :type => "password"}/
+          %button.button delete
