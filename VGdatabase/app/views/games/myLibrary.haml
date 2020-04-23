@@ -42,7 +42,8 @@
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
     %br/
-    %h1 You have #{@library.length} games in your collection
+    - @lunghezza = @library.where(:user_id => @user.id).length
+    %h1 You have #{@lunghezza} games in your collection
     %div.page-content
       %a.sort{:href => "#"}
         %span Sort

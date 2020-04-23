@@ -4,6 +4,7 @@ skip_before_action :verify_authenticity_token
     def homepage
         @user = User.find(session[:user_id])
         @games = Game.all
+        @library = Mylibrary.where(:user_id => @user.id)
     end
 
     def myLibrary
