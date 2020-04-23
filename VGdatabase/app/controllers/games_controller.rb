@@ -13,16 +13,18 @@ skip_before_action :verify_authenticity_token
     end
 
     def myLibraryFavorites
-        @library = Mylibrary.all
+        @library = Mylibrary.where(:favorite => "true")
         @user = User.find(session[:user_id])
     end
 
     def myLibraryEdit
-        @games = Game.all
+        @mylibrary = Mylibrary.all
+        @user = User.find(session[:user_id])
     end
 
     def myLibraryFavoritesEdit
-        @games = Game.all
+        @mylibrary = Mylibrary.where(:favorite => "true")
+        @user = User.find(session[:user_id])
     end
 
     def search
