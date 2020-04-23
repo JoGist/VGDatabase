@@ -22,13 +22,9 @@ def create
     password = params[:user][:password]
     if User.exists?(User.where(:username => name))
         @users = User.where(:username => name)[0]
-        if @users.username=='admin'
-            if @users.password == 'admin'
-                session[:user_id]= @users.id
-                redirect_to settings_path
-            else
-                redirect_to login_error_path 
-            end
+        if name == 'admin' && @users.username == name && @users.password == password
+            session[:user_id]= @users.id
+            redirect_to settings_path
         elsif @users.username == name && @users.password == password
             session[:user_id]=@users.id
             redirect_to homepage_path
