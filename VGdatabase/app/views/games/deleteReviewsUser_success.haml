@@ -44,3 +44,9 @@
           .field-wrap
             %input{:name => 'game[title]' , :placeholder => 'Game' , :autocomplete => "off", :required => "", :type => "password"}/
           %button.button delete
+          .overlay
+            .popup
+              %h2 Success
+              %a.close{:href => forgot_password_path, "data-method" => "get"} ×
+              .content
+                Invalid credentials, please try again.
