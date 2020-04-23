@@ -259,6 +259,11 @@ img {
   display: none;
 }
 
+.tab-content i {
+  margin-top: -5px;
+  color: #f26657
+}
+
 h1 {
   cursor: default;
   text-align: center;
