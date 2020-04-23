@@ -51,6 +51,8 @@
             %br
             %br
             %br
+              %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            - else             
           %li.gameInfo
             %h2 Title: #{@games.title}
             %h4 Developer: #{@games.developer}

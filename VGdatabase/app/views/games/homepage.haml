@@ -54,15 +54,10 @@
               %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
             - else             
               %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
-            /only present if the game is in your library and not in favorites
-            /if the game is in favorites, the the full star should appear
             .content.cardPadding
               %p.description Genre: #{game.genre}
               %p.description Platforms: #{game.platform}
               %a.btn{:href => game_path(game), "data-method" => "get"} View info 
-              /%a.btn{:href => game_mylibraries_path(game), "data-method" => "post"}
-              /%i.mdi.mdi-minus
-              /%span.sidebar__nav__text library
             %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
         - elsif @library.exists?(:game_id => game.id) && game.favorite == 'true'
           .card
