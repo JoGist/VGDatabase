@@ -1126,6 +1126,18 @@ a:hover {
   color: #f26657;
 }
 
+.white:hover {
+  color: #fff;
+}
+
+.grid-item-details a:hover {
+  color: #f26657;
+}
+
+.grid-item-details a2:hover {
+  color: #fff;
+}
+
 .grid-item-details input,
 textarea {
   font-size: 16px;
@@ -1383,7 +1395,9 @@ textarea {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
+  margin-top: 10%;
   width: 30%;
+  max-width: 400px;
   position: relative;
 }
 
