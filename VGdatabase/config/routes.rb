@@ -28,9 +28,8 @@ get '/visitProfile' => 'games#visitProfile'
 get '/editProfile' => 'games#editProfile'
 post '/editProfile' => 'games#editingProfile'
 get '/contactUs' => 'games#contactUs'
-get '/delete' => 'games#delete'       #Serve all'user per cancellare il proprio profilo 
 get '/searchResult' => 'games#searchResult'
-get 'deleteUser' => 'games#deleteUser'
+get '/deleteUser' => 'games#deleteUser'   #Serve all'user per cancellare il proprio profilo
 
 # Guest routes 
 get '/homepage_guest' => 'sessions#homepageGuest'
@@ -47,8 +46,8 @@ get '/search_result_guest' => 'sessions#searchResultGuest'
 
 # Admin routes
 get '/settings' => 'games#settings'
-get '/deleteUser' => 'games#deleteUser'
-post '/deleteUser' => 'games#deletingUser'
+get '/deletingUser' => 'games#deletingUser'
+post '/deletingUser' => 'games#deleteUser'
 get '/deleteReviewsUser' => 'games#deleteReviewsUser'
 post '/deleteReviewsUser' => 'games#deletingReviewsUser'
 get '/deleteReviewsGame' => 'games#deleteReviewsGame'

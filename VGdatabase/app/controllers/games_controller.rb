@@ -90,6 +90,7 @@ skip_before_action :verify_authenticity_token
         redirect_to login_path
     end
 
+    
 
     def searchUser
     end
