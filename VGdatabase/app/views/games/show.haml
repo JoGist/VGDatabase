@@ -51,8 +51,7 @@
             %br
             %br
             %br
-              %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
-            - else             
+            /%a.mdi.mdi-star.dot{:href => game_mylibrary_path(@games.id,@library.where(:game_id => @games.id)[0].id), "data-method" => "put"}           
           %li.gameInfo
             %h2 Title: #{@games.title}
             %h4 Developer: #{@games.developer}
@@ -61,7 +60,7 @@
             %h4 Score: #{@games.score}
             %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
             %br
-            %a.buttonSmall{:name => 'mylibrary', :href => game_mylibraries_path(@games), "data-method" => "post"}
+            %a.buttonSmall{:href => game_mylibraries_path(@games), "data-method" => "post"}
               %i.mdi.mdi-plus
               %span.hidden . 
               %span.sidebar__nav__text Add to library 

@@ -81,6 +81,7 @@ skip_before_action :verify_authenticity_token
     def show
         id = params[:id]
         @games = Game.find(id)
+        @library = Mylibrary.where(:user_id => session[:user_id])
     end
 
     def contactUs
