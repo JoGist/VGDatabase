@@ -49,13 +49,12 @@
         %span Sort
         %i.mdi.mdi-filter-variant
       %a.editText{:href => myLibrary_path, "data-method" => "get"}
-        %span Exit
+        %span Save changes
         %i.mdi.mdi-content-save
       - @mylibrary.each do |game|
         - if (game.user_id == @user.id) 
           - @games = Game.find(game.game_id)
           .card
-            %a.mdi.mdi-star-outline.dotCard{:href => "#"}
             .content.cardPadding
               %p
               %p

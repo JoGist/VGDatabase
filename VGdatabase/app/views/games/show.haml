@@ -52,12 +52,12 @@
             %br
             %br
           %li.gameInfo
-            %h2 Title: #{@games.title}
-            %h4 Developer: #{@games.developer}
-            %h4 Genre: #{@games.genre}
-            %h4 Platform: #{@games.platform}
-            %h4 Score: #{@games.score}
-            %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
+            %h2.reviewDetails Title: #{@games.title}
+            %h4.reviewDetails Developer: #{@games.developer}
+            %h4.reviewDetails Genre: #{@games.genre}
+            %h4.reviewDetails Platform: #{@games.platform}
+            %h4.reviewDetails Score: #{@games.score}
+            %h4.reviewDetails Release date: #{@games.release_date.strftime('%d %B %Y')}
             %br
             %a.buttonSmall{:name => 'mylibrary', :href => game_mylibraries_path(@games), "data-method" => "post"}
               %i.mdi.mdi-plus
@@ -67,10 +67,10 @@
               %i.mdi.mdi-amazon
               %span.hidden . 
               %span.sidebar__nav__text BUY
-          %div.right3
+          %li.right3
             /to do: has to change width % proportionally with screen
             .reviewHeader
-              %a{:href => contactUs_path, "data-method" => "get"}
+              %a{:href => "#"}
                 /add route
                 %h6.right5 Edit review
                 %i.mdi.mdi-pencil.right5
