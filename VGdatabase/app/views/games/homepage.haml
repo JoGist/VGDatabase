@@ -55,9 +55,10 @@
           .content.cardPadding
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}
-            %a.btn{:href => game_path(game), "data-method" => "get"} View info 
-            %a.btn{:href => game_mylibraries_path(game), "data-method" => "post"}
-              %i.mdi.mdi-plus
-              %span.sidebar__nav__text library
-              //only present if the game is not in your library
+            %a.btn{:href => game_path(game), "data-method" => "get"} View info
+            - if (game.game.id == @game.id && game.favorite == 'true') 
+              %a.btn{:href => game_mylibraries_path(game), "data-method" => "post"}
+                %i.mdi.mdi-plus
+                %span.sidebar__nav__text library
+                //only present if the game is not in your library
           %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
