@@ -8,6 +8,6 @@
     = form_tag :method => :post do
       = select :game, :score, [1, 2, 3, 4, 5]
       .field-wrap
-      %input{:name => 'user[name]', :placeholder => 'Email address' ,:autocomplete => "off", :required => "", :type => "email"}/
+      %input{:name => 'user[comment]', :placeholder => 'Comments' ,:autocomplete => "off", :type => "text"}/
       %button.button.button-block{:type => "submit"} Save changes
-      %button.button.button-block{:href => game_path(@games), "data-method" => "get", :type => "reset"} Discard changes
+      %a.button.button-block{:href => game_path(@games), "data-method" => "get"} Discard changes
