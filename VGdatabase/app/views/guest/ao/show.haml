@@ -18,7 +18,7 @@
               %i.mdi.mdi-database-search
               %span.sidebar__nav__text Search
           %li
-            %a.sidebar__nav__link{:href => signup_path, "data-method" => "delete"}
+            %a.sidebar__nav__link{:href => signup_path, "data-method" => "get"}
               %i.mdi.mdi-logout-variant
               %span.sidebar__nav__text Sign up
           %li
@@ -43,10 +43,10 @@
             %h4 Score: #{@game.score}
             %h4 Release date: #{@game.release_date.strftime('%d %B %Y')}
             %br
-            %a.buttonSmall{:href => "#"}
+            %a.buttonSmall{:href => signup_path, "data-method" => "get"}
               %i.mdi.mdi-login
               %span.hidden . 
-              %span.sidebar__nav__text Log in to Add to library 
+              %span.sidebar__nav__text Sign up to Add to library 
             %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@game.title}&i=videogames", :target => "_blank"}
               %i.mdi.mdi-amazon
               %span.hidden . 
