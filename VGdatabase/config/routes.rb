@@ -24,7 +24,7 @@ get '/editLibrary' => 'games#myLibraryEdit'
 get '/editFavorites' => 'games#myLibraryFavoritesEdit'
 get '/friends' => 'games#friends'
 get '/myProfile' => 'games#myProfile'
-get '/visitProfile' => 'games#visitProfile'
+#get '/visitProfile' => 'games#visitProfile'
 get '/editProfile' => 'games#editProfile'
 post '/editProfile' => 'games#editingProfile'
 get '/contactUs' => 'games#contactUs'
@@ -32,6 +32,7 @@ get '/searchResult' => 'games#searchResult'
 get '/deleteUser' => 'games#deleteUser'   #Serve all'user per cancellare il proprio profilo
 get '/editProfile_success' => "games#editProfile_success"
 get '/editProfile_error' => "games#editProfile_error"
+get '/editAvatar' => 'games#editAvatar'
 
 # Guest routes 
 get '/homepage_guest' => 'sessions#homepageGuest'
@@ -76,6 +77,9 @@ namespace :guest do
   resources :show , only: [:show]
 end
 
+namespace :visit do
+  resources :profile, only: [:show]
+end
 
 resources :users do
   resources :reviews

@@ -137,7 +137,7 @@
                 - @game = Game.find(review.game_id)
                 .reviewUser
                   %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                  %a{:href => game_path(@game)} #{@game.title}
+                  %a{:href => edit_game_review_path(@game,review.id)} #{@game.title}
                   - if (review.score==1)
                     %i.mdi.mdi-star.reviewStar.right4
                   - elsif (review.score==2)
