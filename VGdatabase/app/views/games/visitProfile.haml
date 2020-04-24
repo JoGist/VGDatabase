@@ -65,7 +65,7 @@
               %span #{@user.email}
             .grid-item-details
               %h5.sub-header-details Games in your collection:
-              %span 16
+              %span #{Mylibrary.where(:user_id => @user.id).length}
             .grid-item-details
               %h5.sub-header-details Linked accounts:
               %br

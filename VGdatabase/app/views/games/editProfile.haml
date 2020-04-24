@@ -53,11 +53,11 @@
             .account-grid-item-1-alt2
               .profile-pic-details
                 .overlayImg.iconBig
-                  %i.mdi.mdi-upload
+                  %i.mdi.mdi-pencil
                   %span.hidden _
-                  %span edit picture
-                  .overlayProfileImg
-                    %input{:name => "myfile", :type => "file"}/
+                  %span change avatar
+                  %a.overlayProfileImg{:href => editAvatar_path, "data-method" => "get"}
+                    /%input{:name => "myfile", :type => "file"}/
                 %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
               .grid-item-detailsProfile
               %button.grid-item-details-button-2
@@ -70,18 +70,17 @@
             .account-grid-item-2
               .grid-item-details
                 %h5.sub-header-details Username
-                %input{:name => 'user[name]' , :placeholder => @user.username , :autocomplete => "off", :type => "text"}/
+                %input{:name => 'user[name]' , :placeholder => @user.username , :autocomplete => "username", :type => "text"}/
               .grid-item-details
                 %h5.sub-header-details Email
-                %input{:name => 'user[email]' , :placeholder => @user.email , :autocomplete => "off", :type => "email"}/
+                %input{:name => 'user[email]' , :placeholder => @user.email , :autocomplete => "email", :type => "email"}/
               .grid-item-details
                 %h5.sub-header-details Password
-                /%span ••••••••
-                %input{:name => 'user[oldp]' , :placeholder => 'Enter current password' , :autocomplete => "off", :type => "password"}/
+                %input{:name => 'user[oldp]' , :placeholder => 'Enter current password' , :autocomplete => "current-password", :type => "password"}/
                 %br
-                %input{:name => 'user[newp]' , :placeholder => 'Enter new password' , :autocomplete => "off", :type => "password"}/
+                %input{:name => 'user[newp]' , :placeholder => 'Enter new password' , :autocomplete => "new-password", :type => "password"}/
                 %br
-                %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "off", :type => "password"}/
+                %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "new-password", :type => "password"}/
                 /%span Last changed password on:
               .grid-item-details
                 %h5.sub-header-details Linked accounts:
