@@ -312,6 +312,15 @@ h5 {
   text-justify: inter-word;
 }
 
+h7 {
+  cursor: default;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 10px;
+  text-justify: inter-word;
+}
+
 label {
   position: absolute;
   -webkit-transform: translateY(6px);
@@ -1471,6 +1480,7 @@ textarea {
 }
 
 .reviewText {
+  margin-top: 80px;
   text-align: justify;
   padding: 15px;
   background-color: #444;
@@ -1506,32 +1516,6 @@ textarea {
   color: #f26657;
 }
 
-.reviewUser a2 {
-  font-size: 24px;
-  cursor: pointer;
-  padding-left: 25%;
-  float: left;
-  color: #fff;
-}
-
-.reviewUser h6 {
-  font-size: 24px;
-}
-
-
-.reviewUser i2 {
-  font-size: 24px;
-  cursor: pointer;
-  padding-left: 5px;
-  float: left;
-  color: #fff;
-}
-
-.reviewUser a2:hover {
-  cursor: pointer;
-  color: #f26657;
-}
-
 .reviewHeader {
   padding: 10px;
   border: 1px solid #444;
@@ -1545,6 +1529,16 @@ textarea {
 
 .reviewHeader a:hover {
   color: #f26657;
+}
+
+.reviewHeader a2 {
+  cursor: default;
+  color: #fff;
+}
+
+.reviewHeader a2:hover {
+  cursor: default;
+  color: #fff;
 }
 
 .reviewHeader h5 {
@@ -1592,6 +1586,7 @@ textarea {
 }
 
 .reviewOverlay {
+  margin-top: 80px;
   text-align: justify;
   padding: 15px;
   transition: opacity 500ms;
@@ -1604,12 +1599,14 @@ textarea {
   color: rgba(255, 255, 255, 0.05);
 }
 
-.reviewUser h7 {
+.reviewUser h6 {
+  padding: -15px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .reviewUser i {
+
   font-size: 18px;
   font-weight: bold;
 }
