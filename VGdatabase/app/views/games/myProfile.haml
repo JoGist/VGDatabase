@@ -42,7 +42,7 @@
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
     %br/
-    %h1 Your profile
+    %h1 My profile
     %div.page-content
       %br/
       .my-account-wrapper
@@ -99,69 +99,67 @@
             .grid-item-detailsImg
               %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
               %a.sub-header-details{:href => visitProfile_path, "data-method" => "get"} Friend_5
-
-          -#%div.right3
-            .reviewHeader
-              - if (@review.exists?(:user_id => @user))
-                %a{:href => "#"}
-                  %h6.right5 Edit review
-                  %i.mdi.mdi-pencil.right5
-              %a{:href => "#"}
-                %h6.right5 Add a review
-              %h5 Reviews
-            .reviewDiv
-              .reviewUser
-                %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                %a{:href => visitProfile_path, "data-method" => "get"} Username
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
-              .reviewUser
-                %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                %a{:href => visitProfile_path, "data-method" => "get"} Username
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
-              .reviewUser
-                %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                %a{:href => visitProfile_path, "data-method" => "get"} Username
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
-              .reviewUser
-                %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                %a.reviewUsername{:href => visitProfile_path, "data-method" => "get"} Username
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
-              .reviewUser
-                %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                %a.reviewUsername{:href => visitProfile_path, "data-method" => "get"} Username
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
-              .reviewUser
-                %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                %a.reviewUsername{:href => visitProfile_path, "data-method" => "get"} Username
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
-                .overlay
-                  .popup
-                  %h2 Error
-                    %a.close{:href => myProfile_path, "data-method" => "get"} ×
-                    .content
-                      Unable to save changes, please try again.
+        %br/
+        %br/
+        %div
+          .reviewHeader
+            %a{:href => "#"}
+              %h6.right5 Edit review
+              %i.mdi.mdi-pencil.right5
+            %h5 Your reviews
+          .reviewDiv
+            .reviewUser
+              %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+              %a{:href => "#"} Game_1
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
+            .reviewUser
+              %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+              %a{:href => "#"} Game_2
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
+            .reviewUser
+              %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+              %a{:href => "#"} Game_3
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
+            .reviewUser
+              %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+              %a.reviewUsername{:href => "#"} Game_4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
+            .reviewUser
+              %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+              %a.reviewUsername{:href => "#"} Game_5
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
+            .reviewUser
+              %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+              %a.reviewUsername{:href => "#"} Game_6
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %i.mdi.mdi-star.reviewStar.right4
+              %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
+              -#.overlay
+                .popup
+                %h2 Error
+                  %a.close{:href => myProfile_path, "data-method" => "get"} ×
+                  .content
+                    Unable to save changes, please try again.

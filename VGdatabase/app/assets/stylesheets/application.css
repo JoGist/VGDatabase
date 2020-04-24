@@ -1478,6 +1478,14 @@ textarea {
   border: 1px solid #f26657;
 }
 
+.reviewText:hover {
+  margin-top: 80px;
+  text-align: justify;
+  padding: 15px;
+  background-color: #222;
+  border: 1px solid #f26657;
+}
+
 .reviewUser {
   padding: 15px;
   border-bottom: 1px solid #444;
