@@ -102,11 +102,12 @@
         %br/
         %br/
         %div
+        - if (@review.length==0)
+          %h5 You dont have any reviews
+        - else
           .reviewHeader
             %h5 Your reviews
           .reviewDiv
-          - if (@review.length==0)
-            %h5 You dont have any reviews
           - @review.each do |review|
             .reviewUser
               %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
