@@ -54,8 +54,8 @@ skip_before_action :verify_authenticity_token
         newp = params[:user][:newp]
         newp1 = params[:user][:newp1]
         @user = User.find(session[:user_id])
-        if username.length==0 && email.length==0 && oldp.length==0
-            redirect_to editProfile_success_path
+        if username.length==0 && email.length==0 && oldp.length==0 && newp.length==0 && newp1.length==0
+            redirect_to myProfile_path
         elsif username.length==0 && email.length==0 && newp.length!=0 && newp==newp1 && oldp==@user.password
             @user.update_attributes!(:password => newp)
             redirect_to editProfile_success_path
