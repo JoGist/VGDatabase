@@ -22,7 +22,7 @@ end
 def edit
     id = params[:id]
     game_id = params[:game_id]
-    @review = Review.find(id)
+    @review = Review.find(Review.where(:user_id => session[:user_id], :game_id => game_id)[0].id)
     @game = Game.find(game_id)
 end
 
