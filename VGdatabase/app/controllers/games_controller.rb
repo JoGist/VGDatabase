@@ -84,6 +84,7 @@ skip_before_action :verify_authenticity_token
 
     def editProfile_error
     end
+
     def show
         id = params[:id]
         @games = Game.find(id)
