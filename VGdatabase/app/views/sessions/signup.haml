@@ -19,11 +19,11 @@
         %br/
         = form_tag :method => :get do
           .field-wrap
-            %input{:name => 'user[name]', :placeholder => 'Email address' ,:autocomplete => "off", :required => "", :type => "email"}/
+            %input{:name => 'user[name]', :placeholder => 'Email address' ,:autocomplete => "email", :required => "", :type => "email"}/
           .field-wrap
-            %input{:name => 'user[name1]' , :placeholder => 'Username' ,:autocomplete => "off", :required => "", :type => "text"}/
+            %input{:name => 'user[name1]' , :placeholder => 'Username' ,:autocomplete => "username", :required => "", :type => "text"}/
           .field-wrap
-            %input{:name => 'user[password]' , :placeholder => 'Password' ,:autocomplete => "off", :required => "", :type => "password"}/
+            %input{:name => 'user[password]' , :placeholder => 'Password' ,:autocomplete => "new-password", :required => "", :type => "password"}/
           .field-wrap
-            %input{:name => 'user[password1]', :placeholder => 'Repeat password' ,:autocomplete => "off", :required => "", :type => "password"}/
+            %input{:name => 'user[password1]', :placeholder => 'Repeat password' ,:autocomplete => "new-password", :required => "", :type => "password"}/
           %button.button.button-block{:type => "submit"} Sign up
