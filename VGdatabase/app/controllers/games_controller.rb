@@ -80,9 +80,11 @@ skip_before_action :verify_authenticity_token
     end
 
     def editProfile_success
+        @user = User.find(session[:user_id])
     end
 
     def editProfile_error
+        @user = User.find(session[:user_id])
     end
 
     def show
