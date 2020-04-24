@@ -44,6 +44,9 @@ skip_before_action :verify_authenticity_token
         @review = Review.where(:user_id => @user)
     end
 
+    def editAvatar
+    end
+
     def editingProfile
         username = params[:user][:name]
         email = params[:user][:email]
