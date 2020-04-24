@@ -1471,18 +1471,9 @@ textarea {
 }
 
 .reviewText {
-  margin-top: 80px;
   text-align: justify;
   padding: 15px;
   background-color: #444;
-  border: 1px solid #f26657;
-}
-
-.reviewText:hover {
-  margin-top: 80px;
-  text-align: justify;
-  padding: 15px;
-  background-color: #222;
   border: 1px solid #f26657;
 }
 
@@ -1511,6 +1502,32 @@ textarea {
 }
 
 .reviewUser a:hover {
+  cursor: pointer;
+  color: #f26657;
+}
+
+.reviewUser a2 {
+  font-size: 24px;
+  cursor: pointer;
+  padding-left: 25%;
+  float: left;
+  color: #fff;
+}
+
+.reviewUser h6 {
+  font-size: 24px;
+}
+
+
+.reviewUser i2 {
+  font-size: 24px;
+  cursor: pointer;
+  padding-left: 5px;
+  float: left;
+  color: #fff;
+}
+
+.reviewUser a2:hover {
   cursor: pointer;
   color: #f26657;
 }
@@ -1572,4 +1589,27 @@ textarea {
     padding-left: 400px;
     width: 1308px;
   }
+}
+
+.reviewOverlay {
+  text-align: justify;
+  padding: 15px;
+  transition: opacity 500ms;
+  visibility: visible;
+}
+
+.reviewOverlay:hover {
+  cursor: pointer;
+  background: #222;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.reviewUser h7 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reviewUser i {
+  font-size: 18px;
+  font-weight: bold;
 }
