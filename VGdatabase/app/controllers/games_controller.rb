@@ -37,6 +37,7 @@ skip_before_action :verify_authenticity_token
     def myProfile
         @user = User.find(session[:user_id])
         @review = Review.where(:user_id => @user)
+        @game = Game.find(Review.where(:user_id => @user)[0].game_id)
     end
 
     def visitProfile

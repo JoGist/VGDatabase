@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200421145537) do
+ActiveRecord::Schema.define(version: 20200424134905) do
 
   create_table "friends", force: :cascade do |t|
     t.integer "user_id"
@@ -44,10 +44,10 @@ ActiveRecord::Schema.define(version: 20200421145537) do
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.integer "score"
-    t.text "comments"
     t.integer "user_id"
     t.integer "game_id"
+    t.integer "score"
+    t.text "comments"
     t.index ["game_id"], name: "index_reviews_on_game_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end

@@ -5,9 +5,9 @@
     %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css", :rel => "stylesheet"}/
   %body.visible
     .tab-content
-    = form_tag :method => :post do
-      = select :game, :score, [1, 2, 3, 4, 5]
+    = form_tag game_reviews_path :method => :post do
+      = select :review, :score, [1, 2, 3, 4, 5]
       .field-wrap
-      %input{:name => 'user[name]', :placeholder => 'Email address' ,:autocomplete => "off", :required => "", :type => "email"}/
+      %input{:name => 'review[comments]', :placeholder => 'Comments' ,:autocomplete => "off", :type => "text"}/
       %button.button.button-block{:type => "submit"} Save changes
-      %button.button.button-block{:href => game_path(@games), "data-method" => "get", :type => "reset"} Discard changes
+    %a.button{:href => game_path(@games), "data-method" => "get"} Discard changes
