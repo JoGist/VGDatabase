@@ -1,0 +1,13 @@
+!!!
+%html{:lang => "en", class: "container"}
+  %head
+    %title Sign up - VGDatabase
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css", :rel => "stylesheet"}/
+  %body.visible
+    .tab-content
+    = form_tag :method => :post do
+      = select :game, :score, [1, 2, 3, 4, 5]
+      .field-wrap
+      %input{:name => 'user[name]', :placeholder => 'Email address' ,:autocomplete => "off", :required => "", :type => "email"}/
+      %button.button.button-block{:type => "submit"} Save changes
+      %button.button.button-block{:href => game_path(@games), "data-method" => "get", :type => "reset"} Discard changes

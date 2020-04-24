@@ -1,6 +1,10 @@
 class ReviewsController < ApplicationController
+    
 def new
+    game = params[:game_id]
+    @games = Game.find(game)
 end
+
 def create
     game_id = params[:movie_id]
     user_id = session[:user_id]

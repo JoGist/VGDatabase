@@ -78,9 +78,10 @@
                 %a{:href => "#"}
                   %h6.right5 Edit review
                   %i.mdi.mdi-pencil.right5
-              %a{:href => "#"}
-                %h6.right5 Add a review
-                %i.mdi.mdi-plus.right5
+              -else 
+                %a{:href => new_game_review_path(@games), "data-method" => "get"}
+                  %h6.right5 Add a review
+                  %i.mdi.mdi-plus.right5
               %h5 Reviews
             .reviewDiv
               .reviewUser
