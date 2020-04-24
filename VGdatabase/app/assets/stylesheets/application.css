@@ -58,15 +58,14 @@ body {
 }
 
 .reviewStar {
-    font-size: large;
-    float: left;
-    margin-left: 0.6rem;
-    padding-top: 1.5rem;
-    color: #d9e62b;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      1px 1px 0 #000;
+  font-size: large;
+  float: left;
+  margin-left: 0.6rem;
+  padding-top: 1.5rem;
+  color: #d9e62b;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
-
 
 .iconBig2:hover {
   /*content: .mdi-star-outline;*/
@@ -267,7 +266,7 @@ img {
 
 .tab-content i {
   margin-top: -5px;
-  color: #f26657
+  color: #f26657;
 }
 
 h1 {
@@ -378,7 +377,7 @@ textarea {
 }
 
 a:hover {
-  color: #fff
+  color: #fff;
 }
 
 .top-row:after {
@@ -476,7 +475,7 @@ a:hover {
 .gameInfo {
   margin-left: 27em;
   list-style-type: none;
-  width: 455px; 
+  width: 455px;
 }
 
 .forgot {
@@ -1515,14 +1514,13 @@ textarea {
   color: #f26657;
 }
 
-.reviewHeader a{
+.reviewHeader a {
   color: #fff;
 }
 
-.reviewHeader a:hover{
+.reviewHeader a:hover {
   color: #f26657;
 }
-
 
 .reviewHeader h5 {
   margin-top: 5px;
@@ -1550,20 +1548,20 @@ textarea {
 }
 
 @media (max-width: 2180px) {
-    .right3 {
-      float: left;
-      margin-top: 120px;
-      list-style-type: none;
-      margin-left: -400px;
-    }
+  .right3 {
+    float: left;
+    margin-top: 120px;
+    list-style-type: none;
+    margin-left: -400px;
   }
+}
 
-  @media (max-width: 1350px) {
-    .right3 {
-      float: left;
-      margin-top: 0px;
-      list-style-type: none;
-      padding-left: 400px;
-      width: 1300px;
-      }
+@media (max-width: 1500px) {
+  .right3 {
+    float: left;
+    margin-top: 0px;
+    list-style-type: none;
+    padding-left: 400px;
+    width: 1300px;
   }
+}
