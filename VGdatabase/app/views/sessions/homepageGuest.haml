@@ -36,5 +36,5 @@
           .content.cardPadding
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}
-            %a.btn{:href => show_guest_path(game.id), "data-method" => "get"} View info 
+            %a.btn{:href => guest_ao_path(game.id), "data-method" => "get"} View info 
           %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}

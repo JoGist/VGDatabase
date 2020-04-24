@@ -39,7 +39,7 @@ get '/search_guest_user' => 'sessions#searchGuestUser'
 post '/search_guest_user' => 'sessions#searchingGuestUser'
 get '/search_guest_game' => 'sessions#searchGuestGame'
 post '/search_guest_game' => 'sessions#searchingGuestGame'
-get '/show_guest' => 'sessions#showGuest'
+#get '/guest' => 'show#show'
 get '/search_result_guest' => 'sessions#searchResultGuest'
 
 # Games routes
@@ -70,6 +70,10 @@ get '/deleteReviewsGame_error' => 'games#deleteReviewsGame_error'
 resources :games do
   resources :reviews
   resources :mylibraries
+end
+
+namespace :guest do
+  resources :ao , only: [:show]
 end
 
 
