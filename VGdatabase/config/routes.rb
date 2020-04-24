@@ -24,7 +24,7 @@ get '/editLibrary' => 'games#myLibraryEdit'
 get '/editFavorites' => 'games#myLibraryFavoritesEdit'
 get '/friends' => 'games#friends'
 get '/myProfile' => 'games#myProfile'
-get '/visitProfile' => 'games#visitProfile'
+#get '/visitProfile' => 'games#visitProfile'
 get '/editProfile' => 'games#editProfile'
 post '/editProfile' => 'games#editingProfile'
 get '/contactUs' => 'games#contactUs'
@@ -76,6 +76,9 @@ namespace :guest do
   resources :show , only: [:show]
 end
 
+namespace :visit do
+  resources :profile, only: [:show]
+end
 
 resources :users do
   resources :reviews

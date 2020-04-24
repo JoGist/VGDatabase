@@ -5,7 +5,7 @@ module Guest
         def show
             id = params[:id]
             @game = Game.find(id)
-            @review = Review.where(:game_id => @games)
+            @review = Review.where(:game_id => @game)
         end
     end
 end

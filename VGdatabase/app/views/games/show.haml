@@ -34,7 +34,7 @@
               %i.mdi.mdi-account-circle
               %span.sidebar__nav__text My account
           %li
-            %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
+            %a.sidebar__nav__link{:href => login_path, "data-method" => "get"}
               %i.mdi.mdi-logout-variant
               %span.sidebar__nav__text Log out 
           %li
@@ -88,7 +88,7 @@
                 - @users = User.where(:id => review.user_id)[0]
                 .reviewUser
                   %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                  %a{:href => visitProfile_path, "data-method" => "get"} #{@users.username}
+                  %a{:href => visit_profile_path(@users.id), "data-method" => "get"} #{@users.username}
                   - if (review.score==1)
                     %i.mdi.mdi-star.reviewStar.right4
                   - elsif (review.score==2)
