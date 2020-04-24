@@ -46,8 +46,39 @@
             %a.buttonSmall{:href => signup_path, "data-method" => "get"}
               %i.mdi.mdi-login
               %span.hidden . 
-              %span.sidebar__nav__text Sign up to Add to library 
+              %span.sidebar__nav__text Sign up to Add 
             %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@game.title}&i=videogames", :target => "_blank"}
               %i.mdi.mdi-amazon
               %span.hidden . 
               %span.sidebar__nav__text BUY 
+          %div.right3
+            .reviewHeader
+              %h5 Reviews
+            .reviewDiv
+              - @review.each do |review|
+                - @users = User.where(:id => review.user_id)[0]
+                .reviewUser
+                  %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+                  %a{:href => visitProfile_path, "data-method" => "get"} #{@users.username}
+                  - if (review.score==1)
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==2)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==3)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==4)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - else
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4                
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  %div{:href => "#"}
+                    %h5.reviewText #{review.comments}

@@ -65,8 +65,6 @@
               %a.mdi.mdi-star.dot
             - else             
               %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "put"}
-            /only present if the game is in your library and not in favorites
-            /if the game is in favorites, the the full star should appear
             .content.cardPadding
               %p.description Genre: #{@games.genre}
               %p.description Platforms: #{@games.platform}
