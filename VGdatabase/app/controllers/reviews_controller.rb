@@ -1,19 +1,22 @@
 class ReviewsController < ApplicationController
-    
+    skip_before_action :verify_authenticity_token
 def new
     game = params[:game_id]
     @games = Game.find(game)
 end
 
 def create
-    game_id = params[:movie_id]
+    game_id = params[:game_id]
     user_id = session[:user_id]
-    @movie = Movie.find(movie_id)
-    @review = Review.new(params[:review].permit(:potatoes,:comments))
-    @review.moviegoer_id = user_id
-    @review.movie_id = movie_id
+    score = params[:review][:score]
+    comments = params[:review][:comments]
+    @user = User.find(user_id)
+    @game = Game.find(game_id)
+    @review = Review.new(:score => score,:comments => comments)
+    @review.user_id = @user.id
+    @review.game_id = @game.id
     @review.save!
-    redirect_to movie_path(@movie)
+    redirect_to game_path(@game)
 end
     def index
         movie_id = params[:movie_id]

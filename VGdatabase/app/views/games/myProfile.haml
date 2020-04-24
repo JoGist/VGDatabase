@@ -111,12 +111,28 @@
           - @review.each do |review|
             .reviewUser
               %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-              %a{:href => "#"} Game_1
-              %i.mdi.mdi-star.reviewStar.right4
-              %i.mdi.mdi-star.reviewStar.right4
-              %i.mdi.mdi-star.reviewStar.right4
-              %i.mdi.mdi-star.reviewStar.right4
-              %h5.reviewText #{@review.comments}
+              %a{:href => game_path(@game)} #{@game.title}
+              - if (review.score==1)
+                %i.mdi.mdi-star.reviewStar.right4
+              - elsif (review.score==2)
+                %i.mdi.mdi-star.reviewStar.right4
+                %i.mdi.mdi-star.reviewStar.right4
+              - elsif (review.score==3)
+                %i.mdi.mdi-star.reviewStar.right4
+                %i.mdi.mdi-star.reviewStar.right4
+                %i.mdi.mdi-star.reviewStar.right4
+              - elsif (review.score==4)
+                %i.mdi.mdi-star.reviewStar.right4
+                %i.mdi.mdi-star.reviewStar.right4
+                %i.mdi.mdi-star.reviewStar.right4
+                %i.mdi.mdi-star.reviewStar.right4
+              - else
+                %i.mdi.mdi-star.reviewStar.right4
+                %i.mdi.mdi-star.reviewStar.right4                
+                %i.mdi.mdi-star.reviewStar.right4
+                %i.mdi.mdi-star.reviewStar.right4
+                %i.mdi.mdi-star.reviewStar.right4
+              %h5.reviewText #{review.comments}
               -#.overlay
                 .popup
                 %h2 Error

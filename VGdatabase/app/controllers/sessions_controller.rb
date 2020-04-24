@@ -98,7 +98,7 @@ def searchingGuestGame
     elsif choice == 'Developer'
        if Game.exists?(Game.where(:developer => search))
              @games = Game.where(:developer => search)
-             render html: ''
+             render html: 'boh'
         end
     end         
 end
