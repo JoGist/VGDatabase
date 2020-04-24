@@ -19,7 +19,7 @@
               %span.sidebar__nav__text Search
           %li
             %a.sidebar__nav__link{:href => signup_path}
-              %i.mdi.mdi-login
+              %i.mdi.mdi-logout-variant
               %span.sidebar__nav__text Sign up
           %li
             %a.sidebar__nav__link{:href => contactUs_guest_path, "data-method" => "get"}
@@ -36,5 +36,5 @@
           .content.cardPadding
             %p.description Genre: #{game.genre}
             %p.description Platforms: #{game.platform}
-            %a.btn{:href => guest_ao_path(game.id), "data-method" => "get"} View info 
+            %a.btn{:href => guest_show_path(game.id), "data-method" => "get"} View info 
           %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}

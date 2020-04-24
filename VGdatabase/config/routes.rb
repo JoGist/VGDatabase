@@ -40,7 +40,6 @@ get '/search_guest_user' => 'sessions#searchGuestUser'
 post '/search_guest_user' => 'sessions#searchingGuestUser'
 get '/search_guest_game' => 'sessions#searchGuestGame'
 post '/search_guest_game' => 'sessions#searchingGuestGame'
-#get '/guest' => 'show#show'
 get '/search_result_guest' => 'sessions#searchResultGuest'
 
 # Games routes
@@ -74,7 +73,7 @@ resources :games do
 end
 
 namespace :guest do
-  resources :ao , only: [:show]
+  resources :show , only: [:show]
 end
 
 

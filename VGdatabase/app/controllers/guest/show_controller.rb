@@ -1,5 +1,5 @@
 module Guest
-    class AoController < ApplicationController
+    class ShowController < ApplicationController
         skip_before_action :set_current_user
 
         def show
