@@ -20,6 +20,7 @@ body {
   background: #14111f;
   font-family: "Roboto";
   overflow-x: hidden;
+  margin: 0;
 }
 
 .container {
@@ -560,7 +561,6 @@ a:hover {
 }
 
 .dotCard:hover {
-  /*content: .mdi-star-outline;*/
   text-shadow: 0 0 0 #d9e62b;
   color: #d9e62b;
 }
@@ -826,7 +826,6 @@ a:hover {
   position: fixed;
   height: 100vh;
   left: 0;
-  margin-top: -8px;
 }
 
 .sidebarOverlay {
@@ -1618,7 +1617,7 @@ textarea {
 
 .wrapper {
   max-width: 80em;
-  margin: 0 auto;
+  margin: auto auto;
 }
 .wrapper li {
   display: inline-block;
@@ -1626,7 +1625,8 @@ textarea {
   max-height: 200px;
 }
 .wrapper img {
-  max-width: 200px;
+  width: 200px;
+  height: 20%;
 }
 .wrapper .overlay-container {
   display: block;
@@ -1634,15 +1634,15 @@ textarea {
 }
 .wrapper .overlay-container::before {
   content: attr(data-overlay-text);
-  font: 1em/1.5em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
   z-index: 1;
-  /*On top of parent*/
   top: 40%;
   width: 100%;
   text-align: center;
   color: #fff;
-  background: rgba(128, 128, 128, 0.8);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  background: rgba(68, 68, 68, 0.7);
   opacity: 0;
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
