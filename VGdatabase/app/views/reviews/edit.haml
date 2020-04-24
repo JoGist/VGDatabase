@@ -1,0 +1,14 @@
+!!!
+%html{:lang => "en", class: "container"}
+  %head
+    %title Sign up - VGDatabase
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css", :rel => "stylesheet"}/
+  %body.visible
+    .tab-content
+    = form_tag game_review_path(@game,@review), :method => :put do
+      = select :review, :score, [1, 2, 3, 4, 5]
+      .field-wrap
+      %input{:name => 'review[comment]', :placeholder => 'Comments' ,:autocomplete => "off", :type => "text"}/
+      %button.button.button-block{:type => "submit"} Save changes
+      %a.button.button-block{:href => game_path(@game), "data-method" => "get"} Discard changes
+      %a.button.button-block{:href => game_review_path(@game,@review), "data-method" => "delete"} Delete review

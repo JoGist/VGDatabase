@@ -107,8 +107,8 @@
         - else
           .reviewHeader
             %h5 Your reviews
-          .reviewDiv
           - @review.each do |review|
+            .reviewDiv
             - @game = Game.find(review.game_id)
             .reviewUser
               %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
