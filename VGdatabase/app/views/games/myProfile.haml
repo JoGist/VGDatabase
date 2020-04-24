@@ -102,41 +102,44 @@
         %br/
         %br/
         %div
-        - if (@review.length==0)
-          %h5 You dont have any reviews
-        - else
           .reviewHeader
+            %a2
+              %h5.right5 click on a review to edit
+              %i.mdi.mdi-pencil.right5
             %h5 Your reviews
           .reviewDiv
-          - @review.each do |review|
-            - @game = Game.find(review.game_id)
             .reviewUser
-              %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-              %a{:href => game_path(@game)} #{@game.title}
-              - if (review.score==1)
-                %i.mdi.mdi-star.reviewStar.right4
-              - elsif (review.score==2)
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-              - elsif (review.score==3)
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-              - elsif (review.score==4)
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
+              - if (@review.length==0)
+                %h6 You dont have any reviews
               - else
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4                
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-                %i.mdi.mdi-star.reviewStar.right4
-              %h5.reviewText #{review.comments}
-              -#.overlay
-                .popup
-                %h2 Error
-                  %a.close{:href => myProfile_path, "data-method" => "get"} ×
-                  .content
-                    Unable to save changes, please try again.
+                - @review.each do |review|
+                  - @game = Game.find(review.game_id)
+                  %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+                  %a{:href => game_path(@game)} #{@game.title}
+                  - if (review.score==1)
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==2)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==3)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==4)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - else
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4                
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  %h5.reviewText #{review.comments}
+                  -#.overlay
+                    .popup
+                    %h2 Error
+                      %a.close{:href => myProfile_path, "data-method" => "get"} ×
+                      .content
+                        Unable to save changes, please try again.

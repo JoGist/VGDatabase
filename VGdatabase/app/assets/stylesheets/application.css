@@ -433,6 +433,10 @@ a:hover {
   border: 2px solid #fff;
 }
 
+.default {
+  cursor: default;
+}
+
 .box {
   width: 40%;
   margin: 0 auto;
@@ -1474,13 +1478,12 @@ textarea {
   border: 1px solid #444;
   border-radius: 2px;
   width: 100%;
-  height: 680px;
+  height: auto;
   float: left;
   margin-top: -10px;
 }
 
 .reviewText {
-  margin-top: 80px;
   text-align: justify;
   padding: 15px;
   background-color: #444;
@@ -1586,9 +1589,7 @@ textarea {
 }
 
 .reviewOverlay {
-  margin-top: 80px;
   text-align: justify;
-  padding: 15px;
   transition: opacity 500ms;
   visibility: visible;
 }
@@ -1596,7 +1597,7 @@ textarea {
 .reviewOverlay:hover {
   cursor: pointer;
   background: #222;
-  color: rgba(255, 255, 255, 0.05);
+  color: #f2675773;
 }
 
 .reviewUser h6 {
@@ -1606,7 +1607,10 @@ textarea {
 }
 
 .reviewUser i {
-
   font-size: 18px;
   font-weight: bold;
+}
+
+.reviewUser a h5 {
+  margin-left: -1.2rem;
 }
