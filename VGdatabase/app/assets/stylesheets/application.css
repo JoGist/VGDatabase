@@ -1484,6 +1484,7 @@ textarea {
 }
 
 .reviewText {
+  margin-top: 80px;
   text-align: justify;
   padding: 15px;
   background-color: #444;

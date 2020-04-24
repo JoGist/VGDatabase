@@ -45,6 +45,8 @@ skip_before_action :verify_authenticity_token
 
     def editProfile
         @user = User.find(session[:user_id])
+        @review = Review.where(:user_id => @user)
+        @review = Review.where(:game_id => @games)
     end
 
     def editingProfile

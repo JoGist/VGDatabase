@@ -103,17 +103,16 @@
         %br/
         %div
           .reviewHeader
-            %a2
-              %h5.right5 click on a review to edit
-              %i.mdi.mdi-pencil.right5
             %h5 Your reviews
           .reviewDiv
-            .reviewUser
-              - if (@review.length==0)
-                %h6 You dont have any reviews
-              - else
-                - @review.each do |review|
-                  - @game = Game.find(review.game_id)
+            - if (@review.length==0)
+              .reviewUser
+                %div{:href => "#"}
+                  %h6 You dont have any reviews
+            - else
+              - @review.each do |review|
+                - @game = Game.find(review.game_id)
+                .reviewUser
                   %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
                   %a{:href => game_path(@game)} #{@game.title}
                   - if (review.score==1)
@@ -136,10 +135,5 @@
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
-                  %h5.reviewText #{review.comments}
-                  -#.overlay
-                    .popup
-                    %h2 Error
-                      %a.close{:href => myProfile_path, "data-method" => "get"} ×
-                      .content
-                        Unable to save changes, please try again.
+                  %div{:href => "#"}
+                    %h5.reviewText #{review.comments}
