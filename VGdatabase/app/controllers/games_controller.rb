@@ -36,6 +36,7 @@ skip_before_action :verify_authenticity_token
 
     def myProfile
         @user = User.find(session[:user_id])
+        @review = Review.where(:user_id => @user)
     end
 
     def visitProfile
@@ -54,30 +55,35 @@ skip_before_action :verify_authenticity_token
         newp1 = params[:user][:newp1]
         @user = User.find(session[:user_id])
         if username.length==0 && email.length==0 && oldp.length==0
-            redirect_to myProfile_path
+            redirect_to editProfile_success_path
         elsif username.length==0 && email.length==0 && newp.length!=0 && newp==newp1 && oldp==@user.password
             @user.update_attributes!(:password => newp)
-            redirect_to myProfile_path
+            redirect_to editProfile_success_path
         elsif username.length!=0 && email.length==0 && newp.length!=0 && newp==newp1 && oldp==@user.password
             @user.update_attributes!(:password => newp, :username => username)
-            redirect_to myProfile_path
+            redirect_to editProfile_success_path
         elsif username.length!=0 && email.length!=0 && newp.length!=0 && newp==newp1 && oldp==@user.password
             @user.update_attributes!(:password => newp, :username => username, :email => email)
-            redirect_to myProfile_path 
+            redirect_to editProfile_success_path
         elsif username.length!=0 && email.length==0 && oldp.length==0
             @user.update_attributes!(:username => username)
-            redirect_to myProfile_path        
+            redirect_to editProfile_success_path        
         elsif username.length==0 && email.length!=0 && oldp.length==0
             @user.update_attributes!(:email => email)
-            redirect_to myProfile_path      
+            redirect_to editProfile_success_path      
         elsif username.length!=0 && email.length!=0 && oldp.length==0
             @user.update_attributes!(:email => email, :username => username)
-            redirect_to myProfile_path                                       
+            redirect_to editProfile_success_path                                       
         else
-            redirect_to myProfile_path        
+            redirect_to editProfile_error_path        
         end
     end
 
+    def editProfile_success
+    end
+
+    def editProfile_error
+    end
     def show
         id = params[:id]
         @games = Game.find(id)
