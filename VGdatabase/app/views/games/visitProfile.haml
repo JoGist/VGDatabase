@@ -99,14 +99,37 @@
         %br/
         %div
           .reviewHeader
-            %h5 #{@user.username}'s' reviews
-            /if review.lenght=0 different message
+            %h5 Your reviews
           .reviewDiv
-            .reviewUser
-              %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-              %a{:href => visitProfile_path, "data-method" => "get"} Game_1
-              %i.mdi.mdi-star.reviewStar.right4
-              %i.mdi.mdi-star.reviewStar.right4
-              %i.mdi.mdi-star.reviewStar.right4
-              %i.mdi.mdi-star.reviewStar.right4
-              %h5.reviewText The September 11 attacks (also referred to as 9/11) were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda against the United States on the morning of Tuesday, September 11, 2001. The attacks resulted in 2,977 fatalities, over 25,000 injuries, and caused at least $10 billion in infrastructure and property damage. Additional people have died of dust-related cancer and respiratory diseases in the months and years following the attacks. Four passenger airliners operated by two major U.S. passenger air carriers (United Airlines and American Airlines)—all of which departed from airports in the northeastern United States bound for San Francisco and Los Angeles—were hijacked by 19 al-Qaeda terrorists. Two of the planes, American Airlines Flight 11 and United Airlines Flight 175, crashed into the North and South towers, respectively, the World Trade Center complex in Lower Manhattan. Within an hour and 42 minutes, both 110-story towers collapsed. 
+            - if (@review.length==0)
+              .reviewUser
+                %div{:href => "#"}
+                  %h6 This user doesen't have any review
+            - else
+              - @review.each do |review|
+                - @game = Game.find(review.game_id)
+                .reviewUser
+                  %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+                  %a{:href => game_path(@game)} #{@game.title}
+                  - if (review.score==1)
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==2)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==3)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==4)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - else
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4                
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  %div{:href => "#"}
+                    %h5.reviewText #{review.comments}
