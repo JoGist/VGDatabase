@@ -99,13 +99,13 @@
         %br/
         %br/
         %div
-        .reviewHeader
-          %h5 Your reviews
+          .reviewHeader
+            %h5 #{@user.username}'s reviews
           .reviewDiv
             - if (@review.length==0)
               .reviewUser
                 %div{:href => "#"}
-                  %h6 You dont have any reviews
+                  %h6 #{@user.username} don't have any reviews
             - else
               - @review.each do |review|
                 - @game = Game.find(review.game_id)
@@ -214,13 +214,13 @@
         %br/
         %br/
         %div
-        .reviewHeader
-          %h5 Your reviews
+          .reviewHeader
+            %h5 #{@user.username}'s reviews
           .reviewDiv
             - if (@review.length==0)
               .reviewUser
                 %div{:href => "#"}
-                  %h6 You dont have any reviews
+                  %h6 #{@user.username} don't have any reviews
             - else
               - @review.each do |review|
                 - @game = Game.find(review.game_id)
