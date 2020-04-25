@@ -47,6 +47,13 @@ skip_before_action :verify_authenticity_token
     def editAvatar
     end
 
+    def editingAvatar
+        @user = User.find(session[:user_id])
+        avatar = 'Avatars/avatar_1'
+        @user.update_attributes!(:avatar => avatar)
+        redirect_to myProfile_path
+    end
+
     def editingProfile
         username = params[:user][:name]
         email = params[:user][:email]

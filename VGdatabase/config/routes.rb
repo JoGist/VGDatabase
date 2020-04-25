@@ -24,7 +24,6 @@ get '/editLibrary' => 'games#myLibraryEdit'
 get '/editFavorites' => 'games#myLibraryFavoritesEdit'
 get '/friends' => 'games#friends'
 get '/myProfile' => 'games#myProfile'
-#get '/visitProfile' => 'games#visitProfile'
 get '/editProfile' => 'games#editProfile'
 post '/editProfile' => 'games#editingProfile'
 get '/contactUs' => 'games#contactUs'
@@ -33,6 +32,7 @@ get '/deleteUser' => 'games#deleteUser'   #Serve all'user per cancellare il prop
 get '/editProfile_success' => "games#editProfile_success"
 get '/editProfile_error' => "games#editProfile_error"
 get '/editAvatar' => 'games#editAvatar'
+post 'editAvatar' => 'games#editingAvatar'
 
 # Guest routes 
 get '/homepage_guest' => 'sessions#homepageGuest'

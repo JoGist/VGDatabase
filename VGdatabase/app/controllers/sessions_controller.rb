@@ -10,7 +10,7 @@ def signing
         name1 = params[:user][:name1]
         password1 = params[:user][:password1]
         if password == password1
-            @users = User.create(:email => name, :password => password, :username => name1)
+            @users = User.create(:email => name, :password => password, :username => name1 :avatar => 'Avatars/avatar_25')
             redirect_to login_path
         else
             redirect_to signup_path
