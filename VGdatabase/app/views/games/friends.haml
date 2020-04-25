@@ -45,30 +45,30 @@
     %h1 Your friends
     %div.page-content
       %br/
-      /- @games.each do |game|
+      - @friends.each do |friend|
+        .friendsCards
+          .my-account-wrapper
+            .friendGrid
+              .profile-pic-details
+                %a.overlayImgFriend{:href => visit_profile_path(friend.friend_id), "data-method" => "get"}
+                  %i.mdi.mdi-pencil
+                  %span.hidden _
+                  %span View profile
+                =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
+              .grid-item-detailsProfile
+              .grid-item-details
+                %p.profile-hyper-links
+                  %a2.sub-header-details Username:
+                  %span #{User.find(friend.friend_id).username}
+              .grid-item-details
+                %p.profile-hyper-links
+                  %a2.sub-header-details Games in the collection:
+                  %span #{Mylibrary.where(:user_id => friend.friend_id).length}
       .friendsCards
         .my-account-wrapper
           .friendGrid
             .profile-pic-details
-              %a.overlayImgFriend{:href => visitProfile_path, "data-method" => "get"}
-                %i.mdi.mdi-pencil
-                %span.hidden _
-                %span View profile
-              %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-            .grid-item-detailsProfile
-            .grid-item-details
-              %p.profile-hyper-links
-                %a2.sub-header-details Username:
-                %span #{@user.username}
-            .grid-item-details
-              %p.profile-hyper-links
-                %a2.sub-header-details Games in the collection:
-                %span 14
-      .friendsCards
-        .my-account-wrapper
-          .friendGrid
-            .profile-pic-details
-              %a.overlayImgFriend{:href => visitProfile_path, "data-method" => "get"}
+              %a.overlayImgFriend{:href => "#", "data-method" => "get"}
                 %i.mdi.mdi-pencil
                 %span.hidden _
                 %span View profile
@@ -83,76 +83,3 @@
               %p.profile-hyper-links
                 %a2.sub-header-details Games in the collection:
                 %span 14
-      .friendsCards
-        .my-account-wrapper
-          .friendGrid
-            .profile-pic-details
-              %a.overlayImgFriend{:href => visitProfile_path, "data-method" => "get"}
-                %i.mdi.mdi-pencil
-                %span.hidden _
-                %span View profile
-              %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-            .grid-item-detailsProfile
-            .grid-item-details
-              %p.profile-hyper-links
-                %a2.sub-header-details Username:
-                %span #{@user.username}
-            .grid-item-details
-              %p.profile-hyper-links
-                %a2.sub-header-details Games in the collection:
-                %span 14
-      .friendsCards
-        .my-account-wrapper
-          .friendGrid
-            .profile-pic-details
-              %a.overlayImgFriend{:href => visitProfile_path, "data-method" => "get"}
-                %i.mdi.mdi-pencil
-                %span.hidden _
-                %span View profile
-              %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-            .grid-item-detailsProfile
-            .grid-item-details
-              %p.profile-hyper-links
-                %a2.sub-header-details Username:
-                %span #{@user.username}
-            .grid-item-details
-              %p.profile-hyper-links
-                %a2.sub-header-details Games in the collection:
-                %span 14
-      .friendsCards
-        .my-account-wrapper
-          .friendGrid
-            .profile-pic-details
-              %a.overlayImgFriend{:href => visitProfile_path, "data-method" => "get"}
-                %i.mdi.mdi-pencil
-                %span.hidden _
-                %span View profile
-              %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-            .grid-item-detailsProfile
-            .grid-item-details
-              %p.profile-hyper-links
-                %a2.sub-header-details Username:
-                %span #{@user.username}
-            .grid-item-details
-              %p.profile-hyper-links
-                %a2.sub-header-details Games in the collection:
-                %span 14
-      .friendsCards
-        .my-account-wrapper
-          .friendGrid
-            .profile-pic-details
-              %a.overlayImgFriend{:href => visitProfile_path, "data-method" => "get"}
-                %i.mdi.mdi-pencil
-                %span.hidden _
-                %span View profile
-              %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-            .grid-item-detailsProfile
-            .grid-item-details
-              %p.profile-hyper-links
-                %a2.sub-header-details Username:
-                %span #{@user.username}
-            .grid-item-details
-              %p.profile-hyper-links
-                %a2.sub-header-details Games in the collection:
-                %span 14
-                

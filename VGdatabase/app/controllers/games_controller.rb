@@ -32,11 +32,13 @@ skip_before_action :verify_authenticity_token
 
     def friends
         @user = User.find(session[:user_id])
+        @friends = Friend.where(:user_id => @user.id)
     end
 
     def myProfile
         @user = User.find(session[:user_id])
         @review = Review.where(:user_id => @user)
+        @friends = Friend.where(:user_id => @user.id)
     end
 
     def editProfile

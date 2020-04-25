@@ -8,6 +8,7 @@ module Visit
             @users = session[:user_id]
             @review = Review.where(:user_id => @user)
             @library = Mylibrary.where(:user_id => @user)
+            @friends = Friend.where(:user_id => @user)
         end
     end
 end

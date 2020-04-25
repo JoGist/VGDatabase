@@ -55,7 +55,11 @@
               %i.mdi.mdi-star-outline.iconBig2.right
             .grid-item-details-button
               %p.profile-hyper-links
-                %a{:href => friend_path(@user), "data-method" => "put"} Add/Remove from friends
+              - if (Friend.exists?(:user_id => @users, :friend_id => @user))
+                %a{:href => friend_path(@user), "data-method" => "delete"} Remove from friends
+                %i.mdi.mdi-account-remove
+              - else 
+                %a{:href => friend_path(@user), "data-method" => "put"} Add from friends
                 %i.mdi.mdi-account-remove
           .account-grid-item-2
             .grid-item-details
@@ -81,21 +85,13 @@
           .account-grid-item-3
             .grid-item-details
               %span Friends
-            .grid-item-detailsImg
-              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-              %span.sub-header-details Friend_1
-            .grid-item-detailsImg
-              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-              %span.sub-header-details Friend_2
-            .grid-item-detailsImg
-              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-              %span.sub-header-details Friend_3
-            .grid-item-detailsImg
-              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-              %span.sub-header-details Friend_4
-            .grid-item-detailsImg
-              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-              %span.sub-header-details Friend_5
+            - @friends.each do |friend|
+              .grid-item-detailsImg
+                =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg" 
+                - if (friend.user_id==@user.id)
+                  %a.sub-header-details{:href => myProfile_path, "data-method" => "get"} #{User.find(friend.friend_id).username}
+                - else 
+                  %a.sub-header-details{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
         %br/
         %br/
         %div
