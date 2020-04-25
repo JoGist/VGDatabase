@@ -37,7 +37,7 @@
           %li
             %a.sidebar__nav__link{:href => login_path, "data-method" => "get"}
               %i.mdi.mdi-logout-variant
-              %span.sidebar__nav__text Log out 
+              %span.sidebar__nav__text Log out
           %li
             %a.sidebar__nav__link{:href => contactUs_path, "data-method" => "get"}
               %i.mdi.mdi-information
@@ -55,7 +55,7 @@
               %i.mdi.mdi-star-outline.iconBig2.right
             .grid-item-details-button
               %p.profile-hyper-links
-                %a{:href => '#'} Add/Remove from friends
+                %a{:href => friend_path(@user), "data-method" => "put"} Add/Remove from friends
                 %i.mdi.mdi-account-remove
           .account-grid-item-2
             .grid-item-details
@@ -128,13 +128,13 @@
                     %i.mdi.mdi-star.reviewStar.right4
                   - else
                     %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4                
+                    %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
                     %h5.reviewText #{review.comments}
-  - else 
+  - else
     %aside.sidebar.normal
       %nav
         %ul.sidebar__nav
@@ -156,7 +156,7 @@
           %li
             %a.sidebar__nav__link{:href => contactUs_guest_path, "data-method" => "get"}
               %i.mdi.mdi-information
-              %span.sidebar__nav__text Contact us    
+              %span.sidebar__nav__text Contact us
     %br/
     %h1 #{@user.username}'s profile
     %div.page-content
@@ -243,7 +243,7 @@
                     %i.mdi.mdi-star.reviewStar.right4
                   - else
                     %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4                
+                    %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4

@@ -34,7 +34,7 @@ get '/editProfile_error' => "games#editProfile_error"
 get '/editAvatar' => 'games#editAvatar'
 post 'editAvatar' => 'games#editingAvatar'
 
-# Guest routes 
+# Guest routes
 get '/homepage_guest' => 'sessions#homepageGuest'
 get '/contactUs_guest' => 'sessions#contactUsGuest'
 get '/search_guest_user' => 'sessions#searchGuestUser'
@@ -84,5 +84,7 @@ end
 resources :users do
   resources :reviews
 end
+
+resources :friends
 
 end
