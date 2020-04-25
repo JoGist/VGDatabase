@@ -49,8 +49,7 @@ skip_before_action :verify_authenticity_token
 
     def editingAvatar
         @user = User.find(session[:user_id])
-        avatar = 'Avatars/avatar_1'
-        @user.update_attributes!(:avatar => avatar)
+        @user.update_attributes!(:avatar => 'Avatars/avatar_4')
         redirect_to myProfile_path
     end
 
