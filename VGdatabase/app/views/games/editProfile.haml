@@ -58,7 +58,7 @@
                   %span change avatar
                   %a.overlayProfileImg{:href => editAvatar_path, "data-method" => "get"}
                     /%input{:name => "myfile", :type => "file"}/
-                %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+                =image_tag (@user.avatar) ,class: "img"
               .grid-item-detailsProfile
               %button.grid-item-details-button-2
                 %p.profile-hyper-links
@@ -136,7 +136,7 @@
               - @review.each do |review|
                 - @game = Game.find(review.game_id)
                 .reviewUser
-                  %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+                  =image_tag (@game.cover) ,class: "reviewImg" 
                   %a{:href => edit_game_review_path(@game,review.id)} #{@game.title}
                   - if (review.score==1)
                     %i.mdi.mdi-star.reviewStar.right4

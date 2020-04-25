@@ -87,7 +87,7 @@
               - @review.each do |review|
                 - @users = User.where(:id => review.user_id)[0]
                 .reviewUser
-                  %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+                  =image_tag (User.find(@user).avatar) ,class: "reviewImg"
                   %a{:href => visit_profile_path(@users.id), "data-method" => "get"} #{@users.username}
                   - if (review.score==1)
                     %i.mdi.mdi-star.reviewStar.right4

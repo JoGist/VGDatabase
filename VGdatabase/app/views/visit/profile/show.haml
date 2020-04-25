@@ -50,7 +50,7 @@
         .account-grid-system
           .account-grid-item-1-alt
             .profile-pic-details
-              %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+              =image_tag (@user.avatar) ,class: "img"
             .grid-item-details
               %i.mdi.mdi-star-outline.iconBig2.right
             .grid-item-details-button
@@ -110,7 +110,7 @@
               - @review.each do |review|
                 - @game = Game.find(review.game_id)
                 .reviewUser
-                  %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
+                  =image_tag (@game.cover) ,class: "reviewImg"
                   %a{:href => game_path(@game)} #{@game.title}
                   - if (review.score==1)
                     %i.mdi.mdi-star.reviewStar.right4
@@ -165,7 +165,7 @@
         .account-grid-system
           .account-grid-item-1-alt
             .profile-pic-details
-              %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+              =image_tag (@user.avatar) ,class: "img"
             .grid-item-details
               %i.mdi.mdi-star-outline.iconBig2.right
             .grid-item-details-button
@@ -225,8 +225,8 @@
               - @review.each do |review|
                 - @game = Game.find(review.game_id)
                 .reviewUser
-                  %img.reviewImg{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                  %a{:href => game_path(@game)} #{@game.title}
+                  =image_tag (@game.cover) ,class: "reviewImg"
+                  %a{:href => guest_show_path(@game)} #{@game.title}
                   - if (review.score==1)
                     %i.mdi.mdi-star.reviewStar.right4
                   - elsif (review.score==2)

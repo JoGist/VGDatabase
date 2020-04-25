@@ -58,7 +58,7 @@
                   %span edit picture
                   .overlayProfileImg
                     %input{:name => "myfile", :type => "file"}/
-                %img{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
+                =image_tag (@user.avatar) ,class: "img"
               .grid-item-detailsProfile
               %button.grid-item-details-button-2
                 %p.profile-hyper-links
