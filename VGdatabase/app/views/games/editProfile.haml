@@ -104,21 +104,11 @@
             .account-grid-item-3
               .grid-item-details
                 %span Friends
+            - @friends.each do |friend|
               .grid-item-detailsImg
-                %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                %span.sub-header-details Friend_1
-              .grid-item-detailsImg
-                %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-                %span.sub-header-details Friend_2
-              .grid-item-detailsImg
-                %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-                %span.sub-header-details Friend_3
-              .grid-item-detailsImg
-                %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-                %span.sub-header-details Friend_4
-              .grid-item-detailsImg
-                %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-                %span.sub-header-details Friend_5
+                =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
+                - if (friend.user_id==@user.id)
+                  %a.sub-header-details{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
         %br/
         %br/
         %div

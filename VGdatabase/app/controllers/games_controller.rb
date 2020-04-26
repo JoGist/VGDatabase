@@ -44,6 +44,7 @@ skip_before_action :verify_authenticity_token
     def editProfile
         @user = User.find(session[:user_id])
         @review = Review.where(:user_id => @user)
+        @friends = Friend.where(:user_id => @user.id)
     end
 
     def editAvatar
@@ -90,11 +91,13 @@ skip_before_action :verify_authenticity_token
     def editProfile_success
         @user = User.find(session[:user_id])
         @review = Review.where(:user_id => @user)
+        @friends = Friend.where(:user_id => @user.id)
     end
 
     def editProfile_error
         @user = User.find(session[:user_id])
         @review = Review.where(:user_id => @user)
+        @friends = Friend.where(:user_id => @user.id)
     end
 
     def show
