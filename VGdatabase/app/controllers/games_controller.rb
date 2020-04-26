@@ -147,7 +147,7 @@ skip_before_action :verify_authenticity_token
         user = params[:username]
         if User.exists?(User.where(:username => user))
             @users = User.where(:username => user)[0].id
-            redirect_to visit_profile_path(@user)
+            redirect_to visit_profile_path(@users)
         else
             render html: 'user non trovato'
         end
