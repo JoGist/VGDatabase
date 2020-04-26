@@ -100,7 +100,7 @@
                 %a
               .grid-item-details.white
                 %i.mdi.mdi-trash-can
-                %a2{:href => deleteUser_path} DELETE ACCOUNT
+                %a{:href => deleteUser_path, "data-method" => "get"} DELETE ACCOUNT
             .account-grid-item-3
               .grid-item-details
                 %span Friends

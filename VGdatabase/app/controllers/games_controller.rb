@@ -116,6 +116,22 @@ skip_before_action :verify_authenticity_token
 
     def deleteUser
         name = session[:user_id]
+        @friends = Friend.where(:user_id => name)
+        @friends.each do |friend|
+            friend.delete
+        end
+        @friends1 = Friend.where(:friend_id => name)
+        @friends1.each do |friend|
+            friend.delete
+        end
+        @review = Review.where(:user_id => name)
+        @review.each do |review|
+            review.delete
+        end
+        @library = Mylibrary.where(:user_id => name)
+        @library.each do |library|
+            library.delete
+        end
         User.delete(name)
         redirect_to login_path
     end
