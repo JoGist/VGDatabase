@@ -163,10 +163,12 @@
             .profile-pic-details
               =image_tag (@user.avatar) ,class: "img"
             .grid-item-details
-              %i.mdi.mdi-star-outline.iconBig2.right
+              %br
+              %br
+              %i.right
             .grid-item-details-button
               %p.profile-hyper-links
-                %a{:href => '#'} Add/Remove from friends
+                %a{:href => signup_path} Log in to add to your friends
                 %i.mdi.mdi-account-remove
           .account-grid-item-2
             .grid-item-details
@@ -174,7 +176,7 @@
               %span #{@user.username}
             .grid-item-details
               %h5.sub-header-details Email
-              %span #{@user.email}
+              %span Can't view emails as guest
             .grid-item-details
               %h5.sub-header-details Games in your collection:
               %span #{@library.length}
