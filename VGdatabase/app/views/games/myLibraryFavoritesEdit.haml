@@ -55,14 +55,14 @@
       - @mylibrary.each do |game|
         - if (game.user_id == @user.id) 
           - @games = Game.find(game.game_id)
-        .card
-          .content.cardPadding
-            %p
-            %p
-            %p
-            %p
-            %a.btn{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "put"}
-              %i.mdi.mdi-minus
-              %span.sidebar__nav__text remove
-          %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
+          .card
+            .content.cardPadding
+              %p
+              %p
+              %p
+              %p
+              %a.btn{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "put"}
+                %i.mdi.mdi-minus
+                %span.sidebar__nav__text remove
+            %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
           
