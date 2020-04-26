@@ -1609,18 +1609,6 @@ textarea {
   }
 }
 
-.reviewOverlay {
-  text-align: justify;
-  transition: opacity 500ms;
-  visibility: visible;
-}
-
-.reviewOverlay:hover {
-  cursor: pointer;
-  background: #222;
-  color: #f2675773;
-}
-
 .reviewUser h6 {
   padding: -15px;
   font-size: 18px;
