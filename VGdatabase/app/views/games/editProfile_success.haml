@@ -105,13 +105,13 @@
             .account-grid-item-3
               .grid-item-details
                 %span Friends
-              - @friends.each do |friend|
-                .grid-item-detailsImg
-                  =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
-                  - if (friend.user_id==@user.id)
-                    %a.sub-header-details{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
-                  - if (friend.favorite == "true")
-                    %a.mdi.mdi-star.friendStar
+            - @friends.each do |friend|
+              .grid-item-detailsImg
+                =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
+                - if (friend.user_id==@user.id)
+                  %a.sub-header-details{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
+                - if (friend.favorite == "true")
+                  %a.mdi.mdi-star.friendStar
         %br/
         %br/
         %div
