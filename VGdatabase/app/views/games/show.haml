@@ -111,3 +111,33 @@
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
                     %h5.reviewText #{review.comments}
+              
+              - @aux.each do |review|
+                - @users = User.where(:id => review.user_id)[0]
+                .reviewUser
+                  =image_tag (User.find(@user).avatar) ,class: "reviewImg"
+                  %a{:href => visit_profile_path(@users.id), "data-method" => "get"} #{@users.username}
+                  - if (review.score==1)
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==2)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==3)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - elsif (review.score==4)
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  - else
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4                
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                    %i.mdi.mdi-star.reviewStar.right4
+                  %div{:href => "#"}
+                    %h5.reviewText #{review.comments}
+              
+
