@@ -88,7 +88,7 @@
                 - @users = User.where(:id => review.user_id)[0]
                 .reviewUser
                   =image_tag (User.find(@user).avatar) ,class: "reviewImg"
-                  %a{:href => visit_profile_path(@users.id), "data-method" => "get"} #{@users.username}
+                  %a{:href => visit_profile_path(@users.id), "data-method" => "get"} Your Review
                   - if (review.score==1)
                     %i.mdi.mdi-star.reviewStar.right4
                   - elsif (review.score==2)
@@ -110,6 +110,7 @@
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
+                  - if (review.comments != "")
                     %h5.reviewText #{review.comments}
               
               - @aux.each do |review|
@@ -138,6 +139,7 @@
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
+                  - if (review.comments != "")
                     %h5.reviewText #{review.comments}
               
 
