@@ -105,7 +105,9 @@ skip_before_action :verify_authenticity_token
         @games = Game.find(id)
         @library = Mylibrary.where(:user_id => session[:user_id])
         @user = session[:user_id]
-        @review = Review.where(:game_id => @games)
+        @aux = Review.where(:game_id => @games)
+        @aux = @aux.where('user_id != ?', @user)
+        @review = Review.where(:game_id => @games, :user_id => @user)
     end
 
     def contactUs
@@ -145,7 +147,7 @@ skip_before_action :verify_authenticity_token
         user = params[:username]
         if User.exists?(User.where(:username => user))
             @users = User.where(:username => user)[0].id
-            render html: 'user trovato'
+            redirect_to visit_profile_path(@user)
         else
             render html: 'user non trovato'
         end
