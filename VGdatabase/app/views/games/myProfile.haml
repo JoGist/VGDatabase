@@ -89,7 +89,7 @@
                 - if (friend.user_id==@user.id)
                   %a.sub-header-details{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
                 - if (friend.favorite == "true")
-                  %a.mdi.mdi-star.iconBig2.right
+                  %a.mdi.mdi-star.friendStar
         %br/
         %br/
         %div
@@ -98,7 +98,7 @@
           .reviewDiv
             - if (@review.length==0)
               .reviewUser
-                %div{:href => "#"}
+                %div
                   %h6 You don't have any reviews
             - else
               - @review.each do |review|

@@ -110,6 +110,8 @@
                 =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
                 - if (friend.user_id==@user.id)
                   %a.sub-header-details{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
+                - if (friend.favorite == "true")
+                  %a.mdi.mdi-star.friendStar
         %br/
         %br/
         %div
