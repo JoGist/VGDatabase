@@ -15,7 +15,8 @@ class MylibrariesController < ApplicationController
     def destroy
         id = params[:id]
 		@mygame = Mylibrary.find(id)
-		@mygame.destroy
+        @mygame.destroy
+        redirect_to editLibrary_path
     end
 
     def update

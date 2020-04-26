@@ -56,6 +56,10 @@
                   %span View profile
                 =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
               .grid-item-detailsProfile
+                - if (friend.favorite == "true")
+                  %a.mdi.mdi-star.iconBig2.right{:href => friend_path(friend.friend_id) , "data-method" => "get"}
+                - else             
+                  %a.mdi.mdi-star-outline.iconBig2.right{:href => friend_path(friend.friend_id) , "data-method" => "get"}
               .grid-item-details
                 %p.profile-hyper-links
                   %a2.sub-header-details Username:
