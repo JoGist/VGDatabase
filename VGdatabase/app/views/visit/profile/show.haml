@@ -52,11 +52,12 @@
             .profile-pic-details
               =image_tag (@user.avatar) ,class: "img"
             .grid-item-details
+            -if Friend.exists?(:user_id => @users)
               - if (Friend.where(:user_id => @users, :friend_id => @user.id)[0].favorite == "true")
                 %a.mdi.mdi-star.iconBig2.right{:href => friend_path(@user.id) , "data-method" => "get"}
               - else             
                 %a.mdi.mdi-star-outline.iconBig2.right{:href => friend_path(@user.id) , "data-method" => "get"}
-              /  - redirect_to visit_profile_path(@user.id)
+
             .grid-item-details-button
               %p.profile-hyper-links
               - if (Friend.exists?(:user_id => @users, :friend_id => @user))
