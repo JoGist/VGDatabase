@@ -112,6 +112,7 @@
                   %div{:href => "#"}
                   - if (review.comments != "")
                     %h5.reviewText #{review.comments}
+              
               - @aux.each do |review|
                 - @users = User.where(:id => review.user_id)[0]
                 .reviewUser
@@ -140,3 +141,5 @@
                   %div{:href => "#"}
                   - if (review.comments != "")
                     %h5.reviewText #{review.comments}
+              
+
