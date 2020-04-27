@@ -51,8 +51,8 @@ body {
 .friendStar {
   font-size: large;
   float: left;
-  margin-left: 1rem;
-  padding-top: 0.8rem;
+  margin-left: 0.6rem;
+  padding-top: 0.6rem;
   color: #d9e62b;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
@@ -145,7 +145,6 @@ img {
 
 .right6 {
   float: right;
-  margin-top: -4px;
   padding-top: 11.5rem;
 }
 
@@ -1166,7 +1165,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   border: 1px solid #444;
-  border-bottom: 0px;
   border-radius: 2px;
   width: 25%;
   max-width: 500px;
@@ -1291,16 +1289,30 @@ textarea {
   font-size: 14px;
   font-weight: 600;
   color: #696f7e;
-  margin-bottom: 5px;
+  margin-bottom: 5;
 }
 
-.sub-header-details2 {
-    font-size: 14px;
-    font-weight: 600;
-    color: #696f7e;
-    margin-top: 0.2rem;
-  }
-  
+.profile-complteness {
+  position: relative;
+  max-width: 150px;
+  height: 10px;
+  margin: 8px auto;
+  background: #ddd;
+  border-radius: 8px;
+}
+
+.profile-complteness::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background: #f26657;
+}
+
 .profile-hlp-txt {
   font-size: 14px;
   margin: 0;
@@ -1489,10 +1501,8 @@ textarea {
   overflow-y: auto;
   overflow-x: hidden;
   border: 1px solid #444;
-  border-bottom: 0px;
   border-radius: 2px;
   width: 100%;
-  max-height: 1000px;
   height: auto;
   float: left;
   margin-top: -10px;
@@ -1520,14 +1530,6 @@ textarea {
   border: 2px solid #f26657;
   float: left;
 }
-
-.friendImg {
-    border-radius: 100%;
-    width: 52px;
-    height: 52px;
-    border: 2px solid #f26657;
-    float: left;
-  }
 
 .reviewUser a {
   font-size: 24px;
