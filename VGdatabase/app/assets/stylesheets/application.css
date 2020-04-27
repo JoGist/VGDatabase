@@ -51,8 +51,7 @@ body {
 .friendStar {
   font-size: large;
   float: left;
-  margin-left: 0.6rem;
-  padding-top: 0.6rem;
+  margin-left: 0.2rem;
   color: #d9e62b;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
@@ -1290,30 +1289,16 @@ textarea {
   font-size: 14px;
   font-weight: 600;
   color: #696f7e;
-  margin-bottom: 5;
+  margin-bottom: 5px;
 }
 
-.profile-complteness {
-  position: relative;
-  max-width: 150px;
-  height: 10px;
-  margin: 8px auto;
-  background: #ddd;
-  border-radius: 8px;
-}
-
-.profile-complteness::after {
-  content: "";
-  position: absolute;
-  width: 80%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  background: #f26657;
-}
-
+.sub-header-details2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #696f7e;
+    margin-top: 0.2rem;
+  }
+  
 .profile-hlp-txt {
   font-size: 14px;
   margin: 0;
@@ -1531,6 +1516,14 @@ textarea {
   border: 2px solid #f26657;
   float: left;
 }
+
+.friendImg {
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #f26657;
+    float: left;
+  }
 
 .reviewUser a {
   font-size: 24px;

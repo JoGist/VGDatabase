@@ -51,10 +51,6 @@
             .profile-pic-details
               =image_tag (@user.avatar)
             .grid-item-detailsProfile
-              /.profile-complteness
-              /%p.profile-hlp-txt
-              /%span 75 /
-              /100
             .grid-item-details-button
               %p.profile-hyper-links
                 %a{:href => editProfile_path, "data-method" => "get"} Edit account info 
@@ -86,9 +82,9 @@
             -if @friends.exists?
               - @friends.each do |friend|
                 .grid-item-detailsImg
-                  =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
+                  =image_tag (User.find(friend.friend_id).avatar) ,class: "friendImg"
                   - if (friend.user_id==@user.id)
-                    %a.sub-header-details{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
+                    %a.sub-header-details2{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
                   - if (friend.favorite == "true")
                     %a.mdi.mdi-star.friendStar
             -else

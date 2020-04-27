@@ -66,7 +66,7 @@
                 %i.mdi.mdi-account-remove
               - else 
                 %a{:href => friend_path(@user), "data-method" => "put"} Add to friends
-                %i.mdi.mdi-account-remove
+                %i.mdi.mdi-account-plus
           .account-grid-item-2
             .grid-item-details
               %h5.sub-header-details Username:
@@ -139,6 +139,7 @@
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
+                  - if (review.comments != "")
                     %h5.reviewText #{review.comments}
   - else
     %aside.sidebar.normal
@@ -179,13 +180,13 @@
             .grid-item-details-button
               %p.profile-hyper-links
                 %a{:href => signup_path} Log in to add to your friends
-                %i.mdi.mdi-account-remove
+                %i.mdi.mdi-account-plus
           .account-grid-item-2
             .grid-item-details
               %h5.sub-header-details Username:
               %span #{@user.username}
             .grid-item-details
-              %h5.sub-header-details Email
+              %h5.sub-header-details Email:
               %span Can't view emails as guest
             .grid-item-details
               %h5.sub-header-details Games in your collection:
@@ -256,4 +257,5 @@
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
+                  - if (review.comments != "")
                     %h5.reviewText #{review.comments}
