@@ -54,11 +54,11 @@
             .grid-item-details
               -if (Friend.exists?(:user_id => @users, :friend_id => @user.id))
                 - if (Friend.where(:user_id => @users, :friend_id => @user.id)[0].favorite == "true")
-                  %a.mdi.mdi-star.iconBig.right6{:href => friend_path(@user.id) , "data-method" => "get"}
+                  %a.mdi.mdi-star.iconBig2.right6{:href => friend_path(@user.id) , "data-method" => "get"}
                 - else             
                   %a.mdi.mdi-star-outline.iconBig2.right6{:href => friend_path(@user.id) , "data-method" => "get"}
               -else
-                %a.mdi.mdi-star-outline.iconBig2.right6
+                %a.mdi.mdi-star-outline.iconBig2.right6.hidden
             .grid-item-details-button
               %p.profile-hyper-links
               - if (Friend.exists?(:user_id => @users, :friend_id => @user.id))
