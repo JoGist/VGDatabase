@@ -28,7 +28,10 @@ To intall all required Gems, then run:
 ```sh
 rails server
 ```
-
+Then simply go on this page with your browser of choice and you're done!
+```sh
+localhost:3000/login
+```
 
 ### Other useful command
 Run the integrated Rails console
