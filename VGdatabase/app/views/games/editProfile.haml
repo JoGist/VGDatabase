@@ -113,7 +113,7 @@
                     - if (friend.user_id==@user.id)
                       %a.sub-header-details2{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
                     - if (friend.favorite == "true")
-                      %a.mdi.mdi-star.friendStar
+                      %i.mdi.mdi-star.friendStar
               -else
                 .grid-item-detailsImg
                   %a.sub-header-details You don't have friends

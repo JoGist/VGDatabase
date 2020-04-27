@@ -61,7 +61,7 @@
             %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
             %br
             - if @library.exists?(:game_id => @games)
-              %a.buttonSmall-null
+              %a.buttonSmall{:href => myLibrary_path, "data-method" => "get"}
                 %span.sidebar__nav__text Already in library
             - else
               %a.buttonSmall{:href => game_mylibraries_path(@games), "data-method" => "post"}
