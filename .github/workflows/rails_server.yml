@@ -15,9 +15,9 @@ jobs:
       with:
         ruby-version: 2.7.x
         nodejs-version: 10.x
+        libsqlite3-dev: 3.x
     - name: Budler installation
       run: |
-        apt-get install libsqlite3-dev
         pwd
         ls
         cd VGdatabase
