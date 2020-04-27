@@ -9,7 +9,7 @@ def signing
         password = params[:user][:password]
         name1 = params[:user][:name1]
         password1 = params[:user][:password1]
-        if password == password1 && name1 != 'admin' && password != 'admin'
+        if password == password1 && (!User.exists?(:username => 'admin',:password => 'admin'))
             @users = User.create(:email => name, :password => password, :username => name1, :avatar => 'Avatars/avatar_0')
             redirect_to login_path
         else

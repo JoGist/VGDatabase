@@ -208,12 +208,6 @@ skip_before_action :verify_authenticity_token
     def deletingUser
     end
 
-    def deletingUser_success
-    end
-
-    def deletingUser_error
-    end
-
     def deletingAdminUser
         name = params[:user][:name]
         if name == 'admin'
@@ -222,11 +216,18 @@ skip_before_action :verify_authenticity_token
             if User.exists?(User.where(:username => name))
                 @user = User.where(:username => name)[0].id
                 User.delete(@user)
-                @result = 'Deleted'
                 redirect_to deletingUser_success_path
             else
                 redirect_to deletingUser_error_path
             end
         end
     end
+
+    def deletingUser_success
+    end
+
+    def deletingUser_error
+    end
+
+
 end
