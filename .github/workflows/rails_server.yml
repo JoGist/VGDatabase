@@ -16,12 +16,12 @@ jobs:
         ruby-version: 2.7.x
         nodejs-version: 10.x
     - name: Budler installation
-      working-directory: ../../VGDatabase/VGDatabase
+      working-directory: VGDatabase
       run: |
         gem install bundler
         gem install rails
         bundle install
     - name: Rails server
-      working-directory: ../../VGDatabase/VGDatabase
+      working-directory: VGDatabase
       run: |
         rails server
