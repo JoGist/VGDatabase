@@ -17,7 +17,7 @@ jobs:
         nodejs-version: 10.x
     - name: Budler installation
       run: |
-        cd VGDatabase
+        pwd
         gem install bundler
         gem install rails
         bundle install
