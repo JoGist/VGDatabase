@@ -1,4 +1,3 @@
-# VGDatabase
 ![logo/logo-normal.png](logo/logo-normal.png)
 VGDatabase (VGDB) is a platform designed and built for gamers by gamers.
 
