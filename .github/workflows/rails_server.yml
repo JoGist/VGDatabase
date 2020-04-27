@@ -15,7 +15,7 @@ jobs:
       with:
         ruby-version: 2.7.x
         nodejs-version: 10.x
-        libsqlite3-dev: 3.x
+        libsqlite3-dev-version: 3.x
     - name: Budler installation
       run: |
         pwd
