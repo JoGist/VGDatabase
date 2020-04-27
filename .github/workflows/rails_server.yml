@@ -24,5 +24,6 @@ jobs:
         ls
         gem install bundler
         gem install rails
+        gem install sqlite3
         bundle install
         rails server
