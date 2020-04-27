@@ -20,6 +20,8 @@ jobs:
       run: |
         gem install bundler
         gem install rails
-        bundle install --jobs 4 --retry 3
-        rake:db migrate
+        bundle install
+    - name: Rails server
+      working-directory: /VGDatabase
+      run: |
         rails server
