@@ -19,6 +19,9 @@ jobs:
       run: |
         pwd
         ls
+        cd VGdatabase
+        pwd
+        ls
         gem install bundler
         gem install rails
         bundle install
