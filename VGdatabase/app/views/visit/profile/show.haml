@@ -94,11 +94,9 @@
             -if @friends.exists?
               - @friends.each do |friend|
                 .grid-item-detailsImg
-                  =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg" 
+                  =image_tag (User.find(friend.friend_id).avatar) ,class: "friendImg"
                   - if (friend.user_id==@user.id)
-                    %a.sub-header-details{:href => myProfile_path, "data-method" => "get"} #{User.find(friend.friend_id).username}
-                  - else 
-                    %a.sub-header-details{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
+                    %a.sub-header-details2{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
             -else
               .grid-item-detailsImg
                 %a.sub-header-details This user doesen't have friends
@@ -205,21 +203,15 @@
           .account-grid-item-3
             .grid-item-details
               %span Friends
-            .grid-item-detailsImg
-              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-              %span.sub-header-details Friend_1
-            .grid-item-detailsImg
-              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-              %span.sub-header-details Friend_2
-            .grid-item-detailsImg
-              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-              %span.sub-header-details Friend_3
-            .grid-item-detailsImg
-              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}/
-              %span.sub-header-details Friend_4
-            .grid-item-detailsImg
-              %img.imgSmall{:src => "https://i.redd.it/2z5wphiaimg41.png"}
-              %span.sub-header-details Friend_5
+            -if @friends.exists?
+              - @friends.each do |friend|
+                .grid-item-detailsImg
+                  =image_tag (User.find(friend.friend_id).avatar) ,class: "friendImg"
+                  - if (friend.user_id==@user.id)
+                    %a.sub-header-details2{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
+            -else
+              .grid-item-detailsImg
+                %a.sub-header-details This user doesen't have friends
         %br/
         %br/
         %div

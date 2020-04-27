@@ -1,7 +1,7 @@
 !!!
 %html{:lang => "en", class: "container"}
   %head
-    %title Search - VGDatabase
+    %title #{@game.title} - VGDatabase
   %body.visible
     %aside.sidebar.normal
       %nav
@@ -44,7 +44,7 @@
             %h4 Release date: #{@game.release_date.strftime('%d %B %Y')}
             %br
             %a.buttonSmall{:href => signup_path, "data-method" => "get"}
-              %i.mdi.mdi-login
+              %i.mdi.mdi-logout-variant
               %span.hidden . 
               %span.sidebar__nav__text Sign up to Add 
             %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@game.title}&i=videogames", :target => "_blank"}
