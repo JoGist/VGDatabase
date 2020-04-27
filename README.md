@@ -29,4 +29,5 @@ rails server
 *   **Marco Musciaglia** - musciaglia.1816864@studenti.uniroma1.it - [GitHub](https://github.com/loldlink)
 *   **Matteo Sabatini** - sabatini.1794627@studenti.uniroma1.it - [GitHub](https://github.com/ZioSaba)
 
-        
+
+![logo/logo-normal.png](logo/logo-normal.png)
