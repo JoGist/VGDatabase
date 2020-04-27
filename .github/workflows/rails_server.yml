@@ -18,6 +18,7 @@ jobs:
     - name: Budler installation
       run: |
         pwd
+        ls
         gem install bundler
         gem install rails
         bundle install
