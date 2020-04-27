@@ -16,9 +16,8 @@ jobs:
         ruby-version: 2.7.x
         nodejs-version: 10.x
     - name: Budler installation
-      working-directory: /VGDatabase
       run: |
-        cd ../../VGDatabase
+        cd VGDatabase
         gem install bundler
         gem install rails
         bundle install
