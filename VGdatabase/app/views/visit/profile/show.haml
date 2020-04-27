@@ -54,28 +54,28 @@
             .grid-item-details
               -if (Friend.exists?(:user_id => @users, :friend_id => @user.id))
                 - if (Friend.where(:user_id => @users, :friend_id => @user.id)[0].favorite == "true")
-                  %a.mdi.mdi-star.iconBig2.right{:href => friend_path(@user.id) , "data-method" => "get"}
+                  %a.mdi.mdi-star.iconBig.right6{:href => friend_path(@user.id) , "data-method" => "get"}
                 - else             
-                  %a.mdi.mdi-star-outline.iconBig2.right{:href => friend_path(@user.id) , "data-method" => "get"}
+                  %a.mdi.mdi-star-outline.iconBig2.right6{:href => friend_path(@user.id) , "data-method" => "get"}
               -else
-                %a.mdi.mdi-star-outline.iconBig2.right
+                %a.mdi.mdi-star-outline.iconBig2.right6
             .grid-item-details-button
               %p.profile-hyper-links
               - if (Friend.exists?(:user_id => @users, :friend_id => @user.id))
                 %a{:href => friend_path(@user), "data-method" => "delete"} Remove from friends
                 %i.mdi.mdi-account-remove
               - else 
-                %a{:href => friend_path(@user), "data-method" => "put"} Add from friends
+                %a{:href => friend_path(@user), "data-method" => "put"} Add to friends
                 %i.mdi.mdi-account-remove
           .account-grid-item-2
             .grid-item-details
               %h5.sub-header-details Username:
               %span #{@user.username}
             .grid-item-details
-              %h5.sub-header-details Email
+              %h5.sub-header-details Email:
               %span #{@user.email}
             .grid-item-details
-              %h5.sub-header-details Games in your collection:
+              %h5.sub-header-details Games in his library:
               %span #{@library.length}
             .grid-item-details
               %h5.sub-header-details Linked accounts:
@@ -101,7 +101,7 @@
                     %a.sub-header-details{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
             -else
               .grid-item-detailsImg
-                Questa persona non ha amici
+                %a.sub-header-details This user doesen't have friends
         %br/
         %br/
         %div
