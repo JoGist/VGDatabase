@@ -15,6 +15,7 @@ jobs:
       with:
         ruby-version: 2.7.x
         nodejs-version: 10.x
+        libsqlite3-dev-version:  x
     - name: Budler installation
       run: |
         pwd
@@ -24,6 +25,5 @@ jobs:
         ls
         gem install bundler
         gem install rails
-        gem install sqlite3
-        bundle install
+        bundle install --jobs 4 --retry 3
         rails server
