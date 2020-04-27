@@ -18,7 +18,7 @@ jobs:
     - name: Budler installation
       working-directory: /VGDatabase
       run: |
-        ../../VGDatabase
+        cd ../../VGDatabase
         gem install bundler
         gem install rails
         bundle install
