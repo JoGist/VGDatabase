@@ -104,14 +104,14 @@
                 %span.sub-header-details This user doesen't have friends
         %br/
         %br/
-        - @games.each do |game|
-        - if @library.exists?(:game_id => game.id)
+        - @library.each do |game|
+          - @games = Game.find(game.game_id)
           .card
             .content.cardPadding
-              %p.description Genre: #{game.genre}
-              %p.description Platforms: #{game.platform}
-              %a.btn{:href => game_path(game), "data-method" => "get"} View info 
-            %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+              %p.description Genre: #{@games.genre}
+              %p.description Platforms: #{@games.platform}
+              %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
+            %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
         %br/
         %br/
         %div
@@ -228,14 +228,14 @@
                 %span.sub-header-details This user doesen't have friends
         %br/
         %br/
-        - @games.each do |game|
-        - if @library.exists?(:game_id => game.id)
+        - @library.each do |game|
+          - @games = Game.find(game.game_id)
           .card
             .content.cardPadding
-              %p.description Genre: #{game.genre}
-              %p.description Platforms: #{game.platform}
-              %a.btn{:href => game_path(game), "data-method" => "get"} View info 
-            %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+              %p.description Genre: #{@games.genre}
+              %p.description Platforms: #{@games.platform}
+              %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
+            %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
         %br/
         %br/
         %div
