@@ -19,12 +19,10 @@ jobs:
     - name: Budler installation
       run: |
         pwd
-        ls
         cd VGdatabase
         pwd
-        ls
         gem install bundler
         gem install rails
         gem update --system
-        bundle install --jobs 4 --retry 3
+        sudo bundle install --jobs 4 --retry 3
         rails server
