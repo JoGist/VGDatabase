@@ -83,7 +83,7 @@
                   %h6.right5 Add a review
                   %i.mdi.mdi-plus.right5
               %h5 Reviews
-              -if (@review.length==0)
+              -if (@review.length==0 && @aux.length==0)
                 %h5.reviewText This game doesen't have any review
             .reviewDiv
               - @review.each do |review|
