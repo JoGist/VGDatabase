@@ -16,7 +16,7 @@ jobs:
         ruby-version: 2.7.x
         nodejs-version: 10.x
         libsqlite3-dev-version: 3.x
-    - name: Budler installation
+    - name: Bundle install
       run: |
         sudo apt-get install -y sqlite3 libsqlite3-dev
         pwd
@@ -26,4 +26,8 @@ jobs:
         gem install rails
         gem update --system
         bundle install --jobs 4 --retry 5 --redownload
+    - name: Rails server
+      run: |
+        pwd
         rails server
+        ping localhost:3000
