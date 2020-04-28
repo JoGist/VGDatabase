@@ -96,12 +96,12 @@
                 .grid-item-detailsImg
                   =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg" 
                   - if (friend.user_id==@user.id)
-                    %a.sub-header-details{:href => myProfile_path, "data-method" => "get"} #{User.find(friend.friend_id).username}
+                    %a.sub-header-details2{:href => myProfile_path, "data-method" => "get"} #{User.find(friend.friend_id).username}
                   - else 
-                    %a.sub-header-details{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
+                    %a.sub-header-details2{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
             -else
               .grid-item-detailsImg
-                %a.sub-header-details This user doesen't have friends
+                %span.sub-header-details This user doesen't have friends
         %br/
         %br/
         %div
@@ -210,12 +210,12 @@
                 .grid-item-detailsImg
                   =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg" 
                   - if (friend.user_id==@user.id)
-                    %a.sub-header-details #{User.find(friend.friend_id).username}
+                    %span.sub-header-details2 #{User.find(friend.friend_id).username}
                   - else 
-                    %a.sub-header-details #{User.find(friend.friend_id).username}
+                    %span.sub-header-details2 #{User.find(friend.friend_id).username}
             -else
               .grid-item-detailsImg
-                %a.sub-header-details This user doesen't have friends
+                %span.sub-header-details This user doesen't have friends
         %br/
         %br/
         %div

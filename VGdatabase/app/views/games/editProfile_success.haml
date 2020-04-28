@@ -152,6 +152,7 @@
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
+                  - if (review.comments != "")
                     %h5.reviewText #{review.comments}
             .overlay
               .popup

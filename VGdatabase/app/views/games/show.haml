@@ -110,7 +110,9 @@
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
-                  - if (review.comments != "")
+                  -if (@review.length==0)
+                    %h5.reviewText This game doesen't have any review
+                  - elsif (review.comments != "")
                     %h5.reviewText #{review.comments}
               
               - @aux.each do |review|

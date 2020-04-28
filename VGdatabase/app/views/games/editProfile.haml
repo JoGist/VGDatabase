@@ -111,7 +111,7 @@
                   .grid-item-detailsImg
                     =image_tag (User.find(friend.friend_id).avatar) ,class: "friendImg"
                     - if (friend.user_id==@user.id)
-                      %a.sub-header-details2{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
+                      %span.sub-header-details2{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
                     - if (friend.favorite == "true")
                       %i.mdi.mdi-star.friendStar
               -else
@@ -157,4 +157,5 @@
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
+                  - if (review.comments != "")
                     %h5.reviewText #{review.comments}

@@ -4,19 +4,19 @@ def login
 end
 def signup
 end
-def signing
+def signin
         name = params[:user][:name]
         password = params[:user][:password]
         name1 = params[:user][:name1]
         password1 = params[:user][:password1]
         if User.exists?(:email => name)         # Vede se esiste già la mail
-            redirect_to login_error_mail_path
+            redirect_to signup_error_mail_path
         elsif name1 == 'admin'                  # Non può creare un nuovo admin
-            redirect_to login_error_path
+            redirect_to signup_error_username_path
         elsif User.exists?(:username => name1)  # Username già esistente
-            redirect_to login_error_username_path
+            redirect_to signup_error_username_path
         elsif password != password1             # Password non coincidono    
-            redirect_to login_error_password_path
+            redirect_to signup_error_password_path
         else                                    # Controlli a buon fine
             @users = User.create(:email => name, :password => password, :username => name1, :avatar => 'Avatars/avatar_0')
             redirect_to login_path
@@ -45,13 +45,13 @@ end
 def login_error
 end
 
-def login_error_mail
+def signup_error_mail
 end
 
-def login_error_username
+def signup_error_username
 end
 
-def login_error_password
+def signup_error_password
 end
 
 def forgot_password
