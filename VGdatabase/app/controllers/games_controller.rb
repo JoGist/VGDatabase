@@ -202,7 +202,21 @@ skip_before_action :verify_authenticity_token
     end
 
     def deletingReviewsUser
-        redirect_to settings_path
+        user1 = params[:user][:name]
+        game1 = params[:game][:title]
+        if(User.exists?(:username => user1) && Game.exists?(:title => game1))
+            @user = User.where(:username => user1)[0].id
+            @game = Game.where(:title => game1)[0].id
+            if(Review.exists?(:user_id => @user,:game_id => @game))
+                @review = Review.where(:user_id => @user,:game_id => @game)[0].id
+                Review.delete(@review)
+                redirect_to deleteReviewsUser_success_path
+            else 
+                redirect_to deleteReviewsUser_error_path
+            end
+        else 
+            redirect_to deleteReviewsUser_error_path
+        end
     end
 
     def deletingUser
