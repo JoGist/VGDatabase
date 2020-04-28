@@ -87,3 +87,5 @@ yarn-debug.log*
 /.vscode
 /VGDatabase/.vscode
 VGdatabase/tmp/pids/server.pid
+*.pid
+VGdatabase/tmp/pids/server.pid
