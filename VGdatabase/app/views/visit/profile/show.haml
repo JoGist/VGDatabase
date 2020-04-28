@@ -104,14 +104,19 @@
                 %span.sub-header-details This user doesen't have friends
         %br/
         %br/
-        - @library.each do |game|
-          - @games = Game.find(game.game_id)
-          .card
-            .content.cardPadding
-              %p.description Genre: #{@games.genre}
-              %p.description Platforms: #{@games.platform}
-              %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
-            %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
+        %div
+          .reviewHeader
+            %h5 #{@user.username}'s library
+          .reviewDiv
+            .reviewUser
+              - @library.each do |game|
+                - @games = Game.find(game.game_id)
+                .card
+                  .content.cardPadding
+                    %p.description Genre: #{@games.genre}
+                    %p.description Platforms: #{@games.platform}
+                    %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
+                  %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
         %br/
         %br/
         %div
@@ -228,14 +233,19 @@
                 %span.sub-header-details This user doesen't have friends
         %br/
         %br/
-        - @library.each do |game|
-          - @games = Game.find(game.game_id)
-          .card
-            .content.cardPadding
-              %p.description Genre: #{@games.genre}
-              %p.description Platforms: #{@games.platform}
-              %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
-            %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
+        %div
+          .reviewHeader
+            %h5 #{@user.username}'s library
+          .reviewDiv
+            .reviewUser
+              - @library.each do |game|
+                - @games = Game.find(game.game_id)
+                .card
+                  .content.cardPadding
+                    %p.description Genre: #{@games.genre}
+                    %p.description Platforms: #{@games.platform}
+                    %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
+                  %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
         %br/
         %br/
         %div
