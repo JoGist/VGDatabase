@@ -93,7 +93,7 @@ def searchingGuestUser
     user = params[:username]
     if User.exists?(User.where(:username => user))
         @users = User.where(:username => user)[0].id
-        render html: 'user trovato'
+        redirect_to visit_profile_path(@users)
     else
         render html: 'user non trovato'
     end
