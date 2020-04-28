@@ -5,3 +5,4 @@ La tabella delle recensioni si chiama GiocoReview ed è composta da utente_di:in
 La tabella dei giochi si chima Videogioco ed è composta dal serial_number:integer, titolo:string, sviluppatore:string, genere:string, piattaforma:string, valutazione:integer, annopubb:timestamp, img_cover:string e link_acquisto:string
 
 
+ok
