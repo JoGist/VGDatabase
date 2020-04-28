@@ -50,18 +50,21 @@
     -else
       %h1 You have #{@lunghezza} games in your favorites
     %div.page-content
-      %a.sort{:href => "#"}
+      %a.sortOnly{:href => "#"}
         %span Sort
         %i.mdi.mdi-filter-variant
-      %a.editText{:href => editFavorites_path, "data-method" => "get"}
-        %span Start editing
-        %i.mdi.mdi-pencil
+      /%a.editText{:href => editFavorites_path, "data-method" => "get"}
+      /  %span Start editing
+      /  %i.mdi.mdi-pencil
       - @library.each do |game|
         - if (game.user_id == @user.id) 
           - @games = Game.find(game.game_id)
           /%h2 Il gioco cercato ha id #{@games.id}, si chiama #{@games.title} ed appartiene a #{@user.username} 
           .card
-            %a.mdi.mdi-star.dot
+            - if (game.favorite == "true")
+              %a.mdi.mdi-star.dot{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "put"}
+            - else             
+              %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "put"}
             /only present if the game is in your library and not in favorites
             /if the game is in favorites, the the full star should appear
             .content.cardPadding
