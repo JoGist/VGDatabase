@@ -50,8 +50,7 @@
             %img.fullSize{:alt => "Game image cover", :src => "#{@games.cover}"}
             %br
             %br
-            %br
-            /%a.mdi.mdi-star.dot{:href => game_mylibrary_path(@games.id,@library.where(:game_id => @games.id)[0].id), "data-method" => "put"}           
+            %br  
           %li.gameInfo
             %h2 Title: #{@games.title}
             %h4 Developer: #{@games.developer}

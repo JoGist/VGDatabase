@@ -108,7 +108,7 @@
           .reviewHeader
             %h5 #{@user.username}'s library
           .reviewDiv
-            .reviewUser
+            .userLibrary
               - @library.each do |game|
                 - @games = Game.find(game.game_id)
                 .card

@@ -1,5 +1,4 @@
 /*Each link has five different states: link, hover, active, focus and visited.
-
 Link is the normal appearance, hover is when you mouse over, active is the state when it's clicked, focus follows active and visited is the state you end up when you unfocus the recently clicked link.*/
 
 *,
@@ -1545,6 +1544,31 @@ textarea {
   color: #f26657;
 }
 
+.userLibrary {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  background-color: #333;
+  color: #f26657;
+}
+
+.userLibrary a {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.userLibrary a:hover {
+  background-color: #222;
+  border: 1px solid #fff;
+}
+
 .reviewHeader {
   padding: 10px;
   border: 1px solid #444;
@@ -1558,16 +1582,6 @@ textarea {
 
 .reviewHeader a:hover {
   color: #f26657;
-}
-
-.reviewHeader a2 {
-  cursor: default;
-  color: #fff;
-}
-
-.reviewHeader a2:hover {
-  cursor: default;
-  color: #fff;
 }
 
 .reviewHeader h5 {
