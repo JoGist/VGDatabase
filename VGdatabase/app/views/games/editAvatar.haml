@@ -10,11 +10,9 @@
     %div.wrapper
       %ul
         - @avatar.each do |avatar|
-          = form_tag :method => :post do
-            %input.hidden{:name => 'avatar' , :value => avatar.avatar}
-            %li
-              %a.overlay-container
+          %li
+            = form_tag :method => :post do
+              %input.hidden2{:name => 'avatar' , :value => avatar.avatar}
+              %a.overlay-container{"data-overlay-text" => "select"}
                 =image_tag (avatar.avatar)
-            %button.button{:type => "submit"} Save changes
-
-
+                %button.btn2{:type => "submit"}

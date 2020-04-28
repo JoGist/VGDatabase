@@ -31,6 +31,10 @@ body {
   opacity: 0;
 }
 
+.hidden2 {
+    display: none;
+  }
+
 .iconBig {
   font-size: x-large;
   color: #fff;
@@ -89,6 +93,13 @@ a:hover {
   color: #f26657;
 }
 
+a button {
+  text-decoration: none;
+  color: #f26657;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 .buttonSmall:hover {
   color: #fff;
   border: 1px solid #fff;
@@ -97,6 +108,10 @@ a:hover {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+form_tag {
+  visibility: hidden;
 }
 
 .imgCentered {
@@ -750,6 +765,15 @@ a:hover {
   border: 1px solid #fff;
 }
 
+.btn2 {
+    cursor: pointer;
+    margin-left: -180px;
+    height: 180px;
+    width: 180px;
+    background-color: rgba(51, 51, 51, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+
 @media (hover: hover) and (min-width: 600px) {
   .card:after {
     -webkit-transform: translateY(0);
@@ -945,6 +969,13 @@ a:hover {
 .sidebar .sidebar__nav i {
   font-size: 2rem;
 }
+
+.img3 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: 1px solid #fff;
+  }
 
 .left-4 {
   margin-left: -4px;
@@ -1661,10 +1692,10 @@ textarea {
 .wrapper li {
   display: inline-block;
   overflow: hidden;
-  max-height: 200px;
+  max-height: 190px;
 }
 .wrapper img {
-  width: 200px;
+  width: 190px;
   height: 20%;
 }
 .wrapper .overlay-container {

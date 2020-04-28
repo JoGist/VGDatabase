@@ -31,7 +31,7 @@
               %span.sidebar__nav__text Friends
           %li.active
             %a.sidebar__nav__link_plain{}
-              %i.mdi.mdi-account-circle
+              =image_tag (@user.avatar), class: "img3"
               %span.sidebar__nav__text My account
           %li
             %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
