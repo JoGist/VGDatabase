@@ -96,27 +96,28 @@
                 .grid-item-detailsImg
                   =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg" 
                   - if (friend.user_id==@user.id)
-                    %a.sub-header-details2{:href => myProfile_path, "data-method" => "get"} #{User.find(friend.friend_id).username}
+                    %span{:href => myProfile_path, "data-method" => "get"} #{User.find(friend.friend_id).username}
                   - else 
-                    %a.sub-header-details2{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
+                    %span{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
             -else
               .grid-item-detailsImg
-                %span.sub-header-details This user doesen't have friends
-        %br/
-        %br/
-        %div
-          .reviewHeader
-            %h5 #{@user.username}'s library
-          .reviewDiv
-            .userLibrary
-              - @library.each do |game|
-                - @games = Game.find(game.game_id)
-                .card
-                  .content.cardPadding
-                    %p.description Genre: #{@games.genre}
-                    %p.description Platforms: #{@games.platform}
-                    %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
-                  %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
+                %span This user doesen't have friends
+        - if (@library.length>0)
+          %br/
+          %br/
+          %div
+            .reviewHeader
+              %h5 #{@user.username}'s library
+            .reviewDiv
+              .userLibrary
+                - @library.each do |game|
+                  - @games = Game.find(game.game_id)
+                  .card
+                    .content.cardPadding
+                      %p.description Genre: #{@games.genre}
+                      %p.description Platforms: #{@games.platform}
+                      %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
+                    %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
         %br/
         %br/
         %div
@@ -126,7 +127,7 @@
             - if (@review.length==0)
               .reviewUser
                 %div{:href => "#"}
-                  %h6 #{@user.username} don't have any reviews
+                  %h6 This user don't have any reviews
             - else
               - @review.each do |review|
                 - @game = Game.find(review.game_id)

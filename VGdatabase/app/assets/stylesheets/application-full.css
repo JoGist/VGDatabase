@@ -1,6 +1,3 @@
-/*Each link has five different states: link, hover, active, focus and visited.
-Link is the normal appearance, hover is when you mouse over, active is the state when it's clicked, focus follows active and visited is the state you end up when you unfocus the recently clicked link.*/
-
 *,
 :before,
 :after {
@@ -51,7 +48,7 @@ body {
   font-size: large;
   float: left;
   margin-left: 0.6rem;
-  padding-top: 0.6rem;
+  padding-top: 1.2rem;
   color: #d9e62b;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
@@ -1132,7 +1129,7 @@ a:hover {
   width: 30%;
   max-width: 300px;
   min-width: 300px;
-  height: 283px;
+  height: 287px;
   text-align: center;
   margin-right: 12px;
 }
@@ -1164,6 +1161,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   border: 1px solid #444;
+  border-bottom: 0px;
   border-radius: 2px;
   width: 25%;
   max-width: 500px;
@@ -1242,23 +1240,28 @@ textarea {
   padding: 8px;
   border-bottom: 1px solid #444;
   background-color: #333;
-  color: #f26657;
+  color: #696f7e;
   padding: 10px;
 }
 
 .grid-item-detailsImg span {
   cursor: default;
   padding-left: 1rem;
-  padding-top: 0.8rem;
+  padding-top: 1.2rem;
   float: left;
 }
 
 .grid-item-detailsImg a {
   cursor: pointer;
   padding-left: 1rem;
-  padding-top: 0.8rem;
+  padding-top: 1.2rem;
+  color: #696f7e;
   float: left;
 }
+
+.grid-item-detailsImg a:hover {
+    color: #fff;
+  }
 
 .grid-item-details:last-child {
   border-bottom: initial;
@@ -1500,6 +1503,7 @@ textarea {
   overflow-y: auto;
   overflow-x: hidden;
   border: 1px solid #444;
+  border-bottom: 0px;
   border-radius: 2px;
   width: 100%;
   height: auto;
@@ -1572,6 +1576,7 @@ textarea {
 .reviewHeader {
   padding: 10px;
   border: 1px solid #444;
+  border-bottom: 0px;
   background-color: #333;
   color: #f26657;
 }
