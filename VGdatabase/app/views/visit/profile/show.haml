@@ -104,6 +104,41 @@
                 %span.sub-header-details This user doesen't have friends
         %br/
         %br/
+        - @games.each do |game|
+        - if @library.exists?(:game_id => game.id)
+          .card
+            - if (@library.where(:game_id => game.id)[0].favorite == "true")
+              %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            - else             
+              %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            .content.cardPadding
+              %p.description Genre: #{game.genre}
+              %p.description Platforms: #{game.platform}
+              %a.btn{:href => game_path(game), "data-method" => "get"} View info 
+            %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+        - elsif @library.exists?(:game_id => game.id) && game.favorite == 'true'
+          .card
+            - if (@library.where(:game_id => game.id)[0].favorite == "true")
+              %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            - else             
+              %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            .content.cardPadding
+              %p.description Genre: #{game.genre}
+              %p.description Platforms: #{game.platform}
+              %a.btn{:href => game_path(game), "data-method" => "get"} View info 
+            %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+        -else  
+          .card
+            .content.cardPadding
+              %p.description Genre: #{game.genre}
+              %p.description Platforms: #{game.platform}
+              %a.btn{:href => game_path(game), "data-method" => "get"} View info 
+              %a.btn{:href => game_mylibraries_path(game), "data-method" => "post"}
+                %i.mdi.mdi-plus
+                %span.sidebar__nav__text library
+            %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+        %br/
+        %br/
         %div
           .reviewHeader
             %h5 #{@user.username}'s reviews
