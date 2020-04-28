@@ -48,6 +48,7 @@ skip_before_action :verify_authenticity_token
     end
 
     def editAvatar
+        @avatar = Avatar.all
     end
 
     def editingAvatar
