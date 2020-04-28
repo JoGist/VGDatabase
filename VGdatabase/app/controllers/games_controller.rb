@@ -53,8 +53,9 @@ skip_before_action :verify_authenticity_token
 
     def editingAvatar
         @user = User.find(session[:user_id])
-        @user.update_attributes!(:avatar => 'Avatars/avatar_4')
-        redirect_to myProfile_path
+        render hmtl: avatar
+        #@user.update_attributes!(:avatar => avatar)
+        #redirect_to myProfile_path
     end
 
     def editingProfile

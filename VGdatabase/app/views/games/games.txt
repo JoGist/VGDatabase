@@ -1,3 +1,78 @@
+   %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path, "data-method" => "post"}
+              =image_tag ('Avatars/avatar_1')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_2')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_3')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_4')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_5')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_6')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_7')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_8')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_9')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_10')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_11')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_12')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_13')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_14')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_15')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_16')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_17')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_18')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_19')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_20')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_21')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_22')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_23')
+          %li
+            %a.overlay-container{"data-overlay-text" => "select", :href => editAvatar_path,"data-method" => "post"}
+              =image_tag ('Avatars/avatar_24')
+
+
+
 .card
         .content
           /%h2.title Mountain View
