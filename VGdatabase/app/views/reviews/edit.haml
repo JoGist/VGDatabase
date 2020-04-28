@@ -49,7 +49,7 @@
         = form_tag game_review_path(@game,@review), :method => :put do
           .field-wrapAlt
             %input{:name => 'review[comment]', :value => @review.comments,:autocomplete => "off", :type => "text", :maxlength => '250'}/
-          = select :review, :score, ["1 ★","2 ★★","3 ★★★","4 ★★★★","5 ★★★★★"], {:class => ""}
+          = select :review, :score, [1,2,3,4,5]
           %br/
           %br/
           %br/
