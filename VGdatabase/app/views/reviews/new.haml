@@ -48,7 +48,7 @@
       .tab-content
         = form_tag game_reviews_path :method => :post do
           .field-wrapAlt
-            %input{:name => 'review[comment]', :placeholder => 'Write your review here' ,:autocomplete => "off", :type => "text"}/
+            %input{:name => 'review[comment]', :value => @review.comments,:autocomplete => "off", :type => "text", :maxlength => '250'}/
           = select :review, :score, raw("<option>1 ★</option><option>2 ★★</option><option>3 ★★★</option><option>4 ★★★★</option><option>5 ★★★★★</option>"), {:class => ""}
           %br/
           %br/

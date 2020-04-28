@@ -9,16 +9,17 @@ def signing
         password = params[:user][:password]
         name1 = params[:user][:name1]
         password1 = params[:user][:password1]
-        if password == password1 && (!User.exists?(:username => name1))
-            if (name1 == 'admin' && password == 'admin' && (!User.exists?(:username => 'admin',:password => 'admin')))
-                @users = User.create(:email => name, :password => password, :username => name1, :avatar => 'Avatars/avatar_0')
-                redirect_to login_path
-            else 
-                @users = User.create(:email => name, :password => password, :username => name1, :avatar => 'Avatars/avatar_0')
-                redirect_to login_path
-            end
-        else
-            redirect_to signup_path
+        if User.exists?(:email => name)         # Vede se esiste già la mail
+            redirect_to login_error_mail_path
+        elsif name1 == 'admin'                  # Non può creare un nuovo admin
+            redirect_to login_error_path
+        elsif User.exists?(:username => name1)  # Username già esistente
+            redirect_to login_error_username_path
+        elsif password != password1             # Password non coincidono    
+            redirect_to login_error_password_path
+        else                                    # Controlli a buon fine
+            @users = User.create(:email => name, :password => password, :username => name1, :avatar => 'Avatars/avatar_0')
+            redirect_to login_path
         end
 end
 def create
@@ -44,6 +45,14 @@ end
 def login_error
 end
 
+def login_error_mail
+end
+
+def login_error_username
+end
+
+def login_error_password
+end
 
 def forgot_password
 end
@@ -51,18 +60,22 @@ end
 def forgot_password_error
 end
 
+def forgot_password_error_password
+end
+
 def change_password
     email = params[:user][:name]
     password = params[:user][:password]
     username = params[:user][:name1]
-    if (User.exists?(User.where(:email => email)))
-        @user = User.where(:email => email)[0]
-        if (@user.username == username)
-            @user.update_attributes!(params[:user].permit(:password))
-            redirect_to login_path
-        end
-    else
+    password1 = params[:user][:password1]
+    if (!User.exists?(:email => email) || !User.exists?(:username => username))
         redirect_to forgot_password_error_path
+    elsif password != password1             # Password non coincidono    
+        redirect_to forgot_password_error_password_path
+    else                                    # Controlli a buon fine
+        @user = User.where(:email => email)[0]
+        @user.update_attributes!(params[:user].permit(:password))
+        redirect_to login_path
     end
 end
 
