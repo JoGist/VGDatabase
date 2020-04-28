@@ -18,11 +18,12 @@ jobs:
         libsqlite3-dev-version: 3.x
     - name: Budler installation
       run: |
+        sudo apt-get install -y sqlite3 libsqlite3-dev
         pwd
         cd VGdatabase
         pwd
         gem install bundler
         gem install rails
         gem update --system
-        bundle install --jobs 4 --retry 5 --force
+        bundle install --jobs 4 --retry 5 --redownload
         rails server
