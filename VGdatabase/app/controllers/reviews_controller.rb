@@ -1,6 +1,7 @@
 class ReviewsController < ApplicationController
     skip_before_action :verify_authenticity_token
 def new
+    @user = User.find(session[:user_id])
     game = params[:game_id]
     @games = Game.find(game)
 end
@@ -20,6 +21,7 @@ def create
 end
 
 def edit
+    @user = User.find(session[:user_id])
     id = params[:id]
     game_id = params[:game_id]
     @review = Review.find(Review.where(:user_id => session[:user_id], :game_id => game_id)[0].id)

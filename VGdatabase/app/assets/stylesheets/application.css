@@ -1232,6 +1232,27 @@ textarea {
   min-height: 100%;
   min-width: 100%;
 }
+.backgroundImg {
+  z-index: -2;
+  background: linear-gradient(rgba(20, 17, 31, 0.8), rgba(20, 17, 31, 0.8));
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 500ms;
+  visibility: visible;
+}
+.background2 {
+  z-index: -2;
+  background: linear-gradient(rgba(20, 17, 31, 0.8), rgba(20, 17, 31, 0.8));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+}
 .overlayImg {
   left: 50%;
   margin-left: -123px;
@@ -1243,6 +1264,27 @@ textarea {
   align-items: center;
   justify-content: center;
   position: absolute;
+}
+.backgroundImg2 {
+  z-index: -1;
+  background: linear-gradient(rgba(20, 17, 31, 0.8), rgba(20, 17, 31, 0.8));
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 500ms;
+  visibility: visible;
+}
+.background2 {
+  z-index: -1;
+  background: linear-gradient(rgba(20, 17, 31, 0.8), rgba(20, 17, 31, 0.8));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
 }
 .overlayImg i span {
   opacity: 0;

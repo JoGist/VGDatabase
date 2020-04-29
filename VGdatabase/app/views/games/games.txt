@@ -90,6 +90,12 @@
                 =image_tag (avatar.avatar)
 
 
+    .backgroundImg
+      - @background = ["backgroundSimple.png", "https://bisqwit.iki.fi/jutut/kuvat/animmerger/method-c.gif", "https://www.retrogamescollector.com/wp-content/uploads/2015/04/ALOZALTTP.png"]
+      - wp = @background.sample
+      =image_tag (wp), class: "background"
+      .overlay
+
 
 .card
         .content

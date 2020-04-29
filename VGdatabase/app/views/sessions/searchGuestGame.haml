@@ -64,3 +64,7 @@
             %p.description Platforms: #{game.platform}
             %a.btn{:href => game_path(game), "data-method" => "get"} View info 
           %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+    .backgroundImg2
+      - background = "backgroundSimple.png"
+      =image_tag (background), class: "background2"
+      .overlay

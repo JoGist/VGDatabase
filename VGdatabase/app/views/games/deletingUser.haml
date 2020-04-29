@@ -42,3 +42,7 @@
           .field-wrap
             %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "off", :required => "", :type => "text"}/
           %button.button delete
+    .backgroundImg2
+      - background = "backgroundSimple.png"
+      =image_tag (background), class: "background2"
+      .overlay
