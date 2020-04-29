@@ -131,6 +131,11 @@ form_tag {
   float: right;
   padding-top: 11.5rem;
 }
+.gameStar {
+  float: left;
+  margin-left: 4.5rem;
+  margin-top: -5.5rem;
+}
 .left {
   float: left;
   margin-top: -5px;

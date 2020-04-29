@@ -50,13 +50,47 @@
             %img.fullSize{:alt => "Game image cover", :src => "#{@games.cover}"}
             %br
             %br
-            %br  
+            %br
+            - score = 0
+            - @review.each do |review|
+              - score = score+review.score
+            - @aux.each do |aux|
+              - score = score+aux.score
+            - score = score/(@review.length+@aux.length) 
           %li.gameInfo
             %h2 Title: #{@games.title}
             %h4 Developer: #{@games.developer}
             %h4 Genre: #{@games.genre}
-            %h4 Platform: #{@games.platform}
-            %h4 Score: #{@games.score}
+            %h4 Platform: #{@games.platform}   
+            %h4 Score:
+            - if (score==0)
+              %h4 Score: 
+              %h5 No review
+            - elsif (score==1)
+              %div.gameStar
+                %i.mdi.mdi-star.reviewStar
+            - elsif (score==2)
+              %div.gameStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+            - elsif (score==3)
+              %div.gameStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+            - elsif (score==4)
+              %div.gameStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+            - else
+              %div.gameStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
             %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
             %br
             - if @library.exists?(:game_id => @games)
