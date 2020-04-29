@@ -245,7 +245,7 @@
                   .content.cardPadding
                     %p.description Genre: #{@games.genre}
                     %p.description Platforms: #{@games.platform}
-                    %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
+                    %a.btn{:href => guest_show_path(@games), "data-method" => "get"} View info 
                   %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
         %br/
         %br/
