@@ -113,6 +113,7 @@ skip_before_action :verify_authenticity_token
     end
 
     def contactUs
+        @user = User.find(session[:user_id])
     end
 
     def settings
@@ -143,6 +144,7 @@ skip_before_action :verify_authenticity_token
     
 
     def searchUser
+        @user = User.find(session[:user_id])
     end
 
     def searchingUser
@@ -157,6 +159,7 @@ skip_before_action :verify_authenticity_token
 
     def searchGame
         @games = Game.all
+        @user = User.find(session[:user_id])
     end
 
     
