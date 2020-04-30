@@ -35,7 +35,7 @@
               =image_tag (User.find(@users).avatar), class: "img3"
               %span.sidebar__nav__text My account
           %li
-            %a.sidebar__nav__link{:href => login_path, "data-method" => "get"}
+            %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
               %i.mdi.mdi-logout-variant
               %span.sidebar__nav__text Log out
           %li
@@ -173,7 +173,7 @@
               %i.mdi.mdi-database-search
               %span.sidebar__nav__text Search
           %li
-            %a.sidebar__nav__link{:href => signup_path}
+            %a.sidebar__nav__link{:href => signup_path, "data-method" => "get"}
               %i.mdi.mdi-logout-variant
               %span.sidebar__nav__text Sign up
           %li

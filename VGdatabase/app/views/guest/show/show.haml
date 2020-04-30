@@ -35,12 +35,44 @@
             %br
             %br
             %br
+            - score = 0
+            - @review.each do |review|
+              - score = score+review.score
+            - score = score/@review.length 
           %li.gameInfo
             %h2 Title: #{@game.title}
             %h4 Developer: #{@game.developer}
             %h4 Genre: #{@game.genre}
             %h4 Platform: #{@game.platform}
-            %h4 Score: #{@game.score}
+            %h4 Score: 
+            - if (score==0)
+              %h4 Score: 
+              %h5 No review
+            - elsif (score==1)
+              %div.gameStar
+                %i.mdi.mdi-star.reviewStar
+            - elsif (score==2)
+              %div.gameStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+            - elsif (score==3)
+              %div.gameStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+            - elsif (score==4)
+              %div.gameStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+            - else
+              %div.gameStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
+                %i.mdi.mdi-star.reviewStar
             %h4 Release date: #{@game.release_date.strftime('%d %B %Y')}
             %br
             %a.buttonSmall{:href => signup_path, "data-method" => "get"}
