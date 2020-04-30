@@ -78,15 +78,15 @@ skip_before_action :verify_authenticity_token
             redirect_to editProfile_success_path
         elsif username.length!=0 && email.length==0 && oldp.length==0
             @user.update_attributes!(:username => username)
-            redirect_to editProfile_success_path        
+            redirect_to editProfile_success_path
         elsif username.length==0 && email.length!=0 && oldp.length==0
             @user.update_attributes!(:email => email)
-            redirect_to editProfile_success_path      
+            redirect_to editProfile_success_path
         elsif username.length!=0 && email.length!=0 && oldp.length==0
             @user.update_attributes!(:email => email, :username => username)
-            redirect_to editProfile_success_path                                       
+            redirect_to editProfile_success_path
         else
-            redirect_to editProfile_error_path        
+            redirect_to editProfile_error_path
         end
     end
 
@@ -141,7 +141,7 @@ skip_before_action :verify_authenticity_token
         redirect_to login_path
     end
 
-    
+
 
     def searchUser
         @user = User.find(session[:user_id])
@@ -162,7 +162,7 @@ skip_before_action :verify_authenticity_token
         @user = User.find(session[:user_id])
     end
 
-    
+
     def searchingGame
         search = params[:search]
         genre = params[:game][:genre]
@@ -178,10 +178,10 @@ skip_before_action :verify_authenticity_token
                  @games = Game.where(:developer => search)
                  render html: ''
             end
-        end         
+        end
     end
-    
-    
+
+
 #admin
 
     def deleteReviewsGame
@@ -203,10 +203,10 @@ skip_before_action :verify_authenticity_token
                     Review.delete(review.id)
                 end
                 redirect_to deleteReviewsGame_success_path
-            else 
+            else
                 redirect_to deleteReviewsGame_error_path
             end
-        else 
+        else
             redirect_to deleteReviewsGame_error_path
         end
     end
@@ -230,10 +230,10 @@ skip_before_action :verify_authenticity_token
                 @review = Review.where(:user_id => @user,:game_id => @game)[0].id
                 Review.delete(@review)
                 redirect_to deleteReviewsUser_success_path
-            else 
+            else
                 redirect_to deleteReviewsUser_error_path
             end
-        else 
+        else
             redirect_to deleteReviewsUser_error_path
         end
     end
@@ -248,8 +248,24 @@ skip_before_action :verify_authenticity_token
         else
             if User.exists?(User.where(:username => name))
                 @user = User.where(:username => name)[0].id
+                @friends = Friend.where(:user_id => @user)
+                @friends.each do |friend|
+                    friend.delete
+                end
+                @friends1 = Friend.where(:friend_id => @user)
+                @friends1.each do |friend|
+                    friend.delete
+                end
+                @review = Review.where(:user_id => @user)
+                @review.each do |review|
+                    review.delete
+                end
+                @library = Store.where(:user_id => @user)
+                @library.each do |library|
+                    library.delete
+                end
                 User.delete(@user)
-                redirect_to deletingUser_success_path
+                redirect_to deletingUser_succes_path
             else
                 redirect_to deletingUser_error_path
             end
