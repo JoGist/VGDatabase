@@ -51,12 +51,15 @@
             %br
             %br
             %br
-            - score = 0
-            - @review.each do |review|
-              - score = score+review.score
-            - @aux.each do |aux|
-              - score = score+aux.score
-            - score = score/(@review.length+@aux.length) 
+            - if (@review.length != 0 || @aux.length != 0)
+              - score = 0
+              - @review.each do |review|
+                - score = score+review.score
+              - @aux.each do |aux|
+                - score = score+aux.score
+              - score = score/(@review.length+@aux.length) 
+            - else 
+              - score = 0
           %li.gameInfo
             %h2 Title: #{@games.title}
             %h4 Developer: #{@games.developer}
@@ -64,8 +67,7 @@
             %h4 Platform: #{@games.platform}   
             %h4 Score:
             - if (score==0)
-              %h4 Score: 
-              %h5 No review
+              %h4.gameReview no review
             - elsif (score==1)
               %div.gameStar
                 %i.mdi.mdi-star.reviewStar
