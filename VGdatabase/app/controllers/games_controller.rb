@@ -1,6 +1,7 @@
 class GamesController < ApplicationController
 skip_before_action :verify_authenticity_token
-
+    require 'apicalypse'
+    require 'rubygems'
     def homepage
         @user = User.find(session[:user_id])
         @games = Game.all
@@ -163,21 +164,24 @@ skip_before_action :verify_authenticity_token
     end
 
 
-    def searchingGame
+    def searchResult
         search = params[:search]
         genre = params[:game][:genre]
         platform = params[:game][:platform]
         choice = params[:game][:choice]
-        if choice == 'Title'
-            if Game.exists?(Game.where(:title => search, :platform => platform, :genre => genre))
-                @games = Game.where(:title => search, :platform => platform, :genre => genre)[0].id
-                redirect_to game_path(@games)
-            end
-        elsif choice == 'Developer'
-           if Game.exists?(Game.where(:developer => search))
-                 @games = Game.where(:developer => search)
-                 render html: ''
-            end
+        @user = User.find(session[:user_id])
+        if genre == 'none'
+            api_endpoint = 'https://api-v3.igdb.com/games'
+            request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+            api = Apicalypse.new(api_endpoint, request_headers)
+            api
+            .fields(:cover,:name)
+            .search(search)
+            .limit(5)
+            .request
+            @games = api.request
+            #render html: @cover
+
         end
     end
 
