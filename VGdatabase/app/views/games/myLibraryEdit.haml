@@ -45,11 +45,8 @@
     %br/
     %h1 Editing my library
     %div.page-content
-      %a.sort{:href => "#"}
-        %span Sort
-        %i.mdi.mdi-filter-variant
       %a.editText{:href => myLibrary_path, "data-method" => "get"}
-        %span Save changes
+        %span Save
         %i.mdi.mdi-content-save
       - @mylibrary.each do |game|
         - if (game.user_id == @user.id) 
@@ -63,9 +60,4 @@
               %a.btn{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "delete"}
                 %i.mdi.mdi-minus
                 %span.sidebar__nav__text remove
-                /remove the game (hai perso) removes it also from favorites
             %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
-    .backgroundImg2
-      - background = "backgroundSimple.png"
-      =image_tag (background), class: "background2"
-      .overlay

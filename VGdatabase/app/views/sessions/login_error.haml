@@ -1,4 +1,4 @@
-!!! 
+!!!
 %html{:lang => "en", class: "container"}
   %head
     %title Error - VGDatabase
@@ -16,7 +16,6 @@
         %br/ 
         %br/
         %br/
-        /%h1 Welcome Back! 
         %br/
         = form_tag callback_path(), :method => :get do
           .field-wrap
@@ -62,7 +61,3 @@
               %a.close{:href => login_path, "data-method" => "delete"} ×
               .content
                 Invalid credentials, please try again.
-    .backgroundImg2
-      - background = "backgroundSimple.png"
-      =image_tag (background), class: "background2"
-      .overlay

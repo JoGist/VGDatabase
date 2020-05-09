@@ -44,6 +44,7 @@
     %br/
     %h1 Search result
     %div.page-content
+      /%h4.extraMarginLeft 2 results
       - @result.each do |game|
         -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
           -api_endpoint = 'https://api-v3.igdb.com/covers'
@@ -73,11 +74,3 @@
                   %i.mdi.mdi-plus
                   %span.sidebar__nav__text library
             %img.cover{:alt => "Game image cover", :src => "#{@split}"}
-        -else
-          .card
-            .content.cardPadding
-              %p.description Genre: Not found
-              %p.description Platforms: Not found
-            %img.cover{:alt => "Game image cover", :src => "https://cdn.eso.org/images/thumb300y/eso1907a.jpg"}
-
-        

@@ -35,19 +35,20 @@
             %br
             %br
             %br
-            - score = 0
-            - @review.each do |review|
-              - score = score+review.score
-            - score = score/@review.length 
+            - if (@review.length != 0)
+              - score = 0
+              - @review.each do |review|
+                - score = score+review.score
+            - else 
+              - score = 0
           %li.gameInfo
             %h2 Title: #{@game.title}
             %h4 Developer: #{@game.developer}
             %h4 Genre: #{@game.genre}
             %h4 Platform: #{@game.platform}
-            %h4 Score: 
+            %h4 Score:
             - if (score==0)
-              %h4 Score: 
-              %h5 No review
+              %h4.gameReview no review
             - elsif (score==1)
               %div.gameStar
                 %i.mdi.mdi-star.reviewStar
@@ -117,7 +118,3 @@
                   %div{:href => "#"}
                   - if (review.comments != "")
                     %h5.reviewText #{review.comments}
-    .backgroundImg2
-      - background = "backgroundSimple.png"
-      =image_tag (background), class: "background2"
-      .overlay

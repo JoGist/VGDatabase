@@ -28,9 +28,6 @@
     %br/
     %h1 Welcome, please sign up!
     %div.page-content
-      %a.sortOnly{:href => "#"}
-        %span Sort
-        %i.mdi.mdi-filter-variant
       - @games.each do |game|
         .card
           .content.cardPadding

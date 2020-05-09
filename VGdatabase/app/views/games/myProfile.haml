@@ -103,7 +103,6 @@
               - @review.each do |review|
                 - @game = Game.find(review.game_id)
                 .reviewUser
-                  /%img.reviewImg{:src => @user.avatar}
                   =image_tag (@game.cover) ,class: "reviewImg" 
                   %a{:href => game_path(@game)} #{@game.title}
                   - if (review.score==1)

@@ -44,7 +44,6 @@
               %span.sidebar__nav__text Contact us
     %br/
     %h1 Editing my profile
-    /%element{:onbeforeunload => "script"} prompt for unsaved changes
     %div.page-content
       %br/
       = form_tag :method => :post do
@@ -57,7 +56,6 @@
                   %span.hidden _
                   %span change avatar
                   %a.overlayProfileImg{:href => editAvatar_path, "data-method" => "get"}
-                    /%input{:name => "myfile", :type => "file"}/
                 =image_tag (@user.avatar) ,class: "img"
               .grid-item-detailsProfile
               %button.grid-item-details-button-2
@@ -81,7 +79,6 @@
                 %input{:name => 'user[newp]' , :placeholder => 'Enter new password' , :autocomplete => "new-password", :type => "password"}/
                 %br
                 %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "new-password", :type => "password"}/
-                /%span Last changed password on:
               .grid-item-details
                 %h5.sub-header-details Linked accounts:
                 %br
@@ -159,7 +156,4 @@
                   %div{:href => "#"}
                   - if (review.comments != "")
                     %h5.reviewText #{review.comments}
-    .backgroundImg2
-      - background = "backgroundSimple.png"
-      =image_tag (background), class: "background2"
-      .overlay
+

@@ -44,7 +44,6 @@
               %span.sidebar__nav__text Contact us
     %br/
     %h1 Editing my profile
-    /%element{:onbeforeunload => "script"} prompt for unsaved changes
     %div.page-content
       %br/
       = form_tag :method => :post do
@@ -76,13 +75,11 @@
                 %input{:name => 'user[email]' , :placeholder => @user.email , :autocomplete => "off", :type => "email"}/
               .grid-item-details
                 %h5.sub-header-details Password
-                /%span ••••••••
                 %input{:name => 'user[oldp]' , :placeholder => 'Enter current password' , :autocomplete => "off", :type => "password"}/
                 %br
                 %input{:name => 'user[newp]' , :placeholder => 'Enter new password' , :autocomplete => "off", :type => "password"}/
                 %br
                 %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "off", :type => "password"}/
-                /%span Last changed password on:
               .grid-item-details
                 %h5.sub-header-details Linked accounts:
                 %br
@@ -164,7 +161,3 @@
                 %a.close{:href => myProfile_path, "data-method" => "get"} ×
                 .content
                   All changes has been saved.
-    .backgroundImg2
-      - background = "backgroundSimple.png"
-      =image_tag (background), class: "background2"
-      .overlay
