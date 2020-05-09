@@ -44,9 +44,6 @@
     %br/
     %h1 Welcome back, #{@user.username}!
     %div.page-content
-      %a.sortOnly{:href => "#"}
-        %span Sort
-        %i.mdi.mdi-filter-variant
       - @games.each do |game|
         - if @library.exists?(:game_id => game.id)
           .card

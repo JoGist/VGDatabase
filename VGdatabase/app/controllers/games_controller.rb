@@ -105,12 +105,12 @@ skip_before_action :verify_authenticity_token
 
     def show
         id = params[:id]
-        @games = Game.find(id)
+        @games = Game.where(:serial => id)[0]
         @library = Mylibrary.where(:user_id => session[:user_id])
         @user = session[:user_id]
-        @aux = Review.where(:game_id => @games)
+        @aux = Review.where(:game_id => @games.id)
         @aux = @aux.where('user_id != ?', @user)
-        @review = Review.where(:game_id => @games, :user_id => @user)
+        @review = Review.where(:game_id => @games.id, :user_id => @user)
     end
 
     def contactUs
@@ -172,13 +172,14 @@ skip_before_action :verify_authenticity_token
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api
-            .fields(:cover,:genres,:name,:platforms)
-            .search(search)
-            .limit(10)
-            .request
+            api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
             @games = api.request
-            #render html: @games.keys
+
+            api_endpoint = 'https://api-v3.igdb.com/covers'
+            request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+            api = Apicalypse.new(api_endpoint, request_headers)
+            cover = api.fields(:url).where(:id => @games[0].values[1]).request[0]
+            #render html: cover.values[1].split('thumb')[0]+'cover_big_2x'+cover.values[1].split('thumb')[1]
         end
     end
 
