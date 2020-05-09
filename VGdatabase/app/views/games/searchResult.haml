@@ -44,7 +44,7 @@
     %br/
     %h1 Search result
     %div.page-content
-      - @games.each do |game|
+      - @result.each do |game|
         -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
           -api_endpoint = 'https://api-v3.igdb.com/covers'
           -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
@@ -67,7 +67,7 @@
               %p.description Genre: #{@genres}
               %p.description Platforms: #{@platform}
               -if Game.exists?(:serial => game.values[0])
-                %a.btn{:href => game_path(game.values[0]), "data-method" => "get"} View info 
+                %a.btn{:href => game_path(Game.where(:serial => game.values[0])[0].id), "data-method" => "get"} View info 
               -else
                 %a.btn{:href => game_mylibraries_path(game.values[0]), "data-method" => "post"}
                   %i.mdi.mdi-plus
