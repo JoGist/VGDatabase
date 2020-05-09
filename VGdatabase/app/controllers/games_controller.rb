@@ -167,21 +167,18 @@ skip_before_action :verify_authenticity_token
     def searchResult
         search = params[:search]
         genre = params[:game][:genre]
-        platform = params[:game][:platform]
-        choice = params[:game][:choice]
         @user = User.find(session[:user_id])
         if genre == 'none'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api
-            .fields(:cover,:name)
+            .fields(:cover,:genres,:name,:platforms)
             .search(search)
-            .limit(5)
+            .limit(10)
             .request
             @games = api.request
-            #render html: @cover
-
+            #render html: @games.keys
         end
     end
 

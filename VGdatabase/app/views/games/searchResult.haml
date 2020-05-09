@@ -45,14 +45,30 @@
     %h1 Search result
     %div.page-content
       - @games.each do |game|
-        -ciao = game.values[1]
-        -api_endpoint = 'https://api-v3.igdb.com/covers'
-        -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
-        -api = Apicalypse.new(api_endpoint, request_headers)
-        -api.fields(:url).where(:id => ciao ).request
-        -@cover = api.request[0].values[1]
-        .card
-          .content.cardPadding
-          %img.cover{:alt => "Game image cover", :src => "#{@cover}"}
+        -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
+          -api_endpoint = 'https://api-v3.igdb.com/covers'
+          -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+          -api = Apicalypse.new(api_endpoint, request_headers)
+          -@cover = api.fields(:url).where(:id => game.values[1] ).request[0].values[1]
+
+          -api_endpoint = 'https://api-v3.igdb.com/genres'
+          -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+          -api = Apicalypse.new(api_endpoint, request_headers)
+          -@genres = api.fields(:name).where(:id => game.values[2][0] ).request[0].values[1]
+
+          -api_endpoint = 'https://api-v3.igdb.com/platforms'
+          -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+          -api = Apicalypse.new(api_endpoint, request_headers)
+          -@platform = api.fields(:name).where(:id => game.values[4][0] ).request[0].values[1]
+
+          .card
+            .content.cardPadding
+              %p.description Genre: #{@genres}
+              %p.description Platforms: #{@platform}
+            %img.cover{:alt => "Game image cover", :src => "#{@cover}"}
+        -else
+          .card
+            .content.cardPadding
+            %img.cover{:alt => "Game image cover", :src => "https://cdn.eso.org/images/thumb300y/eso1907a.jpg"}
 
         
