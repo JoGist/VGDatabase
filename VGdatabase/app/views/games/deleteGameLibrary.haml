@@ -13,12 +13,12 @@
             %a.sidebar__nav__link{:href => settings_path, "data-method" => "get"}
               %i.mdi.mdi-home
               %span.sidebar__nav__text Admin control panel
-          %li
+          %li.active
             %a.sidebar__nav__link{:href => deleteGameLibrary_path, "data-method" => "get"}
               %i.mdi.mdi-database-search
               %span.sidebar__nav__text Delete a game from a library
-          %li.active
-            %a.sidebar__nav__link_plain{}
+          %li
+            %a.sidebar__nav__link{:href => deleteReviewsUser_path, "data-method" => 'get'}
               %i.mdi.mdi-account-multiple
               %span.sidebar__nav__text Delete reviews of a game 
           %li
@@ -36,13 +36,15 @@
           %li
             %a.sidebar__nav__link_plain
               %span.sidebar__nav__text
-    %br/
+    %br
     %div.page-content
     .form
       .tab-content
         %br/
-        %h1 Delete reviews of a game 
+        %h1 Delete game from a library
         = form_tag :method => :post do
+          .field-wrap
+            %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "off", :required => "", :type => "text"}/
           .field-wrap
             %input{:name => 'game[title]' , :placeholder => 'Game' , :autocomplete => "off", :required => "", :type => "text"}/
           %button.button delete

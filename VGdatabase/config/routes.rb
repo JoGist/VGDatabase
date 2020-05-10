@@ -37,6 +37,8 @@ get '/editProfile_success' => "games#editProfile_success"
 get '/editProfile_error' => "games#editProfile_error"
 get '/editAvatar' => 'games#editAvatar'
 post 'editAvatar' => 'games#editingAvatar'
+get '/searchUserError' => 'games#searchUserError'
+get '/deleteUserConfirmation' => 'games#deleteUserConfirmation'
 
 # Guest routes
 get '/homepage_guest' => 'sessions#homepageGuest'
@@ -46,6 +48,7 @@ post '/search_guest_user' => 'sessions#searchingGuestUser'
 get '/search_guest_game' => 'sessions#searchGuestGame'
 post '/search_guest_game' => 'sessions#searchResult'
 get '/search_result_guest' => 'sessions#searchResultGuest'
+get '/search_user_error_guest' => 'sessions#searchUserErrorGuest'
 
 # Games routes
 # Qualcosa sulle review
@@ -67,6 +70,11 @@ get '/deleteReviewsGame' => 'games#deleteReviewsGame'
 post '/deleteReviewsGame' => 'games#deletingReviewsGame'
 get '/deleteReviewsGame_success' => 'games#deleteReviewsGame_success'
 get '/deleteReviewsGame_error' => 'games#deleteReviewsGame_error'
+
+get '/deleteGameLibrary' => 'games#deleteGameLibrary'
+post '/deleteGameLibrary' => 'games#deletingGameLibrary'
+get '/deleteGameLibrarySucces' => 'games#deleteGameLibrarySucces'
+get '/deleteGameLibraryError' => 'games#deleteGameLibraryError'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 #resources :movies do
     #resources :reviews

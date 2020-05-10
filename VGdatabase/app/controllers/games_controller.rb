@@ -119,7 +119,7 @@ skip_before_action :verify_authenticity_token
         @user = User.find(session[:user_id])
     end
 
-    def settings
+    def deleteUserConfirmation
     end
 
     def deleteUser
@@ -150,6 +150,9 @@ skip_before_action :verify_authenticity_token
         @user = User.find(session[:user_id])
     end
 
+    def searchUserError
+    end
+
     def searchingUser
         user = params[:username]
         if User.exists?(User.where(:username => user))
@@ -161,7 +164,7 @@ skip_before_action :verify_authenticity_token
                 redirect_to visit_profile_path(@users)
             end
         else
-            render html: 'user non trovato'
+            redirect_to searchUserError_path
         end
     end
 
@@ -228,6 +231,12 @@ skip_before_action :verify_authenticity_token
 
 
 #admin
+
+    def settings
+        @users = User.all
+        @reviews = Review.all
+        @libraries = Mylibrary.all
+    end
 
     def deleteReviewsGame
     end
@@ -323,5 +332,31 @@ skip_before_action :verify_authenticity_token
     def deletingUser_error
     end
 
+    def deleteGameLibrary
+    end
+
+    def deletingGameLibrary
+        game = params[:game][:title]
+        user = params[:user][:name]
+        if User.exists?(:username => user) && Game.exists?(:title => game)
+            game_id = Game.where(:title => game)[0].id
+            user_id = User.where(:username => user)[0].id
+            if Mylibrary.exists?(:game_id => game_id,:user_id => user_id)
+                library = Mylibrary.where(:game_id => game_id, :user_id => user_id)[0].id
+                Mylibrary.delete(library)
+                redirect_to settings_path
+            else
+                render html: 'no'
+            end
+        else
+            render html: 'no'
+        end
+    end
+
+    def deleteGameLibrarySucces
+    end
+
+    def deleteGameLibraryError
+    end
 
 end

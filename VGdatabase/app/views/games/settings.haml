@@ -14,6 +14,10 @@
               %i.mdi.mdi-home
               %span.sidebar__nav__text Admin control panel
           %li
+            %a.sidebar__nav__link{:href => deleteGameLibrary_path, "data-method" => "get"}
+              %i.mdi.mdi-database-search
+              %span.sidebar__nav__text Delete a game from a library
+          %li
             %a.sidebar__nav__link{:href => deleteReviewsGame_path, "data-method" => "get"}
               %i.mdi.mdi-account-multiple
               %span.sidebar__nav__text Delete reviews of a game 
@@ -32,3 +36,21 @@
           %li
             %a.sidebar__nav__link_plain
               %span.sidebar__nav__text
+    %br/
+    %div.page-content
+      %h1 Users
+      - @users.each do |user|
+        %h1 #{user.username}
+      %br
+      %h1 Libraries
+      - @libraries.each do |library|
+        -user = User.find(library.user_id).username
+        -game = Game.find(library.game_id).title
+        %h1 #{user} , #{game}
+      %br
+      %h1 Reviews
+      - @reviews.each do |review|
+        -user = User.find(review.user_id).username
+        -game = Game.find(review.game_id).title
+        %h1 #{user} , #{game}
+
