@@ -69,24 +69,12 @@ skip_before_action :verify_authenticity_token
         newp1 = params[:user][:newp1]
         @user = User.find(session[:user_id])
         if username.length==0 && email.length==0 && oldp.length==0 && newp.length==0 && newp1.length==0
-            redirect_to myProfile_path
-        elsif username.length==0 && email.length==0 && newp.length!=0 && newp==newp1 && oldp==@user.password
-            @user.update_attributes!(:password => newp)
-            redirect_to editProfile_success_path
-        elsif username.length!=0 && email.length==0 && newp.length!=0 && newp==newp1 && oldp==@user.password
-            @user.update_attributes!(:password => newp, :username => username)
-            redirect_to editProfile_success_path
+            redirect_to editProfile_error_path
         elsif username.length!=0 && email.length!=0 && newp.length!=0 && newp==newp1 && oldp==@user.password
-            @user.update_attributes!(:password => newp, :username => username, :email => email)
+            @user.update_attributes!(:username => username, :email => email, :password => newp)
             redirect_to editProfile_success_path
-        elsif username.length!=0 && email.length==0 && oldp.length==0
-            @user.update_attributes!(:username => username)
-            redirect_to editProfile_success_path
-        elsif username.length==0 && email.length!=0 && oldp.length==0
-            @user.update_attributes!(:email => email)
-            redirect_to editProfile_success_path
-        elsif username.length!=0 && email.length!=0 && oldp.length==0
-            @user.update_attributes!(:email => email, :username => username)
+        elsif username.length!=0 && email.length!=0 && oldp.length==0 && newp.length==0 && newp1.length==0
+            @user.update_attributes!(:username => username, :email => email)
             redirect_to editProfile_success_path
         else
             redirect_to editProfile_error_path
@@ -347,19 +335,19 @@ skip_before_action :verify_authenticity_token
             if Mylibrary.exists?(:game_id => game_id,:user_id => user_id)
                 library = Mylibrary.where(:game_id => game_id, :user_id => user_id)[0].id
                 Mylibrary.delete(library)
-                redirect_to settings_path
+                redirect_to deleteGameLibrary_success_path
             else
-                render html: 'no'
+                redirect_to deleteGameLibrary_error_path
             end
         else
-            render html: 'no'
+            redirect_to deleteGameLibrary_error_path
         end
     end
 
-    def deleteGameLibrarySucces
+    def deleteGameLibrary_success
     end
 
-    def deleteGameLibraryError
+    def deleteGameLibrary_error
     end
 
 end

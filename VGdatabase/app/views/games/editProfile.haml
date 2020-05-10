@@ -68,10 +68,10 @@
             .account-grid-item-2
               .grid-item-details
                 %h5.sub-header-details Username
-                %input{:name => 'user[name]' , :placeholder => @user.username , :autocomplete => "username", :type => "text"}/
+                %input{:name => 'user[name]' , :value => @user.username , :autocomplete => "username", :type => "text"}/
               .grid-item-details
                 %h5.sub-header-details Email
-                %input{:name => 'user[email]' , :placeholder => @user.email , :autocomplete => "email", :type => "email"}/
+                %input{:name => 'user[email]' , :value => @user.email , :autocomplete => "email", :type => "email"}/
               .grid-item-details
                 %h5.sub-header-details Password
                 %input{:name => 'user[oldp]' , :placeholder => 'Enter current password' , :autocomplete => "current-password", :type => "password"}/

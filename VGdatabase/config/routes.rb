@@ -73,8 +73,8 @@ get '/deleteReviewsGame_error' => 'games#deleteReviewsGame_error'
 
 get '/deleteGameLibrary' => 'games#deleteGameLibrary'
 post '/deleteGameLibrary' => 'games#deletingGameLibrary'
-get '/deleteGameLibrarySucces' => 'games#deleteGameLibrarySucces'
-get '/deleteGameLibraryError' => 'games#deleteGameLibraryError'
+get '/deleteGameLibrary_success' => 'games#deleteGameLibrary_success'
+get '/deleteGameLibrary_error' => 'games#deleteGameLibrary_error'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 #resources :movies do
     #resources :reviews

@@ -41,10 +41,12 @@
     .form
       .tab-content
         %br/
-        %h1 Delete reviews of a game 
-        = form_tag :method => :get do
+        %h1 Delete game from a library 
+        = form_tag :method => :post do
           .field-wrap
-            %input{:name => 'game[title]' , :placeholder => 'Game' , :autocomplete => "off", :required => "", :type => "password"}/
+            %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "off", :required => "", :type => "text"}/
+          .field-wrap
+            %input{:name => 'game[title]' , :placeholder => 'Game' , :autocomplete => "off", :required => "", :type => "text"}/
           %button.button delete
           .overlay
             .popup
