@@ -142,6 +142,7 @@ skip_before_action :verify_authenticity_token
     end
 
     def searchUserError
+        @user = User.find(session[:user_id])
     end
 
     def searchingUser

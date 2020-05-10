@@ -43,7 +43,7 @@
               %span.sidebar__nav__text Contact us
     %br/
     %div
-      %h1 Search result
+      %h1 Games search
       .s003
         = form_tag :method => :post do
           .inner-form
@@ -63,11 +63,12 @@
     %br
     %br
     %br
+    %br
     %div.page-content
-      /%h4.extraMarginLeft 2 results
       -if @result.length == 0
-        %h4 No result found 
+        %h6.extraMarginLeft No result found 
       -else
+        %h6.extraMarginLeft Game result
         - @result.each do |game|
           -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
             -api_endpoint = 'https://api-v3.igdb.com/covers'
