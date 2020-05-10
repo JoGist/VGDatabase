@@ -1,5 +1,7 @@
 class SessionsController < ApplicationController
     skip_before_action :set_current_user
+    require 'apicalypse'
+    require 'rubygems'
 def login
 end
 def signup
