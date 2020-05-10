@@ -5,40 +5,24 @@
   %body.visible
     %aside.sidebar.normal
       %nav
-        %ul.sidebar__nav 
+        %ul.sidebar__nav
           %li
-            %a.sidebar__nav__link_plain_img
+            %a.sidebar__nav__link_plain
               =image_tag ('logo-normal.png')
           %li
-            %a.sidebar__nav__link{:href => homepage_path, "data-method" => "get"}
+            %a.sidebar__nav__link{:href => homepage_guest_path, "data-method" => "get"}
               %i.mdi.mdi-home
               %span.sidebar__nav__text Homepage
-          %li
-            %a.sidebar__nav__link{:href => myLibrary_path, "data-method" => "get"}
-              %i.mdi.mdi-library-movie
-              %span.sidebar__nav__text My library
-          %li
-            %a.sidebar__nav__link{:href => myLibraryFavorites_path, "data-method" => "get"}
-              %i.mdi.mdi-star
-              %span.sidebar__nav__text  Favorites
           %li.active
-            %a.sidebar__nav__link{:href => searchGame_path, "data-method" => "get"}
+            %a.sidebar__nav__link_plain{}
               %i.mdi.mdi-database-search
               %span.sidebar__nav__text Search
           %li
-            %a.sidebar__nav__link{:href => friends_path, "data-method" => "get"}
-              %i.mdi.mdi-account-multiple
-              %span.sidebar__nav__text Friends
-          %li
-            %a.sidebar__nav__link{:href => myProfile_path, "data-method" => "get"}
-              =image_tag (@user.avatar), class: "img3"
-              %span.sidebar__nav__text My account
-          %li
-            %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
+            %a.sidebar__nav__link{:href => signup_path, "data-method" => "get"}
               %i.mdi.mdi-logout-variant
-              %span.sidebar__nav__text Log out 
+              %span.sidebar__nav__text Sign up 
           %li
-            %a.sidebar__nav__link{:href => contactUs_path, "data-method" => "get"}
+            %a.sidebar__nav__link{:href => contactUs_guest_path, "data-method" => "get"}
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
     %br/
@@ -72,9 +56,8 @@
                 %p.description Genre: #{@genres}
                 %p.description Platforms: #{@platform}
                 -if Game.exists?(:serial => game.values[0])
-                  %a.btn{:href => game_path(Game.where(:serial => game.values[0])[0].id), "data-method" => "get"} View info 
+                  %a.btn{:href => guest_show_path(Game.where(:serial => game.values[0])[0].id), "data-method" => "get"} View info 
                 -else
-                  %a.btn{:href => game_mylibraries_path(game.values[0]), "data-method" => "post"}
-                    %i.mdi.mdi-plus
-                    %span.sidebar__nav__text library
+                  %a.btn{:href => signup_path, "data-method" => "get"}
+                    %span.sidebar__nav__text Sign up to add
               %img.cover{:alt => "Game image cover", :src => "#{@split}"}

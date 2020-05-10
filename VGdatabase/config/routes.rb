@@ -44,7 +44,7 @@ get '/contactUs_guest' => 'sessions#contactUsGuest'
 get '/search_guest_user' => 'sessions#searchGuestUser'
 post '/search_guest_user' => 'sessions#searchingGuestUser'
 get '/search_guest_game' => 'sessions#searchGuestGame'
-post '/search_guest_game' => 'sessions#searchingGuestGame'
+post '/search_guest_game' => 'sessions#searchResult'
 get '/search_result_guest' => 'sessions#searchResultGuest'
 
 # Games routes

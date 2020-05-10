@@ -103,31 +103,64 @@ def searchGuestGame
     @games = Game.all
 end
 
-def searchingGuestGame
+def searchResult
     search = params[:search]
     genre = params[:game][:genre]
-    platform = params[:game][:platform]
-    choice = params[:game][:choice]
-    if choice == 'Title'
-        if Game.exists?(Game.where(:title => search, :platform => platform, :genre => genre))
-            @games = Game.where(:title => search, :platform => platform, :genre => genre)[0].id
-            redirect_to show_guest_path
+    if genre == 'Genre'
+        api_endpoint = 'https://api-v3.igdb.com/games'
+        request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+        api = Apicalypse.new(api_endpoint, request_headers)
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
+        @result = api.request
+    elsif genre == 'Adventure'  
+        api_endpoint = 'https://api-v3.igdb.com/games'
+        request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+        api = Apicalypse.new(api_endpoint, request_headers)
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
+        @games = api.request
+        @result = []
+        @games.each do |game|
+            if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
+                if game.values[2].include?(31)
+                    @result.push(game)
+                end
+            end
         end
-    elsif choice == 'Developer'
-       if Game.exists?(Game.where(:developer => search))
-             @games = Game.where(:developer => search)
-             render html: 'boh'
+    elsif genre == 'Racing'  
+        api_endpoint = 'https://api-v3.igdb.com/games'
+        request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+        api = Apicalypse.new(api_endpoint, request_headers)
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
+        @games = api.request
+        @result = []
+        @games.each do |game|
+            if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
+                if game.values[2].include?(10)
+                    @result.push(game)
+                end
+            end
         end
-    end         
+    elsif genre == 'Arcade'  
+        api_endpoint = 'https://api-v3.igdb.com/games'
+        request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+        api = Apicalypse.new(api_endpoint, request_headers)
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request   
+        @games = api.request 
+        @result = []
+        @games.each do |game|
+            if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
+                if game.values[2].include?(33)
+                    @result.push(game)
+                end
+            end
+        end
+    end
 end
             
 
 def destroy
     session.delete(:user_id)
     redirect_to login_path
-end
-
-def showGuest
 end
 
 end

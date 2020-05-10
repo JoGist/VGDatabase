@@ -79,16 +79,21 @@
           .account-grid-item-3
             .grid-item-details
               %span Friends
-            -if @friends.exists?
-              - @friends.each do |friend|
-                .grid-item-detailsImg
-                  =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
-                  %a{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
-                  - if (friend.favorite == "true")
-                    %i.mdi.mdi-star.friendStar
-            -else
+            -if @friends.length==0 && @firends1.length==0
               .grid-item-detailsImg
                 %span You don't have friends
+            -else
+              -if @friends.exists?
+                - @friends.each do |friend|
+                  .grid-item-detailsImg
+                    =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
+                    %a{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
+                    %i.mdi.mdi-star.friendStar
+              -if @friends1.exists?
+                - @friends1.each do |friend|
+                  .grid-item-detailsImg
+                    =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
+                    %a{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
         %br/
         %br/
         %div

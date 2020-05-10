@@ -42,7 +42,7 @@
               %i.mdi.mdi-information
               %span.sidebar__nav__text Contact us
     %br/
-    - @lunghezza = @friends.where(:user_id => @user.id).length
+    - @lunghezza = @friends.where(:user_id => @user.id).length+@friends1.where(:user_id => @user.id).length
     - if @lunghezza==0
       %h1 You don't have any friend
     - elsif @lunghezza==1
@@ -52,6 +52,29 @@
     %div.page-content
       %br/
       - @friends.each do |friend|
+        .friendsCards
+          .my-account-wrapper
+            .friendGrid
+              .profile-pic-details
+                %a.overlayImgFriend{:href => visit_profile_path(friend.friend_id), "data-method" => "get"}
+                  %i.mdi.mdi-pencil
+                  %span.hidden _
+                  %span View profile
+                =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg"
+              .grid-item-detailsProfile
+                - if (friend.favorite == "true")
+                  %a.mdi.mdi-star.iconBig2.right{:href => friend_path(friend.friend_id) , "data-method" => "get"}
+                - else             
+                  %a.mdi.mdi-star-outline.iconBig2.right{:href => friend_path(friend.friend_id) , "data-method" => "get"}
+              .grid-item-details
+                %p.profile-hyper-links
+                  %a2.sub-header-details Username:
+                  %span #{User.find(friend.friend_id).username}
+              .grid-item-details
+                %p.profile-hyper-links
+                  %a2.sub-header-details Games in the collection:
+                  %span #{Mylibrary.where(:user_id => friend.friend_id).length}
+      - @friends1.each do |friend|
         .friendsCards
           .my-account-wrapper
             .friendGrid

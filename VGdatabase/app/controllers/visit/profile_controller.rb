@@ -8,7 +8,8 @@ module Visit
             @users = session[:user_id]
             @review = Review.where(:user_id => @user)
             @library = Mylibrary.where(:user_id => @user)
-            @friends = Friend.where(:user_id => @user)
+            @friends = Friend.where(:user_id => @user.id,:favorite => 'true')
+            @friends1 = Friend.where(:user_id => @user.id,:favorite => 'false')
         end
     end
 end

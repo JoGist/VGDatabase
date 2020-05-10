@@ -33,13 +33,15 @@ skip_before_action :verify_authenticity_token
 
     def friends
         @user = User.find(session[:user_id])
-        @friends = Friend.where(:user_id => @user.id)
+        @friends = Friend.where(:user_id => @user.id, :favorite => 'true')
+        @friends1 = Friend.where(:user_id => @user.id, :favorite => 'false')
     end
 
     def myProfile
         @user = User.find(session[:user_id])
         @review = Review.where(:user_id => @user)
-        @friends = Friend.where(:user_id => @user.id)
+        @friends = Friend.where(:user_id => @user.id,:favorite => 'true')
+        @friends1 = Friend.where(:user_id => @user.id,:favorite => 'false')
     end
 
     def editProfile
@@ -151,8 +153,13 @@ skip_before_action :verify_authenticity_token
     def searchingUser
         user = params[:username]
         if User.exists?(User.where(:username => user))
-            @users = User.where(:username => user)[0].id
-            redirect_to visit_profile_path(@users)
+            if user==User.find(session[:user_id]).username
+                @users = User.where(:username => user)[0].id
+                redirect_to myProfile_path
+            else
+                @users = User.where(:username => user)[0].id
+                redirect_to visit_profile_path(@users)
+            end
         else
             render html: 'user non trovato'
         end
