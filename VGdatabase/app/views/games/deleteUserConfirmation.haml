@@ -1,4 +1,54 @@
-%a.button{:href => deleteUser_path, "data-method" => "get"} Yes
-%br/
-%br/
-%a.button{:href => myProfile_path, "data-method" => "get"} No
+!!!
+%html{:lang => "en", class: "container"}
+  %head
+    %title #{@user.username}'s profile - VGDatabase
+  %body.visible
+    %aside.sidebar.normal
+      %a.sidebarOverlay
+      %nav
+        %ul.sidebar__nav
+          %li
+            %a.sidebar__nav__link_plain_img
+              =image_tag ('logo-normal.png')
+          %li
+            %a.sidebar__nav__link{:href => homepage_path, "data-method" => "get"}
+              %i.mdi.mdi-home
+              %span.sidebar__nav__text Homepage
+          %li
+            %a.sidebar__nav__link{:href => myLibrary_path, "data-method" => "get"}
+              %i.mdi.mdi-library-movie
+              %span.sidebar__nav__text My library
+          %li
+            %a.sidebar__nav__link{:href => myLibraryFavorites_path, "data-method" => "get"}
+              %i.mdi.mdi-star
+              %span.sidebar__nav__text  Favorites
+          %li
+            %a.sidebar__nav__link{:href => searchGame_path, "data-method" => "get"}
+              %i.mdi.mdi-database-search
+              %span.sidebar__nav__text Search
+          %li
+            %a.sidebar__nav__link{:href => friends_path, "data-method" => "get"}
+              %i.mdi.mdi-account-multiple
+              %span.sidebar__nav__text Friends
+          %li.active
+            %a.sidebar__nav__link_plain{}
+              =image_tag (@user.avatar), class: "img3"
+              %span.sidebar__nav__text My account
+          %li
+            %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
+              %i.mdi.mdi-logout-variant
+              %span.sidebar__nav__text Log out 
+          %li
+            %a.sidebar__nav__link{:href => contactUs_path, "data-method" => "get"}
+              %i.mdi.mdi-information
+              %span.sidebar__nav__text Contact us
+    %br/
+    %div.page-content
+      .form
+        .tab-content
+          %h1 Are you sure to permanently remove your account?
+          %br
+          %a.button{:href => deleteUser_path, "data-method" => "get"} Yes
+          %br/
+          %br/
+          %a.button{:href => myProfile_path, "data-method" => "get"} No

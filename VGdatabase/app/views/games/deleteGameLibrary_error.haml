@@ -13,16 +13,16 @@
             %a.sidebar__nav__link{:href => settings_path, "data-method" => "get"}
               %i.mdi.mdi-home
               %span.sidebar__nav__text Admin control panel
-          %li
-            %a.sidebar__nav__link{:href => deleteGameLibrary_path, "data-method" => "get"}
+          %li.active
+            %a.sidebar__nav__link_plain{}
               %i.mdi.mdi-database-search
               %span.sidebar__nav__text Delete a game from a library
           %li
-            %a.sidebar__nav__link{:href => deleteReviewsGame_path, "data-method" => "get"}
+            %a.sidebar__nav__link{:href => deleteReviewsUser_path, "data-method" => 'get'}
               %i.mdi.mdi-account-multiple
               %span.sidebar__nav__text Delete reviews of a game 
-          %li.active
-            %a.sidebar__nav__link_plain{}
+          %li
+            %a.sidebar__nav__link{:href => deleteReviewsUser_path, "data-method" => "get"}
               %i.mdi.mdi-database-search
               %span.sidebar__nav__text Delete reviews from user
           %li
@@ -36,21 +36,19 @@
           %li
             %a.sidebar__nav__link_plain
               %span.sidebar__nav__text
-    %br
+    %br/
     %div.page-content
     .form
       .tab-content
         %br/
-        %h1 Delete reviews from user
+        %h1 Delete reviews of a game 
         = form_tag :method => :get do
-          .field-wrap
-            %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "off", :required => "", :type => "text"}/
           .field-wrap
             %input{:name => 'game[title]' , :placeholder => 'Game' , :autocomplete => "off", :required => "", :type => "password"}/
           %button.button delete
           .overlay
             .popup
               %h2 Error
-              %a.close{:href => deleteReviewsUser_path, "data-method" => "get"} ×
+              %a.close{:href => deleteReviewsGame_path, "data-method" => "get"} ×
               .content
                 Error, please try again.

@@ -105,6 +105,12 @@ skip_before_action :verify_authenticity_token
         @friends = Friend.where(:user_id => @user.id)
     end
 
+    def deleteUserConfirmation
+        @user = User.find(session[:user_id])
+        @review = Review.where(:user_id => @user)
+        @friends = Friend.where(:user_id => @user.id)
+    end
+
     def show
         id = params[:id]
         @games = Game.find(id)
@@ -117,9 +123,6 @@ skip_before_action :verify_authenticity_token
 
     def contactUs
         @user = User.find(session[:user_id])
-    end
-
-    def deleteUserConfirmation
     end
 
     def deleteUser
