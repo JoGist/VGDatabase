@@ -285,6 +285,13 @@ h5 {
   margin: 0 0 10px;
   text-justify: inter-word;
 }
+h6 {
+  cursor: default;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 10px;
+}
 h7 {
   cursor: default;
   font-size: 20px;
@@ -1586,4 +1593,30 @@ textarea {
   -o-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  color: #fff;
+}
+th {
+  background-color: #333;
+}
+.center {
+  margin: 0 auto;
+  margin: 1px solid #fff;
+}
+.b {
+  color: #f26657;
+  -webkit-text-stroke: 1px black;
+}
+.head {
+  color: #000;
+  background-color: #666;
 }

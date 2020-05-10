@@ -15,19 +15,19 @@
               %span.sidebar__nav__text Admin control panel
           %li
             %a.sidebar__nav__link{:href => deleteGameLibrary_path, "data-method" => "get"}
-              %i.mdi.mdi-database-search
+              %i.mdi.mdi-database-remove
               %span.sidebar__nav__text Delete a game from a library
           %li
             %a.sidebar__nav__link{:href => deleteReviewsGame_path, "data-method" => "get"}
-              %i.mdi.mdi-account-multiple
+              %i.mdi.mdi-file-document-box-remove
               %span.sidebar__nav__text Delete reviews of a game 
           %li
             %a.sidebar__nav__link{:href => deleteReviewsUser_path, "data-method" => "get"}
-              %i.mdi.mdi-database-search
+              %i.mdi.mdi-file-document-box-remove
               %span.sidebar__nav__text Delete reviews from user
           %li.active
             %a.sidebar__nav__link_plain{}
-              %i.mdi.mdi-account-circle
+              %i.mdi.mdi-account-remove
               %span.sidebar__nav__text Delete user
           %li
             %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}

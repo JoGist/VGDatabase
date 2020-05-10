@@ -15,19 +15,19 @@
               %span.sidebar__nav__text Admin control panel
           %li
             %a.sidebar__nav__link{:href => deleteGameLibrary_path, "data-method" => "get"}
-              %i.mdi.mdi-database-search
+              %i.mdi.mdi-database-remove
               %span.sidebar__nav__text Delete a game from a library
           %li
             %a.sidebar__nav__link{:href => deleteReviewsGame_path, "data-method" => "get"}
-              %i.mdi.mdi-account-multiple
+              %i.mdi.mdi-file-document-box-remove
               %span.sidebar__nav__text Delete reviews of a game 
           %li
             %a.sidebar__nav__link{:href => deleteReviewsUser_path, "data-method" => "get"}
-              %i.mdi.mdi-database-search
+              %i.mdi.mdi-file-document-box-remove
               %span.sidebar__nav__text Delete reviews from user
           %li
             %a.sidebar__nav__link{:href => deletingUser_path, "data-method" => "get"}
-              %i.mdi.mdi-account-circle
+              %i.mdi.mdi-account-remove
               %span.sidebar__nav__text Delete user
           %li
             %a.sidebar__nav__link{:href => login_path, "data-method" => "delete"}
@@ -38,19 +38,43 @@
               %span.sidebar__nav__text
     %br/
     %div.page-content
-      %h1 Users
-      - @users.each do |user|
-        %h1 #{user.username}
+      %h1.b Users
+      %table.center
+        %tr
+          %th.head Username
+          %th.head Email
+        - @users.each do |user|
+          %tr
+            %th #{user.username}
+            %th #{user.email}
       %br
-      %h1 Libraries
-      - @libraries.each do |library|
-        -user = User.find(library.user_id).username
-        -game = Game.find(library.game_id).title
-        %h1 #{user} , #{game}
       %br
-      %h1 Reviews
-      - @reviews.each do |review|
-        -user = User.find(review.user_id).username
-        -game = Game.find(review.game_id).title
-        %h1 #{user} , #{game}
-
+      %h1.b Libraries
+      %table.center
+        %tr
+          %th.head Username
+          %th.head Game title
+          %th.head Serial id
+        - @libraries.each do |library|
+          - user = User.find(library.user_id).username
+          - game1 = Game.find(library.game_id).title
+          - game2 = Game.find(library.game_id).serial
+          %tr
+            %th #{user}
+            %th #{game1}
+            %th #{game2}
+      %br
+      %br
+      %h1.b Reviews
+      %table.center
+        %tr
+          %th.head Username
+          %th.head Game id
+        - @reviews.each do |review|
+          -user = User.find(review.user_id).username
+          -game = Game.find(review.game_id).title
+          %tr
+            %th #{user}
+            %th #{game}
+      %br
+      %br
