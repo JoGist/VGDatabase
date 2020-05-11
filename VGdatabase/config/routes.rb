@@ -4,10 +4,6 @@ get '/callback' => 'sessions#create'
 get '/login' => 'sessions#login'
 post '/login' => 'sessions#login'
 delete '/login' => 'sessions#destroy'
-get '/searchUser' => 'games#searchUser'
-post '/searchUser' => 'games#searchingUser'
-get '/searchGame' => 'games#searchGame'
-post '/searchGame' => 'games#searchResult'
 get '/signup' => 'sessions#signup'
 post '/signup' => 'sessions#signin'
 get '/signup_error_mail' => 'sessions#signup_error_mail'
@@ -37,8 +33,13 @@ get '/editProfile_success' => "games#editProfile_success"
 get '/editProfile_error' => "games#editProfile_error"
 get '/editAvatar' => 'games#editAvatar'
 post 'editAvatar' => 'games#editingAvatar'
-get '/searchUserError' => 'games#searchUserError'
 get '/deleteUserConfirmation' => 'games#deleteUserConfirmation'
+get '/searchUser' => 'games#searchUser'
+post '/searchUser' => 'games#searchingUser'
+get '/searchGame' => 'games#searchGame'
+post '/searchGame' => 'games#searchResult'
+get '/searchUserError' => 'games#searchUserError'
+post '/searchUserError' => 'games#searchingUser'
 
 # Guest routes
 get '/homepage_guest' => 'sessions#homepageGuest'
@@ -49,9 +50,7 @@ get '/search_guest_game' => 'sessions#searchGuestGame'
 post '/search_guest_game' => 'sessions#searchResult'
 get '/search_result_guest' => 'sessions#searchResultGuest'
 get '/search_user_error_guest' => 'sessions#searchUserErrorGuest'
-
-# Games routes
-# Qualcosa sulle review
+post '/search_user_error_guest' => 'sessions#searchingGuestUser'
 
 # Admin routes
 get '/settings' => 'games#settings'
