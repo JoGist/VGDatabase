@@ -1,7 +1,7 @@
 !!!
 %html{:lang => "en", class: "container"}
   %head
-    %title Search - VGDatabase
+    %title #{@game.title} - VGDatabase
   %body.visible
     %aside.sidebar.normal
       %nav
@@ -87,34 +87,37 @@
           %div.right3
             .reviewHeader
               %h5 Reviews
-              -if (@review.length==0)
-                %h5.reviewText This game doesen't have any review
             .reviewDiv
-              - @review.each do |review|
-                - @users = User.where(:id => review.user_id)[0]
+              - if (@review.length==0)
                 .reviewUser
-                  =image_tag (User.find(@users.id).avatar) ,class: "reviewImg"
-                  %a{:href => visit_profile_path(@users.id), "data-method" => "get"} #{@users.username}
-                  - if (review.score==1)
-                    %i.mdi.mdi-star.reviewStar.right4
-                  - elsif (review.score==2)
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                  - elsif (review.score==3)
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                  - elsif (review.score==4)
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                  - else
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4                
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                  %div{:href => "#"}
-                  - if (review.comments != "")
-                    %h5.reviewText #{review.comments}
+                  %h5.reviewText_alt This game doesen't have any review
+              - else
+                - @review.each do |review|
+                  - @users = User.where(:id => review.user_id)[0]
+                  .reviewUser
+                    =image_tag (User.find(@users.id).avatar) ,class: "reviewImg"
+                    %a{:href => visit_profile_path(@users.id), "data-method" => "get"} #{@users.username}
+                    - if (review.score==1)
+                      %i.mdi.mdi-star.reviewStar.right4
+                    - elsif (review.score==2)
+                      %i.mdi.mdi-star.reviewStar.right4
+                      %i.mdi.mdi-star.reviewStar.right4
+                    - elsif (review.score==3)
+                      %i.mdi.mdi-star.reviewStar.right4
+                      %i.mdi.mdi-star.reviewStar.right4
+                      %i.mdi.mdi-star.reviewStar.right4
+                    - elsif (review.score==4)
+                      %i.mdi.mdi-star.reviewStar.right4
+                      %i.mdi.mdi-star.reviewStar.right4
+                      %i.mdi.mdi-star.reviewStar.right4
+                      %i.mdi.mdi-star.reviewStar.right4
+                    - else
+                      %i.mdi.mdi-star.reviewStar.right4
+                      %i.mdi.mdi-star.reviewStar.right4                
+                      %i.mdi.mdi-star.reviewStar.right4
+                      %i.mdi.mdi-star.reviewStar.right4
+                      %i.mdi.mdi-star.reviewStar.right4
+                    %div{:href => "#"}
+                      - if (review.comments != "")
+                        %h5.reviewText #{review.comments}
+

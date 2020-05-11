@@ -59,6 +59,7 @@ body {
 }
 .iconBig2:hover {
   text-shadow: 0 0 0 #d9e62b;
+  color: #fff;
 }
 nav .container {
   overflow-y: visible;
@@ -1071,6 +1072,17 @@ a:hover {
 .grid-item-details a:hover {
   color: #f26657;
 }
+.grid-item-details_alt {
+  cursor: default;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #444;
+  background-color: #333;
+  color: #f26657;
+}
+.grid-item-details_alt a:hover {
+  color: #fff;
+}
 .grid-item-details a2:hover {
   color: #fff;
 }
@@ -1108,7 +1120,15 @@ textarea {
 .grid-item-details-button-2:hover {
   cursor: pointer;
   background-color: #222;
-  color: #f26657;
+  color: #fff;
+}
+.grid-item-details-button:hover a {
+  color: #fff;
+  transition: 0.1s;
+}
+.grid-item-details-button-2:hover a {
+  color: #fff;
+  transition: 0.1s;
 }
 .grid-item-detailsProfile {
   padding: 10px;
@@ -1204,6 +1224,10 @@ textarea {
 .profile-hyper-links a2 {
   color: #696f7e;
   text-decoration: none;
+}
+}
+.profile-hyper-links:hover a{
+  color: #fff !important;
 }
 .account-grid-item-2 .grid-item-details {
   padding: 14px 50px;
@@ -1422,6 +1446,13 @@ textarea {
 }
 .reviewText {
   margin-top: 80px;
+  text-align: justify;
+  padding: 15px;
+  background-color: #444;
+  border: 1px solid #f26657;
+}
+.reviewText_alt {
+  margin-top: 10px;
   text-align: justify;
   padding: 15px;
   background-color: #444;

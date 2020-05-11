@@ -51,7 +51,7 @@
           .account-grid-item-1-alt
             .profile-pic-details
               =image_tag (@user.avatar) ,class: "img"
-            .grid-item-details
+            .grid-item-details_alt
               -if (Friend.exists?(:user_id => @users, :friend_id => @user.id))
                 - if (Friend.where(:user_id => @users, :friend_id => @user.id)[0].favorite == "true")
                   %a.mdi.mdi-star.iconBig2.right6{:href => friend_path(@user.id) , "data-method" => "get"}
@@ -61,12 +61,12 @@
                 %a.mdi.mdi-star-outline.iconBig2.right6.hidden
             .grid-item-details-button
               %p.profile-hyper-links
-              - if (Friend.exists?(:user_id => @users, :friend_id => @user.id))
-                %a{:href => friend_path(@user), "data-method" => "delete"} Remove from friends
-                %i.mdi.mdi-account-remove
-              - else 
-                %a{:href => friend_path(@user), "data-method" => "put"} Add to friends
-                %i.mdi.mdi-account-plus
+                - if (Friend.exists?(:user_id => @users, :friend_id => @user.id))
+                  %a{:href => friend_path(@user), "data-method" => "delete"} Remove from friends
+                  %i.mdi.mdi-account-remove
+                - else 
+                  %a{:href => friend_path(@user), "data-method" => "put"} Add to friends
+                  %i.mdi.mdi-account-plus
           .account-grid-item-2
             .grid-item-details
               %h5.sub-header-details Username:
@@ -130,8 +130,7 @@
           .reviewDiv
             - if (@review.length==0)
               .reviewUser
-                %div{:href => "#"}
-                  %h6 This user don't have any reviews
+                %h5.reviewText_alt This user don't have any reviews
             - else
               - @review.each do |review|
                 - @game = Game.find(review.game_id)
@@ -159,8 +158,8 @@
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
-                  - if (review.comments != "")
-                    %h5.reviewText #{review.comments}
+                    - if (review.comments != "")
+                      %h5.reviewText #{review.comments}
   - else
     %aside.sidebar.normal
       %nav
@@ -253,7 +252,7 @@
                     .content.cardPadding
                       %p.description Genre: #{@games.genre}
                       %p.description Platforms: #{@games.platform}
-                      %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
+                      %a.btn{:href => guest_show_path(@games), "data-method" => "get"} View info 
                     %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
         %br/
         %br/
@@ -263,8 +262,7 @@
           .reviewDiv
             - if (@review.length==0)
               .reviewUser
-                %div{:href => "#"}
-                  %h6 #{@user.username} don't have any reviews
+                %h5.reviewText_alt This user don't have any reviews
             - else
               - @review.each do |review|
                 - @game = Game.find(review.game_id)
@@ -292,5 +290,5 @@
                     %i.mdi.mdi-star.reviewStar.right4
                     %i.mdi.mdi-star.reviewStar.right4
                   %div{:href => "#"}
-                  - if (review.comments != "")
-                    %h5.reviewText #{review.comments}
+                    - if (review.comments != "")
+                      %h5.reviewText #{review.comments}

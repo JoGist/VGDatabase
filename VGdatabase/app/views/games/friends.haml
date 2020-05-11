@@ -68,11 +68,11 @@
                   %a.mdi.mdi-star-outline.iconBig2.right{:href => friend_path(friend.friend_id) , "data-method" => "get"}
               .grid-item-details
                 %p.profile-hyper-links
-                  %a2.sub-header-details Username:
+                  %span.sub-header-details Username:
                   %span #{User.find(friend.friend_id).username}
               .grid-item-details
                 %p.profile-hyper-links
-                  %a2.sub-header-details Games in the collection:
+                  %span.sub-header-details Games in the collection:
                   %span #{Mylibrary.where(:user_id => friend.friend_id).length}
       - @friends1.each do |friend|
         .friendsCards
@@ -91,9 +91,9 @@
                   %a.mdi.mdi-star-outline.iconBig2.right{:href => friend_path(friend.friend_id) , "data-method" => "get"}
               .grid-item-details
                 %p.profile-hyper-links
-                  %a2.sub-header-details Username:
+                  %span.sub-header-details Username:
                   %span #{User.find(friend.friend_id).username}
               .grid-item-details
                 %p.profile-hyper-links
-                  %a2.sub-header-details Games in the collection:
+                  %span.sub-header-details Games in the collection:
                   %span #{Mylibrary.where(:user_id => friend.friend_id).length}
