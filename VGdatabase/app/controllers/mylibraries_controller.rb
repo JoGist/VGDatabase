@@ -29,7 +29,7 @@ class MylibrariesController < ApplicationController
             api_endpoint = 'https://api-v3.igdb.com/genres'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            genres = api.fields(:name).where(:id => 33).request[0].values[1]
+            genres = api.fields(:name).where(:id => games.values[2][0]).request[0].values[1]
             
             api_endpoint = 'https://api-v3.igdb.com/platforms'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
