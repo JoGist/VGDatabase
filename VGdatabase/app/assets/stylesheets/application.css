@@ -653,11 +653,11 @@ a:hover {
 }
 .description {
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-style: italic;
-  line-height: 1.35;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  line-height: 1.25;
+  overflow: hidden;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .btn {
   cursor: pointer;
@@ -933,6 +933,10 @@ a:hover {
 .s003 form .inner-form .input-field.third-wrap .btn-search svg {
   width: 20px;
   color: #fff;
+}
+.s003 form .inner-form .input-field.third-wrap .btn-search:hover svg {
+  width: 20px;
+  color: #555;
 }
 .s003 form .inner-form .input-field.third-wrap .btn-search {
   padding: 1.15rem;

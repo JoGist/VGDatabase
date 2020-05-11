@@ -115,29 +115,64 @@ def searchResult
         api_endpoint = 'https://api-v3.igdb.com/games'
         request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
         api = Apicalypse.new(api_endpoint, request_headers)
-        api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(12).request
         @result = api.request
-    elsif genre == 'Adventure'  
+    elsif genre == 'Fighting'  
         api_endpoint = 'https://api-v3.igdb.com/games'
         request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
         api = Apicalypse.new(api_endpoint, request_headers)
-        api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
-        @games = api.request
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(12).request   
+        @games = api.request 
         @result = []
+        @genre_requested = 4
         @games.each do |game|
             if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
-                if game.values[2].include?(31)
+                if game.values[2].include?(4)
                     @result.push(game)
                 end
             end
         end
+    
+    elsif genre == 'Platform'  
+        api_endpoint = 'https://api-v3.igdb.com/games'
+        request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+        api = Apicalypse.new(api_endpoint, request_headers)
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(12).request   
+        @games = api.request 
+        @result = []
+        @genre_requested = 8
+        @games.each do |game|
+            if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
+                if game.values[2].include?(8)
+                    @result.push(game)
+                end
+            end
+        end
+
+    elsif genre == 'Puzzle'  
+        api_endpoint = 'https://api-v3.igdb.com/games'
+        request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+        api = Apicalypse.new(api_endpoint, request_headers)
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(12).request   
+        @games = api.request 
+        @result = []
+        @genre_requested = 9
+        @games.each do |game|
+            if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
+                if game.values[2].include?(9)
+                    @result.push(game)
+                end
+            end
+        end
+        
     elsif genre == 'Racing'  
         api_endpoint = 'https://api-v3.igdb.com/games'
         request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
         api = Apicalypse.new(api_endpoint, request_headers)
-        api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
-        @games = api.request
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(12).request   
+        @games = api.request 
         @result = []
+        @genre_requested = 10
         @games.each do |game|
             if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                 if game.values[2].include?(10)
@@ -145,16 +180,66 @@ def searchResult
                 end
             end
         end
-    elsif genre == 'Arcade'  
+
+    elsif genre == 'RPG'  
         api_endpoint = 'https://api-v3.igdb.com/games'
         request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
         api = Apicalypse.new(api_endpoint, request_headers)
-        api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request   
-        @games = api.request 
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(12).request
+        @games = api.request
         @result = []
+        @genre_requested = 12
         @games.each do |game|
             if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
-                if game.values[2].include?(33)
+                if game.values[2].include?(12)
+                    @result.push(game)
+                end
+            end
+        end
+
+    elsif genre == 'Shooter'  
+        api_endpoint = 'https://api-v3.igdb.com/games'
+        request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+        api = Apicalypse.new(api_endpoint, request_headers)
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(12).request
+        @games = api.request
+        @result = []
+        @genre_requested = 5
+        @games.each do |game|
+            if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
+                if game.values[2].include?(5)
+                    @result.push(game)
+                end
+            end
+        end
+
+    elsif genre == 'Simulator'  
+        api_endpoint = 'https://api-v3.igdb.com/games'
+        request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+        api = Apicalypse.new(api_endpoint, request_headers)
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(12).request
+        @games = api.request
+        @result = []
+        @genre_requested = 13
+        @games.each do |game|
+            if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
+                if game.values[2].include?(13)
+                    @result.push(game)
+                end
+            end
+        end
+
+    elsif genre == 'Sport'  
+        api_endpoint = 'https://api-v3.igdb.com/games'
+        request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+        api = Apicalypse.new(api_endpoint, request_headers)
+        api.fields(:cover,:genres,:name,:platforms).search(search).limit(12).request
+        @games = api.request
+        @result = []
+        @genre_requested = 14
+        @games.each do |game|
+            if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
+                if game.values[2].include?(14)
                     @result.push(game)
                 end
             end

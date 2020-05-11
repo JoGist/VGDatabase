@@ -239,21 +239,22 @@
                   .grid-item-detailsImg
                     =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg" 
                     %span.sub-header-details2 #{User.find(friend.friend_id).username}
-        %br/
-        %br/
-        %div
-          .reviewHeader
-            %h5 #{@user.username}'s library
-          .reviewDiv
-            .reviewUser
-              - @library.each do |game|
-                - @games = Game.find(game.game_id)
-                .card
-                  .content.cardPadding
-                    %p.description Genre: #{@games.genre}
-                    %p.description Platforms: #{@games.platform}
-                    %a.btn{:href => guest_show_path(@games), "data-method" => "get"} View info 
-                  %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
+        - if (@library.length>0)
+          %br/
+          %br/
+          %div
+            .reviewHeader
+              %h5 #{@user.username}'s library
+            .reviewDiv
+              .userLibrary
+                - @library.each do |game|
+                  - @games = Game.find(game.game_id)
+                  .card
+                    .content.cardPadding
+                      %p.description Genre: #{@games.genre}
+                      %p.description Platforms: #{@games.platform}
+                      %a.btn{:href => game_path(@games), "data-method" => "get"} View info 
+                    %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
         %br/
         %br/
         %div
