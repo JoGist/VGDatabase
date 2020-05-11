@@ -176,6 +176,8 @@ skip_before_action :verify_authenticity_token
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
             @result = api.request
+            @genre_requested = 0
+            #render html: "#{@result}"
 
         elsif genre == 'Arcade'  
             api_endpoint = 'https://api-v3.igdb.com/games'
@@ -184,6 +186,7 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request   
             @games = api.request 
             @result = []
+            @genre_requested = 33
             @games.each do |game|
                 if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                     if game.values[2].include?(33)
@@ -199,6 +202,7 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
             @games = api.request
             @result = []
+            @genre_requested = 31
             @games.each do |game|
                 if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                     if game.values[2].include?(31)
@@ -214,6 +218,7 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request   
             @games = api.request 
             @result = []
+            @genre_requested = 4
             @games.each do |game|
                 if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                     if game.values[2].include?(4)
@@ -229,6 +234,7 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request   
             @games = api.request 
             @result = []
+            @genre_requested = 8
             @games.each do |game|
                 if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                     if game.values[2].include?(8)
@@ -244,6 +250,7 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request   
             @games = api.request 
             @result = []
+            @genre_requested = 9
             @games.each do |game|
                 if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                     if game.values[2].include?(9)
@@ -259,6 +266,7 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request   
             @games = api.request 
             @result = []
+            @genre_requested = 10
             @games.each do |game|
                 if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                     if game.values[2].include?(10)
@@ -274,6 +282,7 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
             @games = api.request
             @result = []
+            @genre_requested = 12
             @games.each do |game|
                 if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                     if game.values[2].include?(12)
@@ -289,6 +298,7 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
             @games = api.request
             @result = []
+            @genre_requested = 5
             @games.each do |game|
                 if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                     if game.values[2].include?(5)
@@ -304,6 +314,7 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
             @games = api.request
             @result = []
+            @genre_requested = 13
             @games.each do |game|
                 if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                     if game.values[2].include?(13)
@@ -319,6 +330,7 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(search).limit(10).request
             @games = api.request
             @result = []
+            @genre_requested = 14
             @games.each do |game|
                 if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
                     if game.values[2].include?(14)
