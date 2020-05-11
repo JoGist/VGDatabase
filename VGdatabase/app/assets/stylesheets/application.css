@@ -84,7 +84,7 @@ a button {
 }
 .buttonSmall:hover {
   color: #fff;
-  border: 1px solid #fff;
+  box-shadow: 0 0 6px #fff;
 }
 img {
   max-width: 100%;
@@ -132,6 +132,10 @@ form_tag {
   float: right;
   padding-top: 11.5rem;
 }
+.right7 {
+  float: right;
+  margin-top: -5px;
+}
 .gameStar {
   float: left;
   margin-left: 4.5rem;
@@ -146,6 +150,9 @@ form_tag {
   float: left;
   margin-top: -5px;
   list-style-type: none;
+}
+.left2 {
+  float: left;
 }
 .opacity0 {
   opacity: 0;
@@ -413,7 +420,7 @@ a:hover {
   border: 2px solid #fff;
 }
 .button:hover {
-  border: 2px solid #fff;
+  box-shadow: 0 0 6px #fff;
 }
 .default {
   cursor: default;
@@ -1624,3 +1631,16 @@ th {
   color: #000;
   background-color: #666;
 }
+.steam {
+  background-color: aqua;
+  font-size:0;
+  line-height:0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.steam:hover {
+  background-color: aqua;
+  font-size:0;
+  line-height:0;
+  box-shadow: 0 0 6px #fff;
+}
+
