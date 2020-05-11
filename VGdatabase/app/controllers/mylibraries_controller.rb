@@ -29,26 +29,8 @@ class MylibrariesController < ApplicationController
             api_endpoint = 'https://api-v3.igdb.com/genres'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            genres = api.fields(:name).where(:id => games.values[2][0]).request[0].values[1]
-  
-            api_endpoint = 'https://api-v3.igdb.com/platforms'
-            request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
-            api = Apicalypse.new(api_endpoint, request_headers)
-            platform = api.fields(:name).where(:id => games.values[4][0]).request[0].values[1]
-
-            api_endpoint = 'https://api-v3.igdb.com/release_dates'
-            request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
-            api = Apicalypse.new(api_endpoint, request_headers)
-            date = api.fields(:human).where(:game => games.values[0] , :platform => games.values[4][0]).request[0].values[1]
-            
-            Game.create(:serial => game_id, :platform => platform, :genre => genres, :cover => split, :title => games.values[3], :release_date => date)
-            @games = Game.where(:serial => game_id)[0].id
-            @user = User.find(session[:user_id])
-            @mylibrary = Mylibrary.new(:favorite => 'false')
-            @mylibrary.user_id = @user.id
-            @mylibrary.game_id = @games
-            @mylibrary.save!
-            redirect_to myLibrary_path
+            genres = api.fields(:name).where(:id => 33).request[0].values[1]
+            render html: "#{genres}"
         end
     end
 
