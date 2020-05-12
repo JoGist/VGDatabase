@@ -14,6 +14,7 @@ get '/forgot_password' => 'sessions#forgot_password'
 post '/forgot_password' => 'sessions#change_password'
 get '/forgot_password_error' => 'sessions#forgot_password_error'
 get '/forgot_password_error_password' => 'sessions#forgot_password_error_password'
+post '/auth/steam/callback' => 'steams#auth_callback'
 
 
 # User routes
