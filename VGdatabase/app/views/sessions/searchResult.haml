@@ -51,7 +51,7 @@
       -if @result.length == 0
         %h6.extraMarginLeft No result found 
       -else
-        %h6.extraMarginLeft Game result
+        %h6.extraMarginLeft Game result for #{@search}
         - @result.each do |game|
           -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
             -api_endpoint = 'https://api-v3.igdb.com/covers'

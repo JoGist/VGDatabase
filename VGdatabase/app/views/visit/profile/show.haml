@@ -99,13 +99,13 @@
                 - @friends.each do |friend|
                   .grid-item-detailsImg
                     =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg" 
-                    %span.sub-header-details2 #{User.find(friend.friend_id).username}
+                    %a{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
                     %i.mdi.mdi-star.friendStar
               -if @friends1.exists?
                 - @friends1.each do |friend|
                   .grid-item-detailsImg
                     =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg" 
-                    %span.sub-header-details2 #{User.find(friend.friend_id).username}
+                    %a{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
         - if (@library.length>0)
           %br/
           %br/
@@ -231,13 +231,13 @@
                 - @friends.each do |friend|
                   .grid-item-detailsImg
                     =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg" 
-                    %span.sub-header-details2 #{User.find(friend.friend_id).username}
+                    %a{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
                     %i.mdi.mdi-star.friendStar
               -if @friends1.exists?
                 - @friends1.each do |friend|
                   .grid-item-detailsImg
                     =image_tag (User.find(friend.friend_id).avatar) ,class: "reviewImg" 
-                    %span.sub-header-details2 #{User.find(friend.friend_id).username}
+                    %a{:href => visit_profile_path(friend.friend_id), "data-method" => "get"} #{User.find(friend.friend_id).username}
         - if (@library.length>0)
           %br/
           %br/
