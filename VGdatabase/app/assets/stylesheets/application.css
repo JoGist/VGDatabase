@@ -1066,6 +1066,9 @@ a:hover {
   background-color: #333;
   color: #f26657;
 }
+.grid-item-details a i {
+  color: #f26657;
+}
 .white:hover {
   color: #fff;
 }
@@ -1083,7 +1086,7 @@ a:hover {
 .grid-item-details_alt a:hover {
   color: #fff;
 }
-.grid-item-details a2:hover {
+.grid-item-details a:hover {
   color: #fff;
 }
 .grid-item-details input,

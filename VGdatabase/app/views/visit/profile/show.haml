@@ -78,16 +78,16 @@
               %h5.sub-header-details Games in his library:
               %span #{@library.length}
             .grid-item-details
-              %h5.sub-header-details Linked accounts:
-              %br
-              %a
-                %i.mdi.mdi-google
-                %span Google OAuth account
-              %br
-              %br
-              %a
-                %i.mdi.mdi-steam
-                %span Steam OAuth account
+              %h5.sub-header-details Linked account:
+              %a{:href => "https://steamcommunity.com/id/giovanni9813", :target => "_blank"}
+                %span.mdi.mdi-steam
+                %span steamOAuth_username
+                /- if steamOAuth_id.exist
+                /.grid-item-details
+                /%h5.sub-header-details Linked account:
+                /%a{:href => "https://steamcommunity.com/id/"+@steamOAuth_username, :target => "_blank"}
+                /%span.mdi.mdi-steam
+                /%span @steamOAuth_username               
           .account-grid-item-3
             .grid-item-details
               %span Friends
@@ -210,16 +210,16 @@
               %h5.sub-header-details Games in your collection:
               %span #{@library.length}
             .grid-item-details
-              %h5.sub-header-details Linked accounts:
-              %br
-              %a
-                %i.mdi.mdi-google
-                %span Google OAuth account
-              %br
-              %br
-              %a
-                %i.mdi.mdi-steam
-                %span Steam OAuth account
+              %h5.sub-header-details Linked account:
+              %a{:href => "https://steamcommunity.com/id/giovanni9813", :target => "_blank"}
+                %span.mdi.mdi-steam
+                %span steamOAuth_username
+                /- if steamOAuth_id.exist
+                /.grid-item-details
+                /%h5.sub-header-details Linked account:
+                /%a{:href => "https://steamcommunity.com/id/"+@steamOAuth_username, :target => "_blank"}
+                /%span.mdi.mdi-steam
+                /%span @steamOAuth_username 
           .account-grid-item-3
             .grid-item-details
               %span Friends

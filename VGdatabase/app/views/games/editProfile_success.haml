@@ -81,21 +81,40 @@
                 %br
                 %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "off", :type => "password"}/
               .grid-item-details
-                %h5.sub-header-details Linked accounts:
+                %h5.sub-header-details Linked account:
                 %br
                 %a
                   %i.mdi.mdi-google
-                  %span Google OAuth account
-                  %a2.right2.white{:href => '#'} x
+                  %i Google account not linked 
+                  %a.right2.x{:href => '#'} link
                 %br
                 %br
                 %a
                   %i.mdi.mdi-steam
-                  %span Steam OAuth account
-                  %a2.right2.white{:href => '#'} x
+                  %i @steamOAuth_username
+                  %a.right2.x{:href => '#'} remove
                 %br
-                %br
-                %a
+                /%h5.sub-header-details Linked account:
+                /%br
+                /%a
+                /%i.mdi.mdi-google
+                /- if googleOAuth_id.exist
+                /%span @googleOAuth_username
+                /%a.right2.x{:href => 'remove_googleOAuth_path'} remove
+                /- else
+                /%span Google account not linked 
+                /%a.right2.x{:href => '/auth/google_oauth2'} link
+                /%br
+                /%br
+                /%a
+                /%i.mdi.mdi-steam
+                /- if steamOAuth_id.exist
+                /%span @steamOAuth_username
+                /%a.right2.x{:href => 'remove_steamOAuth_path'} remove
+                /- else
+                /%span Steam account not linked 
+                /%a.right2.x{:href => '/auth/steam'} link
+                /%br
               .grid-item-details.white
                 %i.mdi.mdi-trash-can
                 %a2{:href => deleteUser_path} DELETE ACCOUNT
