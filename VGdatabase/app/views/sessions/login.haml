@@ -28,33 +28,9 @@
           %br/
           %button.button Log in
           %br/
-          %a.left
-            /Google OAuth button
-            #my-signin2
-            :javascript
-              function onSuccess(googleUser) {
-                console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-              }
-              function onFailure(error) {
-                console.log(error);
-              }
-              function renderButton() {
-                gapi.signin2.render('my-signin2', {
-                  'scope': 'profile email',
-                  'width': 250,
-                  'height': 50,
-                  'longtitle': true,
-                  'theme': 'dark',
-                  'onsuccess': onSuccess,
-                  'onfailure': onFailure
-                });
-              }
-            /%script{:async => "", :defer => "defer", :src => "https://apis.google.com/js/platform.js?onload=renderButton"}
           %a.left.steam{:href => '/auth/google_oauth2'}
-            =image_tag ('steam.png')
-            /end Google OAuth button
+            =image_tag ('google.png')
           %a.right7.steam{:href => '/auth/steam'}
             =image_tag ('steam.png')
-            /51EC3016597AB1EB1BC274E17432258F
           %br/
           %br/

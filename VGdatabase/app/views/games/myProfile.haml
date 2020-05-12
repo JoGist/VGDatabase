@@ -102,8 +102,7 @@
           .reviewDiv
             - if (@review.length==0)
               .reviewUser
-                %div
-                  %h6 You don't have any reviews
+                %h5.reviewText_alt You don't have any reviews
             - else
               - @review.each do |review|
                 - @game = Game.find(review.game_id)

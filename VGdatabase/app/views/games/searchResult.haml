@@ -1,7 +1,7 @@
 !!!
 %html{:lang => "en", class: "container"}
   %head
-    %title Search result - VGDatabase
+    %title Results for #{@search} - VGDatabase
   %body.visible
     %aside.sidebar.normal
       %nav
@@ -66,9 +66,9 @@
     %br
     %div.page-content
       -if @result.length == 0
-        %h6.extraMarginLeft No result found 
+        %h6.extraMarginLeft No result found for #{@search}
       -else
-        %h6.extraMarginLeft Game result for #{@search}
+        %h6.extraMarginLeft Search results for #{@search}
         - @result.each do |game|
           -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
             -api_endpoint = 'https://api-v3.igdb.com/covers'
