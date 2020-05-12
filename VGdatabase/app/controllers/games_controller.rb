@@ -177,7 +177,6 @@ skip_before_action :verify_authenticity_token
             api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request
             @result = api.request
             @genre_requested = 0
-            #render html: "#{@result}"
 
         elsif genre == 'Arcade'  
             api_endpoint = 'https://api-v3.igdb.com/games'
