@@ -14,7 +14,13 @@ get '/forgot_password' => 'sessions#forgot_password'
 post '/forgot_password' => 'sessions#change_password'
 get '/forgot_password_error' => 'sessions#forgot_password_error'
 get '/forgot_password_error_password' => 'sessions#forgot_password_error_password'
+
+#Steam
 post '/auth/steam/callback' => 'steams#auth_callback'
+
+#Google
+get 'auth/:provider/callback', to: 'googles#googleAuth'
+get 'auth/failure', to: redirect('/')
 
 
 # User routes

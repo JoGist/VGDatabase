@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200428173530) do
+ActiveRecord::Schema.define(version: 2020_05_12_171146) do
 
   create_table "avatars", force: :cascade do |t|
     t.string "avatar"
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 20200428173530) do
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "user_id", limit: 16
     t.integer "game_id"
     t.integer "score"
     t.text "comments"
@@ -63,6 +63,8 @@ ActiveRecord::Schema.define(version: 20200428173530) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "avatar"
+    t.string "google_token"
+    t.string "google_refresh_token"
   end
 
 end
