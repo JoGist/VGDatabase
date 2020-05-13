@@ -49,7 +49,7 @@
       = form_tag :method => :post do
         .my-account-wrapper
           .account-grid-system
-            .account-grid-item-1-alt2
+            .account-grid-item-1
               .profile-pic-details
                 .overlayImg.iconBig
                   %i.mdi.mdi-pencil
@@ -79,36 +79,23 @@
                 %br
                 %a
                   %i.mdi.mdi-google
-                  %i Google account not linked 
-                  %a.right2.x{:href => '#'} link
+                  - if @user.google_username!=nil
+                    %i #{@user.google_username}
+                    %i.right2.x already linked
+                  - else
+                    %i Google account not linked 
+                    %a.right2.x{:href => '/auth/google_oauth2'} link
                 %br
                 %br
                 %a
                   %i.mdi.mdi-steam
-                  %i @steamOAuth_username
-                  %a.right2.x{:href => '#'} remove
+                  - if @user.steam_username!=nil
+                    %i #{@user.steam_username}
+                    %i.right2.x already linked
+                  - else
+                    %i Steam account not linked 
+                    %a.right2.x{:href => '/auth/steam'} link
                 %br
-                /%h5.sub-header-details Linked account:
-                /%br
-                /%a
-                /%i.mdi.mdi-google
-                /- if googleOAuth_id.exist
-                /%span @googleOAuth_username
-                /%a.right2.x{:href => 'remove_googleOAuth_path'} remove
-                /- else
-                /%span Google account not linked 
-                /%a.right2.x{:href => '/auth/google_oauth2'} link
-                /%br
-                /%br
-                /%a
-                /%i.mdi.mdi-steam
-                /- if steamOAuth_id.exist
-                /%span @steamOAuth_username
-                /%a.right2.x{:href => 'remove_steamOAuth_path'} remove
-                /- else
-                /%span Steam account not linked 
-                /%a.right2.x{:href => '/auth/steam'} link
-                /%br
               %a.grid-item-details.white{:href => deleteUserConfirmation_path, "data-method" => "get"}
                 %br
                 %i.mdi.mdi-trash-can
@@ -130,44 +117,3 @@
                 .grid-item-detailsImg
                   %span You don't have friends
         %br/
-        %br/
-        %div
-          .reviewHeader
-            %a2
-              %h5.right5 click on a review title to edit
-              %i.mdi.mdi-pencil.right5
-            %h5 Your reviews
-          .reviewDiv
-            - if (@review.length==0)
-              .reviewUser
-                %h5.reviewText_alt You don't have any reviews
-            - else
-              - @review.each do |review|
-                - @game = Game.find(review.game_id)
-                .reviewUser
-                  =image_tag (@game.cover) ,class: "reviewImg" 
-                  %a{:href => edit_game_review_path(@game,review.id)} #{@game.title}
-                  - if (review.score==1)
-                    %i.mdi.mdi-star.reviewStar.right4
-                  - elsif (review.score==2)
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                  - elsif (review.score==3)
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                  - elsif (review.score==4)
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                  - else
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4                
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                    %i.mdi.mdi-star.reviewStar.right4
-                  %div{:href => "#"}
-                  - if (review.comments != "")
-                    %h5.reviewText #{review.comments}
-

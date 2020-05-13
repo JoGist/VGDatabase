@@ -85,20 +85,20 @@
                 %a
                   %i.mdi.mdi-google
                   - if @user.google_username!=nil
-                    %span #{@user.google_username}
-                    /%a.right2.x{:href => remove_googleOAuth_path} remove
+                    %i #{@user.google_username}
+                    %a.right2.x{:href => '#'} remove
                   - else
-                    %span Google account not linked 
+                    %i Account not linked 
                     %a.right2.x{:href => '/auth/google_oauth2'} link
                 %br
                 %br
                 %a
                   %i.mdi.mdi-steam
                   - if @user.steam_username!=nil
-                    %span #{@user.steam_username}
-                    /%a.right2.x{:href => remove_googleOAuth_path} remove
+                    %i #{@user.steam_username}
+                    %a.right2.x{:href => '#'} remove
                   - else
-                    %span Steam account not linked 
+                    %i Account not linked 
                     %a.right2.x{:href => '/auth/steam'} link
                 %br
               %a.grid-item-details.white{:href => deleteUserConfirmation_path, "data-method" => "get"}

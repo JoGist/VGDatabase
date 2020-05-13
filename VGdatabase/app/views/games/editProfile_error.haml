@@ -85,36 +85,23 @@
                 %br
                 %a
                   %i.mdi.mdi-google
-                  %i Google account not linked 
-                  %a.right2.x{:href => '#'} link
+                  - if @user.google_username!=nil
+                    %i #{@user.google_username}
+                    %a.right2.x{:href => '#'} remove
+                  - else
+                    %i Account not linked 
+                    %a.right2.x{:href => '/auth/google_oauth2'} link
                 %br
                 %br
                 %a
                   %i.mdi.mdi-steam
-                  %i @steamOAuth_username
-                  %a.right2.x{:href => '#'} remove
+                  - if @user.steam_username!=nil
+                    %i #{@user.steam_username}
+                    %a.right2.x{:href => '#'} remove
+                  - else
+                    %i Account not linked 
+                    %a.right2.x{:href => '/auth/steam'} link
                 %br
-                /%h5.sub-header-details Linked account:
-                /%br
-                /%a
-                /%i.mdi.mdi-google
-                /- if googleOAuth_id.exist
-                /%span @googleOAuth_username
-                /%a.right2.x{:href => 'remove_googleOAuth_path'} remove
-                /- else
-                /%span Google account not linked 
-                /%a.right2.x{:href => '/auth/google_oauth2'} link
-                /%br
-                /%br
-                /%a
-                /%i.mdi.mdi-steam
-                /- if steamOAuth_id.exist
-                /%span @steamOAuth_username
-                /%a.right2.x{:href => 'remove_steamOAuth_path'} remove
-                /- else
-                /%span Steam account not linked 
-                /%a.right2.x{:href => '/auth/steam'} link
-                /%br
               .grid-item-details.white
                 %i.mdi.mdi-trash-can
                 %a2{:href => deleteUser_path} DELETE ACCOUNT
