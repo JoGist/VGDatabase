@@ -86,7 +86,7 @@
                   %i.mdi.mdi-google
                   - if @user.google_username!=nil
                     %i #{@user.google_username}
-                    %a.right2.x{:href => '#'} remove
+                    %a.right2.x{:href => removeOauthGoogle_path} remove
                   - else
                     %i Account not linked 
                     %a.right2.x{:href => '/auth/google_oauth2'} link
@@ -96,7 +96,7 @@
                   %i.mdi.mdi-steam
                   - if @user.steam_username!=nil
                     %i #{@user.steam_username}
-                    %a.right2.x{:href => '#'} remove
+                    %a.right2.x{:href => removeOauthSteam_path} remove
                   - else
                     %i Account not linked 
                     %a.right2.x{:href => '/auth/steam'} link

@@ -77,17 +77,12 @@
             .grid-item-details
               %h5.sub-header-details Games in his library:
               %span #{@library.length}
-            .grid-item-details
-              %h5.sub-header-details Linked account:
-              %a{:href => "https://steamcommunity.com/id/giovanni9813", :target => "_blank"}
-                %span.mdi.mdi-steam
-                %span steamOAuth_username
-                /- if steamOAuth_id.exist
-                /.grid-item-details
-                /%h5.sub-header-details Linked account:
-                /%a{:href => "https://steamcommunity.com/id/"+@steamOAuth_username, :target => "_blank"}
-                /%span.mdi.mdi-steam
-                /%span @steamOAuth_username               
+            - if @user.steam_username!=nil
+              .grid-item-details
+                %h5.sub-header-details Linked account:
+                %a{:href => "https://steamcommunity.com/id/"+@user.steam_username, :target => "_blank"}
+                  %span.mdi.mdi-steam
+                  %span #{@user.steam_username}             
           .account-grid-item-3
             .grid-item-details
               %span Friends
@@ -209,17 +204,12 @@
             .grid-item-details
               %h5.sub-header-details Games in your collection:
               %span #{@library.length}
-            .grid-item-details
-              %h5.sub-header-details Linked account:
-              %a{:href => "https://steamcommunity.com/id/giovanni9813", :target => "_blank"}
-                %span.mdi.mdi-steam
-                %span steamOAuth_username
-                /- if steamOAuth_id.exist
-                /.grid-item-details
-                /%h5.sub-header-details Linked account:
-                /%a{:href => "https://steamcommunity.com/id/"+@steamOAuth_username, :target => "_blank"}
-                /%span.mdi.mdi-steam
-                /%span @steamOAuth_username 
+            - if @user.steam_username!=nil
+              .grid-item-details
+                %h5.sub-header-details Linked account:
+                %a{:href => "https://steamcommunity.com/id/"+@user.steam_username, :target => "_blank"}
+                  %span.mdi.mdi-steam
+                  %span #{@user.steam_username}
           .account-grid-item-3
             .grid-item-details
               %span Friends

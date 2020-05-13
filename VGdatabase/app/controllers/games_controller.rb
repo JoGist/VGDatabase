@@ -88,6 +88,18 @@ skip_before_action :verify_authenticity_token
         @friends = Friend.where(:user_id => @user.id)
     end
 
+    def removeOauthGoogle
+        @user = User.find(session[:user_id])
+        @user.update_attributes!(:google_token => nil, :google_username => nil)
+        redirect_to editProfile_path
+    end
+
+    def removeOauthSteam
+        @user = User.find(session[:user_id])
+        @user.update_attributes!(:steam_token => nil, :steam_username => nil)
+        redirect_to editProfile_path
+    end
+
     def editAvatar
         @avatar = Avatar.all
     end
