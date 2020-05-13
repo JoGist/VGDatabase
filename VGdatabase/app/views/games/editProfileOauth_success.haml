@@ -85,20 +85,18 @@
                   %i.mdi.mdi-google
                   - if @user.google_username!=nil
                     %i #{@user.google_username}
-                    %a.right2.x{:href => '#'} remove
+                    %i.right2.x linked
                   - else
-                    %i Account not linked 
-                    %a.right2.x{:href => '/auth/google_oauth2'} link
+                    %i Account not linked
                 %br
                 %br
                 %a
                   %i.mdi.mdi-steam
                   - if @user.steam_username!=nil
                     %i #{@user.steam_username}
-                    %a.right2.x{:href => '#'} remove
+                    %i.right2.x linked
                   - else
-                    %i Account not linked 
-                    %a.right2.x{:href => '/auth/steam'} link
+                    %i Account not linked
                 %br
               .grid-item-details.white
                 %i.mdi.mdi-trash-can

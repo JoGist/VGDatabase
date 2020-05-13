@@ -15,7 +15,7 @@ class SteamsController < ApplicationController
         end
       else
         if !User.exists?(:steam_token => auth.uid)
-          User.find(session[:user_id]).update_attributes(:steam_username => auth.info['nickname'],:steam_token => auth.uid)
+          User.find(session[:user_id]).update_attributes(:steam_username => auth.info.values[4].values[0].split('id/')[1].split('/')[0],:steam_token => auth.uid)
           redirect_to editProfile_success_path
         else
           redirect_to editProfile_error_path 

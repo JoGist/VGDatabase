@@ -11,7 +11,7 @@ class GooglesController < ApplicationController
                 session[:user_id] = User.where(:google_token => auth.uid)[0].id
                 redirect_to editProfileOauth_path
             else
-                session[:user_id] = User.where(:steam_token => auth.uid)[0].id
+                session[:user_id] = User.where(:google_token => auth.uid)[0].id
                 redirect_to homepage_path  
             end
         else
