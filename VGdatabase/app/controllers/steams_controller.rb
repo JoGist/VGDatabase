@@ -4,13 +4,22 @@ class SteamsController < ApplicationController
 
     def auth_callback
       auth = request.env['omniauth.auth']
-      if !User.exists?(:steam_token => auth.uid)
-        User.create(:username => auth.info['nickname'],:steam_username => auth.info['nickname'],:avatar => auth.info['image'],:steam_token => auth.uid)
-        session[:user_id] = User.where(:steam_token => auth.uid)[0].id
-        redirect_to editProfile_path
+      if session[:user_id]==nil
+        if !User.exists?(:steam_token => auth.uid)
+          User.create(:username => auth.info['nickname'],:steam_username => auth.info['nickname'],:avatar => auth.extra.raw_info['avatarfull'],:steam_token => auth.uid)
+          session[:user_id] = User.where(:steam_token => auth.uid)[0].id
+          redirect_to editProfileOauth_path
+        else
+          session[:user_id] = User.where(:steam_token => auth.uid)[0].id
+          redirect_to homepage_path  
+        end
       else
-        session[:user_id] = User.where(:steam_token => auth.uid)[0].id
-        redirect_to homepage_path  
+        if !User.exists?(:steam_token => auth.uid)
+          User.find(session[:user_id]).update_attributes(:steam_username => auth.info['nickname'],:steam_token => auth.uid)
+          redirect_to editProfile_success_path
+        else
+          redirect_to editProfile_error_path 
+        end
       end
     end
-  end
+end

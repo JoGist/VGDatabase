@@ -62,45 +62,53 @@
                 %p.profile-hyper-links
                   %a Save changes 
                   %i.mdi.mdi-content-save
-              .grid-item-details-button
-                %p.profile-hyper-links
-                  %a{:href => myProfile_path, "data-method" => "get"} Discard changes  x
             .account-grid-item-2
               .grid-item-details
                 %h5.sub-header-details Username
                 %input{:name => 'user[name]' , :value => @user.username , :autocomplete => "username", :type => "text"}/
               .grid-item-details
                 %h5.sub-header-details Email
-                %input{:name => 'user[email]' , :value => @user.email , :autocomplete => "email", :type => "email"}/
+                %input{:name => 'user[email]' , :value => @user.email , :autocomplete => "email", :type => "email", :required => ''}/
               .grid-item-details
                 %h5.sub-header-details Password
-                %input{:name => 'user[oldp]' , :placeholder => 'Enter current password' , :autocomplete => "current-password", :type => "password"}/
+                %input{:name => 'user[newp]' , :placeholder => 'Enter password' , :autocomplete => "new-password", :type => "password", :required => ''}/
                 %br
-                %input{:name => 'user[newp]' , :placeholder => 'Enter new password' , :autocomplete => "new-password", :type => "password"}/
-                %br
-                %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "new-password", :type => "password"}/
+                %input{:name => 'user[newp1]' , :placeholder => 'Re-enter password' , :autocomplete => "new-password", :type => "password", :required => ''}/
               .grid-item-details
                 %h5.sub-header-details Linked account:
                 %br
                 %a
                   %i.mdi.mdi-google
-                  - if @user.google_username!=nil
-                    %span #{@user.google_username}
-                    /%a.right2.x{:href => remove_googleOAuth_path} remove
-                  - else
-                    %span Google account not linked 
-                    %a.right2.x{:href => '/auth/google_oauth2'} link
+                  %i Google account not linked 
+                  %a.right2.x{:href => '#'} link
                 %br
                 %br
                 %a
                   %i.mdi.mdi-steam
-                  - if @user.steam_username!=nil
-                    %span #{@user.steam_username}
-                    /%a.right2.x{:href => remove_googleOAuth_path} remove
-                  - else
-                    %span Steam account not linked 
-                    %a.right2.x{:href => '/auth/steam'} link
+                  %i @steamOAuth_username
+                  %a.right2.x{:href => '#'} remove
                 %br
+                /%h5.sub-header-details Linked account:
+                /%br
+                /%a
+                /%i.mdi.mdi-google
+                /- if googleOAuth_id.exist
+                /%span @googleOAuth_username
+                /%a.right2.x{:href => 'remove_googleOAuth_path'} remove
+                /- else
+                /%span Google account not linked 
+                /%a.right2.x{:href => '/auth/google_oauth2'} link
+                /%br
+                /%br
+                /%a
+                /%i.mdi.mdi-steam
+                /- if steamOAuth_id.exist
+                /%span @steamOAuth_username
+                /%a.right2.x{:href => 'remove_steamOAuth_path'} remove
+                /- else
+                /%span Steam account not linked 
+                /%a.right2.x{:href => '/auth/steam'} link
+                /%br
               %a.grid-item-details.white{:href => deleteUserConfirmation_path, "data-method" => "get"}
                 %br
                 %i.mdi.mdi-trash-can

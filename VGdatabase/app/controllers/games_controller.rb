@@ -51,6 +51,43 @@ skip_before_action :verify_authenticity_token
         @friends = Friend.where(:user_id => @user.id)
     end
 
+    def editProfileOauth
+        @user = User.find(session[:user_id])
+        @review = Review.where(:user_id => @user)
+        @friends = Friend.where(:user_id => @user.id)
+    end
+
+    def editingProfileOauth
+        username = params[:user][:name]
+        email = params[:user][:email]
+        newp = params[:user][:newp]
+        newp1 = params[:user][:newp1]
+        @user = User.find(session[:user_id])
+        if username.length==0 && email.length==0 && newp.length==0 && newp1.length==0
+            redirect_to editProfileOauth_error_path
+        elsif username.length!=0 && email.length!=0 && newp.length!=0 && newp==newp1
+            @user.update_attributes!(:username => username, :email => email, :password => newp)
+            redirect_to editProfileOauth_success_path
+        elsif username.length!=0 && email.length!=0 && newp.length==0 && newp1.length==0
+            @user.update_attributes!(:username => username, :email => email)
+            redirect_to editProfileOauth_success_path
+        else
+            redirect_to editProfileOauth_error_path
+        end
+    end
+
+    def editProfileOauth_error
+        @user = User.find(session[:user_id])
+        @review = Review.where(:user_id => @user)
+        @friends = Friend.where(:user_id => @user.id)
+    end
+
+    def editProfileOauth_success
+        @user = User.find(session[:user_id])
+        @review = Review.where(:user_id => @user)
+        @friends = Friend.where(:user_id => @user.id)
+    end
+
     def editAvatar
         @avatar = Avatar.all
     end
@@ -132,6 +169,7 @@ skip_before_action :verify_authenticity_token
         @library.each do |library|
             library.delete
         end
+        session.delete(:user_id)
         User.delete(name)
         redirect_to login_path
     end

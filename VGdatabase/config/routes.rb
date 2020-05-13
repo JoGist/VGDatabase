@@ -48,6 +48,10 @@ get '/searchGame' => 'games#searchGame'
 post '/searchGame' => 'games#searchResult'
 get '/searchUserError' => 'games#searchUserError'
 post '/searchUserError' => 'games#searchingUser'
+get '/editProfileOauth' => 'games#editProfileOauth'
+post '/editProfileOauth' => 'games#editingProfileOauth'
+get '/editProfileOauth_error' => "games#editProfileOauth_error"
+get '/editProfileOauth_success' => "games#editProfileOauth_success"
 
 # Guest routes
 get '/homepage_guest' => 'sessions#homepageGuest'

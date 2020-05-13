@@ -52,10 +52,11 @@
             .account-grid-item-1-alt2
               .profile-pic-details
                 .overlayImg.iconBig
-                  %i.mdi.mdi-pencil
+                  %i.mdi.mdi-upload
                   %span.hidden _
-                  %span change avatar
-                  %a.overlayProfileImg{:href => editAvatar_path, "data-method" => "get"}
+                  %span edit picture
+                  .overlayProfileImg
+                    %input{:name => "myfile", :type => "file"}/
                 =image_tag (@user.avatar) ,class: "img"
               .grid-item-detailsProfile
               %button.grid-item-details-button-2
@@ -68,45 +69,53 @@
             .account-grid-item-2
               .grid-item-details
                 %h5.sub-header-details Username
-                %input{:name => 'user[name]' , :value => @user.username , :autocomplete => "username", :type => "text"}/
+                %input{:name => 'user[name]' , :placeholder => @user.username , :autocomplete => "off", :type => "text"}/
               .grid-item-details
                 %h5.sub-header-details Email
-                %input{:name => 'user[email]' , :value => @user.email , :autocomplete => "email", :type => "email"}/
+                %input{:name => 'user[email]' , :placeholder => @user.email , :autocomplete => "off", :type => "email"}/
               .grid-item-details
                 %h5.sub-header-details Password
-                %input{:name => 'user[oldp]' , :placeholder => 'Enter current password' , :autocomplete => "current-password", :type => "password"}/
+                %input{:name => 'user[newp]' , :placeholder => 'Enter new password' , :autocomplete => "off", :type => "password"}/
                 %br
-                %input{:name => 'user[newp]' , :placeholder => 'Enter new password' , :autocomplete => "new-password", :type => "password"}/
-                %br
-                %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "new-password", :type => "password"}/
+                %input{:name => 'user[newp1]' , :placeholder => 'Re-enter new password' , :autocomplete => "off", :type => "password"}/
               .grid-item-details
                 %h5.sub-header-details Linked account:
                 %br
                 %a
                   %i.mdi.mdi-google
-                  - if @user.google_username!=nil
-                    %span #{@user.google_username}
-                    /%a.right2.x{:href => remove_googleOAuth_path} remove
-                  - else
-                    %span Google account not linked 
-                    %a.right2.x{:href => '/auth/google_oauth2'} link
+                  %i Google account not linked 
+                  %a.right2.x{:href => '#'} link
                 %br
                 %br
                 %a
                   %i.mdi.mdi-steam
-                  - if @user.steam_username!=nil
-                    %span #{@user.steam_username}
-                    /%a.right2.x{:href => remove_googleOAuth_path} remove
-                  - else
-                    %span Steam account not linked 
-                    %a.right2.x{:href => '/auth/steam'} link
+                  %i @steamOAuth_username
+                  %a.right2.x{:href => '#'} remove
                 %br
-              %a.grid-item-details.white{:href => deleteUserConfirmation_path, "data-method" => "get"}
-                %br
+                /%h5.sub-header-details Linked account:
+                /%br
+                /%a
+                /%i.mdi.mdi-google
+                /- if googleOAuth_id.exist
+                /%span @googleOAuth_username
+                /%a.right2.x{:href => 'remove_googleOAuth_path'} remove
+                /- else
+                /%span Google account not linked 
+                /%a.right2.x{:href => '/auth/google_oauth2'} link
+                /%br
+                /%br
+                /%a
+                /%i.mdi.mdi-steam
+                /- if steamOAuth_id.exist
+                /%span @steamOAuth_username
+                /%a.right2.x{:href => 'remove_steamOAuth_path'} remove
+                /- else
+                /%span Steam account not linked 
+                /%a.right2.x{:href => '/auth/steam'} link
+                /%br
+              .grid-item-details.white
                 %i.mdi.mdi-trash-can
-                %span DELETE ACCOUNT
-                %br
-                %br
+                %a2{:href => deleteUser_path} DELETE ACCOUNT
             .account-grid-item-3
               .grid-item-details
                 %span Friends
@@ -125,8 +134,8 @@
         %br/
         %div
           .reviewHeader
-            %a2
-              %h5.right5 click on a review title to edit
+            %a
+              %h5.right5 click on a review to edit
               %i.mdi.mdi-pencil.right5
             %h5 Your reviews
           .reviewDiv
@@ -162,4 +171,9 @@
                   %div{:href => "#"}
                   - if (review.comments != "")
                     %h5.reviewText #{review.comments}
-
+            .overlay
+              .popup
+                %h2 Success
+                %a.close{:href => myProfile_path, "data-method" => "get"} ×
+                .content
+                  All changes has been saved.
