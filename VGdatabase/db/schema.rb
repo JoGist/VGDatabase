@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_12_171146) do
+ActiveRecord::Schema.define(version: 2020_05_13_134236) do
 
   create_table "avatars", force: :cascade do |t|
     t.string "avatar"
@@ -64,7 +64,9 @@ ActiveRecord::Schema.define(version: 2020_05_12_171146) do
     t.datetime "updated_at", null: false
     t.string "avatar"
     t.string "google_token"
-    t.string "google_refresh_token"
+    t.string "steam_token"
+    t.string "steam_username"
+    t.string "google_username"
   end
 
 end
