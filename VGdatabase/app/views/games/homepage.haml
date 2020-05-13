@@ -48,7 +48,7 @@
         -api_endpoint = 'https://api-v3.igdb.com/games'
         -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
         -api = Apicalypse.new(api_endpoint, request_headers)
-        -api.fields(:cover,:genres,:name,:platforms,:popularity).where('popularity > 150').limit(10).request
+        -api.fields(:cover,:genres,:name,:platforms,:popularity).where('popularity > 420').limit(10).request
         -@result = api.request
         - @result.each do |game|
           -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms') && game.keys.include?('popularity')
