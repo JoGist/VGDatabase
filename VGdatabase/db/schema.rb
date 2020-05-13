@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_13_140054) do
+ActiveRecord::Schema.define(version: 2020_05_13_145344) do
 
   create_table "avatars", force: :cascade do |t|
     t.string "avatar"
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2020_05_13_140054) do
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.integer "user_id", limit: 16
+    t.integer "user_id"
     t.integer "game_id"
     t.integer "score"
     t.text "comments"
@@ -60,13 +60,11 @@ ActiveRecord::Schema.define(version: 2020_05_13_140054) do
     t.string "email"
     t.string "username"
     t.string "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.string "avatar"
     t.integer "google_token", limit: 16
-    t.integer "steam_token", limit: 16
-    t.string "steam_username"
     t.string "google_username"
+    t.string "steam_username"
+    t.integer "steam_token"
   end
 
 end

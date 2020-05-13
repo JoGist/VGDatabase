@@ -5,12 +5,12 @@ class GooglesController < ApplicationController
     def googleAuth
         auth = request.env["omniauth.auth"]
         info = auth.info
-        if !User.exists?(:id => auth.uid)
-            User.create(:username => info.name ,:avatar => info.image, :id => auth.uid)
-            session[:user_id] = {:id => auth.uid}.values[0]
+        if !User.exists?(:google_token => auth.uid)
+            User.create(:username => info.name ,:google_username => info.name , :avatar => info.image, :google_token => auth.uid, :email => info.email)
+            session[:user_id] = User.where(:google_token => auth.uid)[0].id
             redirect_to editProfile_path
         else
-            session[:user_id] = {:id => auth.uid}.values[0]
+            session[:user_id] = User.where(:google_token => auth.uid)[0].id
             redirect_to homepage_path  
          end
     end
