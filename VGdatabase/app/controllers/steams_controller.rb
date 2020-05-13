@@ -6,7 +6,7 @@ class SteamsController < ApplicationController
       auth = request.env['omniauth.auth']
       if session[:user_id]==nil
         if !User.exists?(:steam_token => auth.uid)
-          User.create(:username => auth.info['nickname'],:steam_username => auth.info['nickname'],:avatar => auth.extra.raw_info['avatarfull'],:steam_token => auth.uid)
+          User.create(:username => auth.info['nickname'],:steam_username => auth.info.values[4].values[0].split('id/')[1].split('/')[0],:avatar => auth.extra.raw_info['avatarfull'],:steam_token => auth.uid)
           session[:user_id] = User.where(:steam_token => auth.uid)[0].id
           redirect_to editProfileOauth_path
         else
