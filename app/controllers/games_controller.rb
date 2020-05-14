@@ -106,6 +106,7 @@ skip_before_action :verify_authenticity_token
 
     def editingAvatar
         @user = User.find(session[:user_id])
+        @user = User.find(session[:user_id])
         avatar = params[:avatar]
         @user.update_attributes!(:avatar => avatar)
         redirect_to myProfile_path
@@ -225,7 +226,7 @@ skip_before_action :verify_authenticity_token
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request
+            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
             @result = api.request
             @genre_requested = 0
 

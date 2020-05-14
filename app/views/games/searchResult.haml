@@ -70,7 +70,7 @@
       -else
         %h6.extraMarginLeft Search results for #{@search}
         - @result.each do |game|
-          -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms')
+          -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms') && game.keys.include?('involved_companies')
             -api_endpoint = 'https://api-v3.igdb.com/covers'
             -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             -api = Apicalypse.new(api_endpoint, request_headers)
@@ -89,11 +89,11 @@
             -api_endpoint = 'https://api-v3.igdb.com/platforms'
             -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             -api = Apicalypse.new(api_endpoint, request_headers)
-            -@platform = api.fields(:name).where(:id => game.values[4][0]).request[0].values[1]
+            -@platform = api.fields(:name).where(:id => game.values[5][0]).request[0].values[1]
 
             .card
               .content.cardPadding
-                %p.description #{game.values[3]}
+                %p.description #{game.values[4]}
                 %p.description Genre: #{@genres}
                 %p.description Platforms: #{@platform}
                 -if Game.exists?(:serial => game.values[0])
