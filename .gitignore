@@ -1,9 +1,9 @@
 # Ignored file extension
-/VGDatabase/.config
-/VGDatabase/coverage/
-/VGDatabase/InstalledFiles
-/VGDatabase/pkg/
-/VGDatabase/spec/reports/
+.config
+coverage/
+InstalledFiles
+pkg/
+spec/reports/
 
 # Ignored files with thosr extensions
 *.gem
@@ -23,11 +23,11 @@ rerun.txt
 pickle-email-*.html
 
 # Ignore all logfiles and tempfiles.
-/VGDatabase/tmp/*
-/VGDatabase/log/*
+/tmp/*
+/log/*
 
 # Ignore bundler config.
-/VGDatabase/.bundle
+/.bundle
 
 # Ignore Byebug command history file.
 .byebug_history
@@ -41,14 +41,14 @@ build-iPhoneOS/
 build-iPhoneSimulator/
 
 # Documentation cache and generated files:
-VGDatabase/.yardoc/
-VGDatabase/_yardoc/
-/VGDatabase/doc/
-/VGDatabase/rdoc/
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
 
 # Ignore all logfiles and tempfiles.
-VGDatabase/log/*
-VGDatabase/log/*/tmp/*
+/log/*
+/log/*/tmp/*
 !/log/.keep
 !/tmp/.keep
 
@@ -57,8 +57,8 @@ VGDatabase/log/*/tmp/*
 #/VGDatabase/db/*.sqlite3-journal
 
 # Comment out this rule if you are OK with secrets being uploaded to the repo
-VGDatabase/config/initializers/secret_token.rb
-VGDatabase/config/master.key
+/config/initializers/secret_token.rb
+/config/master.key
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
@@ -75,17 +75,16 @@ bower.json
 .byebug_history
 
 # Ignore node_modules
-/VGDatabase/node_modules/
+/node_modules/
 
 # Ignore yarn files
-/VGDatabase/yarn-error.log
+/yarn-error.log
 yarn-debug.log*
 .yarn-integrity
 
 # Ignore visual studio workspace folders
 .vscode
 /.vscode
-/VGDatabase/.vscode
-VGdatabase/tmp/pids/server.pid
+/tmp/pids/server.pid
 *.pid
-VGdatabase/tmp/pids/server.pid
+/tmp/pids/server.pid
