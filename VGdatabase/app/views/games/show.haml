@@ -93,8 +93,12 @@
                 %i.mdi.mdi-star.reviewStar
                 %i.mdi.mdi-star.reviewStar
                 %i.mdi.mdi-star.reviewStar
-            %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
-            %br
+            -if @games.release_date == nil
+              %h4 Release date: not available
+              %br
+            -else
+              %h4 Release date: #{@games.release_date.strftime('%d %B %Y')}
+              %br
             - if @library.exists?(:game_id => @games)
               %a.buttonSmall{:href => myLibrary_path, "data-method" => "get"}
                 %span.sidebar__nav__text Already in library
