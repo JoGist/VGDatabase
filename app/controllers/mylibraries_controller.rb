@@ -76,7 +76,7 @@ class MylibrariesController < ApplicationController
         @mygame = Mylibrary.find(id)
         if @mygame.favorite == "false"
             @mygame.update_attributes!(:favorite => "true")
-            redirect_to myLibraryFavorites_path
+            redirect_to myLibrary_path
         else
             @mygame.update_attributes!(:favorite => "false")   
             redirect_to myLibraryFavorites_path
