@@ -529,12 +529,12 @@ skip_before_action :verify_authenticity_token
                 @review.each do |review|
                     review.delete
                 end
-                @library = Store.where(:user_id => @user)
+                @library = Mylibrary.where(:user_id => @user)
                 @library.each do |library|
                     library.delete
                 end
                 User.delete(@user)
-                redirect_to deletingUser_succes_path
+                redirect_to deletingUser_success_path
             else
                 redirect_to deletingUser_error_path
             end
