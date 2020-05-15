@@ -1460,6 +1460,14 @@ textarea {
   background-color: #444;
   border: 1px solid #f26657;
 }
+.reviewText_alt2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+  padding: 15px;
+  background-color: #444;
+  border: 1px solid #f26657;
+}
 .reviewUser {
   padding: 15px;
   border-bottom: 1px solid #444;
