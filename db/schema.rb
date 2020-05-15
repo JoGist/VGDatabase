@@ -10,17 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_13_145344) do
+ActiveRecord::Schema.define(version: 2020_05_15_085012) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "avatars", force: :cascade do |t|
     t.string "avatar"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "friends", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "friend_id"
+    t.bigint "user_id"
+    t.bigint "friend_id"
     t.string "favorite"
     t.index ["friend_id"], name: "index_friends_on_friend_id"
     t.index ["user_id"], name: "index_friends_on_user_id"
@@ -31,25 +32,24 @@ ActiveRecord::Schema.define(version: 2020_05_13_145344) do
     t.integer "serial"
     t.string "developer"
     t.string "platform"
+    t.string "genre"
     t.integer "score"
     t.datetime "release_date"
     t.string "cover"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "genre"
+    t.string "plot"
   end
 
   create_table "mylibraries", force: :cascade do |t|
-    t.integer "game_id"
-    t.integer "user_id"
+    t.bigint "game_id"
+    t.bigint "user_id"
     t.string "favorite"
-    t.index ["game_id"], name: "index_mylibraries_on_game_id"
-    t.index ["user_id"], name: "index_mylibraries_on_user_id"
+    t.index ["game_id"], name: "index_my_libraries_on_game_id"
+    t.index ["user_id"], name: "index_my_libraries_on_user_id"
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "game_id"
+    t.bigint "user_id"
+    t.bigint "game_id"
     t.integer "score"
     t.text "comments"
     t.index ["game_id"], name: "index_reviews_on_game_id"
@@ -61,10 +61,10 @@ ActiveRecord::Schema.define(version: 2020_05_13_145344) do
     t.string "username"
     t.string "password"
     t.string "avatar"
-    t.integer "google_token", limit: 16
+    t.decimal "google_token"
     t.string "google_username"
     t.string "steam_username"
-    t.integer "steam_token"
+    t.bigint "steam_token"
   end
 
 end

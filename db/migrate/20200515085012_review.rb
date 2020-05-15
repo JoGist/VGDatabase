@@ -5,6 +5,6 @@ class Review < ActiveRecord::Migration[5.2]
       t.references 'game'
       t.integer 'score'
       t.text 'comments'
-      end
+    end
   end
 end
