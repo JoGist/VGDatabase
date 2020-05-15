@@ -133,7 +133,7 @@
           .reviewDiv
             - if (@review.length==0)
               .reviewUser
-                %h5.reviewText_alt This user don't have any reviews
+                %h5.reviewText_alt This user doesn't have any reviews
             - else
               - @review.each do |review|
                 - @game = Game.find(review.game_id)
@@ -260,7 +260,7 @@
           .reviewDiv
             - if (@review.length==0)
               .reviewUser
-                %h5.reviewText_alt This user don't have any reviews
+                %h5.reviewText_alt This user doesn't have any reviews
             - else
               - @review.each do |review|
                 - @game = Game.find(review.game_id)

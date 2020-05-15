@@ -44,7 +44,6 @@
     %br/
     %h1 Game info
     %div.page-content
-      %h1 #{@plot}
       %br
         %ul
           %li.left
@@ -112,6 +111,8 @@
               %i.mdi.mdi-amazon
               %span.hidden . 
               %span.sidebar__nav__text BUY
+          %div{:href => "#"}
+            %h5.reviewText #{@plot}
           %div.right3
             .reviewHeader
               - if (@review.exists?(:user_id => @user))
@@ -124,7 +125,7 @@
                   %i.mdi.mdi-plus.right5
               %h5 Reviews
               -if (@review.length==0 && @aux.length==0)
-                %h5.reviewText This game doesen't have any review
+                %h5.reviewText This game doesn't have any review
             .reviewDiv
               - @review.each do |review|
                 - @users = User.where(:id => review.user_id)[0]
