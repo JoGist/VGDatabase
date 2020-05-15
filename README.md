@@ -17,15 +17,19 @@ In order to build and run the Rails server in your machine, you must have instal
 *   _Bundler 2.0_
 *   _Ruby 2.7.0p0_
 *   _Rails 6.0.2.2_
+*   _Postgres 9 or above_
 *   _JavaScript (any version)_
 
 
-## Code usage
-To build and run the Rails server, go into the /VGDatabase folder and run:
+## Rails app usage
+To build and run the Rails app, go into the root folder of the repo and run the following commands.
+
+Build and install all required Gems included in Gemfile:
 ```sh
 Bundle install
 ```
-To intall all required Gems, then run:
+
+Start the rails server:
 ```sh
 rails server
 ```
@@ -45,7 +49,12 @@ View all the routes created in the project
 rails route
 ```
 
-Execute database table migrations that have not run yet
+Drop and recreate the schema and the tables
 ```sh
-rake:db migrate
+rake db:reset
+```
+
+Execute database table migrations that are pending
+```sh
+rake db:migrate
 ```
