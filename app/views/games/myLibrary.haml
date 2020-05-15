@@ -53,14 +53,21 @@
       %a.editText{:href => editLibrary_path, "data-method" => "get"}
         %span Edit
         %i.mdi.mdi-pencil
-      - @library.each do |game|
+      - @library_favorites.each do |game|
         - if (game.user_id == @user.id) 
           - @games = Game.find(game.game_id)
           .card
-            - if (game.favorite == "true")
-              %a.mdi.mdi-star.dot
-            - else             
-              %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "put"}
+            %a.mdi.mdi-star.dot
+            .content.cardPadding
+              %p.description Genre: #{@games.genre}
+              %p.description Platforms: #{@games.platform}
+              %a.btn{:href => game_path(game.game_id), "data-method" => "get"} View info 
+            %img.cover{:alt => "Game image cover", :src => "#{@games.cover}"}
+      - @library.each do |game|
+        - if (game.user_id == @user.id) 
+          - @games = Game.find(game.game_id)
+          .card         
+            %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(@games.id,game.id), "data-method" => "put"}
             .content.cardPadding
               %p.description Genre: #{@games.genre}
               %p.description Platforms: #{@games.platform}

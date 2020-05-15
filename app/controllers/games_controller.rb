@@ -58,7 +58,8 @@ skip_before_action :verify_authenticity_token
         end
 
     def myLibrary
-        @library = Mylibrary.all
+        @library_favorites = Mylibrary.where(:favorite => "true")
+        @library = Mylibrary.where(:favorite => "false")
         @user = User.find(session[:user_id])
     end
 
