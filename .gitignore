@@ -90,4 +90,4 @@ yarn-debug.log*
 /tmp/pids/server.pid
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
+#/config/master.key
