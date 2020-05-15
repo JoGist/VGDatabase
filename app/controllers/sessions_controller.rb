@@ -83,7 +83,7 @@ def change_password
 end
 
 def homepageGuest
-    @games = Game.all
+    @games = Game.order('games.title ASC').all
 end
 
 def contactUsGuest

@@ -51,9 +51,9 @@ skip_before_action :verify_authenticity_token
                     Game.create(:serial => games.values[0], :platform => platform, :genre => genres, :cover => split, :title => games.values[4], :release_date => date, :developer => companies)
                     end
                 end
-                @games = Game.all
+                @games = Game.order('games.title ASC').all
             else
-                @games = Game.all
+                @games = Game.order('games.title ASC').all
             end
         end
 
