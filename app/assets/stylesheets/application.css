@@ -458,6 +458,19 @@ a:hover {
   background-color: #f26657;
   border: none;
 }
+.buttonSmall_alt {
+  cursor: default;
+  margin-top: 4.6rem;
+  margin-right: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f26657;
+  border: none;
+}
 .buttonSmall-null {
   cursor: default;
   margin-top: 4.6rem;
@@ -1226,6 +1239,13 @@ textarea {
 }
 .profile-hlp-txt span {
   color: f26657;
+}
+a .profile-hyper-links {
+  font-size: 14px;
+  margin: 3px;
+}
+a .profile-hyper-links:hover a{
+  color: #fff !important;
 }
 .profile-hyper-links {
   font-size: 14px;
