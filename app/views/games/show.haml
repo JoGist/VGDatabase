@@ -111,8 +111,12 @@
               %i.mdi.mdi-amazon
               %span.hidden . 
               %span.sidebar__nav__text BUY
-          %div{:href => "#"}
-            %h5.reviewText #{@plot}
+          - if @plot.length!=0
+            %br
+            %div.right3
+              .reviewHeader
+              %h5.reviewText #{@plot}
+            %br
           %div.right3
             .reviewHeader
               - if (@review.exists?(:user_id => @user))
