@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 # Shared routes
+
+root :to => 'sessions#login'
+
 get '/callback' => 'sessions#create'
 get '/login' => 'sessions#login'
 post '/login' => 'sessions#login'
