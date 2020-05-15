@@ -44,74 +44,37 @@
     %br/
     %h1 Welcome back, #{@user.username}!
     %div.page-content
-      -if @games.length==0
-        -api_endpoint = 'https://api-v3.igdb.com/games'
-        -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
-        -api = Apicalypse.new(api_endpoint, request_headers)
-        -api.fields(:cover,:genres,:name,:platforms,:popularity).where('popularity > 420').limit(10).request
-        -@result = api.request
-        - @result.each do |game|
-          -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms') && game.keys.include?('popularity')
-            -api_endpoint = 'https://api-v3.igdb.com/covers'
-            -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
-            -api = Apicalypse.new(api_endpoint, request_headers)
-            -@cover = api.fields(:url).where(:id => game.values[1]).request[0].values[1]
-            -@split = @cover.split('thumb')[0]+'cover_big'+@cover.split('thumb')[1]
-
-            -api_endpoint = 'https://api-v3.igdb.com/genres'
-            -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
-            -api = Apicalypse.new(api_endpoint, request_headers)
-            -@genres = api.fields(:name).where(:id => game.values[2][0]).request[0].values[1]
-
-            -api_endpoint = 'https://api-v3.igdb.com/platforms'
-            -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
-            -api = Apicalypse.new(api_endpoint, request_headers)
-            -@platform = api.fields(:name).where(:id => game.values[4][0]).request[0].values[1]
-
-            .card
-              .content.cardPadding
-                %p.description #{game.values[3]}
-                %p.description Genre: #{@genres}
-                %p.description Platforms: #{@platform}
-                -if Game.exists?(:serial => game.values[0])
-                  %a.btn{:href => game_path(Game.where(:serial => game.values[0])[0].id), "data-method" => "get"} View info 
-                -else
-                  %a.btn{:href => game_mylibraries_path(game.values[0]), "data-method" => "post"}
-                    %i.mdi.mdi-plus
-                    %span.sidebar__nav__text library
-              %img.cover{:alt => "Game image cover", :src => "#{@split}"}
-      -else
-        - @games.each do |game|
-          - if @library.exists?(:game_id => game.id)
-            .card
-              - if (@library.where(:game_id => game.id)[0].favorite == "true")
-                %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
-              - else             
-                %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
-              .content.cardPadding
-                %p.description Genre: #{game.genre}
-                %p.description Platforms: #{game.platform}
-                %a.btn{:href => game_path(game), "data-method" => "get"} View info 
-              %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
-          - elsif @library.exists?(:game_id => game.id) && game.favorite == 'true'
-            .card
-              - if (@library.where(:game_id => game.id)[0].favorite == "true")
-                %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
-              - else             
-                %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
-              .content.cardPadding
-                %p.description Genre: #{game.genre}
-                %p.description Platforms: #{game.platform}
-                %a.btn{:href => game_path(game), "data-method" => "get"} View info 
-              %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
-          -else  
-            .card
-              .content.cardPadding
-                %p.description Genre: #{game.genre}
-                %p.description Platforms: #{game.platform}
-                %a.btn{:href => game_path(game), "data-method" => "get"} View info 
-                %a.btn{:href => game_mylibraries_path(game), "data-method" => "post"}
-                  %i.mdi.mdi-plus
-                  %span.sidebar__nav__text library
-              %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+      - @games.each do |game|
+        - if @library.exists?(:game_id => game.id)
+          .card
+            - if (@library.where(:game_id => game.id)[0].favorite == "true")
+              %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            - else             
+              %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            .content.cardPadding
+              %p.description Genre: #{game.genre}
+              %p.description Platforms: #{game.platform}
+              %a.btn{:href => game_path(game), "data-method" => "get"} View info 
+            %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+        - elsif @library.exists?(:game_id => game.id) && game.favorite == 'true'
+          .card
+            - if (@library.where(:game_id => game.id)[0].favorite == "true")
+              %a.mdi.mdi-star.dot{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            - else             
+              %a.mdi.mdi-star-outline.dotCard{:href => game_mylibrary_path(game.id,@library.where(:game_id => game.id)[0].id), "data-method" => "put"}
+            .content.cardPadding
+              %p.description Genre: #{game.genre}
+              %p.description Platforms: #{game.platform}
+              %a.btn{:href => game_path(game), "data-method" => "get"} View info 
+            %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
+        -else  
+          .card
+            .content.cardPadding
+              %p.description Genre: #{game.genre}
+              %p.description Platforms: #{game.platform}
+              %a.btn{:href => game_path(game), "data-method" => "get"} View info 
+              %a.btn{:href => game_mylibraries_path(game), "data-method" => "post"}
+                %i.mdi.mdi-plus
+                %span.sidebar__nav__text library
+            %img.cover{:alt => "Game image cover", :src => "#{game.cover}"}
       

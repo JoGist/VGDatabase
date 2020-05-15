@@ -12,7 +12,7 @@ class MylibrariesController < ApplicationController
             @mylibrary.user_id = @user.id
             @mylibrary.game_id = @games.id
             @mylibrary.save!
-            redirect_to myLibrary_path
+            redirect_to homepage_path
         else  
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
