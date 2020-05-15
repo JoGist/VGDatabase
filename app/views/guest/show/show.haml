@@ -85,11 +85,9 @@
               %span.hidden . 
               %span.sidebar__nav__text BUY 
           - if @plot.length!=0
-            %br
-            %div.right3
-              %h5.reviewText_alt2 #{@plot}
-            %br
-          %div.right3
+            .right8
+              %h5.reviewText_alt2 #{@plot}  
+          .right3
             .reviewHeader
               %h5.reviewText Reviews
             .reviewDiv
@@ -125,4 +123,5 @@
                     %div{:href => "#"}
                       - if (review.comments != "")
                         %h5.reviewText #{review.comments}
-
+          %br
+          %br

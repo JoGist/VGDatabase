@@ -112,11 +112,12 @@ form_tag {
 }
 .right3 {
   float: right;
-  margin-top: -472px;
+  margin-top: -550px;
+  margin-bottom: 20px;
   list-style-type: none;
   padding-right: 60px;
+  min-width: 800px;
   width: 50%;
-  min-width: 1000px;
 }
 .right4 {
   float: right;
@@ -136,6 +137,14 @@ form_tag {
 .right7 {
   float: right;
   margin-top: -5px;
+}
+.right8 {
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: -25em;
+  width: 850px;
+  list-style-type: none;
 }
 .gameStar {
   float: left;
@@ -472,7 +481,9 @@ a:hover {
 .gameInfo {
   margin-left: 27em;
   list-style-type: none;
-  width: 455px;
+  min-width: 455px;
+  width: 28%;
+  height: 550px;
 }
 .forgot {
   margin-top: -10px;
@@ -664,7 +675,7 @@ a:hover {
   font-size: 1.15rem;
   font-style: italic;
   line-height: 1.25;
-  overflow: hidden;
+  /*overflow: auto;*/
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .btn {
@@ -1468,8 +1479,6 @@ textarea {
   width: 100%;
   height: auto;
   float: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
   text-align: justify;
   padding: 15px;
   background-color: #444;
@@ -1556,21 +1565,22 @@ textarea {
   font-size: 24px;
   font-weight: 700;
 }
-@media (max-width: 2180px) {
-  .right3 {
-    float: left;
-    margin-top: 120px;
-    list-style-type: none;
-    margin-left: -400px;
-  }
-}
-@media (max-width: 1500px) {
+
+@media (max-width: 2000px) {
   .right3 {
     float: left;
     margin-top: 0;
     list-style-type: none;
-    padding-left: 400px;
-    width: 1308px;
+    width: 100%;
+  }
+  .right8 {
+    padding-right: 60px;
+    width: 100%;
+  }
+  .gameInfo {
+    margin-left: 27em;
+    list-style-type: none;
+    width: 100%;
   }
 }
 .reviewUser h6 {
