@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>404 - VGDatabase</title>
+    <title>ERROR 404 - VGDatabase</title>
     <style>
       html,
       body {
@@ -38,18 +38,56 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 35%;
+        width: 30%;
+      }
+      .imgSmall {
+        display: block;
+        margin-left: 2%;
+        margin-top: 2%;
+        width: 15%;
+      }
+      .button {
+        border: 0;
+        outline: none;
+        border-radius: 0;
+        padding: 15px 0;
+        font-size: 2rem;
+        display: block;
+        font-weight: 600;
+        width: 460px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        background: #f26657;
+        color: #fff;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -webkit-appearance: none;
+        transition: all 0.3s ease-out;
+        text-align: center;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .button:active {
+        cursor: progress;
+        border: 2px solid #fff;
+      }
+      .button:hover {
+        box-shadow: 0 0 6px #fff;
       }
     </style>
   </head>
   <body>
-    <br>
-    <h1>404 - DEAD LINK</h1>
+    <img class="imgSmall" src="logo-normal.png" alt="DEAD LINK">
+    <h1>404 - PAGE NOT FOUND</h1>
     <div>
       <img class="imgCentered" src="404.png" alt="DEAD LINK">
       <div>
         <br>
-        <h1>Page not found. Return to homepage?</h1>
+        <h1>DEAD LINK</h1>
+        <br>
+        <br>
+        <a href="https://vgdatabase.herokuapp.com/homepage" class="button"> Return to homepage </a>
       </div>
     </div>
   </body>
