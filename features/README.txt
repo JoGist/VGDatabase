@@ -21,3 +21,5 @@ L'istruzione "And I press ["..."]" ricerca un bottone nella pagina avente identi
 L'istruzione "And I should see ["..."]" si aspetta di trovare il parametro passato all'interno della pagina, proprio graficamente
 
 Per lanciarlo va fatto da terminale dalla cartella principale "-$ cucumber ./features/*.feature"
+
+Per sistemare la show delle ultime 2 scenari basta lanciarli tutti insieme una volta e vedere l'id finale
