@@ -1,4 +1,3 @@
-
 Feature: Aggiunge un User al sistema
 Scenario: AddUser
     Given I am on the VGDatabase_login

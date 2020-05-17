@@ -46,10 +46,10 @@ module NavigationHelpers
       "/editProfile_success"
 
     when /^the VGDatabase_show/
-      "/games/9"
+      "/games/34"
 
     when /^the VGDatabase_review/
-      "/games/9/reviews/new"
+      "/games/34/reviews/new"
     
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
