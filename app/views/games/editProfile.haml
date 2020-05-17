@@ -58,7 +58,7 @@
                   %a.overlayProfileImg{:href => editAvatar_path, "data-method" => "get"}
                 =image_tag (@user.avatar) ,class: "img"
               .grid-item-detailsProfile
-              %button.grid-item-details-button-2
+              %button.grid-item-details-button-2{:id => "save"}
                 %p.profile-hyper-links
                   %a Save changes 
                   %i.mdi.mdi-content-save

@@ -99,7 +99,7 @@
                 -if Game.exists?(:serial => game.values[0])
                   %a.btn{:href => game_path(Game.where(:serial => game.values[0])[0].id), "data-method" => "get"} View info 
                 -else
-                  %a.btn{:href => game_mylibraries_path(game.values[0]), "data-method" => "post"}
+                  %a.btn{:id => "add", :href => game_mylibraries_path(game.values[0]), "data-method" => "post"}
                     %i.mdi.mdi-plus
                     %span.sidebar__nav__text library
               %img.cover{:alt => "Game image cover", :src => "#{@split}"}

@@ -43,12 +43,13 @@
               %span.sidebar__nav__text Contact us
     %br/
     - @lunghezza = @library.where(:user_id => @user.id).length
-    - if @lunghezza==0
-      %h1 You don't have any game in your library
-    - elsif @lunghezza==1
+    - @lunghezza_pref = @library_favorites.where(:user_id => @user.id).length
+    - if @lunghezza==0 && @lunghezza_pref == 0
+      %h1 You don't have any games in your library
+    - elsif (@lunghezza==1 && @lunghezza_pref == 0) || (@lunghezza==0 && @lunghezza_pref == 1) 
       %h1 You have 1 game in your library
     -else
-      %h1 You have #{@lunghezza} games in your library
+      %h1 You have #{@lunghezza+@lunghezza_pref} games in your library
     %div.page-content
       %a.editText{:href => editLibrary_path, "data-method" => "get"}
         %span Edit
