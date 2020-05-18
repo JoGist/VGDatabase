@@ -1603,6 +1603,7 @@ a .profile-hyper-links:hover a{
   }
   .gameInfo {
     margin-left: 27em;
+    padding-right: 60px;
     list-style-type: none;
     width: 100%;
   }
