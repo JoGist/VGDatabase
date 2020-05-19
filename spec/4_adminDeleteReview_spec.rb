@@ -1,6 +1,6 @@
 require 'rails_helper'
-RSpec.describe "home page", :type => :feature do
-  it "displays the user's username after successful login" do
+RSpec.describe "admin delete review", :type => :feature do
+  it "User 'admin' login on to application's settings page and delete review on game 'Test game' made by user 'test_user'" do
     admin = User.create!(:username => "admin", :password => "admin")
     user = User.create!(:username => "test_user", :password => "pass", :avatar => "Avatars/avatar_0")
     game = Game.create!(:title => "Test_game")

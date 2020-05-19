@@ -1,6 +1,6 @@
 require 'rails_helper'
-RSpec.describe "home page", :type => :feature do
-  it "displays the user's username after successful login" do
+RSpec.describe "admin delete user", :type => :feature do
+  it "User 'admin' login on to application's settings page and delete user 'user_to_delete'" do
     admin = User.create!(:username => "admin", :password => "admin")
     user = User.create!(:username => "user_to_delete", :password => "pass", :avatar => "Avatars/avatar_0")
     visit "/login"

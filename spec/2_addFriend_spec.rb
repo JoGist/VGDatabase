@@ -1,6 +1,6 @@
 require 'rails_helper'
 RSpec.describe "add Friend", :type => :feature do
-  it "user 'jdoe' login and add user 'rspec_user' as friend" do
+  it "User 'jdoe' login and add user 'rspec_user' as friend" do
     user_1 = User.create!(:username => "jdoe", :password => "secret", :avatar => "Avatars/avatar_0")
     user_2 = User.create!(:username => "rspec_user", :password => "pass", :avatar => "Avatars/avatar_0")
     visit "/login"
