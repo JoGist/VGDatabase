@@ -115,7 +115,7 @@ form_tag {
   margin-top: -550px;
   margin-bottom: 20px;
   list-style-type: none;
-  padding-right: 60px;
+  padding-right: 50px;
   width: 50%;
 }
 .right4 {
@@ -1598,13 +1598,14 @@ a .profile-hyper-links:hover a{
     margin-top: -10px;
     margin-bottom: 20px;
     margin-left: 0px;
-    padding-right: 60px;
+    padding-right: 50px;
     list-style-type: none; 
   }
   .gameInfo {
     margin-left: 27em;
+    margin-right: 50px;
     list-style-type: none;
-    width: 100%;
+    width: 90%;
   }
 }
 .reviewUser h6 {
