@@ -1,8 +1,8 @@
 require 'rails_helper'
 RSpec.describe "add Friend", :type => :feature do
-  it "User 'jdoe' login and add user 'rspec_user' as friend" do
-    user_1 = User.create!(:username => "jdoe", :password => "secret", :avatar => "Avatars/avatar_0")
-    user_2 = User.create!(:username => "rspec_user", :password => "pass", :avatar => "Avatars/avatar_0")
+  it "User 'John Doe' login and add user 'rspec_user' as friend" do
+    user_1 = FactoryBot.create(:user)
+    user_2 = FactoryBot.create(:user, :username => "rspec_user", :email => "mail_2@example.com")
     visit "/login"
     fill_in "user[name]", with: user_1.username
     fill_in "user[password]", with: user_1.password
