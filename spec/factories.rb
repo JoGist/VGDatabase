@@ -4,16 +4,18 @@ FactoryBot.define do
         email       {"example@mail.com"}
         password    {"secret"}
         avatar      {"Avatars/avatar_0"}
+        id          {1}
     end
 
     factory :game do
         title       {"Rspec_game"}
-        serial      {12345} 
+        serial      {12345}
+        id          {1}
     end
 
     factory :review do
-        user_id     {0}
-        game_id     {0}
+        user_id     {}
+        game_id     {}
     end
 
 end

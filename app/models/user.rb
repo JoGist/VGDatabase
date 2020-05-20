@@ -2,7 +2,7 @@ class User < ApplicationRecord
 validates :username, uniqueness: true
 validates :email, uniqueness: true
 
-has_many :reviews, dependent: :destroy
+has_one :review, dependent: :destroy
 has_many :friends
 has_many :mylibraries
 

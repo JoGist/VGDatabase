@@ -1,7 +1,7 @@
 require 'rails_helper'
 RSpec.describe "admin delete user", :type => :feature do
   it "User 'admin' login on to application's settings page and delete user 'John Doe'" do
-    admin = FactoryBot.create(:user, :username => "admin", :password => "admin", :email => "admin@mail")
+    admin = FactoryBot.create(:user, :username => "admin", :password => "admin", :email => "admin@mail", :id => 0)
     user = FactoryBot.create(:user)
     visit "/login"
     fill_in "user[name]", with: admin.username
