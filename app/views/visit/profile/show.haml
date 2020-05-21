@@ -72,9 +72,6 @@
               %h5.sub-header-details Username:
               %span #{@user.username}
             .grid-item-details
-              %h5.sub-header-details Email:
-              %span #{@user.email}
-            .grid-item-details
               %h5.sub-header-details Games in his library:
               %span #{@library.length}
             - if @user.steam_username!=nil
@@ -203,9 +200,6 @@
                 %a{:href => signup_path} Log in to add to your friends
                 %i.mdi.mdi-account-plus
           .account-grid-item-2
-            .grid-item-details
-              %h5.sub-header-details Username:
-              %span #{@user.username}
             .grid-item-details
               %h5.sub-header-details Email:
               %span Can't view emails as guest
