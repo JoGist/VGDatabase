@@ -16,7 +16,7 @@ module NavigationHelpers
 
     when /^the home\s?page$/
       '/'
-    
+
     # Login
     when /^the VGDatabase_login/
       "/login"
@@ -50,7 +50,7 @@ module NavigationHelpers
 
     when /^the VGDatabase_review/
       "/games/34/reviews/new"
-    
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
