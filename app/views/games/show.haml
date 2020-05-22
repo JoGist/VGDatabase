@@ -107,6 +107,11 @@
                 %i.mdi.mdi-plus
                 %span.hidden . 
                 %span.sidebar__nav__text Add to library 
+            - if @games.title == "Super Mario 64"
+              %a.buttonSmall{:href => "https://froggi.es/mario/", :target => "_blank"}
+                %i.mdi.mdi-play
+                %span.hidden . 
+                %span.sidebar__nav__text PLAY
             %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"}
               %i.mdi.mdi-amazon
               %span.hidden . 
