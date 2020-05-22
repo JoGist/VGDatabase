@@ -112,10 +112,11 @@
                 %i.mdi.mdi-play
                 %span.hidden . 
                 %span.sidebar__nav__text PLAY
-            %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"}
-              %i.mdi.mdi-amazon
-              %span.hidden . 
-              %span.sidebar__nav__text BUY
+            - else
+              %a.buttonSmall{:href => "https://www.amazon.it/s?k=#{@games.title}&i=videogames", :target => "_blank"}
+                %i.mdi.mdi-amazon
+                %span.hidden . 
+                %span.sidebar__nav__text BUY
           - if @plot.length!=0
             .right8
               %h5.reviewText_alt2 #{@plot}  
