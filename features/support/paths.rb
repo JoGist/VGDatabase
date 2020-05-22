@@ -57,13 +57,7 @@ module NavigationHelpers
     when /^the VGDatabase_visit/
       "/visit/profile/2"
 
-<<<<<<< HEAD
     
-=======
-    when /^the VGDatabase_review/
-      "/games/34/reviews/new"
-
->>>>>>> 5168141b06c59d36c0f79fdd3fea2601c00ede7b
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
