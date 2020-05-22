@@ -30,11 +30,20 @@ module NavigationHelpers
     when /^the VGDatabase_library/
       "/myLibrary"
 
-    when /^the VGDatabase_search/
+    when /^the VGDatabase_friends/
+      "/friends"
+
+    when /^the VGDatabase_searchGame/
       "/searchGame"
 
-    when /^the VGDatabase_searchResult/
+    when /^the VGDatabase_searchGameResult/
       "/searchGame?method=post"
+
+    when /^the VGDatabase_searchUser/
+      "/searchUser"
+
+    when /^the VGDatabase_searchUserResult/
+      "/searchuser?method=post"
 
     when /^the VGDatabase_profile/
       "/myProfile"
@@ -45,11 +54,9 @@ module NavigationHelpers
     when /^the VGDatabase_Success/
       "/editProfile_success"
 
-    when /^the VGDatabase_show/
-      "/games/34"
+    when /^the VGDatabase_visit/
+      "/visit/profile/2"
 
-    when /^the VGDatabase_review/
-      "/games/34/reviews/new"
     
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

@@ -17,10 +17,10 @@ Scenario: AddGame
     Then I should be on the VGDatabase_library
     And I should see "You don't have any games in your library"
     When I follow "Search"
-    Then I should be on the VGDatabase_search
+    Then I should be on the VGDatabase_searchGame
     When I fill in "search" with "dark sector"
     And I press "search"
-    Then I should be on the VGDatabase_searchResult
+    Then I should be on the VGDatabase_searchGameResult
     When I follow "add"
     Then I should be on the VGDatabase_library
     And I should see "You have 1 game in your library"
