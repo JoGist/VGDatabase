@@ -452,15 +452,31 @@ skip_before_action :verify_authenticity_token
         @users = User.all
         @reviews = Review.all
         @libraries = Mylibrary.all
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deleteReviewsGame
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deleteReviewsGame_success
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deleteReviewsGame_error
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deletingReviewsGame
@@ -482,12 +498,24 @@ skip_before_action :verify_authenticity_token
     end
 
     def deleteReviewsUser
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deleteReviewsUser_success
+        @user = session[:user_id]
+        if !User.find(@user).username == 'admin' && !User.find(@user).password == 'admin'
+            redirect_to homepage_path
+        end
     end
 
     def deleteReviewsUser_error
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deletingReviewsUser
@@ -509,6 +537,10 @@ skip_before_action :verify_authenticity_token
     end
 
     def deletingUser
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deletingAdminUser
@@ -543,12 +575,24 @@ skip_before_action :verify_authenticity_token
     end
 
     def deletingUser_success
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deletingUser_error
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deleteGameLibrary
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deletingGameLibrary
@@ -570,9 +614,17 @@ skip_before_action :verify_authenticity_token
     end
 
     def deleteGameLibrary_success
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
     def deleteGameLibrary_error
+        @user = session[:user_id]
+        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+            redirect_to homepage_path
+        end
     end
 
 end
