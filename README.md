@@ -14,7 +14,7 @@ The site is based on a videogames database, where you can view many information 
 
 ## Dependencies
 In order to build and run the Rails server in your machine, you must have installed:
-*   _Ruby 2.4
+*   _Ruby 2.4_
 *   _Rails 6_
 *   _Bundler 2_
 *   _Postgres 9 or above_
