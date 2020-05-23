@@ -17,7 +17,7 @@
         %br/
         %br/
         %br/
-        = form_tag callback_path(), :method => :get do
+        = form_tag callback_path(), :method => :post do
           .field-wrap
             %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "username", :required => "", :type => "text"}/
           .field-wrap

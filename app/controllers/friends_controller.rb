@@ -1,5 +1,5 @@
 class FriendsController < ApplicationController
-    skip_before_action :set_current_user
+    skip_before_action :verify_authenticity_token
     def update
         friend_id = params[:id]
         user_id = session[:user_id]
