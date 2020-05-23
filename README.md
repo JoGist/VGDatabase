@@ -14,14 +14,14 @@ The site is based on a videogames database, where you can view many information 
 
 ## Dependencies
 In order to build and run the Rails server in your machine, you must have installed:
-*   _Bundler 2.0_
 *   _Ruby 2.7.0p0_
 *   _Rails 6.0.2.2_
+*   _Bundler 2_
 *   _Postgres 9 or above_
 *   _JavaScript (any version)_
 
 
-## Rails app usage
+## Rails app setup and usage
 
 In order to successfully run the project, you have to obtain a valid API key on these services:
 * IGDB - https://www.igdb.com/api
@@ -36,11 +36,58 @@ To build and run the Rails app, go into the root folder of the repo and run the 
   ```sh
   Bundle install
   ```
+  
+* Initialize Figaro gem, to store securely store your OAuth credentials: 
+  ```sh
+  figaro install
+  ```
+  
+* To show your secret key, copy it as we will use it later:
+  ```sh
+  rake secret
+  ```
+
+* To enter your OAuth credentials and API keys, open the file /config/application.yml created with 'Figaro install', and append at the end of file as following:
+  ```sh
+  STEAM_WEB_API_KEY: '[your-steam-api-key-here]'
+  SECRET_TOKEN: '[your-rake-secret-key-here]'
+
+  GOOGLE_CLIENT_ID: '[your-google-client-id-here].apps.googleusercontent.com'
+  GOOGLE_CLIENT_SECRET: '[your-google-api-key-here]'
+  ```
+
+* Insert your IGDB API key in the credentials file with:
+  ```sh
+  EDITOR='[any-IDE-here] --wait' rails credentials:edit
+  ```
+  And append at the end of the file that opens up the following code:
+  ```sh
+  maps:
+    igdb: '[your-igdb-api-key-here]'
+  ```
+
+* Edit in /config/database.yml the username and password with the one you have set in your local machine.
+
+* Ensure that the Postgres service is started:
+  ```sh
+  sudo service postgresql start
+  ```
+  
+* Initialize the db:
+  ```sh
+  rake db:reset
+  ```
+ 
+* Execute database migrations:
+  ```sh
+  rake db:migrate
+  ```
 
 * Start the rails server:
   ```sh
   rails server
   ```
+  
 * Then simply go on this page with your browser of choice and you're done!
   ```sh
   localhost:3000/login
