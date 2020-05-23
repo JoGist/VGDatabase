@@ -98,22 +98,22 @@ After the first setup, execute these commmands to start the server and deploy th
   ```
 
 ### Other useful command
-Run the integrated Rails console
-```sh
-rails console
-```
+* Run the integrated Rails console
+  ```sh
+  rails console
+  ```
 
-View all the routes created in the project
-```sh
-rails route
-```
+* View all the routes created in the project
+  ```sh
+  rails routes
+  ```
 
-Drop and recreate the schema and the tables
-```sh
-rake db:reset
-```
+* Drop and recreate the schema and the tables
+  ```sh
+  rake db:reset
+  ```
 
-Execute database table migrations that are pending
-```sh
-rake db:migrate
-```
+* Execute database table migrations that are pending
+  ```sh
+  rake db:migrate
+  ```
