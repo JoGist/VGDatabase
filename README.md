@@ -22,21 +22,29 @@ In order to build and run the Rails server in your machine, you must have instal
 
 
 ## Rails app usage
-To build and run the Rails app, go into the root folder of the repo and run the following commands.
 
-Build and install all required Gems included in Gemfile:
-```sh
-Bundle install
-```
+In order to successfully run the project, you have to obtain a valid API key on these services:
+* IGDB - https://www.igdb.com/api
+* Google - https://support.google.com/cloud/answer/6158849?hl=en
+* Steam - https://steamcommunity.com/dev/apikey
 
-Start the rails server:
-```sh
-rails server
-```
-Then simply go on this page with your browser of choice and you're done!
-```sh
-localhost:3000/login
-```
+
+
+To build and run the Rails app, go into the root folder of the repo and run the following commands:
+
+* Build and install all required Gems included in Gemfile:
+  ```sh
+  Bundle install
+  ```
+
+* Start the rails server:
+  ```sh
+  rails server
+  ```
+* Then simply go on this page with your browser of choice and you're done!
+  ```sh
+  localhost:3000/login
+  ```
 
 ### Other useful command
 Run the integrated Rails console
