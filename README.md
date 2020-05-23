@@ -21,7 +21,7 @@ In order to build and run the Rails server in your machine, you must have instal
 *   _JavaScript (any version)_
 
 
-## Rails app setup and usage
+## Rails app setup
 
 In order to successfully run the project, you have to obtain a valid API key on these services:
 * IGDB - https://www.igdb.com/api
@@ -82,6 +82,10 @@ To build and run the Rails app, go into the root folder of the repo and run the 
   ```sh
   rake db:migrate
   ```
+  
+## Rails app usage
+
+After the first setup, execute these commmands to start the server and deploy the application:
 
 * Start the rails server:
   ```sh
