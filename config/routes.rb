@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
 root :to => 'sessions#login'
 
-get '/callback' => 'sessions#create'
+post '/callback' => 'sessions#create'
 get '/login' => 'sessions#login'
 post '/login' => 'sessions#login'
 delete '/login' => 'sessions#destroy'
