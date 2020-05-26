@@ -3,10 +3,8 @@ RSpec.describe "add Friend", :type => :feature do
   it "User 'John Doe' login and add user 'rspec_user' as friend" do
     user_1 = FactoryBot.create(:user)
     user_2 = FactoryBot.create(:user, :username => "rspec_user", :email => "mail_2@example.com", :id => 2)
-    visit "/login"
-    fill_in "user[name]", with: user_1.username
-    fill_in "user[password]", with: user_1.password
-    click_button "Log In"
+    page.set_rack_session(user_id: user_1.id)
+    visit "/homepage"
     expect(page).to have_content("Welcome back, #{user_1.username}!")
     click_link "Search"
     expect(page).to have_content("Games search")

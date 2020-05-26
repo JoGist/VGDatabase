@@ -5,10 +5,8 @@ RSpec.describe "admin delete review", :type => :feature do
     user = FactoryBot.create(:user)
     game = FactoryBot.create(:game)
     review = FactoryBot.create(:review, :user_id => user.id, :game_id => game.id)
-    visit "/login"
-    fill_in "user[name]", with: admin.username
-    fill_in "user[password]", with: admin.password
-    click_button "Log In"
+    page.set_rack_session(user_id: admin.id)
+    visit "/settings"
     expect(page).to have_content("Admin control panel")
     expect(page).to have_content("#{user.username}")
     expect(page).to have_content("#{game.title}")

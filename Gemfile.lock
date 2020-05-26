@@ -197,6 +197,9 @@ GEM
       ruby-openid (>= 2.1.8)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    rack_session_access (0.2.0)
+      builder (>= 2.0.0)
+      rack (>= 1.0.0)
     rails (5.2.4.2)
       actioncable (= 5.2.4.2)
       actionmailer (= 5.2.4.2)
@@ -320,6 +323,7 @@ DEPENDENCIES
   omniauth-steam
   pg
   puma (~> 3.7)
+  rack_session_access
   rails (~> 5.2)
   rspec-rails
   ruby-apicalypse
