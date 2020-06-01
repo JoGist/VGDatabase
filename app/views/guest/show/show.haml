@@ -74,8 +74,12 @@
                 %i.mdi.mdi-star.reviewStar
                 %i.mdi.mdi-star.reviewStar
                 %i.mdi.mdi-star.reviewStar
-            %h4 Release date: #{@game.release_date.strftime('%d %B %Y')}
-            %br
+            -if @game.release_date == nil
+              %h4 Release date: not available
+              %br
+            -else
+              %h4 Release date: #{@game.release_date.strftime('%d %B %Y')}
+              %br
             %a.buttonSmall{:href => signup_path, "data-method" => "get"}
               %i.mdi.mdi-login
               %span.hidden . 
