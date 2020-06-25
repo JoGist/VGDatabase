@@ -3,7 +3,7 @@
 
 The site is based on a videogames database, where you can view many information about any games such as genre, developer, date of release, score and the reviews written by other players, with an additional external link for the purchase. The platform also provides a search functions by title or by filters, such as genre or platform, and a search function for registered users. In addition, the site is updated periodically, always showing in the homepage the most popular games at the moment. Each user has his own library of games, a friends list and the possibility to group games and friends in Favorites lists. Enjoy!
 
-**The site is now live, [check it out!](https://vgdatabase.herokuapp.com/)**
+**The site is now live, [check it out](https://vgdatabase.herokuapp.com/)!**
 
 ## Authors
 
