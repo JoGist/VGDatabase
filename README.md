@@ -97,6 +97,21 @@ After the first setup, execute these commmands to start the server and deploy th
   localhost:3000/login
   ```
 
+## Cucumber & RSpec testing
+
+This project also includes several test cases to test the functioning of the main functions of the site. A detailed description of each test and what they do is avaiable [here](Relazione.pdf). 
+To execute them, you need to launch respectively:
+
+* Cucumber test:
+  ```sh
+  cucumber ./features/*.feature
+  ```
+  
+* RSpec test:
+  ```sh
+  bundle exec rspec ./spec/*_spec.rb
+  ```
+
 ### Other useful command
 * Run the integrated Rails console
   ```sh
