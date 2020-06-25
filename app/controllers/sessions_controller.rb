@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
     skip_before_action :set_current_user
     require 'apicalypse'
     require 'rubygems'
-    
+
 def login
 end
 def signup
@@ -14,11 +14,11 @@ def signin
         password1 = params[:user][:password1]
         if User.exists?(:email => name)         # Vede se esiste già la mail
             redirect_to signup_error_mail_path
-        elsif name1 == 'admin'                  # Non può creare un nuovo admin
+        elsif name1 == 'vgdb_admin'                  # Non può creare un nuovo admin
             redirect_to signup_error_username_path
         elsif User.exists?(:username => name1)  # Username già esistente
             redirect_to signup_error_username_path
-        elsif password != password1             # Password non coincidono    
+        elsif password != password1             # Password non coincidono
             redirect_to signup_error_password_path
         else                                    # Controlli a buon fine
             @users = User.create(:email => name, :password => password, :username => name1, :avatar => 'Avatars/avatar_0')
@@ -31,7 +31,7 @@ def create
     password = params[:user][:password]
     if User.exists?(User.where(:username => name))
         @users = User.where(:username => name)[0]
-        if name == 'admin' && @users.username == name && @users.password == password
+        if name == 'vgdb_admin' && @users.username == name && @users.password == password && password=='labassi2020'
             session[:user_id]= @users.id
             redirect_to settings_path
         elsif @users.username == name && @users.password == password
@@ -73,7 +73,7 @@ def change_password
     password1 = params[:user][:password1]
     if (!User.exists?(:email => email) || !User.exists?(:username => username))
         redirect_to forgot_password_error_path
-    elsif password != password1             # Password non coincidono    
+    elsif password != password1             # Password non coincidono
         redirect_to forgot_password_error_password_path
     else                                    # Controlli a buon fine
         @user = User.where(:email => email)[0]
@@ -121,12 +121,12 @@ end
             @genre_requested = 0
             #render html: "#{@result}"
 
-        elsif genre == 'Arcade'  
+        elsif genre == 'Arcade'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request   
-            @games = api.request 
+            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request
+            @games = api.request
             @result = []
             @genre_requested = 33
             @games.each do |game|
@@ -137,7 +137,7 @@ end
                 end
             end
 
-        elsif genre == 'Adventure'  
+        elsif genre == 'Adventure'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
@@ -152,13 +152,13 @@ end
                     end
                 end
             end
-        
-        elsif genre == 'Fighting'  
+
+        elsif genre == 'Fighting'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request   
-            @games = api.request 
+            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request
+            @games = api.request
             @result = []
             @genre_requested = 4
             @games.each do |game|
@@ -168,13 +168,13 @@ end
                     end
                 end
             end
-        
-        elsif genre == 'Platform'  
+
+        elsif genre == 'Platform'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request   
-            @games = api.request 
+            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request
+            @games = api.request
             @result = []
             @genre_requested = 8
             @games.each do |game|
@@ -185,12 +185,12 @@ end
                 end
             end
 
-        elsif genre == 'Puzzle'  
+        elsif genre == 'Puzzle'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request   
-            @games = api.request 
+            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request
+            @games = api.request
             @result = []
             @genre_requested = 9
             @games.each do |game|
@@ -200,13 +200,13 @@ end
                     end
                 end
             end
-            
-        elsif genre == 'Racing'  
+
+        elsif genre == 'Racing'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request   
-            @games = api.request 
+            api.fields(:cover,:genres,:name,:platforms).search(@search).limit(12).request
+            @games = api.request
             @result = []
             @genre_requested = 10
             @games.each do |game|
@@ -217,7 +217,7 @@ end
                 end
             end
 
-        elsif genre == 'RPG'  
+        elsif genre == 'RPG'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
@@ -233,7 +233,7 @@ end
                 end
             end
 
-        elsif genre == 'Shooter'  
+        elsif genre == 'Shooter'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
@@ -249,7 +249,7 @@ end
                 end
             end
 
-        elsif genre == 'Simulator'  
+        elsif genre == 'Simulator'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
@@ -265,7 +265,7 @@ end
                 end
             end
 
-        elsif genre == 'Sport'  
+        elsif genre == 'Sport'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
@@ -282,7 +282,7 @@ end
             end
         end
     end
-            
+
 
 def destroy
     session.delete(:user_id)

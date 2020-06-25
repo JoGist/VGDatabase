@@ -20,12 +20,12 @@ skip_before_action :verify_authenticity_token
                     api = Apicalypse.new(api_endpoint, request_headers)
                     cover = api.fields(:url).where(:id => games.values[1]).request[0].values[1]
                     split = cover.split('thumb')[0]+'cover_big'+cover.split('thumb')[1]
-        
+
                     api_endpoint = 'https://api-v3.igdb.com/genres'
                     request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
                     api = Apicalypse.new(api_endpoint, request_headers)
                     genres = api.fields(:name).where(:id => games.values[2][0]).request[0].values[1]
-                    
+
                     api_endpoint = 'https://api-v3.igdb.com/platforms'
                     request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
                     api = Apicalypse.new(api_endpoint, request_headers)
@@ -47,7 +47,7 @@ skip_before_action :verify_authenticity_token
                     api = Apicalypse.new(api_endpoint, request_headers)
                     api.fields(:name).where(:id => involved_companies).limit(1).request
                     companies = api.request[0].values[1]
-                
+
                     Game.create(:serial => games.values[0], :platform => platform, :genre => genres, :cover => split, :title => games.values[4], :release_date => date, :developer => companies)
                     end
                 end
@@ -206,7 +206,7 @@ skip_before_action :verify_authenticity_token
         @user = session[:user_id]
         @aux = Review.where(:game_id => @games)
         @aux = @aux.where('user_id != ?', @user)
-        @review = Review.where(:game_id => @games, :user_id => @user)            
+        @review = Review.where(:game_id => @games, :user_id => @user)
         api_endpoint = 'https://api-v3.igdb.com/games'
         request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
         api = Apicalypse.new(api_endpoint, request_headers)
@@ -284,12 +284,12 @@ skip_before_action :verify_authenticity_token
             @result = api.request
             @genre_requested = 0
 
-        elsif genre == 'Arcade'  
+        elsif genre == 'Arcade'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request   
-            @games = api.request 
+            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
+            @games = api.request
             @result = []
             @genre_requested = 33
             @games.each do |game|
@@ -299,7 +299,7 @@ skip_before_action :verify_authenticity_token
                     end
                 end
             end
-        elsif genre == 'Adventure'  
+        elsif genre == 'Adventure'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
@@ -314,13 +314,13 @@ skip_before_action :verify_authenticity_token
                     end
                 end
             end
-        
-        elsif genre == 'Fighting'  
+
+        elsif genre == 'Fighting'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request   
-            @games = api.request 
+            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
+            @games = api.request
             @result = []
             @genre_requested = 4
             @games.each do |game|
@@ -330,13 +330,13 @@ skip_before_action :verify_authenticity_token
                     end
                 end
             end
-        
-        elsif genre == 'Platform'  
+
+        elsif genre == 'Platform'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request   
-            @games = api.request 
+            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
+            @games = api.request
             @result = []
             @genre_requested = 8
             @games.each do |game|
@@ -347,12 +347,12 @@ skip_before_action :verify_authenticity_token
                 end
             end
 
-        elsif genre == 'Puzzle'  
+        elsif genre == 'Puzzle'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request   
-            @games = api.request 
+            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
+            @games = api.request
             @result = []
             @genre_requested = 9
             @games.each do |game|
@@ -362,13 +362,13 @@ skip_before_action :verify_authenticity_token
                     end
                 end
             end
-            
-        elsif genre == 'Racing'  
+
+        elsif genre == 'Racing'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request   
-            @games = api.request 
+            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
+            @games = api.request
             @result = []
             @genre_requested = 10
             @games.each do |game|
@@ -379,7 +379,7 @@ skip_before_action :verify_authenticity_token
                 end
             end
 
-        elsif genre == 'RPG'  
+        elsif genre == 'RPG'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
@@ -395,7 +395,7 @@ skip_before_action :verify_authenticity_token
                 end
             end
 
-        elsif genre == 'Shooter'  
+        elsif genre == 'Shooter'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
@@ -411,7 +411,7 @@ skip_before_action :verify_authenticity_token
                 end
             end
 
-        elsif genre == 'Simulator'  
+        elsif genre == 'Simulator'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
@@ -427,7 +427,7 @@ skip_before_action :verify_authenticity_token
                 end
             end
 
-        elsif genre == 'Sport'  
+        elsif genre == 'Sport'
             api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
@@ -449,32 +449,32 @@ skip_before_action :verify_authenticity_token
 #admin
 
     def settings
-        @users = User.all
+        @users = User.where('username != ?', 'vgdb_admin')
         @reviews = Review.all
         @libraries = Mylibrary.all
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
 
     def deleteReviewsGame
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
 
     def deleteReviewsGame_success
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
 
     def deleteReviewsGame_error
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
@@ -499,21 +499,21 @@ skip_before_action :verify_authenticity_token
 
     def deleteReviewsUser
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
 
     def deleteReviewsUser_success
         @user = session[:user_id]
-        if !User.find(@user).username == 'admin' && !User.find(@user).password == 'admin'
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
 
     def deleteReviewsUser_error
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
@@ -538,14 +538,14 @@ skip_before_action :verify_authenticity_token
 
     def deletingUser
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
 
     def deletingAdminUser
         name = params[:user][:name]
-        if name == 'admin'
+        if name == 'vgdb_admin'
             redirect_to deletingUser_error_path
         else
             if User.exists?(User.where(:username => name))
@@ -576,21 +576,21 @@ skip_before_action :verify_authenticity_token
 
     def deletingUser_success
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
 
     def deletingUser_error
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
 
     def deleteGameLibrary
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
@@ -615,14 +615,14 @@ skip_before_action :verify_authenticity_token
 
     def deleteGameLibrary_success
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
 
     def deleteGameLibrary_error
         @user = session[:user_id]
-        if !(User.find(@user).username == 'admin' && User.find(@user).password == 'admin')
+        if !(User.find(@user).username == 'vgdb_admin' && User.find(@user).password == 'labassi2020')
             redirect_to homepage_path
         end
     end
