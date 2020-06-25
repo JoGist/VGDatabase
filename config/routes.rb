@@ -114,5 +114,4 @@ resources :users do
 end
 
 resources :friends
-
 end

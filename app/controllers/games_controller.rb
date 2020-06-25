@@ -253,7 +253,7 @@ skip_before_action :verify_authenticity_token
 
     def searchingUser
         user = params[:username]
-        if User.exists?(User.where(:username => user)) && user!='admin'
+        if User.exists?(User.where(:username => user)) && user!='vgdb_admin'
             if user==User.find(session[:user_id]).username
                 @users = User.where(:username => user)[0].id
                 redirect_to myProfile_path
