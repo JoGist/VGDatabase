@@ -19,7 +19,7 @@
         %br/
         = form_tag callback_path(), :method => :post do
           .field-wrap
-            %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "username", :required => "", :type => "text"}/
+            %input{:name => 'user[name]' , :placeholder => 'Username' , :autocomplete => "username", :required => "", :type => "text", :pattern => "^[a-zA-Z0-9._-]+"}/
           .field-wrap
             %input{:name => 'user[password]' , :placeholder => 'Password' , :autocomplete => "current-password", :required => "", :type => "password"}/
           %a.left{:href => homepage_guest_path, "data-method" => "get"} Explore as Guest

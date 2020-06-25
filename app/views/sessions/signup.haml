@@ -21,7 +21,7 @@
           .field-wrap
             %input{:name => 'user[name]', :placeholder => 'Email address' ,:autocomplete => "email", :required => "", :type => "email"}/
           .field-wrap
-            %input{:name => 'user[name1]' , :placeholder => 'Username' ,:autocomplete => "username", :required => "", :type => "text"}/
+            %input{:name => 'user[name1]' , :placeholder => 'Username' ,:autocomplete => "username", :required => "", :type => "text", :pattern => "^[a-zA-Z0-9._-]+"}/
           .field-wrap
             %input{:name => 'user[password]' , :placeholder => 'Password' ,:autocomplete => "new-password", :required => "", :type => "password"}/
           .field-wrap
