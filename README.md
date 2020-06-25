@@ -132,3 +132,4 @@ To execute them, you need to launch respectively:
   ```sh
   rake db:migrate
   ```
+ 
