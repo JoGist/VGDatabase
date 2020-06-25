@@ -109,7 +109,7 @@ To execute them, you need to launch respectively:
   
 * RSpec test:
   ```sh
-  bundle exec rspec ./spec/*.rb
+  bundle exec rspec ./spec/*_spec.rb
   ```
 
 ### Other useful command
