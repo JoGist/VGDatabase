@@ -1,7 +1,7 @@
 require 'rails_helper'
 RSpec.describe "admin delete review", :type => :feature do
-  it "User 'admin' login on to application's settings page and delete review on game 'Test game' made by user 'test_user'" do
-    admin = FactoryBot.create(:user, :username => "admin", :password => "admin", :email => "admin@mail", :id => 0)
+  it "User 'vgdb_admin' login on to application's settings page and delete review on game 'Test game' made by user 'test_user'" do
+    admin = FactoryBot.create(:user, :username => "vgdb_admin", :password => "labassi2020", :email => "admin@mail", :id => 0)
     user = FactoryBot.create(:user)
     game = FactoryBot.create(:game)
     review = FactoryBot.create(:review, :user_id => user.id, :game_id => game.id)
