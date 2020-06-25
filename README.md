@@ -107,7 +107,7 @@ To execute them, you need to launch respectively:
   cucumber ./features/*.feature
   ```
   
-  * RSpec test:
+* RSpec test:
   ```sh
   bundle exec rspec ./spec/*.rb
   ```
