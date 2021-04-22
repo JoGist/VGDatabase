@@ -28,7 +28,7 @@
           %br/
           %button.button Log In
           %br/
-          %a.left.oauth{:href => '/auth/google_oauth2'}
+          %a.left.oauth{:href => '/auth/:provider/callback'}
             =image_tag ('google.png')
           %a.right7.oauth{:href => '/auth/steam'}
             =image_tag ('steam.png')
