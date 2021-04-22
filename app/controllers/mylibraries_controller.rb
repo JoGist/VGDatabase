@@ -14,40 +14,40 @@ class MylibrariesController < ApplicationController
             @mylibrary.save!
             redirect_to homepage_path
         else  
-            api_endpoint = 'https://api-v3.igdb.com/games'
+            api_endpoint = 'https://api.igdb.com/v4/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:release_dates,:involved_companies).where(:id => game_id).request
             games = api.request[0]
             
-            api_endpoint = 'https://api-v3.igdb.com/covers'
+            api_endpoint = 'https://api.igdb.com/v4/covers'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             cover = api.fields(:url).where(:id => games.values[1]).request[0].values[1]
             split = cover.split('thumb')[0]+'cover_big'+cover.split('thumb')[1]
   
-            api_endpoint = 'https://api-v3.igdb.com/genres'
+            api_endpoint = 'https://api.igdb.com/v4/genres'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             genres = api.fields(:name).where(:id => games.values[2][0]).request[0].values[1]
             
-            api_endpoint = 'https://api-v3.igdb.com/platforms'
+            api_endpoint = 'https://api.igdb.com/v4/platforms'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             platform = api.fields(:name).where(:id => games.values[5][0]).request[0].values[1]
 
-            api_endpoint = 'https://api-v3.igdb.com/release_dates'
+            api_endpoint = 'https://api.igdb.com/v4/release_dates'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             date = api.fields(:human).where(:game => games.values[0] , :platform => games.values[5][0]).request[0].values[1]
 
-            api_endpoint = 'https://api-v3.igdb.com/involved_companies'
+            api_endpoint = 'https://api.igdb.com/v4/involved_companies'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:company).where(:id => games.values[3][0]).limit(1).request
             involved_companies = api.request[0].values[1]
 
-            api_endpoint = 'https://api-v3.igdb.com/companies'
+            api_endpoint = 'https://api.igdb.com/v4/companies'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:name).where(:id => involved_companies).limit(1).request
