@@ -42,7 +42,7 @@ To build and run the Rails app, go into the root folder of the repo and run the 
   figaro install
   ```
   
-* To show your secret key, copy it as you will use it later:
+* To show your secret key, copy it as we will use it later:
   ```sh
   rake secret
   ```
