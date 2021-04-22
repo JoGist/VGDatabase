@@ -8,41 +8,41 @@ skip_before_action :verify_authenticity_token
         game = Game.all
         @library = Mylibrary.where(:user_id => @user.id)
         if game.length==0
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:release_dates,:involved_companies,:popularity).where('popularity > 420').request
             @games = api.request
             @games.each do |games|
                 if games.keys.include?('cover') && games.keys.include?('genres') && games.keys.include?('platforms') && games.keys.include?('popularity')
-                    api_endpoint = 'https://api.igdb.com/v4/covers'
+                    api_endpoint = 'https://api-v3.igdb.com/covers'
                     request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
                     api = Apicalypse.new(api_endpoint, request_headers)
                     cover = api.fields(:url).where(:id => games.values[1]).request[0].values[1]
                     split = cover.split('thumb')[0]+'cover_big'+cover.split('thumb')[1]
 
-                    api_endpoint = 'https://api.igdb.com/v4/genres'
+                    api_endpoint = 'https://api-v3.igdb.com/genres'
                     request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
                     api = Apicalypse.new(api_endpoint, request_headers)
                     genres = api.fields(:name).where(:id => games.values[2][0]).request[0].values[1]
 
-                    api_endpoint = 'https://api.igdb.com/v4/platforms'
+                    api_endpoint = 'https://api-v3.igdb.com/platforms'
                     request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
                     api = Apicalypse.new(api_endpoint, request_headers)
                     platform = api.fields(:name).where(:id => games.values[5][0]).request[0].values[1]
 
-                    api_endpoint = 'https://api.igdb.com/v4/release_dates'
+                    api_endpoint = 'https://api-v3.igdb.com/release_dates'
                     request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
                     api = Apicalypse.new(api_endpoint, request_headers)
                     date = api.fields(:human).where(:game => games.values[0] , :platform => games.values[5][0]).request[0].values[1]
 
-                    api_endpoint = 'https://api.igdb.com/v4/involved_companies'
+                    api_endpoint = 'https://api-v3.igdb.com/involved_companies'
                     request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
                     api = Apicalypse.new(api_endpoint, request_headers)
                     api.fields(:company).where(:id => games.values[3][0]).limit(1).request
                     involved_companies = api.request[0].values[1]
 
-                    api_endpoint = 'https://api.igdb.com/v4/companies'
+                    api_endpoint = 'https://api-v3.igdb.com/companies'
                     request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
                     api = Apicalypse.new(api_endpoint, request_headers)
                     api.fields(:name).where(:id => involved_companies).limit(1).request
@@ -207,7 +207,7 @@ skip_before_action :verify_authenticity_token
         @aux = Review.where(:game_id => @games)
         @aux = @aux.where('user_id != ?', @user)
         @review = Review.where(:game_id => @games, :user_id => @user)
-        api_endpoint = 'https://api.igdb.com/v4/games'
+        api_endpoint = 'https://api-v3.igdb.com/games'
         request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
         api = Apicalypse.new(api_endpoint, request_headers)
         api.fields(:summary).where(:id => @games.serial).request
@@ -277,7 +277,7 @@ skip_before_action :verify_authenticity_token
         genre = params[:game][:genre]
         @user = User.find(session[:user_id])
         if genre == 'Genre'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
@@ -285,7 +285,7 @@ skip_before_action :verify_authenticity_token
             @genre_requested = 0
 
         elsif genre == 'Arcade'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
@@ -300,7 +300,7 @@ skip_before_action :verify_authenticity_token
                 end
             end
         elsif genre == 'Adventure'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
@@ -316,7 +316,7 @@ skip_before_action :verify_authenticity_token
             end
 
         elsif genre == 'Fighting'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
@@ -332,7 +332,7 @@ skip_before_action :verify_authenticity_token
             end
 
         elsif genre == 'Platform'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
@@ -348,7 +348,7 @@ skip_before_action :verify_authenticity_token
             end
 
         elsif genre == 'Puzzle'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
@@ -364,7 +364,7 @@ skip_before_action :verify_authenticity_token
             end
 
         elsif genre == 'Racing'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
@@ -380,7 +380,7 @@ skip_before_action :verify_authenticity_token
             end
 
         elsif genre == 'RPG'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
@@ -396,7 +396,7 @@ skip_before_action :verify_authenticity_token
             end
 
         elsif genre == 'Shooter'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
@@ -412,7 +412,7 @@ skip_before_action :verify_authenticity_token
             end
 
         elsif genre == 'Simulator'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
@@ -428,7 +428,7 @@ skip_before_action :verify_authenticity_token
             end
 
         elsif genre == 'Sport'
-            api_endpoint = 'https://api.igdb.com/v4/games'
+            api_endpoint = 'https://api-v3.igdb.com/games'
             request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
             api = Apicalypse.new(api_endpoint, request_headers)
             api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
