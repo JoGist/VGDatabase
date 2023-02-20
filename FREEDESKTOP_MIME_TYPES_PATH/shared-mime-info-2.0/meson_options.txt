@@ -1,0 +1,8 @@
+
+option('update-mimedb', type: 'boolean', value: false,
+    description: 'Call update-mime-database after install. It should not be enabled if DESTDIR is used.',
+)
+
+option('xdgmime-path', type: 'string', value: './xdgmime',
+    description: 'Path to the xdgmime executable',
+)

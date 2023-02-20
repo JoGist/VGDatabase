@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+	<mime-type type="application/x-php">
+		<sub-class-of type="text/plain"/>
+		<generic-icon name="text-x-script"/>
+		<magic priority="50"/>
+		<glob pattern="*.inc"/>
+		<comment>PHP script</comment>
+	</mime-type>
+
+	<mime-type type="text/html">
+		<sub-class-of type="text/html"/>
+		<generic-icon name="text-html"/>
+		<magic priority="50"/>
+		<glob pattern="*.tpl"/>
+		<comment>Smarty template</comment>
+	</mime-type>
+</mime-info>

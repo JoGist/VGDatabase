@@ -1,0 +1,11 @@
+[Unit]
+Description=Pseudo-Emergency Shell
+Conflicts=shutdown.target
+Conflicts=rescue.service
+Conflicts=syslog.socket
+Before=shutdown.target
+
+[Service]
+Environment=HOME=/root
+WorkingDirectory=-/root
+Type=idle

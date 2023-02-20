@@ -1,0 +1,9 @@
+# This is a D-Bus service with a comment at the top, which
+# would typically be some kind of licencing header; but
+# here it’s just designed to take up space, annoyingly.
+
+[D-BUS Service]
+Name=org.freedesktop.someservice
+Exec=/bin/false
+User=root
+SystemdService=dbus-org.freedesktop.someservice.service

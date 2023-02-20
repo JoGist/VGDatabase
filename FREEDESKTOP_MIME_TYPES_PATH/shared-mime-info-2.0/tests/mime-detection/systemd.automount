@@ -1,0 +1,7 @@
+[Unit]
+Description=Test Automount Point
+Before=sysinit.target
+ConditionPathExists=/some/mountpoint/
+
+[Automount]
+Where=/some/mountpoint

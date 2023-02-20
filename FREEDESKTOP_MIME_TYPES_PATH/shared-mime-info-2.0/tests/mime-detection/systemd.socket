@@ -1,0 +1,5 @@
+[Unit]
+Description=Another Bus Messaging Socket
+
+[Socket]
+ListenStream=/run/another/system_bus_socket

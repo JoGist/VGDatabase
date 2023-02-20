@@ -1,0 +1,15 @@
+# Supposed to work
+image-dcf x-content/image-dcf
+video-vcd x-content/video-vcd
+video-svcd x-content/video-svcd
+video-dvd x-content/video-dvd x-content/audio-dvd
+video-dvd-2 x-content/video-dvd x-content/audio-dvd
+video-dvd-3 x-content/video-dvd x-content/audio-dvd
+video-bluray x-content/video-bluray
+video-hddvd x-content/video-hddvd
+image-picturecd x-content/image-picturecd
+software x-content/unix-software
+ostree-repository x-content/ostree-repository
+
+# Supposed to fail
+x tree-failure x-content/image-dcf

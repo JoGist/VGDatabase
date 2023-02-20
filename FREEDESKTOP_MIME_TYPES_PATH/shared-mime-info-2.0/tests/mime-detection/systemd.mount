@@ -1,0 +1,14 @@
+# This file has a deliberately quite long introductory comment, which is
+# designed to emulate the long license and copyright headers which some
+# systemd files include. This might throw off simplistic magic string
+# sniffing.
+[Unit]
+Description=Some Fancy Mount
+DefaultDependencies=no
+Before=sysinit.target
+ConditionPathExists=/proc/sys/fs/mqueue
+
+[Mount]
+What=mqueue
+Where=/dev/mqueue
+Type=mqueue

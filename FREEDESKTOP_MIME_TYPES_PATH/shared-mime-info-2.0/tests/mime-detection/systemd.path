@@ -1,0 +1,6 @@
+[Unit]
+Description=Some Kind of Path
+
+[Path]
+DirectoryNotEmpty=/run/systemd/some-path
+MakeDirectory=yes

@@ -1,0 +1,3168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the shared-mime-info package.
+# 
+# Translators:
+# Slobodan Simić <slsimic@gmail.com>, 2017
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: shared-mime-info\n"
+"Report-Msgid-Bugs-To: https://gitlab.freedesktop.org/xdg/shared-mime-info/issues\n"
+"POT-Creation-Date: 2019-09-11 12:53+0200\n"
+"PO-Revision-Date: 2019-08-20 21:02+0000\n"
+"Last-Translator: hadess <hadess@hadess.net>\n"
+"Language-Team: Serbian (http://www.transifex.com/freedesktop/shared-mime-info/language/sr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sr\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: freedesktop.org.xml.in:83
+msgid "Atari 2600 ROM"
+msgstr ""
+
+#: freedesktop.org.xml.in:88
+msgid "Atari 7800 ROM"
+msgstr ""
+
+#: freedesktop.org.xml.in:96
+msgid "Atari Lynx ROM"
+msgstr ""
+
+#: freedesktop.org.xml.in:104
+msgid "ATK inset"
+msgstr "АТК уметак"
+
+#: freedesktop.org.xml.in:111
+msgid "electronic book document"
+msgstr "документ електронске књиге"
+
+#: freedesktop.org.xml.in:125
+msgid "Adobe Illustrator document"
+msgstr "документ Адобе илустратора"
+
+#: freedesktop.org.xml.in:131
+msgid "Macintosh BinHex-encoded file"
+msgstr "Мекинтошова БинХекс-кодирана датотека"
+
+#: freedesktop.org.xml.in:138
+msgid "Mathematica Notebook file"
+msgstr ""
+
+#: freedesktop.org.xml.in:153
+msgid "MathML document"
+msgstr "МатМЛ документ"
+
+#: freedesktop.org.xml.in:162
+msgid "mailbox file"
+msgstr "датотека поштанског сандучета"
+
+#: freedesktop.org.xml.in:171 freedesktop.org.xml.in:180
+msgid "Metalink file"
+msgstr "датотека метавезе"
+
+#: freedesktop.org.xml.in:189
+msgid "unknown"
+msgstr "непознато"
+
+#: freedesktop.org.xml.in:192
+msgid "Partially downloaded file"
+msgstr "делимично преузета датотека"
+
+#: freedesktop.org.xml.in:199
+msgid "ODA document"
+msgstr "ОДА документ"
+
+#: freedesktop.org.xml.in:206
+msgid "WWF document"
+msgstr "ВВФ документ"
+
+#: freedesktop.org.xml.in:213
+msgid "PDF document"
+msgstr "ПДФ документ"
+
+#: freedesktop.org.xml.in:227
+msgid "XSPF playlist"
+msgstr "ИксСПФ списак нумера"
+
+#: freedesktop.org.xml.in:241
+msgid "Microsoft Windows theme pack"
+msgstr "пакет теме Мајкрософт Виндоуза"
+
+#: freedesktop.org.xml.in:247
+msgid "AmazonMP3 download file"
+msgstr "датотека преузимања АмазонаМП3"
+
+#: freedesktop.org.xml.in:251
+msgid "GSM 06.10 audio"
+msgstr "ГСМ 06.10 звук"
+
+#: freedesktop.org.xml.in:257
+msgid "iRiver playlist"
+msgstr ""
+
+#: freedesktop.org.xml.in:264
+msgid "PGP/MIME-encrypted message header"
+msgstr "ПГП/МИМЕ шифровано заглавље поруке"
+
+#: freedesktop.org.xml.in:276
+msgid "PGP keys"
+msgstr "ПГП кључеви"
+
+#: freedesktop.org.xml.in:297
+msgid "detached OpenPGP signature"
+msgstr "одвојени ОпенПГП потпис"
+
+#: freedesktop.org.xml.in:310
+msgid "PKCS#7 file"
+msgstr ""
+
+#: freedesktop.org.xml.in:318
+msgid "detached S/MIME signature"
+msgstr "одвојени С/МИМЕ потпис"
+
+#: freedesktop.org.xml.in:326
+msgid "PKCS#8 private key"
+msgstr "ПКЦС#8 лични кључ"
+
+#: freedesktop.org.xml.in:332
+msgid "PKCS#8 private key (encrypted)"
+msgstr ""
+
+#: freedesktop.org.xml.in:338
+msgid "PKCS#10 certification request"
+msgstr "ПКЦС#10 зхатев уверења"
+
+#: freedesktop.org.xml.in:345
+msgid "X.509 certificate"
+msgstr "Икс.509 уверење"
+
+#: freedesktop.org.xml.in:349
+msgid "certificate revocation list"
+msgstr ""
+
+#: freedesktop.org.xml.in:353
+msgid "PkiPath certification path"
+msgstr "путања уверења ПкиПат-а"
+
+#: freedesktop.org.xml.in:357
+msgid "PostScript document"
+msgstr ""
+
+#: freedesktop.org.xml.in:367
+msgid "Plucker document"
+msgstr "Плакер документ"
+
+#: freedesktop.org.xml.in:374
+msgid "RAML document"
+msgstr "РАМЛ документ"
+
+#: freedesktop.org.xml.in:384
+msgid "RELAX NG XML schema"
+msgstr "РЕЛАКС НГ ИксМЛ шема"
+
+#: freedesktop.org.xml.in:393
+msgid "RTF document"
+msgstr "РТФ документ"
+
+#: freedesktop.org.xml.in:405
+msgid "Sieve mail filter script"
+msgstr "Сјев скрипта пропусника поште"
+
+#: freedesktop.org.xml.in:411
+msgid "SMIL document"
+msgstr "СМИЛ документ"
+
+#: freedesktop.org.xml.in:429
+msgid "WPL playlist"
+msgstr "ВПЛ списак нумера"
+
+#: freedesktop.org.xml.in:439
+msgid "SQLite2 database"
+msgstr "СКуЛајт2 база података"
+
+#: freedesktop.org.xml.in:446
+msgid "SQLite3 database"
+msgstr "СКуЛајт3 база података"
+
+#: freedesktop.org.xml.in:454
+msgid "GEDCOM family history"
+msgstr "ГЕДКОМ историјат породице"
+
+#: freedesktop.org.xml.in:466
+msgid "Flash video"
+msgstr "Флеш видео"
+
+#: freedesktop.org.xml.in:477
+msgid "JavaFX video"
+msgstr "ЈаваФИкс видео"
+
+#. translators: a record is in this context a description of a board game
+#. that has been played, and that can be played back again:
+#. http://www.red-bean.com/sgf/
+#: freedesktop.org.xml.in:489
+msgid "SGF record"
+msgstr "СГФ запис"
+
+#: freedesktop.org.xml.in:501
+msgid "XLIFF translation file"
+msgstr "ИксЛИФФ датотека превода"
+
+#: freedesktop.org.xml.in:515
+msgid "YAML document"
+msgstr "ЈАМЛ документ"
+
+#: freedesktop.org.xml.in:529
+msgid "Corel Draw drawing"
+msgstr "Корелов цртеж"
+
+#: freedesktop.org.xml.in:544
+msgid "HPGL file"
+msgstr "ХПГЛ датотека"
+
+#: freedesktop.org.xml.in:551
+msgid "PCL file"
+msgstr "ПЦЛ датотека"
+
+#: freedesktop.org.xml.in:558
+msgid "Lotus 1-2-3 spreadsheet"
+msgstr "Лотусова 1-2-3 табела"
+
+#: freedesktop.org.xml.in:575
+msgid "Lotus Word Pro document"
+msgstr ""
+
+#: freedesktop.org.xml.in:583
+msgid "JET database"
+msgstr "ЈЕТ база података"
+
+#: freedesktop.org.xml.in:600
+msgid "Microsoft Cabinet archive"
+msgstr "Мајкрософтова кабинет архива"
+
+#: freedesktop.org.xml.in:609 freedesktop.org.xml.in:639
+msgid "Excel spreadsheet"
+msgstr "Екселова табела"
+
+#: freedesktop.org.xml.in:627
+msgid "Excel add-in"
+msgstr "Екселов додатак"
+
+#: freedesktop.org.xml.in:633
+msgid "Excel 2007 binary spreadsheet"
+msgstr "Ексел 2007 бинарна табела"
+
+#: freedesktop.org.xml.in:645
+msgid "Excel spreadsheet template"
+msgstr "Екселов шаблон табеле"
+
+#: freedesktop.org.xml.in:651 freedesktop.org.xml.in:667
+#: freedesktop.org.xml.in:679
+msgid "PowerPoint presentation"
+msgstr "Пауер поинт презентација"
+
+#: freedesktop.org.xml.in:662
+msgid "PowerPoint add-in"
+msgstr "Пауер поинт додатак"
+
+#: freedesktop.org.xml.in:673
+msgid "PowerPoint slide"
+msgstr "Пауер поинт слајд"
+
+#: freedesktop.org.xml.in:685
+msgid "PowerPoint presentation template"
+msgstr "Шаблон презентације Пауер поинта"
+
+#: freedesktop.org.xml.in:691 freedesktop.org.xml.in:709
+msgid "Office Open XML Visio drawing"
+msgstr ""
+
+#: freedesktop.org.xml.in:697 freedesktop.org.xml.in:715
+msgid "Office Open XML Visio template"
+msgstr ""
+
+#: freedesktop.org.xml.in:703 freedesktop.org.xml.in:721
+msgid "Office Open XML Visio stencil"
+msgstr ""
+
+#: freedesktop.org.xml.in:727 freedesktop.org.xml.in:769
+msgid "Word document"
+msgstr "Ворд документ"
+
+#: freedesktop.org.xml.in:733
+msgid "Word document template"
+msgstr "Шаблон Ворд документа"
+
+#: freedesktop.org.xml.in:739
+msgid "XPS document"
+msgstr "ИксПС документ"
+
+#: freedesktop.org.xml.in:750
+msgid "Microsoft Works document"
+msgstr "документ Мајкрософт Воркса"
+
+#: freedesktop.org.xml.in:760
+msgid "Microsoft Visio document"
+msgstr "документ Мајкрософт Визиа"
+
+#: freedesktop.org.xml.in:789
+msgid "Word template"
+msgstr "Ворд шаблон"
+
+#: freedesktop.org.xml.in:795
+msgid "GML document"
+msgstr "ГМЛ документ"
+
+#: freedesktop.org.xml.in:803
+msgid "GNUnet search file"
+msgstr "ГНУнет датотека претраге"
+
+#: freedesktop.org.xml.in:810
+msgid "TNEF message"
+msgstr "ТНЕФ порука"
+
+#: freedesktop.org.xml.in:822
+msgid "StarCalc spreadsheet"
+msgstr "Стар калк табела"
+
+#: freedesktop.org.xml.in:827
+msgid "StarChart chart"
+msgstr "График Стар Графика"
+
+#: freedesktop.org.xml.in:832
+msgid "StarDraw drawing"
+msgstr "Цртеж Стар Цртежа"
+
+#: freedesktop.org.xml.in:837
+msgid "StarImpress presentation"
+msgstr "Презентација Стар Импреса"
+
+#: freedesktop.org.xml.in:843
+msgid "StarMail email"
+msgstr "Ел. пошта Стар Поште"
+
+#: freedesktop.org.xml.in:847
+msgid "StarMath formula"
+msgstr "Формула Стар Математике"
+
+#: freedesktop.org.xml.in:852
+msgid "StarWriter document"
+msgstr "Документ Стар Писца"
+
+#: freedesktop.org.xml.in:863
+msgid "OpenOffice Calc spreadsheet"
+msgstr "Табела Опен Офис Рачуна"
+
+#: freedesktop.org.xml.in:876
+msgid "OpenOffice Calc template"
+msgstr "Шаблон Опен Офис Рачуна"
+
+#: freedesktop.org.xml.in:889
+msgid "OpenOffice Draw drawing"
+msgstr "Цртеж Опен Офис Цртежа"
+
+#: freedesktop.org.xml.in:902
+msgid "OpenOffice Draw template"
+msgstr "Шаблон Опен Офис Цртежа"
+
+#: freedesktop.org.xml.in:915
+msgid "OpenOffice Impress presentation"
+msgstr "Презентација Опен Офис Импреса"
+
+#: freedesktop.org.xml.in:928
+msgid "OpenOffice Impress template"
+msgstr "Шаблон Опен Офис Импреса"
+
+#: freedesktop.org.xml.in:941
+msgid "OpenOffice Math formula"
+msgstr "Формула Опен Офис Математике"
+
+#: freedesktop.org.xml.in:954
+msgid "OpenOffice Writer document"
+msgstr "Документ Опен Офис Писца"
+
+#: freedesktop.org.xml.in:967
+msgid "OpenOffice Writer global document"
+msgstr "Општи документ Опен Офис Писца"
+
+#: freedesktop.org.xml.in:980
+msgid "OpenOffice Writer template"
+msgstr "Шаблон Опен Офис Писца"
+
+#: freedesktop.org.xml.in:993
+msgid "ODT document"
+msgstr "ОДТ документ"
+
+#: freedesktop.org.xml.in:1008
+msgid "ODT document (Flat XML)"
+msgstr "ОДТ документ (Обични ИксМЛ)"
+
+#: freedesktop.org.xml.in:1016
+msgid "ODT template"
+msgstr "ОДТ шаблон"
+
+#: freedesktop.org.xml.in:1031
+msgid "OTH template"
+msgstr "ОТХ шаблон"
+
+#: freedesktop.org.xml.in:1046
+msgid "ODM document"
+msgstr "ОДМ документ"
+
+#: freedesktop.org.xml.in:1061
+msgid "ODG drawing"
+msgstr "ОДГ цртеж"
+
+#: freedesktop.org.xml.in:1076
+msgid "ODG drawing (Flat XML)"
+msgstr "ОДГ цртеж (Обичан ИксМЛ)"
+
+#: freedesktop.org.xml.in:1084
+msgid "ODG template"
+msgstr "ОДГ шаблон"
+
+#: freedesktop.org.xml.in:1099
+msgid "ODP presentation"
+msgstr "ОДП презентација"
+
+#: freedesktop.org.xml.in:1114
+msgid "ODP presentation (Flat XML)"
+msgstr "ОДП презентација (Обични ИксМЛ)"
+
+#: freedesktop.org.xml.in:1122
+msgid "ODP template"
+msgstr "ОДП шаблон"
+
+#: freedesktop.org.xml.in:1137
+msgid "ODS spreadsheet"
+msgstr "ОДС табела"
+
+#: freedesktop.org.xml.in:1152
+msgid "ODS spreadsheet (Flat XML)"
+msgstr "ОДС табела (обични ИксМЛ)"
+
+#: freedesktop.org.xml.in:1160
+msgid "ODS template"
+msgstr "ОДС шаблон"
+
+#: freedesktop.org.xml.in:1175
+msgid "ODC chart"
+msgstr "ОДЦ график"
+
+#: freedesktop.org.xml.in:1190
+msgid "ODC template"
+msgstr "ОДЦ шаблон"
+
+#: freedesktop.org.xml.in:1205
+msgid "ODF formula"
+msgstr "ОДФ формула"
+
+#: freedesktop.org.xml.in:1220
+msgid "ODF template"
+msgstr "ОДФ шаблон"
+
+#: freedesktop.org.xml.in:1235
+msgid "ODB database"
+msgstr "ОДБ база података"
+
+#: freedesktop.org.xml.in:1251
+msgid "ODI image"
+msgstr "ОДИ слика"
+
+#: freedesktop.org.xml.in:1266
+msgid "OpenOffice.org extension"
+msgstr "проширење ОпенОфис.орг-а"
+
+#: freedesktop.org.xml.in:1272
+msgid "Android package"
+msgstr "Андроидов пакет"
+
+#: freedesktop.org.xml.in:1277
+msgid "SIS package"
+msgstr "СИС пакет"
+
+#: freedesktop.org.xml.in:1287
+msgid "SISX package"
+msgstr "СИСИкс пакет"
+
+#: freedesktop.org.xml.in:1297
+msgid "network packet capture"
+msgstr ""
+
+#: freedesktop.org.xml.in:1309
+msgid "WordPerfect document"
+msgstr "документ Ворд перфекта"
+
+#: freedesktop.org.xml.in:1325
+msgid "YouTube media archive"
+msgstr ""
+
+#: freedesktop.org.xml.in:1331
+msgid "SPSS portable data file"
+msgstr ""
+
+#: freedesktop.org.xml.in:1340
+msgid "SPSS data file"
+msgstr ""
+
+#: freedesktop.org.xml.in:1352
+msgid "XBEL bookmarks"
+msgstr "ИксБЕЛ обележивачи"
+
+#: freedesktop.org.xml.in:1363
+msgid "7-zip archive"
+msgstr "7-зип архива"
+
+#: freedesktop.org.xml.in:1371
+msgid "AbiWord document"
+msgstr "Абиворд документ"
+
+#: freedesktop.org.xml.in:1385
+msgid "CD image cuesheet"
+msgstr "Кју лист ЦД одраза"
+
+#: freedesktop.org.xml.in:1391
+msgid "Lotus AmiPro document"
+msgstr "Лотусов Ами Про документ"
+
+#: freedesktop.org.xml.in:1396
+msgid "AportisDoc document"
+msgstr "Апортис Док документ"
+
+#: freedesktop.org.xml.in:1407
+msgid "Applix Spreadsheets spreadsheet"
+msgstr "документ Апликсове Табеле"
+
+#: freedesktop.org.xml.in:1418
+msgid "Applix Words document"
+msgstr "документ Апликсових Речи"
+
+#: freedesktop.org.xml.in:1428
+msgid "ARC archive"
+msgstr "АРЦ архива"
+
+#: freedesktop.org.xml.in:1440
+msgid "AR archive"
+msgstr "АР архива"
+
+#: freedesktop.org.xml.in:1450
+msgid "ARJ archive"
+msgstr "АРЈ архива"
+
+#: freedesktop.org.xml.in:1460
+msgid "ASP page"
+msgstr "АСП страница"
+
+#: freedesktop.org.xml.in:1468
+msgid "AWK script"
+msgstr "АВК скрипта"
+
+#: freedesktop.org.xml.in:1487
+msgid "BCPIO document"
+msgstr "БЦПИО документ"
+
+#: freedesktop.org.xml.in:1494
+msgid "BitTorrent seed file"
+msgstr "датотека сејача Бит Торента"
+
+#: freedesktop.org.xml.in:1501
+msgid "Blender scene"
+msgstr "Блендерова сцена"
+
+#: freedesktop.org.xml.in:1511
+msgid "TeX DVI document (bzip-compressed)"
+msgstr "ТеКс ДВИ документ (запакована бзипом)"
+
+#: freedesktop.org.xml.in:1517
+msgid "Bzip archive"
+msgstr "Бзип архива"
+
+#: freedesktop.org.xml.in:1527
+msgid "Tar archive (bzip-compressed)"
+msgstr "Тар архива (запакована бзипом)"
+
+#: freedesktop.org.xml.in:1537
+msgid "PDF document (bzip-compressed)"
+msgstr "ПДФ документ (запакован бзипом)"
+
+#: freedesktop.org.xml.in:1543
+msgid "PostScript document (bzip-compressed)"
+msgstr "Постскрипт документ (запакован бзипом)"
+
+#: freedesktop.org.xml.in:1549 freedesktop.org.xml.in:1556
+#: freedesktop.org.xml.in:1562 freedesktop.org.xml.in:1568
+msgid "comic book archive"
+msgstr "архива стрипа"
+
+#: freedesktop.org.xml.in:1575
+msgid "Lrzip archive"
+msgstr "Лрзип архива"
+
+#: freedesktop.org.xml.in:1583
+msgid "Tar archive (lrzip-compressed)"
+msgstr "Тар архива (запакована лрзипом)"
+
+#: freedesktop.org.xml.in:1590
+msgid "Apple disk image"
+msgstr "Еплов одраз диска"
+
+#: freedesktop.org.xml.in:1594
+msgid "Raw disk image"
+msgstr "сиров одраз диска"
+
+#: freedesktop.org.xml.in:1599
+msgid "Floppy disk image"
+msgstr ""
+
+#: freedesktop.org.xml.in:1606
+msgid "Raw disk image (XZ-compressed)"
+msgstr "сиров одраз диска (запакована ИксЗ-ом)"
+
+#: freedesktop.org.xml.in:1612
+msgid "raw CD image"
+msgstr "сиров одраз ЦД-а"
+
+#: freedesktop.org.xml.in:1620 freedesktop.org.xml.in:7234
+msgid "AppImage application bundle"
+msgstr "скуп програма Ап-слике"
+
+#: freedesktop.org.xml.in:1636
+msgid "CD Table Of Contents"
+msgstr "табела садржаја ЦД-а"
+
+#: freedesktop.org.xml.in:1651
+msgid "PGN chess game notation"
+msgstr "ПГН забелешка шаховске игре"
+
+#: freedesktop.org.xml.in:1663
+msgid "CHM document"
+msgstr "ЦХМ документ"
+
+#: freedesktop.org.xml.in:1671
+msgid "Java byte code"
+msgstr "бајтни ко̂д Јаве"
+
+#: freedesktop.org.xml.in:1674
+msgid "UNIX-compressed file"
+msgstr "датотека запакована ЈУНИКС-ом"
+
+#: freedesktop.org.xml.in:1682
+msgid "Tar archive (gzip-compressed)"
+msgstr "Тар архива (запакована гзипом)"
+
+#: freedesktop.org.xml.in:1689
+msgid "program crash data"
+msgstr "подаци о падовима програма"
+
+#: freedesktop.org.xml.in:1708
+msgid "CPIO archive"
+msgstr "ЦПИО архива"
+
+#: freedesktop.org.xml.in:1719
+msgid "CPIO archive (gzip-compressed)"
+msgstr "ЦПИО архива (компресована гзип-ом)"
+
+#: freedesktop.org.xml.in:1725
+msgid "C shell script"
+msgstr "скрипта Ц шкољке"
+
+#: freedesktop.org.xml.in:1738
+msgid "Xbase document"
+msgstr "документ Иксбазе"
+
+#: freedesktop.org.xml.in:1746
+msgid "ECMAScript program"
+msgstr "програм ЕЦМАСкрипте"
+
+#. Translate this to Mega-CD if the console was known as such in your locale
+#. Should be Mega-CD in all but en_US, Mexico, Canada and Brazil:
+#. https://en.wikipedia.org/wiki/Sega_CD
+#: freedesktop.org.xml.in:1756
+msgid "Sega CD disc image"
+msgstr "одраз диска Сега ЦД-а"
+
+#. Translate this to Kids Computer Pico if the console was known as such in
+#. your locale
+#. Should be Sega Pico in all but Japan:
+#. https://en.wikipedia.org/wiki/Sega_Pico
+#: freedesktop.org.xml.in:1772
+msgid "Sega Pico ROM"
+msgstr "Сега Пико РОМ"
+
+#: freedesktop.org.xml.in:1779
+msgid "Sega Saturn disc image"
+msgstr "одраз диска Сега Сатурна"
+
+#: freedesktop.org.xml.in:1788
+msgid "Dreamcast disc image"
+msgstr ""
+
+#: freedesktop.org.xml.in:1793
+msgid "Nintendo DS ROM"
+msgstr "Нинтендо ДС РОМ"
+
+#: freedesktop.org.xml.in:1798
+msgid "PC Engine ROM"
+msgstr "ПЦ Енџин РОМ"
+
+#: freedesktop.org.xml.in:1803
+msgid "Wii disc image"
+msgstr "одраз диска Вии-ја"
+
+#: freedesktop.org.xml.in:1816
+msgid "WiiWare bundle"
+msgstr "ВииВер комплет"
+
+#: freedesktop.org.xml.in:1826
+msgid "GameCube disc image"
+msgstr "одраз диска Гејм Коцке"
+
+#: freedesktop.org.xml.in:1835
+msgid "Thomson Mémo7 cartridge"
+msgstr "Томсон Мемо7 кертриџ"
+
+#: freedesktop.org.xml.in:1840
+msgid "Thomson cassette"
+msgstr "Томсон касете"
+
+#: freedesktop.org.xml.in:1845
+msgid "HFE floppy disk image"
+msgstr "ХФЕ слика флопи диска"
+
+#: freedesktop.org.xml.in:1856
+msgid "SAP Thomson floppy disk image"
+msgstr "САП Томсон слика флопи диска"
+
+#: freedesktop.org.xml.in:1867
+msgid "Debian package"
+msgstr "Дебијанов пакет"
+
+#: freedesktop.org.xml.in:1880
+msgid "Qt Designer interface document"
+msgstr ""
+
+#: freedesktop.org.xml.in:1890
+msgid "Qt Markup Language file"
+msgstr "датотека КуТ-овог језика означавања"
+
+#: freedesktop.org.xml.in:1905
+msgid "desktop configuration file"
+msgstr "датотека подешавања радне површи"
+
+#: freedesktop.org.xml.in:1920
+msgid "FictionBook document"
+msgstr "документ Фикшон Књиге"
+
+#: freedesktop.org.xml.in:1930
+msgid "Compressed FictionBook document"
+msgstr "запаковани документ Фикшон Књиге"
+
+#: freedesktop.org.xml.in:1941
+msgid "Dia diagram"
+msgstr "дијаграм Дие"
+
+#: freedesktop.org.xml.in:1951
+msgid "Dia shape"
+msgstr "облик Дие"
+
+#: freedesktop.org.xml.in:1961
+msgid "TeX DVI document"
+msgstr "ТеКс ДВИ документ"
+
+#: freedesktop.org.xml.in:1971
+msgid "Enlightenment theme"
+msgstr "тема за Енлајтмент"
+
+#: freedesktop.org.xml.in:1975
+msgid "Egon Animator animation"
+msgstr "анимација Егон аниматора"
+
+#: freedesktop.org.xml.in:1980
+msgid "executable"
+msgstr "извршна"
+
+#: freedesktop.org.xml.in:2001
+msgid "FLTK Fluid file"
+msgstr "датотека ФЛТК Флуида"
+
+#: freedesktop.org.xml.in:2012
+msgid "WOFF font"
+msgstr "ВОФФ слова"
+
+#: freedesktop.org.xml.in:2023
+msgid "WOFF2 font"
+msgstr ""
+
+#: freedesktop.org.xml.in:2033
+msgid "PostScript type-1 font"
+msgstr "слова Постскрипта врсте-1"
+
+#: freedesktop.org.xml.in:2049
+msgid "Adobe font metrics"
+msgstr "метрика Адобе слова"
+
+#: freedesktop.org.xml.in:2054
+msgid "BDF font"
+msgstr "БДФ слова"
+
+#: freedesktop.org.xml.in:2062
+msgid "DOS font"
+msgstr "ДОС слова"
+
+#: freedesktop.org.xml.in:2071
+msgid "Adobe FrameMaker font"
+msgstr "слова Адобе Фрејм Мејкера"
+
+#: freedesktop.org.xml.in:2078
+msgid "LIBGRX font"
+msgstr "ЛИБГРИкс слова"
+
+#: freedesktop.org.xml.in:2085
+msgid "Linux PSF console font"
+msgstr "слова Линуксове ПСФ конзоле"
+
+#: freedesktop.org.xml.in:2093
+msgid "Linux PSF console font (gzip-compressed)"
+msgstr "слова Линуксове ПСФ конзоле (запакована гзип-ом)"
+
+#: freedesktop.org.xml.in:2099
+msgid "PCF font"
+msgstr "ПЦФ слова"
+
+#: freedesktop.org.xml.in:2109
+msgid "OpenType font"
+msgstr "слова Отворене Врсте"
+
+#: freedesktop.org.xml.in:2119
+msgid "Speedo font"
+msgstr "Спидо слова"
+
+#: freedesktop.org.xml.in:2127
+msgid "SunOS News font"
+msgstr "слова СанОС Њуза"
+
+#: freedesktop.org.xml.in:2136
+msgid "TeX font"
+msgstr "ТеКс слова"
+
+#: freedesktop.org.xml.in:2145
+msgid "TeX font metrics"
+msgstr "метрика слова ТеКс-а"
+
+#: freedesktop.org.xml.in:2153
+msgid "TrueType font"
+msgstr "Трутајп слова"
+
+#: freedesktop.org.xml.in:2164
+msgid "Font collection"
+msgstr ""
+
+#: freedesktop.org.xml.in:2169
+msgid "TrueType XML font"
+msgstr "Трутајп ИксМЛ слова"
+
+#: freedesktop.org.xml.in:2178
+msgid "V font"
+msgstr "В слова"
+
+#: freedesktop.org.xml.in:2185
+msgid "Adobe FrameMaker document"
+msgstr "документ Адобе Фреј Мејкера"
+
+#: freedesktop.org.xml.in:2200
+msgid "Game Boy ROM"
+msgstr "Гејм Бој РОМ"
+
+#: freedesktop.org.xml.in:2211
+msgid "Game Boy Color ROM"
+msgstr "Гејм Бој РОМ боје"
+
+#: freedesktop.org.xml.in:2222
+msgid "Game Boy Advance ROM"
+msgstr "Гејм Бој Адванс РОМ"
+
+#: freedesktop.org.xml.in:2228
+msgid "Virtual Boy ROM"
+msgstr ""
+
+#: freedesktop.org.xml.in:2233
+msgid "GDBM database"
+msgstr "ГДБМ база података"
+
+#. Translate this to Mega Drive if the console was known as such in your
+#. locale
+#. Should be Mega Drive in all but en_US, Mexico and Canada:
+#. https://en.wikipedia.org/wiki/Sega_Genesis#History
+#: freedesktop.org.xml.in:2245
+msgid "Genesis ROM"
+msgstr "Мегадрајв РОМ"
+
+#. Translate this to Super 32X, Mega Drive 32X or Mega 32X if the system was
+#. known as such in your locale
+#. Should be Super 32X in Japan, Mega Drive 32X in PAL region and Mega 32X in
+#. Brazil: https://en.wikipedia.org/wiki/32X
+#: freedesktop.org.xml.in:2260
+msgid "Genesis 32X ROM"
+msgstr "Џенезис 32X РОМ"
+
+#: freedesktop.org.xml.in:2269
+msgid "translated messages (machine-readable)"
+msgstr "преведене поруке (машинама читљиве)"
+
+#: freedesktop.org.xml.in:2278
+msgid "GTK+ Builder interface document"
+msgstr ""
+
+#: freedesktop.org.xml.in:2287
+msgid "Glade project"
+msgstr "Глејдов пројекат"
+
+#: freedesktop.org.xml.in:2296
+msgid "GnuCash financial data"
+msgstr "финансијски подаци Гнуовог новца"
+
+#: freedesktop.org.xml.in:2303
+msgid "Gnumeric spreadsheet"
+msgstr "табела Гномовог бројевника"
+
+#: freedesktop.org.xml.in:2312
+msgid "Gnuplot document"
+msgstr "документ Гнуплота"
+
+#: freedesktop.org.xml.in:2320
+msgid "Graphite scientific graph"
+msgstr "Графитов научни графикони"
+
+#: freedesktop.org.xml.in:2325
+msgid "GTKtalog catalog"
+msgstr "каталог ГТКталога"
+
+#: freedesktop.org.xml.in:2332
+msgid "TeX DVI document (gzip-compressed)"
+msgstr "ТеКс ДВИ документ (запакован гзип-ом)"
+
+#: freedesktop.org.xml.in:2338
+msgid "Gzip archive"
+msgstr "Гзип архива"
+
+#: freedesktop.org.xml.in:2347
+msgid "PDF document (gzip-compressed)"
+msgstr "ПДФ документ (запакован гзип-ом)"
+
+#: freedesktop.org.xml.in:2353
+msgid "PostScript document (gzip-compressed)"
+msgstr "Постскрипт документ (запакован гзип-ом)"
+
+#: freedesktop.org.xml.in:2359
+msgid "HDF document"
+msgstr "ХДФ документ"
+
+#: freedesktop.org.xml.in:2374
+msgid "IFF file"
+msgstr "ИФФ датотека"
+
+#: freedesktop.org.xml.in:2382
+msgid "iPod firmware"
+msgstr "ајПод-ов уграђени"
+
+#: freedesktop.org.xml.in:2388
+msgid "Java archive"
+msgstr "архива Јаве"
+
+#: freedesktop.org.xml.in:2396
+msgid "Java class"
+msgstr "разред Јаве"
+
+#: freedesktop.org.xml.in:2408
+msgid "Groovy source code"
+msgstr ""
+
+#: freedesktop.org.xml.in:2417
+msgid "Gradle scripts"
+msgstr ""
+
+#: freedesktop.org.xml.in:2422
+msgid "JNLP file"
+msgstr "ЈНЛП датотека"
+
+#: freedesktop.org.xml.in:2433
+msgid "Java keystore"
+msgstr "смештај кључа Јаве"
+
+#: freedesktop.org.xml.in:2442
+msgid "Java JCE keystore"
+msgstr "смештај ЈЦЕ кључа Јаве"
+
+#: freedesktop.org.xml.in:2451
+msgid "Pack200 Java archive"
+msgstr "архива Јаве Пак200"
+
+#: freedesktop.org.xml.in:2459
+msgid "JavaScript program"
+msgstr "програм Јава скрипте"
+
+#: freedesktop.org.xml.in:2481
+msgid "JSON document"
+msgstr "ЈСОН документ"
+
+#: freedesktop.org.xml.in:2489
+msgid "JRD document"
+msgstr "ЈРД документ"
+
+#: freedesktop.org.xml.in:2497
+msgid "JSON patch"
+msgstr "ЈСОН закрпа"
+
+#: freedesktop.org.xml.in:2505
+msgid "JSON-LD document"
+msgstr "ЈСОН-ЛД документ"
+
+#: freedesktop.org.xml.in:2513
+msgid "Jupyter notebook document"
+msgstr ""
+
+#: freedesktop.org.xml.in:2524
+msgid "CoffeeScript document"
+msgstr "Кофи скрипт документ"
+
+#: freedesktop.org.xml.in:2530
+msgid "JBuilder project"
+msgstr "пројекат ЈГрадитеља"
+
+#: freedesktop.org.xml.in:2536
+msgid "Karbon14 drawing"
+msgstr "цртеж Карбона14"
+
+#: freedesktop.org.xml.in:2553
+msgid "KChart chart"
+msgstr "графикон К-графика"
+
+#: freedesktop.org.xml.in:2570
+msgid "Kexi settings"
+msgstr ""
+
+#: freedesktop.org.xml.in:2574
+msgid "Kexi shortcut"
+msgstr ""
+
+#: freedesktop.org.xml.in:2578 freedesktop.org.xml.in:2583
+msgid "Kexi database file"
+msgstr ""
+
+#: freedesktop.org.xml.in:2590
+msgid "KFormula formula"
+msgstr "формула К-формуле"
+
+#: freedesktop.org.xml.in:2607
+msgid "KIllustrator drawing"
+msgstr "цртеж К-илустратора"
+
+#: freedesktop.org.xml.in:2619
+msgid "Kivio flowchart"
+msgstr "Кивиов дијаграм тока"
+
+#: freedesktop.org.xml.in:2636
+msgid "Kontour drawing"
+msgstr "Контуров цртеж"
+
+#: freedesktop.org.xml.in:2653
+msgid "KPovModeler scene"
+msgstr "сцена КПов Моделера"
+
+#: freedesktop.org.xml.in:2658
+msgid "KPresenter presentation"
+msgstr "презентација К-представљача"
+
+#: freedesktop.org.xml.in:2676
+msgid "Krita document"
+msgstr "документ Крите"
+
+#: freedesktop.org.xml.in:2693
+msgid "KSpread spreadsheet"
+msgstr "табела К-табеле"
+
+#: freedesktop.org.xml.in:2710
+msgid "KSpread spreadsheet (encrypted)"
+msgstr "табела К-табеле (шифрована)"
+
+#: freedesktop.org.xml.in:2717
+msgid "KSysV init package"
+msgstr "КСисВ побудни пакет"
+
+#: freedesktop.org.xml.in:2726
+msgid "Kugar document"
+msgstr "документ Кугара"
+
+#: freedesktop.org.xml.in:2731
+msgid "KWord document"
+msgstr "документ К-речи"
+
+#: freedesktop.org.xml.in:2749
+msgid "KWord document (encrypted)"
+msgstr "документ К-речи (шифровани)"
+
+#: freedesktop.org.xml.in:2756
+msgid "LHA archive"
+msgstr "ЛХА архива"
+
+#: freedesktop.org.xml.in:2777
+msgid "LHZ archive"
+msgstr "ЛХЗ архива"
+
+#: freedesktop.org.xml.in:2782
+msgid "message catalog"
+msgstr "каталог порука"
+
+#: freedesktop.org.xml.in:2792
+msgid "LyX document"
+msgstr "ЛиКс документ"
+
+#: freedesktop.org.xml.in:2802
+msgid "LZ4 archive"
+msgstr "ЛЗ4 архива"
+
+#: freedesktop.org.xml.in:2811
+msgid "Tar archive (LZ4-compressed)"
+msgstr "Тар архива (запакована ЛЗ4-ом)"
+
+#: freedesktop.org.xml.in:2817
+msgid "Lzip archive"
+msgstr "Лзип архива"
+
+#: freedesktop.org.xml.in:2825
+msgid "Tar archive (lzip-compressed)"
+msgstr "Тар архива (запакована лзипом)"
+
+#: freedesktop.org.xml.in:2831
+msgid "PDF document (lzip-compressed)"
+msgstr "ПДФ документ (запакован лзип-ом)"
+
+#: freedesktop.org.xml.in:2837
+msgid "LZMA archive"
+msgstr "ЛЗМА архива"
+
+#: freedesktop.org.xml.in:2844
+msgid "Tar archive (LZMA-compressed)"
+msgstr "Тар архива (запакована ЛЗМА-ом)"
+
+#: freedesktop.org.xml.in:2851
+msgid "LZO archive"
+msgstr "ЛЗО архива"
+
+#: freedesktop.org.xml.in:2861
+msgid "Qpress archive"
+msgstr "Купрес архива"
+
+#: freedesktop.org.xml.in:2869
+msgid "XAR archive"
+msgstr "ИксАР архива"
+
+#: freedesktop.org.xml.in:2881
+msgid "Zlib archive"
+msgstr "Злиб архива"
+
+#: freedesktop.org.xml.in:2886
+msgid "MagicPoint presentation"
+msgstr "презентација Меџик Поинта"
+
+#: freedesktop.org.xml.in:2892
+msgid "Macintosh MacBinary file"
+msgstr "Мекинтош Мек Бинари датотека"
+
+#: freedesktop.org.xml.in:2899
+msgid "Matroska stream"
+msgstr "Матрошкин ток"
+
+#: freedesktop.org.xml.in:2913
+msgid "Matroska video"
+msgstr "Матрошкин видео"
+
+#: freedesktop.org.xml.in:2918
+msgid "Matroska 3D video"
+msgstr "Матрошкин 3Д видео"
+
+#: freedesktop.org.xml.in:2923
+msgid "Matroska audio"
+msgstr "Матрошкин звук"
+
+#: freedesktop.org.xml.in:2928
+msgid "WebM video"
+msgstr "ВебМ видео"
+
+#: freedesktop.org.xml.in:2942
+msgid "WebM audio"
+msgstr "ВебМ звук"
+
+#: freedesktop.org.xml.in:2946
+msgid "MHTML web archive"
+msgstr "МХТМЛ веб архива"
+
+#: freedesktop.org.xml.in:2954
+msgid "MXF video"
+msgstr "МИксФ видео"
+
+#: freedesktop.org.xml.in:2964
+msgid "OCL file"
+msgstr "ОЦЛ датотека"
+
+#: freedesktop.org.xml.in:2971
+msgid "COBOL source code"
+msgstr ""
+
+#: freedesktop.org.xml.in:2979
+msgid "Mobipocket e-book"
+msgstr "Мобипокет ел. књига"
+
+#: freedesktop.org.xml.in:2993
+msgid "Adobe FrameMaker MIF document"
+msgstr "Адобе Фрејм Мејкер МИФ документ"
+
+#: freedesktop.org.xml.in:2997
+msgid "Mozilla bookmarks"
+msgstr "Мозилини обележивачи"
+
+#: freedesktop.org.xml.in:3006
+msgid "DOS/Windows executable"
+msgstr "ДОС/Виндоуз извршна"
+
+#: freedesktop.org.xml.in:3014
+msgid "Internet shortcut"
+msgstr "интернет пречица"
+
+#: freedesktop.org.xml.in:3024
+msgid "WRI document"
+msgstr "ВРИ документ"
+
+#: freedesktop.org.xml.in:3029
+msgid "MSX ROM"
+msgstr "МСИкс РОМ"
+
+#: freedesktop.org.xml.in:3034
+msgid "M4 macro"
+msgstr "М4 макро"
+
+#: freedesktop.org.xml.in:3040
+msgid "Nintendo64 ROM"
+msgstr "Нинтендо64 РОМ"
+
+#: freedesktop.org.xml.in:3055
+msgid "Nautilus link"
+msgstr "Наутилусова веза"
+
+#: freedesktop.org.xml.in:3063
+msgid "Neo-Geo Pocket ROM"
+msgstr "Нео-Гео Покет РОМ"
+
+#: freedesktop.org.xml.in:3074
+msgid "Neo-Geo Pocket Color ROM"
+msgstr ""
+
+#. Translate this to Famicom if the console was known as such in your locale
+#: freedesktop.org.xml.in:3086
+msgid "NES ROM"
+msgstr "НЕС РОМ"
+
+#: freedesktop.org.xml.in:3094
+msgid "Unidata NetCDF document"
+msgstr "документ Унидата НетЦДФ-а"
+
+#: freedesktop.org.xml.in:3102
+msgid "NewzBin usenet index"
+msgstr "Њузбин попис јузнета"
+
+#: freedesktop.org.xml.in:3110
+msgid "object code"
+msgstr "објектни ко̂д"
+
+#: freedesktop.org.xml.in:3127
+msgid "Annodex exchange format"
+msgstr "Анодексов запис размене"
+
+#: freedesktop.org.xml.in:3140
+msgid "Annodex video"
+msgstr ""
+
+#: freedesktop.org.xml.in:3153
+msgid "Annodex audio"
+msgstr ""
+
+#: freedesktop.org.xml.in:3166
+msgid "Ogg multimedia file"
+msgstr "Огг мултимедијална датотека"
+
+#: freedesktop.org.xml.in:3175
+msgid "Ogg audio"
+msgstr ""
+
+#: freedesktop.org.xml.in:3186
+msgid "Ogg video"
+msgstr ""
+
+#: freedesktop.org.xml.in:3196
+msgid "Ogg Vorbis audio"
+msgstr "Огг Ворбис звук"
+
+#: freedesktop.org.xml.in:3209
+msgid "Ogg FLAC audio"
+msgstr "Огг ФЛАЦ звук"
+
+#: freedesktop.org.xml.in:3224
+msgid "Opus audio"
+msgstr "Опус звук"
+
+#: freedesktop.org.xml.in:3234
+msgid "Ogg Speex audio"
+msgstr "Огг Спикс звук"
+
+#: freedesktop.org.xml.in:3245
+msgid "Speex audio"
+msgstr "Спикс звук"
+
+#: freedesktop.org.xml.in:3252
+msgid "Ogg Theora video"
+msgstr "Огг Теора видео"
+
+#: freedesktop.org.xml.in:3263
+msgid "OGM video"
+msgstr "ОГМ видео"
+
+#: freedesktop.org.xml.in:3276
+msgid "OLE2 compound document storage"
+msgstr "смештај ОЛЕ2 сједињеног документа"
+
+#: freedesktop.org.xml.in:3284
+msgid "Microsoft Publisher document"
+msgstr "документ Мајкрософтовог Издавача"
+
+#: freedesktop.org.xml.in:3289
+msgid "Windows Installer package"
+msgstr "пакет Виндоузовог инсталатера"
+
+#: freedesktop.org.xml.in:3294
+msgid "GNU Oleo spreadsheet"
+msgstr "ГНУ Олео табела"
+
+#: freedesktop.org.xml.in:3302
+msgid "PAK archive"
+msgstr "ПАК архива"
+
+#: freedesktop.org.xml.in:3310
+msgid "Palm OS database"
+msgstr "база података Палм ОС-а"
+
+#: freedesktop.org.xml.in:3318
+msgid "Parchive archive"
+msgstr "архива Пархива"
+
+#: freedesktop.org.xml.in:3329
+msgid "PEF executable"
+msgstr "ПЕФ извршна"
+
+#: freedesktop.org.xml.in:3336
+msgid "Perl script"
+msgstr "Перл скрипта"
+
+#: freedesktop.org.xml.in:3365
+msgid "PHP script"
+msgstr "ПХП скрипта"
+
+#: freedesktop.org.xml.in:3378
+msgid "PKCS#7 certificate bundle"
+msgstr "ПКЦС#7 пакет уверења"
+
+#: freedesktop.org.xml.in:3385
+msgid "PKCS#12 certificate bundle"
+msgstr "ПКЦС#12 пакет уверења"
+
+#: freedesktop.org.xml.in:3393
+msgid "PlanPerfect spreadsheet"
+msgstr "табела План Перфекта"
+
+#: freedesktop.org.xml.in:3398
+msgid "Pocket Word document"
+msgstr "документ Покет Ворда"
+
+#: freedesktop.org.xml.in:3406
+msgid "profiler results"
+msgstr "резултати профилатора"
+
+#: freedesktop.org.xml.in:3412
+msgid "Pathetic Writer document"
+msgstr "документ Патетичног Писца"
+
+#: freedesktop.org.xml.in:3417
+msgid "Python bytecode"
+msgstr "Питонов бајтни ко̂д"
+
+#: freedesktop.org.xml.in:3425
+msgid "QtiPlot document"
+msgstr "КутиПлот документ"
+
+#: freedesktop.org.xml.in:3435
+msgid "Quattro Pro spreadsheet"
+msgstr "Кватро Про табела"
+
+#: freedesktop.org.xml.in:3442
+msgid "QuickTime playlist"
+msgstr ""
+
+#: freedesktop.org.xml.in:3457
+msgid "Quicken document"
+msgstr "Квикен документ"
+
+#: freedesktop.org.xml.in:3462
+msgid "RAR archive"
+msgstr "РАР архива"
+
+#: freedesktop.org.xml.in:3474
+msgid "DAR archive"
+msgstr "ДАР архива"
+
+#: freedesktop.org.xml.in:3482
+msgid "Alzip archive"
+msgstr "Алзип архива"
+
+#: freedesktop.org.xml.in:3490
+msgid "rejected patch"
+msgstr "одбијена закрпа"
+
+#: freedesktop.org.xml.in:3497
+msgid "RPM package"
+msgstr "РПМ пакет"
+
+#: freedesktop.org.xml.in:3506
+msgid "Source RPM package"
+msgstr "изворни РПМ пакет"
+
+#: freedesktop.org.xml.in:3513
+msgid "Ruby script"
+msgstr "Руби скрипта"
+
+#: freedesktop.org.xml.in:3524
+msgid "Markaby script"
+msgstr "Маркаби скрипта"
+
+#: freedesktop.org.xml.in:3530
+msgid "Rust source code"
+msgstr "Раст изворни ко̂д"
+
+#: freedesktop.org.xml.in:3535
+msgid "SC/Xspread spreadsheet"
+msgstr "табела СЦ/Икс-табеле"
+
+#: freedesktop.org.xml.in:3542
+msgid "shell archive"
+msgstr "архива љуске"
+
+#: freedesktop.org.xml.in:3547
+msgid "libtool shared library"
+msgstr "дељена библиотека библ-алата"
+
+#: freedesktop.org.xml.in:3553
+msgid "shared library"
+msgstr "дељена библиотека"
+
+#: freedesktop.org.xml.in:3573
+msgid "shell script"
+msgstr "скрипта љуске"
+
+#: freedesktop.org.xml.in:3594
+msgid "Shockwave Flash file"
+msgstr "Шоквејв Флеш датотека"
+
+#. translators: "Shorten" is the name of an audio codec
+#: freedesktop.org.xml.in:3607
+msgid "Shorten audio"
+msgstr "Шортен звук"
+
+#: freedesktop.org.xml.in:3616
+msgid "Siag spreadsheet"
+msgstr "Сјаг табела"
+
+#: freedesktop.org.xml.in:3621
+msgid "Skencil document"
+msgstr "Скенцил документ"
+
+#: freedesktop.org.xml.in:3629
+msgid "Stampede package"
+msgstr "Стампеде пакет"
+
+#: freedesktop.org.xml.in:3633
+msgid "SG-1000 ROM"
+msgstr "СГ-1000 РОМ"
+
+#. Translate this to "Master System/Mark III" if the console was known as such
+#. in your locale (probably only in Japan)
+#: freedesktop.org.xml.in:3639
+msgid "Master System ROM"
+msgstr "Мастер Систем РОМ"
+
+#: freedesktop.org.xml.in:3651
+msgid "Game Gear ROM"
+msgstr "Гејм Гир РОМ"
+
+#. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
+#. Europe) if the console was known as such in your locale
+#: freedesktop.org.xml.in:3665
+msgid "Super NES ROM"
+msgstr "Супер НЕС РОМ"
+
+#: freedesktop.org.xml.in:3672
+msgid "StuffIt archive"
+msgstr "Стаф Ит архива"
+
+#: freedesktop.org.xml.in:3683
+msgid "SubRip subtitles"
+msgstr "Суб Рип преводи"
+
+#: freedesktop.org.xml.in:3695
+msgid "WebVTT subtitles"
+msgstr "Веб ВТТ преводи"
+
+#: freedesktop.org.xml.in:3706
+msgid "SAMI subtitles"
+msgstr "САМИ преводи"
+
+#: freedesktop.org.xml.in:3718
+msgid "MicroDVD subtitles"
+msgstr "Микро ДВД преводи"
+
+#: freedesktop.org.xml.in:3728
+msgid "MPSub subtitles"
+msgstr "МПСуб преводи"
+
+#: freedesktop.org.xml.in:3738
+msgid "SSA subtitles"
+msgstr "ССА преводи"
+
+#: freedesktop.org.xml.in:3750
+msgid "SubViewer subtitles"
+msgstr "Суб Вјивер преводи"
+
+#: freedesktop.org.xml.in:3758
+msgid "iMelody ringtone"
+msgstr "звоно ајМелодије"
+
+#: freedesktop.org.xml.in:3768
+msgid "SMAF audio"
+msgstr "СМАФ звук"
+
+#: freedesktop.org.xml.in:3780
+msgid "MRML playlist"
+msgstr "МРМЛ списак нумера"
+
+#: freedesktop.org.xml.in:3790
+msgid "XMF audio"
+msgstr "ИксМФ звук"
+
+#: freedesktop.org.xml.in:3802
+msgid "SV4 CPIO archive"
+msgstr "СВ4 ЦПИО архива"
+
+#: freedesktop.org.xml.in:3807
+msgid "SV4 CPIO archive (with CRC)"
+msgstr "СВ4 ЦПИО архива (са ЦРЦ-ом)"
+
+#: freedesktop.org.xml.in:3812
+msgid "Tar archive"
+msgstr "Тар архива"
+
+#: freedesktop.org.xml.in:3824
+msgid "Tar archive (compressed)"
+msgstr "Тар архива (запакована)"
+
+#: freedesktop.org.xml.in:3831
+msgid "generic font file"
+msgstr "општа датотека слова"
+
+#: freedesktop.org.xml.in:3836
+msgid "packed font file"
+msgstr "пакована датотека слова"
+
+#: freedesktop.org.xml.in:3841
+msgid "TGIF document"
+msgstr "ТГИФ документ"
+
+#: freedesktop.org.xml.in:3849
+msgid "theme"
+msgstr "тема"
+
+#: freedesktop.org.xml.in:3855
+msgid "ToutDoux document"
+msgstr "Туду документ"
+
+#: freedesktop.org.xml.in:3859
+msgid "backup file"
+msgstr "датотека резерве"
+
+#: freedesktop.org.xml.in:3867
+msgid "Troff document"
+msgstr "Трофф документ"
+
+#: freedesktop.org.xml.in:3882
+msgid "Manpage manual document"
+msgstr "документ упутства странице упутства"
+
+#: freedesktop.org.xml.in:3888
+msgid "manual page (compressed)"
+msgstr "страница упутства (запакована)"
+
+#: freedesktop.org.xml.in:3892
+msgid "Tar archive (LZO-compressed)"
+msgstr "Тар архива (запакована ЛЗО-ом)"
+
+#: freedesktop.org.xml.in:3899
+msgid "XZ archive"
+msgstr "ИксЗ архива"
+
+#: freedesktop.org.xml.in:3907
+msgid "Tar archive (XZ-compressed)"
+msgstr "Тар архива (запакована ИксЗ-ом)"
+
+#: freedesktop.org.xml.in:3914
+msgid "Zstandard archive"
+msgstr ""
+
+#: freedesktop.org.xml.in:3922
+msgid "Tar archive (Zstandard-compressed)"
+msgstr ""
+
+#: freedesktop.org.xml.in:3929
+msgid "PDF document (XZ-compressed)"
+msgstr "ПДФ документ (запакован ИксЗ-ом)"
+
+#: freedesktop.org.xml.in:3935
+msgid "Ustar archive"
+msgstr "Устар архива"
+
+#: freedesktop.org.xml.in:3940
+msgid "WAIS source code"
+msgstr "ВАИС изворни ко̂д"
+
+#: freedesktop.org.xml.in:3946
+msgid "WordPerfect/Drawperfect image"
+msgstr "Ворд Перфект/Дров Перфект слика"
+
+#: freedesktop.org.xml.in:3951
+msgid "Bandai WonderSwan ROM"
+msgstr ""
+
+#: freedesktop.org.xml.in:3956
+msgid "Bandai WonderSwan Color ROM"
+msgstr ""
+
+#: freedesktop.org.xml.in:3961
+msgid "DER/PEM/Netscape-encoded X.509 certificate"
+msgstr "ДЕР/ПЕМ/Нетскејп кодирано уверење Икс.509"
+
+#: freedesktop.org.xml.in:3969
+msgid "empty document"
+msgstr "празан документ"
+
+#: freedesktop.org.xml.in:3972
+msgid "Zoo archive"
+msgstr "Зoo архива"
+
+#: freedesktop.org.xml.in:3980
+msgid "XHTML page"
+msgstr "ИксХТМЛ страница"
+
+#: freedesktop.org.xml.in:3998
+msgid "Zip archive"
+msgstr "Зип архива"
+
+#: freedesktop.org.xml.in:4008
+msgid "WIM disk image"
+msgstr ""
+
+#: freedesktop.org.xml.in:4018
+msgid "Dolby Digital audio"
+msgstr "Дигитални Долби звук"
+
+#: freedesktop.org.xml.in:4025
+msgid "DTS audio"
+msgstr "ДТС звук"
+
+#: freedesktop.org.xml.in:4036
+msgid "DTSHD audio"
+msgstr "ДТСХД звук"
+
+#: freedesktop.org.xml.in:4045
+msgid "AMR audio"
+msgstr "АМР звук"
+
+#: freedesktop.org.xml.in:4056
+msgid "AMR-WB audio"
+msgstr "АМР-ВБ звук"
+
+#: freedesktop.org.xml.in:4067
+msgid "ULAW (Sun) audio"
+msgstr "УЛАВ (Сан) звук"
+
+#: freedesktop.org.xml.in:4075
+msgid "Commodore 64 audio"
+msgstr "звук Комодора 64"
+
+#: freedesktop.org.xml.in:4083
+msgid "PCM audio"
+msgstr "ПЦМ звук"
+
+#: freedesktop.org.xml.in:4101
+msgid "AIFC audio"
+msgstr "АИФЦ звук"
+
+#: freedesktop.org.xml.in:4113
+msgid "AIFF/Amiga/Mac audio"
+msgstr "АИФФ/Амига/Мекинтош звук"
+
+#: freedesktop.org.xml.in:4125
+msgid "Monkey's audio"
+msgstr "Монкијев звук"
+
+#: freedesktop.org.xml.in:4132
+msgid "Audible.Com audio"
+msgstr ""
+
+#: freedesktop.org.xml.in:4144
+msgid "Impulse Tracker audio"
+msgstr "звук Пратиоца Импулса"
+
+#: freedesktop.org.xml.in:4151
+msgid "FLAC audio"
+msgstr "ФЛАЦ звук"
+
+#: freedesktop.org.xml.in:4159
+msgid "WavPack audio"
+msgstr "Вејвпак звук"
+
+#: freedesktop.org.xml.in:4167
+msgid "WavPack audio correction file"
+msgstr "датотека поправке Вејвпак звука"
+
+#: freedesktop.org.xml.in:4174
+msgid "MIDI audio"
+msgstr "МИДИ звук"
+
+#: freedesktop.org.xml.in:4184
+msgid "compressed Tracker audio"
+msgstr "запаковани звук Пратиоца"
+
+#: freedesktop.org.xml.in:4191
+msgid "AAC audio"
+msgstr "ААЦ звук"
+
+#: freedesktop.org.xml.in:4204
+msgid "USAC audio"
+msgstr ""
+
+#: freedesktop.org.xml.in:4211
+msgid "MPEG-4 audio"
+msgstr "МПЕГ-4 звук"
+
+#: freedesktop.org.xml.in:4221
+msgid "MPEG-4 ringtone"
+msgstr ""
+
+#: freedesktop.org.xml.in:4226
+msgid "MPEG-4 video"
+msgstr "МПЕГ-4 видео"
+
+#: freedesktop.org.xml.in:4243
+msgid "MPEG-4 audio book"
+msgstr "МПЕГ-4 звукотека"
+
+#: freedesktop.org.xml.in:4252
+msgid "3GPP multimedia file"
+msgstr "3ГПП мултимедијална датотека"
+
+#: freedesktop.org.xml.in:4275
+msgid "3GPP2 multimedia file"
+msgstr "3ГПП2 мултимедијална датотека"
+
+#: freedesktop.org.xml.in:4288
+msgid "Amiga SoundTracker audio"
+msgstr "звук Амигиног Пратиоца Звука"
+
+#: freedesktop.org.xml.in:4332
+msgid "MP2 audio"
+msgstr "МП2 звук"
+
+#: freedesktop.org.xml.in:4337
+msgid "MP3 audio"
+msgstr "МП3 звук"
+
+#: freedesktop.org.xml.in:4350
+msgid "MP3 audio (streamed)"
+msgstr "МП3 звук (проточан)"
+
+#: freedesktop.org.xml.in:4365
+msgid "HTTP Live Streaming playlist"
+msgstr "ХТТП списак нумера Живог Протока"
+
+#: freedesktop.org.xml.in:4377
+msgid "Microsoft ASX playlist"
+msgstr "Мајкрософтов АСИкс списак нумера"
+
+#: freedesktop.org.xml.in:4394
+msgid "PSF audio"
+msgstr "ПСФ звук"
+
+#: freedesktop.org.xml.in:4403
+msgid "MiniPSF audio"
+msgstr "Мини ПСФ звук"
+
+#: freedesktop.org.xml.in:4410
+msgid "PSFlib audio library"
+msgstr "библиотека звука ПСФ библиотеке"
+
+#: freedesktop.org.xml.in:4417
+msgid "Windows Media audio"
+msgstr "Виндоуз Медија звук"
+
+#: freedesktop.org.xml.in:4423
+msgid "Musepack audio"
+msgstr "звук Мјузпака"
+
+#: freedesktop.org.xml.in:4432
+msgid "RealAudio document"
+msgstr "документ Рил Аудиа"
+
+#: freedesktop.org.xml.in:4439
+msgid "RealMedia playlist"
+msgstr ""
+
+#: freedesktop.org.xml.in:4443
+msgid "RealVideo document"
+msgstr "документ Рил Видеа"
+
+#: freedesktop.org.xml.in:4449
+msgid "RealMedia document"
+msgstr "документ Рил Медија"
+
+#: freedesktop.org.xml.in:4463
+msgid "RealPix document"
+msgstr "документ Рил Пикса"
+
+#: freedesktop.org.xml.in:4467
+msgid "RealText document"
+msgstr "документ Рил Текста"
+
+#: freedesktop.org.xml.in:4471
+msgid "RIFF audio"
+msgstr "РИФФ звук"
+
+#: freedesktop.org.xml.in:4474
+msgid "RIFF container"
+msgstr "РИФФ садржалац"
+
+#: freedesktop.org.xml.in:4481
+msgid "Scream Tracker 3 audio"
+msgstr "звук Скрим Тракера 3"
+
+#: freedesktop.org.xml.in:4488
+msgid "MP3 ShoutCast playlist"
+msgstr "списак МП3 песама Шаут Каста"
+
+#: freedesktop.org.xml.in:4499
+msgid "Scream Tracker audio"
+msgstr "звук Скрим Тракера"
+
+#: freedesktop.org.xml.in:4508
+msgid "VOC audio"
+msgstr "ВОЦ звук"
+
+#: freedesktop.org.xml.in:4512
+msgid "WAV audio"
+msgstr "ВАВ звук"
+
+#: freedesktop.org.xml.in:4522
+msgid "Scream Tracker instrument"
+msgstr "инструмент Скрим Тракера"
+
+#: freedesktop.org.xml.in:4529
+msgid "FastTracker II audio"
+msgstr "звук Фаст Тракера ИИ"
+
+#: freedesktop.org.xml.in:4536
+msgid "TrueAudio audio"
+msgstr "Тру Аудио звук"
+
+#: freedesktop.org.xml.in:4544
+msgid "Windows BMP image"
+msgstr "Виндоузова БМП слика"
+
+#: freedesktop.org.xml.in:4559
+msgid "WBMP image"
+msgstr "ВБМП слика"
+
+#: freedesktop.org.xml.in:4565
+msgid "CGM image"
+msgstr ""
+
+#: freedesktop.org.xml.in:4571
+msgid "CCITT G3 fax image"
+msgstr ""
+
+#: freedesktop.org.xml.in:4576
+msgid "GIF image"
+msgstr "ГИФ слика"
+
+#: freedesktop.org.xml.in:4583
+msgid "HEIF image"
+msgstr ""
+
+#: freedesktop.org.xml.in:4593
+msgid "IEF image"
+msgstr "ИЕФ слика"
+
+#: freedesktop.org.xml.in:4597
+msgid "JPEG image"
+msgstr "ЈПЕГ слика"
+
+#: freedesktop.org.xml.in:4608
+msgid "MJPEG video stream"
+msgstr ""
+
+#: freedesktop.org.xml.in:4616
+msgid "JPEG-2000 codestream"
+msgstr ""
+
+#: freedesktop.org.xml.in:4625
+msgid "JPEG-2000 JP2 image"
+msgstr ""
+
+#: freedesktop.org.xml.in:4638
+msgid "JPEG-2000 JPX image"
+msgstr ""
+
+#: freedesktop.org.xml.in:4648
+msgid "JPEG-2000 JPM image"
+msgstr ""
+
+#: freedesktop.org.xml.in:4658
+msgid "JPEG-2000 MJ2 video"
+msgstr ""
+
+#: freedesktop.org.xml.in:4668
+msgid "OpenRaster image"
+msgstr ""
+
+#: freedesktop.org.xml.in:4680
+msgid "DirectDraw surface"
+msgstr "Директ Дров површина"
+
+#: freedesktop.org.xml.in:4687
+msgid "X11 cursor"
+msgstr "Икс11 курсор"
+
+#: freedesktop.org.xml.in:4693
+msgid "EXR image"
+msgstr "ЕИксР слика"
+
+#: freedesktop.org.xml.in:4700
+msgid "Macintosh Quickdraw/PICT drawing"
+msgstr "Мекинтошов Квикдров/ПИЦТ цртеж"
+
+#: freedesktop.org.xml.in:4725
+msgid "UFRaw ID image"
+msgstr "УФ сирова ИД слика"
+
+#: freedesktop.org.xml.in:4733
+msgid "digital raw image"
+msgstr "дигитална сирова слика"
+
+#: freedesktop.org.xml.in:4736
+msgid "Adobe DNG negative"
+msgstr "Адобов ДНГ негатив"
+
+#: freedesktop.org.xml.in:4746
+msgid "Canon CRW raw image"
+msgstr "Кенон ЦРВ сирова слика"
+
+#: freedesktop.org.xml.in:4757
+msgid "Canon CR2 raw image"
+msgstr "Кенон ЦР2 сирова слика"
+
+#: freedesktop.org.xml.in:4765
+msgid "Fuji RAF raw image"
+msgstr "Фуџи РАФ сирова слика"
+
+#: freedesktop.org.xml.in:4775
+msgid "Kodak DCR raw image"
+msgstr "Кодак ДЦР сирова слика"
+
+#: freedesktop.org.xml.in:4783
+msgid "Kodak K25 raw image"
+msgstr "Кодак К25 сирова слика"
+
+#: freedesktop.org.xml.in:4791
+msgid "Kodak KDC raw image"
+msgstr "Кодак КДЦ сирова слика"
+
+#: freedesktop.org.xml.in:4802
+msgid "Minolta MRW raw image"
+msgstr "Минолта МРВ сирова слика"
+
+#: freedesktop.org.xml.in:4812
+msgid "Nikon NEF raw image"
+msgstr "Никон НЕФ сирова слика"
+
+#: freedesktop.org.xml.in:4820
+msgid "Olympus ORF raw image"
+msgstr "Олимпус ОРФ сирова слика"
+
+#: freedesktop.org.xml.in:4835 freedesktop.org.xml.in:4845
+msgid "Panasonic raw image"
+msgstr "Панасоник сирова слика"
+
+#: freedesktop.org.xml.in:4855
+msgid "Pentax PEF raw image"
+msgstr "Пентакс ПЕФ сирова слика"
+
+#: freedesktop.org.xml.in:4863
+msgid "Sigma X3F raw image"
+msgstr "Сигма Икс3Ф сирова слика"
+
+#: freedesktop.org.xml.in:4877
+msgid "Sony SRF raw image"
+msgstr "Сони СРФ сирова слика"
+
+#: freedesktop.org.xml.in:4885
+msgid "Sony SR2 raw image"
+msgstr "Сони СР2 сирова слика"
+
+#: freedesktop.org.xml.in:4893
+msgid "Sony ARW raw image"
+msgstr "Сони АРВ сирова слика"
+
+#: freedesktop.org.xml.in:4901
+msgid "PNG image"
+msgstr "ПНГ слика"
+
+#: freedesktop.org.xml.in:4908
+msgid "RLE bitmap image"
+msgstr ""
+
+#: freedesktop.org.xml.in:4914
+msgid "SVG image"
+msgstr "СВГ слика"
+
+#: freedesktop.org.xml.in:4926
+msgid "compressed SVG image"
+msgstr "запакована СВГ слика"
+
+#: freedesktop.org.xml.in:4933
+msgid "TIFF image"
+msgstr "ТИФФ слика"
+
+#: freedesktop.org.xml.in:4944
+msgid "Multi-page TIFF image"
+msgstr "Вишестранична ТИФФ слика"
+
+#: freedesktop.org.xml.in:4950
+msgid "AutoCAD image"
+msgstr "АутоКАД слика"
+
+#: freedesktop.org.xml.in:4954
+msgid "DXF vector image"
+msgstr "ДИксФ векторска графика"
+
+#: freedesktop.org.xml.in:4962
+msgid "MDI image"
+msgstr ""
+
+#: freedesktop.org.xml.in:4971
+msgid "WebP image"
+msgstr "ВебП слика"
+
+#: freedesktop.org.xml.in:4980
+msgid "3D Studio image"
+msgstr "слика 3Д Студија"
+
+#: freedesktop.org.xml.in:4984
+msgid "Applix Graphics image"
+msgstr "Апликсов графички документ"
+
+#: freedesktop.org.xml.in:4993
+msgid "EPS image (bzip-compressed)"
+msgstr "ЕПС слика (запакована бзип-ом)"
+
+#: freedesktop.org.xml.in:5000
+msgid "CMU raster image"
+msgstr "ЦМУ растерска слика"
+
+#: freedesktop.org.xml.in:5004
+msgid "compressed GIMP image"
+msgstr "запакована ГИМП слика"
+
+#: freedesktop.org.xml.in:5009
+msgid "DICOM image"
+msgstr "ДИКОМ слика"
+
+#: freedesktop.org.xml.in:5020
+msgid "DocBook document"
+msgstr "Док Бук документ"
+
+#: freedesktop.org.xml.in:5035
+msgid "DIB image"
+msgstr "ДИБ слика"
+
+#: freedesktop.org.xml.in:5043
+msgid "DjVu image"
+msgstr "ДјВу слика"
+
+#: freedesktop.org.xml.in:5058
+msgid "DjVu document"
+msgstr "ДјВу документ"
+
+#: freedesktop.org.xml.in:5073
+msgid "DPX image"
+msgstr "ДПИкс слика"
+
+#: freedesktop.org.xml.in:5081
+msgid "EPS image"
+msgstr "ЕПС слика"
+
+#: freedesktop.org.xml.in:5099
+msgid "FITS document"
+msgstr "ФИТС документ"
+
+#: freedesktop.org.xml.in:5109
+msgid "FPX image"
+msgstr "ФПИкс слика"
+
+#: freedesktop.org.xml.in:5117
+msgid "EPS image (gzip-compressed)"
+msgstr "ЕПС слика (запакована гзип-ом)"
+
+#: freedesktop.org.xml.in:5124
+msgid "Windows icon"
+msgstr "Иконица Виндоуза"
+
+#: freedesktop.org.xml.in:5139
+msgid "MacOS X icon"
+msgstr "МекОС Икс иконица"
+
+#: freedesktop.org.xml.in:5146
+msgid "ILBM image"
+msgstr "ИЛБМ слика"
+
+#: freedesktop.org.xml.in:5160
+msgid "JNG image"
+msgstr "ЈНГ слика"
+
+#: freedesktop.org.xml.in:5166
+msgid "LightWave object"
+msgstr "Лајт Вејв објекат"
+
+#: freedesktop.org.xml.in:5171
+msgid "LightWave scene"
+msgstr "Лајт Вејв сцена"
+
+#: freedesktop.org.xml.in:5175
+msgid "MacPaint Bitmap image"
+msgstr "Мек Пеинт битмап слика"
+
+#: freedesktop.org.xml.in:5179
+msgid "Office drawing"
+msgstr "Канцеларијски цртеж"
+
+#: freedesktop.org.xml.in:5183
+msgid "NIFF image"
+msgstr "НИФФ слика"
+
+#: freedesktop.org.xml.in:5189
+msgid "PCX image"
+msgstr "ПЦИкс слика"
+
+#: freedesktop.org.xml.in:5204
+msgid "PCD image"
+msgstr "ПЦД слика"
+
+#: freedesktop.org.xml.in:5210
+msgid "PNM image"
+msgstr "ПНМ слика"
+
+#: freedesktop.org.xml.in:5214
+msgid "PBM image"
+msgstr "ПБМ слика"
+
+#: freedesktop.org.xml.in:5235
+msgid "PGM image"
+msgstr "ПГМ слика"
+
+#: freedesktop.org.xml.in:5256
+msgid "PPM image"
+msgstr "ППМ слика"
+
+#: freedesktop.org.xml.in:5277
+msgid "Photoshop image"
+msgstr "Фотошоп слика"
+
+#: freedesktop.org.xml.in:5290
+msgid "RGB image"
+msgstr "РГБ слика"
+
+#: freedesktop.org.xml.in:5294
+msgid "SGI image"
+msgstr "СГИ слика"
+
+#: freedesktop.org.xml.in:5298
+msgid "Sun raster image"
+msgstr "слика Сановог растера"
+
+#: freedesktop.org.xml.in:5305
+msgid "TGA image"
+msgstr "ТГА слика"
+
+#: freedesktop.org.xml.in:5331
+msgid "Windows cursor"
+msgstr "Виндоузов курсор"
+
+#: freedesktop.org.xml.in:5340
+msgid "Windows animated cursor"
+msgstr "Виндоузов анимирани курсор"
+
+#: freedesktop.org.xml.in:5349
+msgid "EMF image"
+msgstr "ЕМФ слика"
+
+#: freedesktop.org.xml.in:5367
+msgid "WMF image"
+msgstr "ВМФ слика"
+
+#: freedesktop.org.xml.in:5391
+msgid "XBM image"
+msgstr "ИксБМ слика"
+
+#: freedesktop.org.xml.in:5397
+msgid "GIMP image"
+msgstr "Гимпова слика"
+
+#: freedesktop.org.xml.in:5405
+msgid "GIMP brush"
+msgstr ""
+
+#: freedesktop.org.xml.in:5412
+msgid "GIMP brush pipe"
+msgstr ""
+
+#: freedesktop.org.xml.in:5416
+msgid "GIMP pattern"
+msgstr ""
+
+#: freedesktop.org.xml.in:5423
+msgid "XFig image"
+msgstr "ИксФиг слика"
+
+#: freedesktop.org.xml.in:5430
+msgid "XPM image"
+msgstr "ИксПМ слика"
+
+#: freedesktop.org.xml.in:5440
+msgid "X window image"
+msgstr "слика Икс прозора"
+
+#: freedesktop.org.xml.in:5444
+msgid "block device"
+msgstr "блок уређај"
+
+#: freedesktop.org.xml.in:5447
+msgid "character device"
+msgstr "знаковни уређај"
+
+#: freedesktop.org.xml.in:5450
+msgid "folder"
+msgstr "фасцикла"
+
+#: freedesktop.org.xml.in:5455
+msgid "pipe"
+msgstr "спојка"
+
+#: freedesktop.org.xml.in:5458
+msgid "mount point"
+msgstr "тачка прикључења"
+
+#: freedesktop.org.xml.in:5462
+msgid "socket"
+msgstr "прикључница"
+
+#: freedesktop.org.xml.in:5465
+msgid "symbolic link"
+msgstr "симболичка веза"
+
+#: freedesktop.org.xml.in:5468
+msgid "mail delivery report"
+msgstr "извештај доставе поруке"
+
+#: freedesktop.org.xml.in:5473
+msgid "mail disposition report"
+msgstr "извештај слања поруке"
+
+#: freedesktop.org.xml.in:5478
+msgid "reference to remote file"
+msgstr "упута на удаљену датотеку"
+
+#: freedesktop.org.xml.in:5482
+msgid "Usenet news message"
+msgstr "Порука новости Јузнета"
+
+#: freedesktop.org.xml.in:5492
+msgid "partial email message"
+msgstr "делимична порука ел. поште"
+
+#: freedesktop.org.xml.in:5497
+msgid "email message"
+msgstr "порука ел. поште"
+
+#: freedesktop.org.xml.in:5515
+msgid "GNU mail message"
+msgstr "порука Гнуове поште"
+
+#: freedesktop.org.xml.in:5520
+msgid "IGES document"
+msgstr "ИГЕС документ"
+
+#: freedesktop.org.xml.in:5533
+msgid "VRML document"
+msgstr "ВРМЛ документ"
+
+#: freedesktop.org.xml.in:5546
+msgid "message in several formats"
+msgstr "порука у неколико записа"
+
+#: freedesktop.org.xml.in:5549
+msgid "Macintosh AppleDouble-encoded file"
+msgstr "Мекинтошова датотека кодирана Епл Дуплим"
+
+#: freedesktop.org.xml.in:5552
+msgid "message digest"
+msgstr "гомила порука"
+
+#: freedesktop.org.xml.in:5555
+msgid "encrypted message"
+msgstr "шифрована порука"
+
+#: freedesktop.org.xml.in:5558
+msgid "compound documents"
+msgstr "сједињени документи"
+
+#: freedesktop.org.xml.in:5561
+msgid "compound document"
+msgstr "сједињени документ"
+
+#: freedesktop.org.xml.in:5564
+msgid "mail system report"
+msgstr "извештај поштанског система"
+
+#: freedesktop.org.xml.in:5567
+msgid "signed message"
+msgstr "потписана порука"
+
+#: freedesktop.org.xml.in:5570
+msgid "stream of data (server push)"
+msgstr "ток података (гурање са сервера)"
+
+#: freedesktop.org.xml.in:5573
+msgid "VCS/ICS calendar"
+msgstr "ВЦС/ИЦС календар"
+
+#: freedesktop.org.xml.in:5587
+msgid "CSS stylesheet"
+msgstr "ЦСС стилски лист"
+
+#: freedesktop.org.xml.in:5594
+msgid "electronic business card"
+msgstr "електронска пословна картица"
+
+#: freedesktop.org.xml.in:5608
+msgid "Turtle document"
+msgstr "Тартл документ"
+
+#: freedesktop.org.xml.in:5613
+msgid "txt2tags document"
+msgstr "документ текста-у-ознаке"
+
+#: freedesktop.org.xml.in:5622
+msgid "Verilog source code"
+msgstr "изворни код Верилога"
+
+#: freedesktop.org.xml.in:5627
+msgid "SystemVerilog header"
+msgstr "заглавље Система Верилога"
+
+#: freedesktop.org.xml.in:5632
+msgid "SystemVerilog source code"
+msgstr "изворни код Система Верилога"
+
+#: freedesktop.org.xml.in:5637
+msgid "VHDL source code"
+msgstr "ВХДЛ изворни код"
+
+#: freedesktop.org.xml.in:5645
+msgid "enriched text document"
+msgstr "обогаћени текстуални документ"
+
+#: freedesktop.org.xml.in:5649
+msgid "help page"
+msgstr "страница помоћи"
+
+#: freedesktop.org.xml.in:5653
+msgid "plain text document"
+msgstr "обичан текстуални документ"
+
+#: freedesktop.org.xml.in:5663
+msgid "RDF file"
+msgstr "РДФ датотека"
+
+#: freedesktop.org.xml.in:5674
+msgid "reStructuredText document"
+msgstr ""
+
+#: freedesktop.org.xml.in:5679
+msgid "OWL XML file"
+msgstr "ОВЛ ИксМЛ датотека"
+
+#: freedesktop.org.xml.in:5690
+msgid "email headers"
+msgstr "заглавља ел. поште"
+
+#: freedesktop.org.xml.in:5694
+msgid "rich text document"
+msgstr "богат текстуални документ"
+
+#: freedesktop.org.xml.in:5699
+msgid "RSS summary"
+msgstr "РСС сажетак"
+
+#: freedesktop.org.xml.in:5712
+msgid "Atom syndication feed"
+msgstr "Атомов довод синдикализације"
+
+#: freedesktop.org.xml.in:5722
+msgid "OPML syndication feed"
+msgstr "ОМПЛ довод синдикализације"
+
+#: freedesktop.org.xml.in:5732
+msgid "SGML document"
+msgstr "СГМЛ документ"
+
+#: freedesktop.org.xml.in:5740
+msgid "spreadsheet interchange document"
+msgstr "документ размене табеле"
+
+#: freedesktop.org.xml.in:5749
+msgid "TSV document"
+msgstr "ТСВ документ"
+
+#: freedesktop.org.xml.in:5756
+msgid "Graphviz DOT graph"
+msgstr "график Графвиз ДОТ-а"
+
+#: freedesktop.org.xml.in:5768
+msgid "JAD document"
+msgstr "ЈАД документ"
+
+#: freedesktop.org.xml.in:5777
+msgid "WML document"
+msgstr "ВМЛ документ"
+
+#: freedesktop.org.xml.in:5784
+msgid "WMLScript program"
+msgstr "програм ВМЛ скрипте"
+
+#: freedesktop.org.xml.in:5788
+msgid "WarpScript source code"
+msgstr ""
+
+#: freedesktop.org.xml.in:5793
+msgid "ACE archive"
+msgstr "АЦЕ архива"
+
+#: freedesktop.org.xml.in:5801
+msgid "Ada source code"
+msgstr "Ада изворни ко̂д"
+
+#: freedesktop.org.xml.in:5807
+msgid "author list"
+msgstr "списак аутора"
+
+#: freedesktop.org.xml.in:5812
+msgid "BibTeX document"
+msgstr "Биб ТеКс документ"
+
+#: freedesktop.org.xml.in:5820
+msgid "C++ header"
+msgstr "Ц++ заглавље"
+
+#: freedesktop.org.xml.in:5829
+msgid "C++ source code"
+msgstr "Ц++ изворни ко̂д"
+
+#: freedesktop.org.xml.in:5838
+msgid "ChangeLog document"
+msgstr "документ дневника измена"
+
+#: freedesktop.org.xml.in:5843
+msgid "C header"
+msgstr "Ц заглавље"
+
+#: freedesktop.org.xml.in:5848
+msgid "CMake source code"
+msgstr "Ц Мејк изворни ко̂д"
+
+#: freedesktop.org.xml.in:5854
+msgid "CSV document"
+msgstr "ЦСВ документ"
+
+#: freedesktop.org.xml.in:5863
+msgid "CSV Schema document"
+msgstr "документ ЦСВ шеме"
+
+#: freedesktop.org.xml.in:5870
+msgid "license terms"
+msgstr "услови коришћења"
+
+#: freedesktop.org.xml.in:5875
+msgid "author credits"
+msgstr "заслуге аутора"
+
+#: freedesktop.org.xml.in:5880
+msgid "C source code"
+msgstr "Ц изворни ко̂д"
+
+#: freedesktop.org.xml.in:5891
+msgid "C# source code"
+msgstr "Ц# изворни ко̂д"
+
+#: freedesktop.org.xml.in:5896
+msgid "Vala source code"
+msgstr "Вала изворни ко̂д"
+
+#: freedesktop.org.xml.in:5902
+msgid "OOC source code"
+msgstr "ООЦ изворни ко̂д"
+
+#: freedesktop.org.xml.in:5909
+msgid "DCL script"
+msgstr "ДЦЛ скрипта"
+
+#: freedesktop.org.xml.in:5916
+msgid "DSSSL document"
+msgstr "ДСССЛ документ"
+
+#: freedesktop.org.xml.in:5923
+msgid "D source code"
+msgstr "Д изворни ко̂д"
+
+#: freedesktop.org.xml.in:5929
+msgid "DTD file"
+msgstr "ДТД датотека"
+
+#: freedesktop.org.xml.in:5938
+msgid "Eiffel source code"
+msgstr "Ајфел изворни ко̂д"
+
+#: freedesktop.org.xml.in:5944
+msgid "Emacs Lisp source code"
+msgstr "Емакс Лисп изворни ко̂д"
+
+#: freedesktop.org.xml.in:5953
+msgid "Erlang source code"
+msgstr "Ерланг изворни ко̂д"
+
+#: freedesktop.org.xml.in:5958
+msgid "Fortran source code"
+msgstr "Фортран изворни ко̂д"
+
+#: freedesktop.org.xml.in:5966
+msgid "Genie source code"
+msgstr "Гение изворни ко̂д"
+
+#: freedesktop.org.xml.in:5972
+msgid "translation file"
+msgstr "датотека превода"
+
+#: freedesktop.org.xml.in:5979
+msgid "translation template"
+msgstr "шаблон превода"
+
+#: freedesktop.org.xml.in:5988
+msgid "Gherkin document"
+msgstr ""
+
+#: freedesktop.org.xml.in:5993
+msgid "HTML document"
+msgstr "ХТМЛ документ"
+
+#: freedesktop.org.xml.in:6020
+msgid "Web application cache file"
+msgstr ""
+
+#: freedesktop.org.xml.in:6033
+msgid "Google Video Pointer shortcut"
+msgstr ""
+
+#: freedesktop.org.xml.in:6042
+msgid "Haskell source code"
+msgstr "Хаскел изворни ко̂д"
+
+#: freedesktop.org.xml.in:6047
+msgid "IDL document"
+msgstr "ИДЛ документ"
+
+#: freedesktop.org.xml.in:6054
+msgid "installation instructions"
+msgstr "упутства инсталације"
+
+#: freedesktop.org.xml.in:6059
+msgid "Java source code"
+msgstr "Јава изворни ко̂д"
+
+#: freedesktop.org.xml.in:6064
+msgid "LDIF address book"
+msgstr "ЛДИФ адресар"
+
+#: freedesktop.org.xml.in:6075
+msgid "Lilypond music sheet"
+msgstr "Лилипонд музички лист"
+
+#: freedesktop.org.xml.in:6080
+msgid "LHS source code"
+msgstr "ЛХС изворни ко̂д"
+
+#: freedesktop.org.xml.in:6087
+msgid "application log"
+msgstr "дневник програма"
+
+#: freedesktop.org.xml.in:6092
+msgid "Makefile build file"
+msgstr ""
+
+#: freedesktop.org.xml.in:6105
+msgid "Markdown document"
+msgstr "Маркдаун документ"
+
+#: freedesktop.org.xml.in:6113
+msgid "Qt MOC file"
+msgstr "Кут МОЦ датотека"
+
+#: freedesktop.org.xml.in:6120
+msgid "Windows Registry extract"
+msgstr "исцедак Виндоузовог регистра"
+
+#: freedesktop.org.xml.in:6130
+msgid "MOF file"
+msgstr ""
+
+#: freedesktop.org.xml.in:6137
+msgid "Mup musical composition document"
+msgstr ""
+
+#: freedesktop.org.xml.in:6146
+msgid "Objective-C source code"
+msgstr "Објектни-Ц изворни ко̂д"
+
+#: freedesktop.org.xml.in:6154
+msgid "OCaml source code"
+msgstr "Окемл изворни ко̂д"
+
+#: freedesktop.org.xml.in:6159
+msgid "OpenCL source code"
+msgstr ""
+
+#: freedesktop.org.xml.in:6166
+msgid "MATLAB file"
+msgstr ""
+
+#: freedesktop.org.xml.in:6181
+msgid "Meson source code"
+msgstr "Месон изворни ко̂д"
+
+#: freedesktop.org.xml.in:6187
+msgid "Modelica model"
+msgstr "модел Моделике"
+
+#: freedesktop.org.xml.in:6207
+msgid "Pascal source code"
+msgstr "Паскалов изворни ко̂д"
+
+#: freedesktop.org.xml.in:6213
+msgid "differences between files"
+msgstr "разлике између датотека"
+
+#: freedesktop.org.xml.in:6232
+msgid "Go source code"
+msgstr "Гоу изворни ко̂д"
+
+#: freedesktop.org.xml.in:6237
+msgid "SCons configuration file"
+msgstr "СКонс датотека подешавања"
+
+#: freedesktop.org.xml.in:6244
+msgid "Python 3 script"
+msgstr ""
+
+#: freedesktop.org.xml.in:6263
+msgid "Python script"
+msgstr "Питонова скрипта"
+
+#: freedesktop.org.xml.in:6283
+msgid "Lua script"
+msgstr "Луа скрипта"
+
+#: freedesktop.org.xml.in:6295
+msgid "README document"
+msgstr "документ ПРОЧИТАЈМЕ"
+
+#: freedesktop.org.xml.in:6300
+msgid "NFO document"
+msgstr "документ НФО"
+
+#: freedesktop.org.xml.in:6305
+msgid "RPM spec file"
+msgstr "РПМ посебна датотека"
+
+#: freedesktop.org.xml.in:6316
+msgid "Sass CSS pre-processor file"
+msgstr "датотека Сас ЦСС пре-процесора"
+
+#: freedesktop.org.xml.in:6324
+msgid "Scala source code"
+msgstr "Скала изворни ко̂д"
+
+#: freedesktop.org.xml.in:6329
+msgid "Scheme source code"
+msgstr "Шемски изворни ко̂д"
+
+#: freedesktop.org.xml.in:6335
+msgid "SCSS pre-processor file"
+msgstr ""
+
+#: freedesktop.org.xml.in:6343
+msgid "Setext document"
+msgstr "Сетекст документ"
+
+#: freedesktop.org.xml.in:6348
+msgid "SQL code"
+msgstr "СКуЛ ко̂д"
+
+#: freedesktop.org.xml.in:6354
+msgid "Tcl script"
+msgstr "Тцл скрипта"
+
+#: freedesktop.org.xml.in:6360
+msgid "TeX document"
+msgstr "ТеКс документ"
+
+#: freedesktop.org.xml.in:6378
+msgid "TeXInfo document"
+msgstr "ТеКсинфо документ"
+
+#: freedesktop.org.xml.in:6384
+msgid "Troff ME input document"
+msgstr "Трофф МЕ улазни документ"
+
+#: freedesktop.org.xml.in:6389
+msgid "Troff MM input document"
+msgstr "Трофф ММ улазни документ"
+
+#: freedesktop.org.xml.in:6394
+msgid "Troff MS input document"
+msgstr "Трофф МС улазни документ"
+
+#: freedesktop.org.xml.in:6399
+msgid "Twig template"
+msgstr "Твиг шаблон"
+
+#: freedesktop.org.xml.in:6405
+msgid "X-Motif UIL table"
+msgstr "Икс-Мотиф УИЛ табела"
+
+#: freedesktop.org.xml.in:6410
+msgid "resource location"
+msgstr "путања изворишта"
+
+#: freedesktop.org.xml.in:6415
+msgid "uuencoded file"
+msgstr "уукодирана датотека"
+
+#: freedesktop.org.xml.in:6424
+msgid "XMI file"
+msgstr "ИксМИ датотека"
+
+#: freedesktop.org.xml.in:6433
+msgid "XSL FO file"
+msgstr "ИксСЛ ФО датотека"
+
+#: freedesktop.org.xml.in:6442
+msgid "iptables configuration file"
+msgstr "датотека подешавања иптабела"
+
+#: freedesktop.org.xml.in:6467
+msgid "D-Bus service file"
+msgstr "датотека услуге Д-сабирнице"
+
+#: freedesktop.org.xml.in:6476
+msgid "systemd unit file"
+msgstr "датотека јединице системд-а"
+
+#: freedesktop.org.xml.in:6520
+msgid "XSLT stylesheet"
+msgstr "ИксСЛТ стилски лист"
+
+#: freedesktop.org.xml.in:6533
+msgid "Maven description file"
+msgstr ""
+
+#: freedesktop.org.xml.in:6540
+msgid "XMCD CD database"
+msgstr "ИксМЦД ЦД база података"
+
+#: freedesktop.org.xml.in:6547
+msgid "XML document"
+msgstr "ИксМЛ документ"
+
+#: freedesktop.org.xml.in:6563
+msgid "XML entities document"
+msgstr "документ ИксМЛ ставки"
+
+#: freedesktop.org.xml.in:6572
+msgid "DV video"
+msgstr "ДВ видео"
+
+#: freedesktop.org.xml.in:6581
+msgid "ISI video"
+msgstr "ИСИ видео"
+
+#: freedesktop.org.xml.in:6584
+msgid "MPEG-2 transport stream"
+msgstr "МПЕГ-2 ток преноса"
+
+#: freedesktop.org.xml.in:6619
+msgid "MPEG video"
+msgstr "МПЕГ видео"
+
+#: freedesktop.org.xml.in:6639
+msgid "MPEG video (streamed)"
+msgstr "МПЕГ видео (проточни)"
+
+#: freedesktop.org.xml.in:6650
+msgid "QuickTime video"
+msgstr "Квик Тајм видео"
+
+#: freedesktop.org.xml.in:6663
+msgid "QuickTime image"
+msgstr "Квик Тајм слика"
+
+#: freedesktop.org.xml.in:6671
+msgid "Khronos texture image"
+msgstr "слика Кронос текстуре"
+
+#: freedesktop.org.xml.in:6682
+msgid "Vivo video"
+msgstr "Виво видео"
+
+#: freedesktop.org.xml.in:6688
+msgid "Wavelet video"
+msgstr "Вејвелет видео"
+
+#: freedesktop.org.xml.in:6691
+msgid "ANIM animation"
+msgstr "АНИМ анимација"
+
+#: freedesktop.org.xml.in:6695
+msgid "FLIC animation"
+msgstr "ФЛИЦ анимација"
+
+#: freedesktop.org.xml.in:6706
+msgid "Haansoft Hangul document"
+msgstr "Хансофт Хангул документ"
+
+#: freedesktop.org.xml.in:6715
+msgid "Haansoft Hangul document template"
+msgstr "шаблон Хансофт Хангул документа"
+
+#: freedesktop.org.xml.in:6721
+msgid "MNG animation"
+msgstr "МНГ анимација"
+
+#: freedesktop.org.xml.in:6730
+msgid "ASF video"
+msgstr "АСФ видео"
+
+#: freedesktop.org.xml.in:6743
+msgid "Windows Media Station file"
+msgstr "датотека станице Виндоузовог Медија"
+
+#: freedesktop.org.xml.in:6752
+msgid "Windows Media video"
+msgstr "Виндоуз Медија видео"
+
+#: freedesktop.org.xml.in:6757
+msgid "AVI video"
+msgstr "АВИ видео"
+
+#: freedesktop.org.xml.in:6778
+msgid "NullSoft video"
+msgstr "Нул Софт видео"
+
+#: freedesktop.org.xml.in:6785
+msgid "SDP multicast stream file"
+msgstr "СДП датотека тока вишеструког емитовања"
+
+#: freedesktop.org.xml.in:6800
+msgid "SGI video"
+msgstr "СГИ видео"
+
+#: freedesktop.org.xml.in:6807
+msgid "eMusic download package"
+msgstr "пакет преузимања еМузике"
+
+#: freedesktop.org.xml.in:6815
+msgid "KML geographic data"
+msgstr "КМЛ географски подаци"
+
+#: freedesktop.org.xml.in:6823
+msgid "KML geographic compressed data"
+msgstr "КМЛ географски запаковани подаци"
+
+#: freedesktop.org.xml.in:6830
+msgid "GeoJSON geospatial data"
+msgstr "ГеоЈСОН геопросторни подаци"
+
+#: freedesktop.org.xml.in:6837
+msgid "GPX geographic data"
+msgstr "ГПИкс географски подаци"
+
+#: freedesktop.org.xml.in:6849
+msgid "Citrix ICA settings file"
+msgstr "датотека подешавања Цитрикс ИЦА-а"
+
+#: freedesktop.org.xml.in:6857
+msgid "XUL interface document"
+msgstr "документ ИксУЛ сучеља"
+
+#: freedesktop.org.xml.in:6866
+msgid "XPInstall installer module"
+msgstr "модул инсталатера Инсталирања ИксПе-а"
+
+#: freedesktop.org.xml.in:6871
+msgid "Word 2007 document"
+msgstr "документ Ворда 2007"
+
+#: freedesktop.org.xml.in:6877
+msgid "Word 2007 document template"
+msgstr "шаблон документа Ворда 2007"
+
+#: freedesktop.org.xml.in:6883
+msgid "PowerPoint 2007 presentation"
+msgstr "презентација Пауер Поинта 2007"
+
+#: freedesktop.org.xml.in:6889
+msgid "PowerPoint 2007 slide"
+msgstr "слајд Пауер Поинта 2007"
+
+#: freedesktop.org.xml.in:6895
+msgid "PowerPoint 2007 show"
+msgstr "приказ Пауер Поинта 2007"
+
+#: freedesktop.org.xml.in:6901
+msgid "PowerPoint 2007 presentation template"
+msgstr "шаблон презентације Пауер Поинта 2007"
+
+#: freedesktop.org.xml.in:6907
+msgid "Excel 2007 spreadsheet"
+msgstr "табела Ексела 2007"
+
+#: freedesktop.org.xml.in:6913
+msgid "Excel 2007 spreadsheet template"
+msgstr "шаблон табеле Ексела 2007"
+
+#: freedesktop.org.xml.in:6919
+msgid "T602 document"
+msgstr "Т602 документ"
+
+#: freedesktop.org.xml.in:6929
+msgid "Cisco VPN settings"
+msgstr ""
+
+#: freedesktop.org.xml.in:6939
+msgid "ICC profile"
+msgstr "ИЦЦ профил"
+
+#: freedesktop.org.xml.in:6947
+msgid "IT 8.7 color calibration file"
+msgstr "ИТ 8.7 датотека калибрације боје"
+
+#: freedesktop.org.xml.in:6956
+msgid "CCMX color correction file"
+msgstr "ЦЦМИкс датотека поправке боје"
+
+#: freedesktop.org.xml.in:6965
+msgid "WinHelp help file"
+msgstr "датотека помоћи Вин хелпа"
+
+#: freedesktop.org.xml.in:6973
+msgid "binary differences between files"
+msgstr "бинарне разлике датотека"
+
+#. http://en.wikipedia.org/wiki/Design_rule_for_Camera_File_system
+#: freedesktop.org.xml.in:6984
+msgid "digital photos"
+msgstr "дигиталне фотографије"
+
+#. TRANSLATORS: This is a brand-name, not a generic term. Please see
+#. http://en.wikipedia.org/wiki/Video_CD
+#. http://www.herongyang.com/CD-DVD/VCD-Movie-File-Directory-Structure.html
+#: freedesktop.org.xml.in:6994
+msgid "Video CD"
+msgstr "Видео ЦД"
+
+#. TRANSLATORS: This is a brand-name, not a generic term. Please see
+#. http://en.wikipedia.org/wiki/Super_Video_CD
+#. http://everything2.com/index.pl?node_id=1009222
+#: freedesktop.org.xml.in:7004
+msgid "Super Video CD"
+msgstr "Супер видео ЦД"
+
+#. http://en.wikipedia.org/wiki/DVD-Video
+#: freedesktop.org.xml.in:7012
+msgid "video DVD"
+msgstr "видео ДВД"
+
+#. http://en.wikipedia.org/wiki/Red_Book_(audio_CD_standard)
+#: freedesktop.org.xml.in:7023
+msgid "audio CD"
+msgstr "звучни ЦД"
+
+#. http://en.wikipedia.org/wiki/Compact_Disc
+#: freedesktop.org.xml.in:7028
+msgid "blank CD disc"
+msgstr "празан ЦД диск"
+
+#. http://en.wikipedia.org/wiki/DVD
+#: freedesktop.org.xml.in:7033
+msgid "blank DVD disc"
+msgstr "празан ДВД диск"
+
+#. http://en.wikipedia.org/wiki/Blu-ray_Disc
+#: freedesktop.org.xml.in:7038
+msgid "blank Blu-ray disc"
+msgstr "празан Блу-реј диск"
+
+#. http://en.wikipedia.org/wiki/HD_DVD
+#: freedesktop.org.xml.in:7043
+msgid "blank HD DVD disc"
+msgstr "празан ХД ДВД диск"
+
+#. http://en.wikipedia.org/wiki/DVD-Audio
+#: freedesktop.org.xml.in:7048
+msgid "audio DVD"
+msgstr "звучни ДВД"
+
+#. http://en.wikipedia.org/wiki/Blu-ray_Disc
+#. http://www.blu-raydisc.com/Section-13470/Section-13890/Index.html
+#: freedesktop.org.xml.in:7058
+msgid "Blu-ray video disc"
+msgstr "Блу-реј видео диск"
+
+#. http://en.wikipedia.org/wiki/HD_DVD
+#. http://www.dvdafteredit.com/wiki/The_HVDVD_TS_Folder
+#: freedesktop.org.xml.in:7068
+msgid "HD DVD video disc"
+msgstr "ХД ДВД видео диск"
+
+#. see fd.o hal spec
+#: freedesktop.org.xml.in:7078
+msgid "e-book reader"
+msgstr "читач ел. књига"
+
+#. TRANSLATORS: This is a brand-name, not a generic term. Please see
+#. http://en.wikipedia.org/wiki/Picture_CD
+#. http://www.re.org/kristin/picturecd.html
+#: freedesktop.org.xml.in:7089
+msgid "Picture CD"
+msgstr "ЦД са сликама"
+
+#. see fd.o hal spec
+#: freedesktop.org.xml.in:7097
+msgid "portable audio player"
+msgstr "преносна музичка справица"
+
+#. https://github.com/ostreedev/ostree/blob/master/man/ostree-create-usb.xml
+#: freedesktop.org.xml.in:7102
+msgid "OSTree software updates"
+msgstr ""
+
+#. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
+#. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
+#: freedesktop.org.xml.in:7113
+msgid "software"
+msgstr "софтвер"
+
+#. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
+#. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
+#: freedesktop.org.xml.in:7119
+msgid "UNIX software"
+msgstr "ЈУНИКС-ов софтвер"
+
+#. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
+#. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
+#: freedesktop.org.xml.in:7131
+msgid "Windows software"
+msgstr "Виндоузов софтвер"
+
+#: freedesktop.org.xml.in:7140
+msgid "TriG RDF document"
+msgstr "ТриГ РДФ документ"
+
+#: freedesktop.org.xml.in:7149
+msgid "Apple Keynote 5 presentation"
+msgstr "презентација Епл Кинота 5"
+
+#: freedesktop.org.xml.in:7162
+msgid "Adobe PageMaker document"
+msgstr ""
+
+#: freedesktop.org.xml.in:7172
+msgid "Doom WAD file"
+msgstr ""
+
+#: freedesktop.org.xml.in:7184
+msgid "Amiga disk image"
+msgstr "слика диска Амиге"
+
+#: freedesktop.org.xml.in:7192
+msgid "Flatpak application bundle"
+msgstr "скуп програма Флатпака"
+
+#: freedesktop.org.xml.in:7204
+msgid "Flatpak repository description"
+msgstr "опис ризнице Флатпака"
+
+#: freedesktop.org.xml.in:7214
+msgid "Flatpak repository reference"
+msgstr "упута ризнице Флатпака"
+
+#: freedesktop.org.xml.in:7224
+msgid "Squashfs filesystem image"
+msgstr ""
+
+#: freedesktop.org.xml.in:7251
+msgid "Snap package"
+msgstr "Снап пакет"
+
+#: freedesktop.org.xml.in:7258
+msgid "STL 3D model"
+msgstr ""
+
+#: freedesktop.org.xml.in:7271
+msgid "G-code file"
+msgstr "датотека Г-ко̂да"
+
+#: freedesktop.org.xml.in:7278
+msgid "Nintendo FDS disk image"
+msgstr "Нинтендо ФДС слика диска"

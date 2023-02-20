@@ -1,0 +1,1063 @@
+<!-- If you're seeing this XML code, you've clicked on the link for Speaking of Faith's podcast. This file is not meant to be read by a Web browser directly. Instead, you should copy the URL [http://speakingoffaith.org/podcast/podcast.xml] and paste it in your podcast program. If you need further explanation and/or step-by-step instructions, visit the Speaking of Faith Web site for more information at http://speakingoffaith.org/podcast/podcasthelp.shtml. -->
+
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+ <channel>
+  <title>APM: Speaking of Faith with Krista Tippett</title>
+  <link>http://speakingoffaith.org</link>
+  <description>Public radio&apos;s conversation about religion, meaning, ethics, and ideas</description>
+  <copyright>&#xA9; 2006 American Public Media. All rights reserved.</copyright>
+  <language>en-us</language>
+  <lastBuildDate>Mon, 8 Dec 2008 13:20:00 CST</lastBuildDate>
+  <pubDate>Mon, 8 Dec 2008 13:20:00 CST</pubDate>
+  <webMaster>mail@speakingoffaith.org (Trent Gilliss)</webMaster>
+  
+  <itunes:block>No</itunes:block>
+  <itunes:subtitle>Speaking of Faith with Krista Tippett is public radio&apos;s conversation about religion, meaning, ethics, and ideas.</itunes:subtitle>
+  <itunes:author>Krista Tippett, American Public Media</itunes:author>
+  <itunes:summary>American Public Media&apos;s Speaking of Faith with Krista Tippett is public radio&apos;s weekly conversation about religion, meaning, ethics, and ideas. Speaking of Faith does not always have religion itself as a subject. Week after week, it grapples with themes of civic life -- asking how perspectives of faith might distinctively inform and illuminate our public reflection. The Speaking of Faith podcast contains each week&apos;s program in its entirety and is updated every Thursday.</itunes:summary>
+  <itunes:owner>
+   <itunes:name>American Public Media</itunes:name>
+   <itunes:email>podcasts@americanpublicmedia.org</itunes:email>
+  </itunes:owner>
+  <itunes:image href="http://speakingoffaith.org/podcast/images/itunes_sof.jpg"/>
+		<itunes:category text="Society &amp; Culture"></itunes:category>
+		<itunes:category text="News &amp; Politics"></itunes:category>
+		<itunes:category text="Religion &amp; Spirituality"></itunes:category>
+  <itunes:explicit>No</itunes:explicit>
+
+  <item>
+   <title>SOF FIRST PERSON (audio) | Repossessing Virtue: Prabhu Guptara on Applying Personal Moral Sense to One&apos;s Work Life</title>
+   <description>As promised, we continue our SOF First Person project by turning to Swiss banking expert, Prabhu Guptara. Several years ago, Krista spoke with Guptara when the fallout of the Enron scandal was wreaking havoc on the U.S. economy and shaking investor confidence in corporate practices and business fundamentals. His message was simple but challenging, and also quite liberating for much of our audience -- bring your personal values into the workplace. For Guptara, doing this is one of the best ways of making ethical decisions that will lead to moral integrity -- and less corruption and scandal.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/features/repossessing_virtue/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081202_repossessing_virtue_fp-guptara.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20081202_repossessing_virtue_fp-guptara.mp3</guid>
+   <pubDate>Mon, 8 Dec 2008 13:20:00 CST</pubDate>
+   <itunes:author>American Public Media, Martin Marty, Kate Moos</itunes:author>
+   <itunes:subtitle>Prabhu Guptara challenges accepted practices in the industry and in business for our Reposessing Virtue series.</itunes:subtitle>
+   <itunes:summary>As promised, we continue our SOF First Person project by turning to Swiss banking expert, Prabhu Guptara. Several years ago, Krista spoke with Guptara when the fallout of the Enron scandal was wreaking havoc on the U.S. economy and shaking investor confidence in corporate practices and business fundamentals. His message was simple but challenging, and also quite liberating for much of our audience -- bring your personal values into the workplace. For Guptara, doing this is one of the best ways of making ethical decisions that will lead to moral integrity -- and less corruption and scandal.</itunes:summary>
+   <itunes:duration>14:33</itunes:duration>
+   <itunes:keywords>first person, prabhu guptara, economic crisis, repossessing virtue, christianity, jesus, Swiss banking, religion, ethics, speaking of faith, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>The Ethics of Aid: One Kenyan&apos;s Perspective (December 4, 2008)</title>
+   <description>We explore the complex ethics of global aid with a young writer from Kenya, Binyavanga Wainaina. He is among a rising generation of African voices who bring a cautionary perspective to the morality and efficacy behind many Western initiatives to abolish poverty and speed development in Africa.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/2008/ethics_of_aid-kenya/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081204_ethics_of_aid-kenya.mp3" length="51904409" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20081204_ethics_of_aid-kenya.mp3</guid>
+   <pubDate>Thu, 4 Dec 2008 11:55:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Binyavanga Wainaina on the morality and efficacy of global aid initiatives.</itunes:subtitle>
+   <itunes:summary>We explore the complex ethics of global aid with a young writer from Kenya, Binyavanga Wainaina. He is among a rising generation of African voices who bring a cautionary perspective to the morality and efficacy behind many Western initiatives to abolish poverty and speed development in Africa.</itunes:summary>
+   <itunes:duration>52:34</itunes:duration>
+   <itunes:keywords>binyavanga wainaina, kenya, global aid, charity, ngo, africa, politics, religion, ethics, morality, krista tippett</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>SOF FIRST PERSON (audio) | Reposessing Virtue: Martin Marty on Trust in Uncertain Times</title>
+   <description>The SOF First Person project kicks off with our search for fresh ways to talk about the current economic crisis -- beginning with reflections from an acclaimed historian and theologian. He shares a good deal of his &quot;lived theology&quot; -- the personal, daily acts of faith that preserve sanity and restore trust even at the most uncertain times.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/features/repossessing_virtue/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081126_repossessing_virtue_fp-marty.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20081126_repossessing_virtue_fp-marty.mp3</guid>
+   <pubDate>Mon, 1 Dec 2008 15:00:00 CST</pubDate>
+   <itunes:author>American Public Media, Martin Marty, Kate Moos</itunes:author>
+   <itunes:subtitle>Martin Marty reflects on the current economic crisis for our Reposessing Virtue series.</itunes:subtitle>
+   <itunes:summary>The SOF First Person project kicks off with our search for fresh ways to talk about the current economic crisis -- beginning with reflections from an acclaimed historian and theologian. He shares a good deal of his &quot;lived theology&quot; -- the personal, daily acts of faith that preserve sanity and restore trust even at the most uncertain times.</itunes:summary>
+   <itunes:duration>14:46</itunes:duration>
+   <itunes:keywords>first person, martin marty, economic crisis, repossessing virtue, christianity, religion, ethics, speaking of faith, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>Listening Generously: The Medicine of Rachel Naomi Remen (November 27, 2008)</title>
+   <description>Rachel Naomi Remen&apos;s lifelong struggle with chronic illness has shaped her philosophy and practice of medicine. She speaks with us about the art of listening to patients and other physicians, the difference between curing and healing, and how our losses help us to live.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/2008/listening_generously/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081127_listening_generously.mp3" length="51904409" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20081127_listening_generously.mp3</guid>
+   <pubDate>Wed, 26 Nov 2008 04:00:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Rachel Naomi Remen on the art of listening to patients.</itunes:subtitle>
+   <itunes:summary>Rachel Naomi Remen&apos;s lifelong struggle with chronic illness has shaped her philosophy and practice of medicine. She speaks with us about the art of listening to patients and other physicians, the difference between curing and healing, and how our losses help us to live.</itunes:summary>
+   <itunes:duration>53:34</itunes:duration>
+   <itunes:keywords>speaking of faith, healing, faith, medicine, integrative medicine, kabbalah, jew, jewish, judaism, mystic, storytelling, rachel naomi remen, krista tippett, radio, faith, religion, spirituality, morality, american public media, apm</itunes:keywords>
+  </item>
+
+  <item>
+   <title>The Sunni-Shia Divide and the Future of Islam (November 20, 2008)</title>
+   <description>We seek fresh insight into the history and the human and religious dynamics of Islam&apos;s Sunni-Shia divide. Vali Nasr says that it is not so different from dynamics in periods of Western Christian history. But he says that by bringing the majority Shia to power in Iraq, the U.S. has changed the religions dynamics of the Middle East.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/2008/future_of_islam/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081120_future_of_islam.mp3" length="51644312" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20081120_future_of_islam.mp3</guid>
+     <pubDate>Thu, 20 Nov 2008 10:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Vali Nasr gives insight into Islam&apos;s Sunni-Shia divide, and how it will effect the future of the Middle East.</itunes:subtitle>
+     <itunes:summary>We seek fresh insight into the history and the human and religious dynamics of Islam&apos;s Sunni-Shia divide. Vali Nasr says that it is not so different from dynamics in periods of Western Christian history. But he says that by bringing the majority Shia to power in Iraq, the U.S. has changed the religions dynamics of the Middle East.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>vali nasr, islam, muslim, sunni, shia, middle east, christian reformation, iraq, iran, ashura, religion, ethics, morality, ideas</itunes:keywords>
+   </item>
+
+  <item>
+     <title>Studs Terkel on Life, Faith, and Death (November 13, 2008)</title>
+     <description>We remember Studs Terkel, who recently died at the age of 96. The legendary interviewer chronicled decades of ordinary life and tumultuous change in U.S. culture. We visited him in his Chicago home in 2004 and drew out his wisdom and warmth on large existential themes of life and death. A lifelong agnostic, Studs Terkel shared his thoughts on religion as he&apos;d observed it in his conversation partners, in culture, and in his own encounters with loss and mortality.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/2008/studs_terkel/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081113_studs_terkel.mp3" length="51330524" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20081113_studs_terkel.mp3</guid>
+     <pubDate>Thu, 13 Nov 2008 09:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Studs Terkel discusses Life, Faith, and Death in a 2004 interview.</itunes:subtitle>
+     <itunes:summary>We remember Studs Terkel, who recently died at the age of 96. The legendary interviewer chronicled decades of ordinary life and tumultuous change in U.S. culture. We visited him in his Chicago home in 2004 and drew out his wisdom and warmth on large existential themes of life and death. A lifelong agnostic, Studs Terkel shared his thoughts on religion as he&apos;d observed it in his conversation partners, in culture, and in his own encounters with loss and mortality.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>speaking of faith, studs terkel, chicago, working, oral history, radio, gore vidal, delbert tibbs, kurt vonnegut, uta hagen, interviews, studs place, krista tippett, radio, faith, art, religion, death, life, spirituality, morality</itunes:keywords>
+   </item>
+
+  <item>
+     <title>Getting Revenge and Forgiveness (November 6, 2008)</title>
+     <description>Professor of psychology Michael McCullough describes science that helps us comprehend how revenge came to have a purpose in human life. At the same time, he stresses, science is also revealing that human beings are more instinctively equipped for forgiveness than we&apos;ve perhaps given ourselves credit for. Knowing this suggests ways to calm the revenge instinct in ourselves and others and embolden the forgiveness intuition.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/2008/revenge_forgiveness/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081106_revenge_forgiveness.mp3" length="51330524" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20081106_revenge_forgiveness.mp3</guid>
+     <pubDate>Thu, 6 Nov 2008 08:05:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Michael McCullough on the biological instincts of revenge and forgiveness.</itunes:subtitle>
+     <itunes:summary>Professor of psychology Michael McCullough describes science that helps us comprehend how revenge came to have a purpose in human life. At the same time, he stresses, science is also revealing that human beings are more instinctively equipped for forgiveness than we&apos;ve perhaps given ourselves credit for. Knowing this suggests ways to calm the revenge instinct in ourselves and others and embolden the forgiveness intuition.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>michael mccullough, revenge, forgiveness, ethics, morality, krista tippett, kindness, apology, biology, evolution, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+   </item>
+			
+		<item>
+   <title>SOF EXTRA (audio) | Unedited Interview with Steve Waldman</title>
+   <description>In this edition of SOF Unheard Cuts, Krista interviewed Steve Waldman, journalist and founder of Beliefnet, for &quot;Liberating the Founders.&quot; Listen to their complete, unedited conversation. Here&apos;s your chance to observe the editorial process and let us know what you think.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/2008/liberating_the_founders/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080313_liberarting_the_founders_uc-waldman.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080313_liberarting_the_founders_uc-waldman.mp3</guid>
+   <pubDate>Thu, 6 Nov 2008 08:00:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Krista&apos;s unedited interview with Steve Waldman.</itunes:subtitle>
+   <itunes:summary>In this edition of SOF Unheard Cuts, Krista interviewed Steve Waldman, journalist and founder of Beliefnet, for &quot;Liberating the Founders.&quot; Listen to their complete, unedited conversation. Here&apos;s your chance to observe the editorial process and let us know what you think.</itunes:summary>
+   <itunes:duration>1:26:27</itunes:duration>
+   <itunes:keywords>unheard cuts, founding fathers, democracy, religion, church and state, christianity, evangelicals, thomas jefferson, james madison, steven waldman, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+  
+  <item>
+   <title>SOF EXTRA (audio) | Unedited Interview with Vashti McKenzie</title>
+   <description>In this edition of SOF Unheard Cuts, Krista interviewed Vashti McKenzie, first female bishop of the African Methodist Episcopal Church, for &quot;African American. Woman. Leader.&quot; Listen to their complete, unedited conversation. Here&apos;s your chance to observe the editorial process and let us know what you think.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/2008/vashti_mckenzie/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081026_vashti_mckenzie_uc-mckenzie.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20081026_vashti_mckenzie_uc-mckenzie.mp3</guid>
+   <pubDate>Mon, 3 Nov 2008 04:20:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Krista&apos;s unedited interview with Bishop Vashti McKenzie.</itunes:subtitle>
+   <itunes:summary>In this edition of SOF Unheard Cuts, Krista interviewed Vashti McKenzie, first female bishop of the African Methodist Episcopal Church, for &quot;African American. Woman. Leader.&quot; Listen to their complete, unedited conversation. Here&apos;s your chance to observe the editorial process and let us know what you think.</itunes:summary>
+   <itunes:duration>1:40:04</itunes:duration>
+   <itunes:keywords>unheard cuts, vashti mckenzie, christianity, theology, african methodist episcopal, radio, racism, sexism, religion, ethics, jeremiah wright, trinity united church, james cone, politics, speaking of faith, krista tippett, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+     <title>Liberating the Founders (October 30, 2008)</title>
+     <description>With the presidential election approaching, we return to an evocative, relevant conversation from earlier this year with journalist Steven Waldman. He&apos;s done an unusual study investigating how the culture wars have skewed contemporary Americans&apos; sense of how we came to have religious liberty in the first place. He understands why 21st-century struggles over religion in the public square spur passionate disagreement and entanglement with politics at its most impure.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/2008/liberating_the_founders/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081030_liberating_the_founders.mp3" length="51191757" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20081030_liberating_the_founders.mp3</guid>
+     <pubDate>Thu, 30 Oct 2008 09:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Journalist Steve Waldman on why struggles over religion in the public square spur passionate disagreement and entanglement with politics at its most impure.</itunes:subtitle>
+     <itunes:summary>With the presidential election approaching, we return to an evocative, relevant conversation from earlier this year with journalist Steven Waldman. He&apos;s done an unusual study investigating how the culture wars have skewed contemporary Americans&apos; sense of how we came to have religious liberty in the first place. He understands why 21st-century struggles over religion in the public square spur passionate disagreement and entanglement with politics at its most impure.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>founding fathers, democracy, religion, church and state, christianity, evangelicals, thomas jefferson, james madison, steven waldman, krista tippett, faith, religion, spirituality, morality</itunes:keywords>
+   </item>
+			
+  <item>
+   <title>SOF EXTRA (audio) | Unedited Interview with Paul Collins and Jennifer Elder</title>
+   <description>In this edition of SOF Unheard Cuts, Krista interviewed Paul Collins and Jennifer Elder for &quot;Being Autistic, Being Human.&quot; They talk about how life with their child who is autistic has deepened their understanding of human nature -- of disability, and of creativity, intelligence, and accomplishment. Here&apos;s your chance to observe the editorial process and let us know what you think.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/2008/beingautistic/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20070927_beingautistic_uc-parents.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20070927_beingautistic_uc-parents.mp3</guid>
+   <pubDate>Mon, 27 Oct 2008 04:20:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Krista&apos;s unedited interview with Paul Collins and Jennifer Elder.</itunes:subtitle>
+   <itunes:summary>In this edition of SOF Unheard Cuts, Krista interviewed Paul Collins and Jennifer Elder for &quot;Being Autistic, Being Human.&quot; They talk about how life with their child who is autistic has deepened their understanding of human nature -- of disability, and of creativity, intelligence, and accomplishment. Here&apos;s your chance to observe the editorial process and let us know what you think.</itunes:summary>
+   <itunes:duration>1:50:24</itunes:duration>
+   <itunes:keywords>unheard cuts, autism, autistic, aspberger, microsoft, paul collins, jennifer elder, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+     <title>African American. Woman. Leader. Meeting Bishop Vashti McKenzie. (October 23, 2008)</title>
+     <description>The 2008 U.S. presidential election has illustrated how gender, race, and religion can become lightning rods, and seen as potential stumbling blocks to leadership. Vashti McKenzie is a pioneering figure on all these fronts; when she became the first woman bishop of the oldest historic black church in America, she declared: &quot;The stained glass ceiling has been pierced and broken.&quot; We offer her story, her wisdom, and her good humor as an edifying lens on the American past, present, and future.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/2008/vashti_mckenzie/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081023_vashti_mckenzie.mp3" length="51335580" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20081023_vashti_mckenzie.mp3</guid>
+     <pubDate>Thu, 23 Oct 2008 09:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Bishop Vashti McKenzie&apos;s story, wisdom, and good humor provide an edifying lens on the American past, present, and future.</itunes:subtitle>
+     <itunes:summary>The 2008 U.S. presidential election has illustrated how gender, race, and religion can become lightning rods, and seen as potential stumbling blocks to leadership. Vashti McKenzie is a pioneering figure on all these fronts; when she became the first woman bishop of the oldest historic black church in America, she declared: &quot;The stained glass ceiling has been pierced and broken.&quot; We offer her story, her wisdom, and her good humor as an edifying lens on the American past, present, and future.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>vashti mckenzie, bishop vashti murphy mckenzie, christianity, theology, american methodist episcopal, radio, payne memorial, racism, sexism, religion, ethics, jeremiah wright, trinity united church, james cone, politics</itunes:keywords>
+  </item>
+  
+  <item>
+   <title>SOF EXTRA (audio) | Unedited Interview with Rod Dreher</title>
+   <description>In this edition of SOF Unheard Cuts, Krista interviewed Rod Dreher for the second part of our series &quot;The Faith Life of the Party.&quot; A conservative columnist, Rod Dreher is an outspoken critic of mainstream Republican economic and environmental ideas and the conduct of the Iraq war, but he voted for George W. Bush twice. We explore the little-known story of religiously influenced impulses within the conservative movement that diverge from the Religious Right. Here&apos;s your chance to observe the editorial process and let us know what you think.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/2008/dreher/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081009_dreher_uc-dreher.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20081009_dreher_uc-dreher.mp3</guid>
+   <pubDate>Mon, 20 Oct 2008 04:20:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Krista&apos;s unedited interview with Rod Dreher on politics and faith of the conservative right</itunes:subtitle>
+   <itunes:summary>In this edition of SOF Unheard Cuts, Krista interviewed Rod Dreher for the second part of our series &quot;The Faith Life of the Party.&quot; A conservative columnist, Rod Dreher is an outspoken critic of mainstream Republican economic and environmental ideas and the conduct of the Iraq war, but he voted for George W. Bush twice. Here&apos;s your chance to observe the editorial process and let us know what you think.</itunes:summary>
+   <itunes:duration>50:11</itunes:duration>
+   <itunes:keywords>unheard cuts, rod dreher, republican, republican party, conservative, politics, john mccain, sarah palin, speaking of faith, krista tippett, religion, ethics, morality</itunes:keywords>
+  </item>
+		
+		<item>
+     <title>Being Autistic, Being Human (October 16, 2008)</title>
+     <description>One of every 150 children is now diagnosed to be somewhere on the mysterious spectrum of autism. We step back from the controversies about the causes and cures of autism and explore one family&apos;s experience with an autistic child. Jennifer Elder, an artist, and Paul Collins, a literary historian, have unearthed a vivid history of people grappling with autism, before it had a name. And they share what all of this is teaching them about what it means to be human.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/2008/beingautistic/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081016_beingautistic.mp3" length="51330524" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20081016_beingautistic.mp3</guid>
+     <pubDate>Thu, 16 Oct 2008 09:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Discovering the humanity, challenges, and gifts of autism with the parents of one child.</itunes:subtitle>
+     <itunes:summary>One of every 150 children is now diagnosed to be somewhere on the mysterious spectrum of autism. We step back from the controversies about the causes and cures of autism and explore one family&apos;s experience with an autistic child. Jennifer Elder, an artist, and Paul Collins, a literary historian, have unearthed a vivid history of people grappling with autism, before it had a name. And they share what all of this is teaching them about what it means to be human.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>autism, autistic, aspberger, microsoft, paul collins, jennifer elder, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+   </item>
+  
+  <item>
+   <title>SOF EXTRA (audio) | Unedited Interview with Amy Sullivan</title>
+   <description>In this edition of SOF Unheard Cuts, Krista interviewed Amy Sullivan for the first part of our series &quot;The Faith Life of the Party.&quot; She&apos;s a national corresponent for Time magazine, an Evangelical Christian, and an observer of the Democratic Party. Here&apos;s your chance to observe the editorial process and let us know what you think.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/2008/sullivan/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081002_sullivan_uc-sullivan.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20081002_sullivan_uc-sullivan.mp3</guid>
+   <pubDate>Mon, 13 Oct 2008 04:20:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Krista&apos;s unedited interview with Amy Sullivan on politics and faith of the political left</itunes:subtitle>
+   <itunes:summary>In this edition of SOF Unheard Cuts, Krista interviewed Amy Sullivan for the first part of our series &quot;The Faith Life of the Party.&quot; She&apos;s a national corresponent for Time magazine, an Evangelical Christian, and an observer of the Democratic Party. Here&apos;s your chance to observe the editorial process and let us know what you think.</itunes:summary>
+   <itunes:duration>1:01:21</itunes:duration>
+   <itunes:keywords>unheard cuts, democrat, democratic party, liberal, abortion, amy sullivan, barack obama, democratic national convention, politics, faith, evangelical, morality, presidental election, john mccain, sarah palin, bill clinton, leah daughtry, ethics</itunes:keywords>
+  </item>
+		
+		<item>
+		   <title>The Faith Life of the Party - Part II, The Right (October 9, 2008)</title>
+		   <description>The second part of our examination of religious energies below the surface of the 2008 presidential campaign. Conservative columnist Rod Dreher is an outspoken critic of mainstream Republican economic and environmental ideas and the conduct of the Iraq war, but he voted for George W. Bush twice. We explore the little-known story of religiously-influenced impulses within the conservative movement that diverge from the Religious Right.</description>
+		   <category>Public Radio</category>
+		   <link>http://speakingoffaith.org/programs/2008/dreher/</link>
+		   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081009_dreher.mp3" length="51500983" type="audio/mpeg"></enclosure>
+		   <guid>http://download.publicradio.org/podcast/speakingoffaith/20081009_dreher.mp3</guid>
+		   <pubDate>Thu, 09 Oct 2008 09:00:00 CST</pubDate>
+		   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+		   <itunes:subtitle>Rod Dreher on the religiously-influenced impulses within conservative politics</itunes:subtitle>
+		   <itunes:summary>The second part of our examination of religious energies below the surface of the 2008 presidential campaign. Conservative columnist Rod Dreher is an outspoken critic of mainstream Republican economic and environmental ideas and the conduct of the Iraq war, but he voted for George W. Bush twice. We explore the little-known story of religiously-influenced impulses within the conservative movement that diverge from the Religious Right.</itunes:summary>
+		   <itunes:duration>53:09</itunes:duration>
+		   <itunes:keywords>rod dreher, republican, republican party, conservative, politics, john mccain, sarah palin, religion, ethics, morality, abortion</itunes:keywords>
+	</item>
+  
+  <item>
+		   <title>The Faith Life of the Party - Part I, The Left (October 2, 2008)</title>
+		   <description>We begin a refreshing, thought-provoking two-part conversation on politics and religion below the surface of the current U.S. presidential campaign. I speak with two counterintuitive yet influential voices. This week, national correspondent for Time magazine, Amy Sullivan, and next week, conservative columnist for the Dallas Morning News, Rod Dreher. Sullivan is a political liberal, an Evangelical Christian, and a savvy observer of the Democratic Party&apos;s complex relationship with faith over the past decade.</description>
+		   <category>Public Radio</category>
+		   <link>http://speakingoffaith.org/programs/2008/sullivan/</link>
+		   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20081002_sullivan.mp3" length="51400890" type="audio/mpeg"></enclosure>
+		   <guid>http://download.publicradio.org/podcast/speakingoffaith/20081002_sullivan.mp3</guid>
+		   <pubDate>Thu, 02 Oct 2008 09:00:00 CST</pubDate>
+		   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+		   <itunes:subtitle>Explore the Democratic Party&apos;s complex relationship with faith and the little-told story of the left&apos;s response to the rise of the Religious Right.</itunes:subtitle>
+		   <itunes:summary>We begin a refreshing, thought-provoking two-part conversation on politics and religion below the surface of the current U.S. presidential campaign. I speak with two counterintuitive yet influential voices. This week, national correspondent for Time magazine, Amy Sullivan, and next week, conservative columnist for the Dallas Morning News, Rod Dreher. Sullivan is a political liberal, an Evangelical Christian, and a savvy observer of the Democratic Party&apos;s complex relationship with faith over the past decade.</itunes:summary>
+		   <itunes:duration>53:09</itunes:duration>
+		   <itunes:keywords>democrat, democratic party, liberal, abortion, amy sullivan, barack obama, democratic national convention, politics, faith, evangelical, morality, presidental election, john mccain, sarah palin, bill clinton, leah daughtry, ethics</itunes:keywords>
+	</item>
+  
+  <item>
+		   <title>Days of Awe (September 25, 2008)</title>
+		   <description>We&apos;ll delve into the world and meaning of the approaching Jewish High Holy Days -- ten days that span the new year of Rosh Hashanah through Yom Kippur&apos;s rituals of atonement. Sharon Brous, a young rabbi in L.A., is one voice in a Jewish spiritual renaissance that is taking many forms across the U.S. The vast majority of her congregation are people in their 20s and 30s, who, she says, are making life-giving connections between ritual, personal transformation, and relevance in the world.</description>
+		   <category>Public Radio</category>
+		   <link>http://speakingoffaith.org/programs/2008/daysofawe/</link>
+		   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080925_daysofawe.mp3" length="51337463" type="audio/mpeg"></enclosure>
+		   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080925_daysofawe.mp3</guid>
+		   <pubDate>Thu, 25 Sep 2008 09:00:00 CST</pubDate>
+		   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+		   <itunes:subtitle>Delve into the world and meaning of the approaching Jewish High Holy Days with rabbi Sharon Brous.</itunes:subtitle>
+		   <itunes:summary>We&apos;ll delve into the world and meaning of the approaching Jewish High Holy Days -- ten days that span the new year of Rosh Hashanah through Yom Kippur&apos;s rituals of atonement. Sharon Brous, a young rabbi in L.A., is one voice in a Jewish spiritual renaissance that is taking many forms across the U.S. The vast majority of her congregation are people in their 20s and 30s, who, she says, are making life-giving connections between ritual, personal transformation, and relevance in the world.</itunes:summary>
+		   <itunes:duration>53:09</itunes:duration>
+		   <itunes:keywords>sharon brous, jew, judaism, nephesh, high holy days, rosh hashanah, yom kippur, ikar, speaking of faith, krista tippett, religion, faith, spirituality, shofar, social justice, kol nidre, social justice</itunes:keywords>
+	</item>
+  
+	
+	<item>
+		   <title>The Origins and Impact of Pentecostalism (September 18, 2008)</title>
+		   <description>Pentecostalism has appeared as a force on both sides of the current presidential campaign. News coverage of vice presidential candidate Sarah Palin&apos;s Pentecostal background has overshadowed the fact that senior leaders of the Obama campaign and the Democratic National Convention are Pentecostal too. In 2006, Pentecostals from all around the globe traveled to the birthplace of this tradition -- Azusa Street in Los Angeles. We were there to cover the centennial celebration -- and now we bring this program into the present, exploring the origins, theology, and impact of this faith that now reaches an estimated half a billion people globally.</description>
+		   <category>Public Radio</category>
+		   <link>http://speakingoffaith.org/programs/2008/azusarevival/</link>
+		   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080918_azusarevival.mp3" length="51467805" type="audio/mpeg"></enclosure>
+		   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080918_azusarevival.mp3</guid>
+		   <pubDate>Thu, 18 Sep 2008 09:00:00 CST</pubDate>
+		   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+		   <itunes:subtitle>Explore the origins, theology, and impact of Pentecostalism -- a faith that now reaches an estimated half a billion people globally.</itunes:subtitle>
+		   <itunes:summary>Pentecostalism has appeared as a force on both sides of the current presidential campaign. News coverage of vice presidential candidate Sarah Palin&apos;s Pentecostal background has overshadowed the fact that senior leaders of the Obama campaign and the Democratic National Convention are Pentecostal too. In 2006, Pentecostals from all around the globe traveled to the birthplace of this tradition -- Azusa Street in Los Angeles. We were there to cover the centennial celebration -- and now we bring this program into the present, exploring the origins, theology, and impact of this faith that now reaches an estimated half a billion people globally.</itunes:summary>
+		   <itunes:duration>53:09</itunes:duration>
+		   <itunes:keywords>pentecostal, charismatic, azusa, william seymour, parham, los angeles, christian, evangelical, fundamentalist, mel robeck, arlene sanchez walsh, krista tippett, faith, religion, spirituality, sarah palin, morality</itunes:keywords>
+		</item>
+	
+		<item>
+   <title>SOF EXTRA (video) | The Myth of Order</title>
+   <description>James Prosek has spent his life capturing wildlife -- whether it be literally as an avid fly-fisher, or figuratively through writing, drawing, and painting. View some of his artwork as he talks about these &quot;mystical creatures,&quot; the names we give them, and ultimately why it&apos;s necessary to protect them.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/rememberingforward/soundseen_video-stream640.shtml</link>
+   <enclosure url="http://download.publicradio.org/video/speakingoffaith/20080828_fishing_ss-mythoforder.mov" length="37520505" type="video/mov"></enclosure>
+   <guid>http://download.publicradio.org/video/speakingoffaith/20080828_fishing_ss-mythoforder.mov</guid>
+   <pubDate>Tue, 16 Sep 2008 15:00:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>James Prosek on the mystical acts of fishing, writing, and art</itunes:subtitle>
+   <itunes:summary>James Prosek has spent his life capturing wildlife -- whether it be literally as an avid fly-fisher, or figuratively through writing, drawing, and painting. View some of his artwork as he talks about these &quot;mystical creatures,&quot; the names we give them, and ultimately why it&apos;s necessary to protect them.</itunes:summary>
+   <itunes:duration>5:02</itunes:duration>
+   <itunes:keywords>fishing, art, illustration, james prosek, god, eels, trout, krista tippett, speaking of faith, religion</itunes:keywords>
+  </item>
+		
+		<item>
+		   <title>Yoga. Meditation in Action with Seane Corn (September 11, 2008)</title>
+		   <description>Yoga studios are cropping up on street corners across the U.S., and there are now yoga classes at YMCAs, law schools, and corporate headquarters. This 5000 year old spiritual technology is converging intriguingly with 21st century medical science and with many religious and philosophical perspectives. Seane Corn takes us inside the practicalities and power of yoga, and describes how it helps her face the darkness in herself and the world.</description>
+		   <category>Public Radio</category>
+		   <link>http://speakingoffaith.org/programs/2008/yoga/</link>
+		   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080911_yoga.mp3" length="51512661" type="audio/mpeg"></enclosure>
+		   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080911_yoga.mp3</guid>
+		   <pubDate>Thu, 11 Sep 2008 09:00:00 CST</pubDate>
+		   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+		   <itunes:subtitle>Seane Corn takes us inside the practicalities and power of yoga.</itunes:subtitle>
+		   <itunes:summary>Yoga studios are cropping up on street corners across the U.S., and there are now yoga classes at YMCAs, law schools, and corporate headquarters. This 5000 year old spiritual technology is converging intriguingly with 21st century medical science and with many religious and philosophical perspectives. Seane Corn takes us inside the practicalities and power of yoga, and describes how it helps her face the darkness in herself and the world.</itunes:summary>
+		   <itunes:duration>53:09</itunes:duration>
+		   <itunes:keywords>seane corn, yoga, obsessive-compulsive disorder, healing, spirituality, activism, buddhism, hinduism, child abuse, prayer, speaking of faith, krista tippett, american public media, APM</itunes:keywords>
+		</item>
+
+		<item>
+	   <title>Stress and the Balance Within (September 4, 2008)</title>
+	   <description>The American experience of stress has spawned a multi-billion dollar self-help industry. Wary of this, Esther Sternberg says that, until recently, modern science did not have the tools or the inclination to take emotional stress seriously. She shares fascinating new scientific insight into the molecular level of the mind-body connection.</description>
+	   <category>Public Radio</category>
+	   <link>http://speakingoffaith.org/programs/2008/stress/</link>
+	   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080904_stress.mp3" length="51448129" type="audio/mpeg"></enclosure>
+	   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080904_stress.mp3</guid>
+	   <pubDate>Thu, 04 Sep 2008 11:00:00 CST</pubDate>
+	   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+	   <itunes:subtitle>Esther Sternberg discusses scientific insight into emotional stress.</itunes:subtitle>
+	   <itunes:summary>The American experience of stress has spawned a multi-billion dollar self-help industry. Wary of this, Esther Sternberg says that, until recently, modern science did not have the tools or the inclination to take emotional stress seriously. She shares fascinating new scientific insight into the molecular level of the mind-body connection.</itunes:summary>
+	   <itunes:duration>53:09</itunes:duration>
+	   <itunes:keywords>	speaking of faith, krista tippett, esther sternberg, stress, orthodox judaism, jew, crete, asclepius, radio, faith, religion, spirituality, morality, american public media, APM</itunes:keywords>
+	</item>
+
+
+	<item>
+	   <title>Fishing with Mystery (August 28, 2008)</title>
+	   <description>James Prosek is a 33-year-old artist, writer, and fly-fisher who has always, as he puts it, found God &quot;through the theater of nature.&quot; From a young age he has been fascinated by trout, and now eel -- which he sees as &quot;mystical creatures&quot; -- and he&apos;s captured them physically and artistically, by way of both angling and paint. We explore the sense of meaning and ritual James Prosek developed along the way, including his concern with how we humans limit our sense of other creatures by the names we give them. We&apos;ll also hear the words of Henry David Thoreau, Bruce Chatwin, and Izaak Walton.</description>
+	   <category>Public Radio</category>
+	   <link>http://speakingoffaith.org/programs/2008/fishing/</link>
+	   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080828_fishing.mp3" length="51306363 " type="audio/mpeg"></enclosure>
+	   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080828_fishing.mp3</guid>
+	   <pubDate>Thu, 28 Aug 2008 09:30:00 CST</pubDate>
+	   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+	   <itunes:subtitle>James Prosek discusses his sense of meaning and ritual inspired by &quot;the theater of nature.&quot;</itunes:subtitle>
+	   <itunes:summary>James Prosek is a 33-year-old artist, writer, and fly-fisher who has always, as he puts it, found God &quot;through the theater of nature.&quot; From a young age he has been fascinated by trout, and now eel -- which he sees as &quot;mystical creatures&quot; -- and he&apos;s captured them physically and artistically, by way of both angling and paint. We explore the sense of meaning and ritual James Prosek developed along the way, including his concern with how we humans limit our sense of other creatures by the names we give them. We&apos;ll also hear the words of Henry David Thoreau, Bruce Chatwin, and Izaak Walton.</itunes:summary>
+	   <itunes:duration>53:09</itunes:duration>
+	   <itunes:keywords>james prosek, fly-fishing, painting, nature, environment, god, eels, mystery, speaking of faith, krista tippett</itunes:keywords>
+	</item>
+
+
+  <item>
+   <title>Rick and Kay Warren at Saddleback (August 21, 2008)</title>
+   <description>Evangelical leader Rick Warren is in the news for bringing John McCain and Barack Obama together at his Saddleback Church in California. This two-hour event, broadcast live on CNN, is just one sign of the cross-cultural authority Warren and his wife Kay have achieved in a handful of years. We revisit Krista&apos;s conversation with them at Saddleback last year -- exploring who they are and what motivates them.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/2008/warren/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080821_warren.mp3" length="51306363 " type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080821_warren.mp3</guid>
+   <pubDate>Thu, 21 Aug 2008 12:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Rick and Kay Warren exploring who they are and what motivates them.</itunes:subtitle>
+   <itunes:summary>Evangelical leader Rick Warren is in the news for bringing John McCain and Barack Obama together at his Saddleback Church in California. This two-hour event, broadcast live on CNN, is just one sign of the cross-cultural authority Warren and his wife Kay have achieved in a handful of years. We revisit Krista&apos;s conversation with them at Saddleback last year -- exploring who they are and what motivates them.</itunes:summary>
+   <itunes:duration>53:09</itunes:duration>
+   <itunes:keywords>	evangelical, rick warren, kay warren, purpose driven life, saddleback, aids, politics, poverty, africa, christianity, christian, speaking of faith, krista tippett, religion, faith, spirituality, barack obama, john mccain, politics</itunes:keywords>
+  </item>
+
+
+  <item>
+   <title>The Power of Eckhart Tolle&apos;s Now (August 14, 2008)</title>
+   <description>Host Krista Tippett creates a certain kind of space in her interviews, and this conversation is no exception. Tolle shares his youthful experience of depression and despair -- suffering that led him to his own spiritual breakthrough, and ultimately, freedom and peace of mind. He also explicates his view of what he calls &quot;the pain body&quot; -- the accumulated emotional pain that may influence us and our relationships in negative ways. And Tolle talks about spirit and God, and what those concepts mean to him.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/tolle/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080814_tolle.mp3" length="51243008" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080814_tolle.mp3</guid>
+   <pubDate>Wed, 13 Aug 2008 12:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Eckhart Tolle on spirit and God, pain-bodies, presence, and living with fame.</itunes:subtitle>
+   <itunes:summary>Host Krista Tippett creates a certain kind of space in her interviews, and this conversation is no exception. Tolle shares his youthful experience of depression and despair -- suffering that led him to his own spiritual breakthrough, and ultimately, freedom and peace of mind. He also explicates his view of what he calls &quot;the pain body&quot; -- the accumulated emotional pain that may influence us and our relationships in negative ways. And Tolle talks about spirit and God, and what those concepts mean to him.</itunes:summary>
+   <itunes:duration>53:09</itunes:duration>
+   <itunes:keywords>eckhart tolle, oprah winfrey, a new earth, ram dass, power of now, pain bodies, speaking of faith, krista tippett</itunes:keywords>
+  </item>
+
+  <item>
+   <title>Living Vodou (August 7, 2008)</title>
+   <description>Vodou is the African-based spiritual world of the people of Haiti, a living religion wherever Haitians are found. It involves dramatic rituals and drumming, trances and dreaming, and belief in a spiritual realm that mirrors the physical world and interacts with it. But contrary to popular notions, it has nothing to do with sticking pins into dolls. With Patrick Bellegarde-Smith, a scholar who is also a Vodou priest, we explore its practices and metaphysics.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/vodou/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080807_vodou.mp3" length="51243008" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080807_vodou.mp3</guid>
+   <pubDate>Thu, 7 Aug 2008 12:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Patrick Bellegarde-Smith talks about the roots of Haitian Vodou</itunes:subtitle>
+   <itunes:summary>Vodou is the African-based spiritual world of the people of Haiti, a living religion wherever Haitians are found. It involves dramatic rituals and drumming, trances and dreaming, and belief in a spiritual realm that mirrors the physical world and interacts with it. But contrary to popular notions, it has nothing to do with sticking pins into dolls. With Patrick Bellegarde-Smith, a scholar who is also a Vodou priest, we explore its practices and metaphysics.</itunes:summary>
+   <itunes:duration>53:09</itunes:duration>
+   <itunes:keywords>voodoo, vodou, haiti, brooklyn, legba, ogou, gede, ghede, spirits, possessed, possession, syncretism, catholic, drumming, patrick bellegarde-smith, claudine michel, maya deren, mama lola, krista tippett, radio, faith, religion, spirituality, morality</itunes:keywords>
+  </item>
+		
+		<item>
+     <title>The Business of Doing Good (July 31, 2008)</title>
+     <description>The news has been marked in recent years, at regular intervals, by the moral and practical downfall of prominent businesses. Jonathan Greenblatt is among a new generation of entrepreneurs who want to lead a fundamental shift in corporate culture as well as philanthropy -- a merger between making a profit and doing good. We explore his way of seeing the world and his economics of &quot;ethical brand architecture&quot; and &quot;fiercely pragmatic idealism.&quot;</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/business_of_good/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080731_business_of_good.mp3" length="51387696" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080731_business_of_good.mp3</guid>
+     <pubDate>Thu, 31 Jul 2008 12:01:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Jonathan Greenblatt describes the merging philosophy of making a profit and doing good.</itunes:subtitle>
+     <itunes:summary>The news has been marked in recent years, at regular intervals, by the moral and practical downfall of prominent businesses. Jonathan Greenblatt is among a new generation of entrepreneurs who want to lead a fundamental shift in corporate culture as well as philanthropy -- a merger between making a profit and doing good. We explore his way of seeing the world and his economics of &quot;ethical brand architecture&quot; and &quot;fiercely pragmatic idealism.&quot;</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>jonathan greenblatt, business, ethos water, starbucks, social entrepreneur, socially responsible investing, ethics, religion, spirituality, krista tippett, profit</itunes:keywords>
+   </item>
+			
+			<item>
+     <title>Play, Spirit, and Character (July 24, 2008)</title>
+     <description>Stuart Brown, a physician and director of the National Institute for Play, says that pleasurable, purposeless activity prevents violence and promotes trust, empathy, and adaptability to life&apos;s complication. He promotes cutting-edge science on human play, and draws on a rich universe of study of intelligent social animals.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/play/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080724_play.mp3" length="51387696" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080724_play.mp3</guid>
+     <pubDate>Thu, 24 Jul 2008 12:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Stuart Brown discusses the value of purposeless activity.</itunes:subtitle>
+     <itunes:summary>Stuart Brown, a physician and director of the National Institute for Play, says that pleasurable, purposeless activity prevents violence and promotes trust, empathy, and adaptability to life&apos;s complication. He promotes cutting-edge science on human play, and draws on a rich universe of study of intelligent social animals.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>stuart brown, play, stress, behavior, speaking of faith, krista tippett, tippet, faith, radio, religion, spirituality, christianity, ethics, morality, jane goodall</itunes:keywords>
+   </item>
+
+  <item>
+     <title>Recovering Chinese Religiosities (July 17, 2008)</title>
+     <description>Put the words &quot;religion&quot; and &quot;China&quot; in a sentence together, and Western imaginations may go to indifference at best, to brutal repression at worst. Yet in grand historical perspective, China is a crucible of religious and philosophical thought and practice. Anthropologist and filmmaker Mayfair Yang says that the upheavals of the 20th century created an amnesia -— in the West as in China itself -- about this rich, pluralistic spiritual inheritance. She traces some of this story for us, and describes a subtle new revival of reverence and ritual.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/joecarter/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080717_chinese_religiosities.mp3" length="51206579" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080717_chinese_religiosities.mp3</guid>
+     <pubDate>Thu, 10 Jul 2008 12:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Mayfair Yang on Chinese religious and political thought and practice.</itunes:subtitle>
+     <itunes:summary>Put the words &quot;religion&quot; and &quot;China&quot; in a sentence together, and Western imaginations may go to indifference at best, to brutal repression at worst. Yet in grand historical perspective, China is a crucible of religious and philosophical thought and practice. Anthropologist and filmmaker Mayfair Yang says that the upheavals of the 20th century created an amnesia -— in the West as in China itself -- about this rich, pluralistic spiritual inheritance. She traces some of this story for us, and describes a subtle new revival of reverence and ritual.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>mayfair yang, china, buddhism, confuscianism, taiwan, religion, daoism, taoism, communism, ethics, secular, tibet, mao, history, ethics, tibet, ritual, speaking of faith, krista tippett</itunes:keywords>
+   </item>
+			
+			<item>
+     <title>Joe Carter and the Legacy of the African-American Spiritual (July 10, 2008)</title>
+     <description>The spiritual is celebrated in American culture and beyond. It is the source from which gospel, jazz, blues and hip-hop evolved. It was born in the American South, created by slaves, bards whose names history never recorded. The organizing concept of this music is not the melody of Europe, but the rhythm of Africa. And the theology conveyed in these songs is a potent mix of African spirituality, Hebrew narrative, Christian doctrine, and an extreme experience of human suffering.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/joecarter/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080710_joecarter.mp3" length="51206579" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080710_joecarter.mp3</guid>
+     <pubDate>Thu, 10 Jul 2008 12:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Singer Joe Carter shares stories about the meaning of the Negro spiritual in word and song.</itunes:subtitle>
+     <itunes:summary>The spiritual is celebrated in American culture and beyond. It is the source from which gospel, jazz, blues and hip-hop evolved. It was born in the American South, created by slaves, bards whose names history never recorded. The organizing concept of this music is not the melody of Europe, but the rhythm of Africa. And the theology conveyed in these songs is a potent mix of African spirituality, Hebrew narrative, Christian doctrine, and an extreme experience of human suffering.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>joe carter, negro spiritual, african-american, african american, song, slavery, sorrow songs, slave, krista tippett, radio, faith, religion, spirituality, morality</itunes:keywords>
+   </item>
+
+  <item>
+     <title>The Ethics of Eating (July 3, 2008)</title>
+     <description>Author Barbara Kingsolver describes an adventure her family undertook to spend one year eating primarily what they could grow or raise themselves. As a citizen and mother more than an expert, she turned her life towards questions many of us are asking. Food, she says, is a &quot;rare moral arena&quot; in which the ethical choice is often the pleasurable choice.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/ethicsofeating/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080703_ethicsofeating.mp3" length="51350395" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080703_ethicsofeating.mp3</guid>
+     <pubDate>Thu, 03 Jul 2008 12:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Author Barbara Kingsolver describes an adventure her family undertook to spend one year eating primarily what they could grow or raise themselves.</itunes:subtitle>
+     <itunes:summary>Author Barbara Kingsolver describes an adventure her family undertook to spend one year eating primarily what they could grow or raise themselves. As a citizen and mother more than an expert, she turned her life towards questions many of us are asking. Food, she says, is a &quot;rare moral arena&quot; in which the ethical choice is often the pleasurable choice.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>barbara kingsolver, organic, sustainability, green, gardening, krista tippett, poisonwood bible, ethics, religion, spirituality, values, morality</itunes:keywords>
+   </item>
+
+  <item>
+     <title>Presence in the Wild (June 26, 2008)</title>
+     <description>Kate Braestrup is a writer, mother and a chaplain to game wardens on search-and-rescue missions in Maine. She is called in when children disappear in the woods and when snowmobilers disappear under the ice. There, she says, the rubber meets the road theologically. And her sense of life, death, and God is formed by what happens between and among people.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/braestrup/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080626_braestrup.mp3" length="5281625" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080626_braestrup.mp3</guid>
+     <pubDate>Thu, 26 Jun 2008 12:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Kate Braestrup, chaplain to game wardens on search-and-rescue missions in Maine, discusses her experiences and how it affects her sense of life, death, and God.</itunes:subtitle>
+     <itunes:summary>	Kate Braestrup is a writer, mother and a chaplain to game wardens on search-and-rescue missions in Maine. She is called in when children disappear in the woods and when snowmobilers disappear under the ice. There, she says, the rubber meets the road theologically. And her sense of life, death, and God is formed by what happens between and among people.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>braestrup, maine, search and rescue, chaplain, game warden, death, loss, park, forest, unitarian universalist, religion, god, community, love, radio</itunes:keywords>
+   </item>
+
+  <item>
+     <title>Sustaining Language, Sustaining Meaning - an Ojibwe Story (June 19, 2008)</title>
+     <description>Novelist and translator David Treuer is helping to compile the first practical grammar of the Ojibwe tongue of his tribe -- one of the 90 percent of human languages that could be endangered in this century. Treuer describes an unfolding awareness of aspects of his personality, of a sense of what brings him joy, an understanding of what makes him human -- that the Ojibwe language distinctly conveys.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/sustaining_language/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080619_treuer.mp3" length="51428304" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080619_treuer.mp3</guid>
+     <pubDate>Fri, 20 Jun 2008 14:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>David Treuer on the identity of speaking Ojibwe.</itunes:subtitle>
+     <itunes:summary>Novelist and translator David Treuer is helping to compile the first practical grammar of the Ojibwe tongue of his tribe -- one of the 90 percent of human languages that could be endangered in this century. Treuer describes an unfolding awareness of aspects of his personality, of a sense of what brings him joy, an understanding of what makes him human -- that the Ojibwe language distinctly conveys.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>ojibwe, native american, indigenous, aboriginal, preserving language, david treuer, speaking of faith, jew, judaism, christianity, krista tippett, radio, faith, religion, spirituality, morality</itunes:keywords>
+   </item>
+			
+			<item>
+     <title>Pagans Ancient and Modern (June 12, 2008)</title>
+     <description>An environmentalist who pursued the ecological impulse of Paganism, from its ancient roots to its modern revival in Europe and North America, discusses his observations about the spirit of Paganism and its influence on everyday Western culture -- and even on old-time religion.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/pagans/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080612_pagans.mp3" length="51428304" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080612_pagans.mp3</guid>
+     <pubDate>Thu, 12 Jun 2008 14:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Adrian Ivakhiv discusses his observations about the spirit of Paganism and its influence on everyday Western culture.</itunes:subtitle>
+     <itunes:summary>An environmentalist who pursued the ecological impulse of Paganism, from its ancient roots to its modern revival in Europe and North America, discusses his observations about the spirit of Paganism and its influence on everyday Western culture -- and even on old-time religion.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>pagan, paganism, neopagan, druids, wicca, wiccans, heathen, carpathian, ukraine, krista tippett, adrian ivakhiv, ecology, environment, radio, faith, religion, spirituality, morality, american public media, APM</itunes:keywords>
+   </item>
+
+  <item>
+     <title>The Spiritual Audacity of Abraham Joshua Heschel (June 5, 2008)</title>
+     <description>Heschel was a mystic who wrote transcendent, poetic words about God. At the very same time, he marched alongside Martin Luther King Jr. and organized religious leadership against the war in Vietnam, embodying the extreme social activism of the biblical prophets he studied. We explore his teachings and his legacy for people in our day.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/heschel/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080605_heschel.mp3" length="51675197" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080605_heschel.mp3</guid>
+     <pubDate>Thu, 5 Jun 2008 14:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Exploring the teachings and legacy of Abraham Joshua Heschel for people in our day.</itunes:subtitle>
+     <itunes:summary>Heschel was a mystic who wrote transcendent, poetic words about God. At the very same time, he marched alongside Martin Luther King Jr. and organized religious leadership against the war in Vietnam, embodying the extreme social activism of the biblical prophets he studied. We explore his teachings and his legacy for people in our day.</itunes:summary>
+     <itunes:duration>53:20</itunes:duration>
+     <itunes:keywords>heschel, judaism, hasidism, vietnam war, old testament, prophets, speaking of faith, krista tippett, arnold eisen, jewish theological seminary, radio, faith, life, religion, ethics</itunes:keywords>
+   </item>
+			
+			<item>
+     <title>Quarks and Creation (May 29, 2008)</title>
+     <description>Science and religion are often pitted against one another; but how do they complement, rather than contradict, one another? We learn how one man applies the deepest insights of modern physics to think about how the world fundamentally works, and how the universe might make space for prayer.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/quarks/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080529_quarks.mp3" length="51721199" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080529_quarks.mp3</guid>
+     <pubDate>Thu, 29 May 2008 12:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Scientist and theologian John Polkinghorne applies the insights of quantum physics to religious mysteries and the evolution debate.</itunes:subtitle>
+     <itunes:summary>Science and religion are often pitted against one another; but how do they complement, rather than contradict, one another? We learn how one man applies the deepest insights of modern physics to think about how the world fundamentally works, and how the universe might make space for prayer.</itunes:summary>
+     <itunes:duration>53:21</itunes:duration>
+     <itunes:keywords>speaking of faith, polkinghorne, polkinghorn, chaos theory, quarks, hadrons, evolution, creationism, intelligent design, science, templeton, apm, american public media, radio, program, faith, life, religion, ethics</itunes:keywords>
+  </item>
+
+  <item>
+     <title>Approaching Prayer (May 22, 2008)</title>
+     <description>Americans are religious and non-religious, devout and irreverent. But in astonishing numbers, across that spectrum, most of us say that we pray. We open up the subject of prayer and explore how it sounds and what it means in three different traditions and lives.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/approachingprayer/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080522_approachingprayer.mp3" length="51675197" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080522_approachingprayer.mp3</guid>
+     <pubDate>Thu, 22 May 2008 12:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Anoushka Shankar, Stephen Mitchell, and Roberta Bondi open up the subject of prayer.</itunes:subtitle>
+     <itunes:summary>Americans are religious and non-religious, devout and irreverent. But in astonishing numbers, across that spectrum, most of us say that we pray. We open up the subject of prayer and explore how it sounds and what it means in three different traditions and lives.</itunes:summary>
+     <itunes:duration>53:20</itunes:duration>
+     <itunes:keywords>speaking of faith, prayer, bondi, shankar, mitchell, jew, judaism, hasid, krista tippett, radio, faith, religion, spirituality, morality</itunes:keywords>
+   </item>
+			
+			<item>
+     <title>The Spirituality of Addiction and Recovery (May 15, 2008)</title>
+     <description>Alcoholics Anonymous co-founder Bill Wilson once said that the program he helped create is, &quot;utter simplicity which encases a complete mystery.&quot; We explore the spiritual foundations of addiction and recovery with authors Kevin Griffin and Susan Cheever. Griffin reflects on the consonance of Buddhist teachings and the 12 Steps; Cheever tells her personal story and that of her father, the late fiction writer John Cheever.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/recovery/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080515_recovery.mp3" length="51339146" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080515_recovery.mp3</guid>
+     <pubDate>Fri, 16 May 2008 04:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Buddhist teacher Kevin Griffin on the consonance of the Twelve Steps and Zen instruction; and Susan Cheever tells her personal story and that of her father, the late fiction writer John Cheever.</itunes:subtitle>
+     <itunes:summary>Alcoholics Anonymous co-founder Bill Wilson once said that the program he helped create is, &quot;utter simplicity which encases a complete mystery.&quot; We explore the spiritual foundations of addiction and recovery with authors Kevin Griffin and Susan Cheever. Griffin reflects on the consonance of Buddhist teachings and the 12 Steps; Cheever tells her personal story and that of her father, the late fiction writer John Cheever.</itunes:summary>
+     <itunes:duration>53:20</itunes:duration>
+     <itunes:keywords>addiction, 12 steps, big book, bill wilson, bill w, alcoholism, drug abuse, spirituality, god, christianity, buddhism, kevin griffin, susan cheever, krista tippett, speaking of faith, religion, ethics, morals, religion</itunes:keywords>
+   </item>
+			
+  <item>
+     <title>The Freelance Monotheism of Karen Armstrong (May 8, 2008)</title>
+     <description>Karen Armstrong speaks about her progression from a disillusioned and damaged young nun into, in her words, a &quot;freelance monotheist.&quot; She&apos;s a formidable thinker and scholar, but as a theologian she calls herself an amateur -- noting that the Latin root of the word &quot;amateur&quot; means a love of one&apos;s subject. Seven years in a strict religious order nearly snuffed out her ability to think about faith at all. Here, we hear the story behind Armstrong&apos;s developing ideas about God.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/armstrong/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080508_armstrong.mp3" length="51339146" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080508_armstrong.mp3</guid>
+     <pubDate>Thu, 8 May 2008 05:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Armstrong reflects on the role of religion in the modern world, theology, poetry, and her life as a freelance monotheist.</itunes:subtitle>
+     <itunes:summary>Karen Armstrong speaks about her progression from a disillusioned and damaged young nun into, in her words, a &quot;freelance monotheist.&quot; She&apos;s a formidable thinker and scholar, but as a theologian she calls herself an amateur -- noting that the Latin root of the word &quot;amateur&quot; means a love of one&apos;s subject. Seven years in a strict religious order nearly snuffed out her ability to think about faith at all. Here, we hear the story behind Armstrong&apos;s developing ideas about God.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>karen armstrong, islam, jew, judaism, nun, christianity, jesuit, spiral staircase, krista tippett, catholic, muhammad, faith, religion, spirituality, morality</itunes:keywords>
+   </item>
+			
+			<item>
+     <title>Being Catholic, The Beauty and Challenge of - Hearing the Faithful (May 3, 2008)</title>
+     <description>We depart from our usual format and listen to a spectrum of lay Catholic voices on the force of this vast and ancient tradition on their lives, the way they struggle with it, the sources of their love for it. Even to be a &quot;lapsed Catholic,&quot; we hear, is a complex state of being.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/being_catholic/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080501_being_catholic.mp3" length="51339146" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080501_being_catholic.mp3</guid>
+     <pubDate>Sat, 3 May 2008 05:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Nine lay Catholic voices on their ancient tradition.</itunes:subtitle>
+     <itunes:summary>We depart from our usual format and listen to a spectrum of lay Catholic voices on the force of this vast and ancient tradition on their lives, the way they struggle with it, the sources of their love for it. Even to be a &quot;lapsed Catholic,&quot; we hear, is a complex state of being.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>catholic, christian, mass, doctrine, pope, vatican, benedict, christianity, abortion, choice, right to life, krista tippett, speaking of faith, religion, ethics, morals, religion</itunes:keywords>
+   </item>
+			
+			<item>
+     <title>Planting the Future with Wangari Maathai (April 24, 2008)</title>
+     <description>In honor of Earth Day, a riveting Kenyan environmentalist and Nobel Peace Prize Laureate, Wangari Maathai. She knows what many in the West have forgotten -- that ecological crises are often the hidden root causes of war. Maathai speaks about the global balance of human and natural resources, and she shares her thoughts on where God resides.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/plantingthefuture/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080424_plantingthefuture.mp3" length="51339146" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080424_plantingthefuture.mp3</guid>
+     <pubDate>Thu, 24 Apr 2008 10:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Wangari Maathai on fighting for environmental awareness and women&apos;s rights in Africa.</itunes:subtitle>
+     <itunes:summary>In honor of Earth Day, a riveting Kenyan environmentalist and Nobel Peace Prize Laureate, Wangari Maathai. She knows what many in the West have forgotten -- that ecological crises are often the hidden root causes of war. Maathai speaks about the global balance of human and natural resources, and she shares her thoughts on where God resides.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>wangari maathai, nobel peace prize, kenya, green belt movement, conservation, deforestation, feminism, poverty, catholic, kikuyu, krista tippett, ecology, environment, radio, faith, religion, spirituality, morality</itunes:keywords>
+   </item>
+
+  <item>
+     <title>Evangelical Politics: Three Generations (April 17, 2008)</title>
+     <description>A passionate discussion is unfolding among Evangelical leaders and communities. Should Christians be involved in politics and if so, how? What has gone wrong, and what has been learned from the Moral Majority to today? Chuck Colson, Greg Boyd, and Shane Claiborne are three generations of Evangelicals who discuss and debate these answers.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/evangelical_politics/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080417_evangelicalpolitics.mp3" length="51085200" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080417_evangelicalpolitics.mp3</guid>
+     <pubDate>Fri, 18 Apr 2008 08:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Chuck Colson, Greg Boyd, and Shane Claiborner in a public dialogue about what it means to be Evangelical today.</itunes:subtitle>
+     <itunes:summary>A passionate discussion is unfolding among Evangelical leaders and communities. Should Christians be involved in politics and if so, how? What has gone wrong, and what has been learned from the Moral Majority to today? Chuck Colson, Greg Boyd, and Shane Claiborne are three generations of Evangelicals who discuss and debate these answers.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>evangelical, charles colson, shane claiborne, greg boyd, politics, christian, christianity, abortion, choice, right to life, krista tippett, speaking of faith, religion, ethics, morals, religion</itunes:keywords>
+   </item>
+			
+			<item>
+     <title>Brother Thay: A Radio Pilgrimmage with Thich Nhat Hanh (April 10, 2008)</title>
+     <description>Forcibly exiled from his native country, Zen master and poet Thich Nhat Hanh recently visited Vietnam for the first time in nearly 40 years. In 2003, Speaking of Faith took a radio pilgrimage with the Buddhist monk at a Christian conference center in a lakeside setting of rural Wisconsin. Thich Nhat Hanh offers stark, gentle wisdom for living in a world of anger and violence. Here, he discusses the concepts of engaged Buddhism, being peace, and mindfulness.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/thichnhathanh/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080410_thichnhathanh.mp3" length="51085200" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080410_thichnhathanh.mp3</guid>
+     <pubDate>Thu, 10 Apr 2008 12:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Zen master and poet Thich Nhat Hanh offers wisdom for living in a world of anger and violence.</itunes:subtitle>
+     <itunes:summary>Forcibly exiled from his native country, Zen master and poet Thich Nhat Hanh recently visited Vietnam for the first time in nearly 40 years. In 2003, Speaking of Faith took a radio pilgrimage with the Buddhist monk at a Christian conference center in a lakeside setting of rural Wisconsin. Thich Nhat Hanh offers stark, gentle wisdom for living in a world of anger and violence. Here, he discusses the concepts of engaged Buddhism, being peace, and mindfulness.</itunes:summary>
+     <itunes:duration>53:08</itunes:duration>
+     <itunes:keywords>thich nhat hanh, buddha, buddhism, plum village, thomas merton, engaged Buddhism, larry ward, maples, dharma, boddhisatva, monk, vietnam, viet nam, sangha, green lake conference center, krista tippett, radio, faith, religion, spirituality, morality</itunes:keywords>
+   </item>
+   
+  <item>
+     <title>The Spirituality of Parenting (April 3, 2008)</title>
+     <description>More and more people in our time are disconnected from religious institutions, at least for part of their lives. Others are religious and find themselves creating a family with a spouse from another tradition or no tradition at all. And the experience of parenting tends to raise spiritual questions anew. We sense that there is a spiritual aspect to our children&apos;s natures and wonder how to support and nurture that. The spiritual life, our guest says, begins not in abstractions, but in concrete everyday experiences. And children need our questions as much as our answers.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/spiritualityofparenting/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080403_spiritualityofparenting.mp3" length="51226650" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080403_spiritualityofparenting.mp3</guid>
+     <pubDate>Thu, 03 Apr 2008 11:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Rabbi Sandi Sasso discusses nurturing the spiritual and moral awareness of children.</itunes:subtitle>
+     <itunes:summary>More and more people in our time are disconnected from religious institutions, at least for part of their lives. Others are religious and find themselves creating a family with a spouse from another tradition or no tradition at all. And the experience of parenting tends to raise spiritual questions anew. We sense that there is a spiritual aspect to our children&apos;s natures and wonder how to support and nurture that. The spiritual life, our guest says, begins not in abstractions, but in concrete everyday experiences. And children need our questions as much as our answers.</itunes:summary>
+     <itunes:duration>53:09</itunes:duration>
+     <itunes:keywords>parenting, children, sandy sasso, rabbi, jew, judaism, unchurched, god, christian, christianity, stoires, krista tippett, radio, faith, religion, spirituality, morality</itunes:keywords>
+   </item>
+
+  <item>
+     <title>Exploring a New Humanism (March 27, 2008)</title>
+     <description>In a recent Pew poll, 16 percent of Americans identified themselves as &quot;unaffiliated&quot; - atheist, agnostic, or most prominently &quot;nothing in particular.&quot; Greg Epstein, a Humanist chaplain at Harvard, described himself that way until he discovered the tradition of humanism. He is passionate about articulating an atheist identity that is not driven by a stance against religion but by positive ethical beliefs and actions.</description>
+     <category>Public Radio</category>
+     <link>http://speakingoffaith.org/programs/new_humanism/</link>
+     <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080327_new_humanism.mp3" length="51421163" type="audio/mpeg"></enclosure>
+     <guid>http://download.publicradio.org/podcast/speakingoffaith/20080327_new_humanism.mp3</guid>
+     <pubDate>Thu, 27 Mar 2008 11:00:00 CST</pubDate>
+     <itunes:author>Krista Tippett, American Public Media</itunes:author>
+     <itunes:subtitle>Harvard Humanist chaplain Greg Epstein discusses an atheism driven by positive ethical beliefs and actions.</itunes:subtitle>
+     <itunes:summary>In a recent Pew poll, 16 percent of Americans identified themselves as &quot;unaffiliated&quot; - atheist, agnostic, or most prominently &quot;nothing in particular.&quot; Greg Epstein, a Humanist chaplain at Harvard, described himself that way until he discovered the tradition of humanism. He is passionate about articulating an atheist identity that is not driven by a stance against religion but by positive ethical beliefs and actions.</itunes:summary>
+     <itunes:duration>53:27</itunes:duration>
+     <itunes:keywords>	humanism, atheism, agnostic, unchurched, harvard, greg epstein, religion, krista tippett, faith, religion, spirituality, morality</itunes:keywords>
+   </item>
+
+  <item>
+   <title>SOF EXTRA (video) | Bach&apos;s Bible</title>
+   <description>Johann Sebastian Bach&apos;s compositions, Dr. Thomas Rossin says, stemmed from his private faith - a faith evidenced by Bach&apos;s handwritten notes in his Bible. Hear about the Bible&apos;s nomadic journey and its possible influence of his &quot;Mass in B Minor&quot; - what the late, great scholar of creeds, Jaroslav Pelikan, holds up as an example of the &quot;best we&apos;ve ever done.&quot;</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/pelikan/ss_bachsbible/ss-bachsbible.shtml#slideshow</link>
+   <enclosure url="http://download.publicradio.org/video/speakingoffaith/20080320_pelikan_vid-bachsbible.mov" length="37520505" type="video/mov"></enclosure>
+   <guid>http://download.publicradio.org/video/speakingoffaith/20080320_pelikan_vid-bachsbible.mov</guid>
+   <pubDate>Tue, 25 Mar 2008 10:00:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Dr. Thomas Rossin discusses Johann Sebastian Bach&apos;s bible.</itunes:subtitle>
+   <itunes:summary>Johann Sebastian Bach&apos;s compositions, Dr. Thomas Rossin says, stemmed from his private faith - a faith evidenced by Bach&apos;s handwritten notes in his Bible. Hear about the Bible&apos;s nomadic journey and its possible influence of his &quot;Mass in B Minor&quot; - what the late, great scholar of creeds, Jaroslav Pelikan, holds up as an example of the &quot;best we&apos;ve ever done.&quot;</itunes:summary>
+   <itunes:duration>3:47</itunes:duration>
+   <itunes:keywords>	jaroslav pelikan, creed, prayer, masai, maasai, orthodox, nicene creed, constantine, st. augustine, krista tippett, radio, faith, religion, spirituality, morality</itunes:keywords>
+  </item>
+
+  <item>
+   <title>The Need for Creeds (March 20, 2008)</title>
+   <description>For many modern Americans, the very idea of reciting an unchanging creed, composed centuries ago, is troublesome. But, Jaroslav Pelikan, who died on May 13, 2006, was a scholar who devoted his life to exploring the vitality of ancient theology and creeds. He insisted that even modern pluralists need strong statements of belief. Here, we revisit Krista&apos;s 2003 conversation with him, who, then, in his 80th year, had released a historic collection of Christian faith from biblical times to the present and from across the globe. They discuss the history and nature of creeds, and how a fixed creed can be reconciled with an honest, intellectual faith that changes and evolves.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/pelikan/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080320_pelikan.mp3" length="51375166" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080320_pelikan.mp3</guid>
+   <pubDate>Thu, 20 Mar 2008 12:00:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Scholar Jaroslav Pelikan discusses the modern need for strong statements of belief.</itunes:subtitle>
+   <itunes:summary>For many modern Americans, the very idea of reciting an unchanging creed, composed centuries ago, is troublesome. But, Jaroslav Pelikan, who died on May 13, 2006, was a scholar who devoted his life to exploring the vitality of ancient theology and creeds. He insisted that even modern pluralists need strong statements of belief. Here, we revisit Krista&apos;s 2003 conversation with him, who, then, in his 80th year, had released a historic collection of Christian faith from biblical times to the present and from across the globe. They discuss the history and nature of creeds, and how a fixed creed can be reconciled with an honest, intellectual faith that changes and evolves</itunes:summary>
+   <itunes:duration>53:27</itunes:duration>
+   <itunes:keywords>jaroslav pelikan, creed, prayer, masai, maasai, orthodox, nicene creed, constantine, st. augustine, krista tippett, radio, faith, religion, spirituality, morality</itunes:keywords>
+  </item>
+
+
+  <item>
+   <title>Liberating the Founders (March 13, 2008)</title>
+   <description>Warning: this conversation may not mirror what you learned in school. The culture wars of recent years, journalist Steven Waldman says, hijacked Americans&apos; understanding of the country&apos;s founders and of the meaning of religious liberty. This hinders people from grasping what is really at stake in the current debates about the relationship between government and religion. It may even distort the wisdom we might bring to young democracies around the world.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/liberating_the_founders/</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080313_liberating_the_founders.mp3" length="51330634" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080313_liberating_the_founders.mp3</guid>
+   <pubDate>Wed, 12 Mar 2008 10:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Journalist Steven Waldman discusses the American founding fathers&apos; views on government and religion.</itunes:subtitle>
+   <itunes:summary>Warning: this conversation may not mirror what you learned in school. The culture wars of recent years, journalist Steven Waldman says, hijacked Americans&apos; understanding of the country&apos;s founders and of the meaning of religious liberty. This hinders people from grasping what is really at stake in the current debates about the relationship between government and religion. It may even distort the wisdom we might bring to young democracies around the world.</itunes:summary>
+   <itunes:duration>53:27</itunes:duration>
+   <itunes:keywords>founding fathers, church, state, religion, james madison, thomas jefferson, steven waldman, government, liberty, democracy</itunes:keywords>
+  </item>
+
+  <item>
+   <title>SOF EXTRA (video) | Beannacht</title>
+   <description>Shortly before his death in 2008, the late Irish poet John O&apos;Donohue recited his poem &quot;Beannacht&quot;, meaning blessing, during an interview with Krista Tippett. We&apos;ve woven his close friends&apos; photographs of him in his Celtic landscapes with this reading. Produced by Colleen Scheck and Trent Gilliss.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/john_odonahue/ss_beannacht/ss-beannacht.shtml#slideshow</link>
+   <enclosure url="http://download.publicradio.org/video/speakingoffaith/20080228_john-odonohue_slideshow-beannacht.mov" length="37520505" type="video/mov"></enclosure>
+   <guid>http://download.publicradio.org/video/speakingoffaith/20080228_john-odonohue_slideshow-beannacht.mov</guid>
+   <pubDate>Mon, 10 Mar 2008 10:00:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>John O&apos;Donohue reads Beannacht with images of his Celtic landscape</itunes:subtitle>
+   <itunes:summary>Shortly before his death in 2008, the late Irish poet John O&apos;Donohue recited his poem &quot;Beannacht&quot;, meaning blessing, during an interview with Krista Tippett. We&apos;ve woven his close friends&apos; photographs of him in his Celtic landscapes with this reading. Produced by Colleen Scheck and Trent Gilliss.</itunes:summary>
+   <itunes:duration>1:18</itunes:duration>
+   <itunes:keywords>john o&apos;donohue, poem, poetry, beannacht, anam cara, celtic, gaelic, ireland, irish, burren, krista tippett, speaking of faith, religion</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>A New Voice for Islam (March 6, 2008)</title>
+   <description>Ingrid Mattson, the first woman and first convert to lead the Islamic Society of North America, describes her experience of Islamic spirituality, which she discovered in her twenties after a Catholic upbringing. We probe her unusual perspective on a tumultuous age for Islam in the West and around the world.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/newvoice/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080306_newvoice.mp3" length="51315397" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080306_newvoice.mp3</guid>
+   <pubDate>Thu, 6 Mar 2008 13:00:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Muslim leader Ingrid Mattson discusses the future of Islam</itunes:subtitle>
+   <itunes:summary>Ingrid Mattson, the first woman and first convert to lead the Islamic Society of North America, describes her experience of Islamic spirituality, which she discovered in her twenties after a Catholic upbringing. We probe her unusual perspective on a tumultuous age for Islam in the West and around the world.</itunes:summary>
+   <itunes:duration>53:27</itunes:duration>
+   <itunes:keywords>ingrid mattson, islam, muslim, islamic society of north america, salat, allah, krista tippett, faith, religion, spirituality, morality</itunes:keywords>
+ </item>
+	
+		<item>
+   <title>The Inner Landscape of Beauty (February 28, 2008)</title>
+   <description>John O&apos;Donohue was an Irish poet and philosopher beloved for his book &quot;Anam Cara&quot; — Gaelic for &quot;soul friend&quot; — and for his insistence on beauty as a human calling and a defining aspect of God. Before his untimely death this year, he spoke with Krista in our studios. And so this hour has become a remembrance of him. But John O&apos;Donohue had a very Celtic, lifelong fascination with what he called &quot;the invisible world.&quot; And he would also surely see this also as a serendipitous continuation of his life&apos;s work — of bringing ancient Celtic wisdom to modern confusions and longings.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/john_odonahue/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080228_john-odonohue.mp3" length="51245470" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080228_john-odonohue.mp3</guid>
+   <pubDate>Sat, 1 Mar 2008 16:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Irish poet John O&apos;Donohue on beauty and friendship</itunes:subtitle>
+   <itunes:summary>John O&apos;Donohue was an Irish poet and philosopher beloved for his book Anam Cara — Gaelic for &quot;soul friend&quot; — and for his insistence on beauty as a human calling and a defining aspect of God. Before his untimely death this year, he spoke with Krista in our studios. And so this hour has become a remembrance of him. But John O&apos;Donohue had a very Celtic, lifelong fascination with what he called &quot;the invisible world.&quot; And he would also surely see this also as a serendipitous continuation of his life&apos;s work — of bringing ancient Celtic wisdom to modern confusions and longings.</itunes:summary>
+   <itunes:duration>53:05</itunes:duration>
+   <itunes:keywords>john o&apos;donohue, poetry, ireland, irish, celtic, gaelic, priest, christianity, beauty, landscape, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>SOF EXTRA (audio) | [8 of 8] Poem: &quot;The Nativity&quot;</title>
+   <description>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;The Nativity&quot; is the eighth of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/john-odonohue/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_08_nativity.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_08_nativity.mp3</guid>
+   <pubDate>Sat, 23 Feb 2008 15:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>[8 of 10] Poem: &quot;The Nativity&quot;</itunes:subtitle>
+   <itunes:summary>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;The Nativity&quot; is the eighth of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</itunes:summary>
+   <itunes:duration>0:57</itunes:duration>
+   <itunes:keywords>john o&apos;donohue, poetry, ireland, irish, celtic, gaelic, priest, christianity, beauty, landscape, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+
+		<item>
+   <title>SOF EXTRA (audio) | [7 of 8] Poem: &quot;Since You Came&quot;</title>
+   <description>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;Since You Came&quot; is the seventh of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/john-odonohue/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_07_since-you-came.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_07_since-you-came.mp3</guid>
+   <pubDate>Sat, 23 Feb 2008 15:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>[7 of 10] Poem: &quot;Since You Came&quot;</itunes:subtitle>
+   <itunes:summary>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;Since You Came&quot; is the seventh of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</itunes:summary>
+   <itunes:duration>0:53</itunes:duration>
+   <itunes:keywords>john o&apos;donohue, poetry, ireland, irish, celtic, gaelic, priest, christianity, beauty, landscape, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+
+		<item>
+   <title>SOF EXTRA (audio) | [6 of 8] Poem: &quot;For the Pilgrim a Kiss: Body Language&quot;</title>
+   <description>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;For the Pilgrim a Kiss: Between Things&quot; is the sixth of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/john-odonohue/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_06_for-the-pilgrim3.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_06_for-the-pilgrim3.mp3</guid>
+   <pubDate>Sat, 23 Feb 2008 15:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>[6 of 10] Poem: &quot;For the Pilgrim a Kiss: Body Language&quot;</itunes:subtitle>
+   <itunes:summary>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;For the Pilgrim a Kiss: Between Things&quot; is the sixth of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</itunes:summary>
+   <itunes:duration>1:27</itunes:duration>
+   <itunes:keywords>john o&apos;donohue, poetry, ireland, irish, celtic, gaelic, priest, christianity, beauty, landscape, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+
+		<item>
+   <title>SOF EXTRA (audio) | [5 of 8] Poem: &quot;For the Pilgrim a Kiss: Between Things&quot;</title>
+   <description>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;For the Pilgrim a Kiss: Between Things&quot; is the fifth of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/john-odonohue/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_05_for-the-pilgrim2.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_05_for-the-pilgrim2.mp3</guid>
+   <pubDate>Sat, 23 Feb 2008 15:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>[5 of 10] Poem: &quot;For the Pilgrim a Kiss: Between Things&quot;</itunes:subtitle>
+   <itunes:summary>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;For the Pilgrim a Kiss: Between Things&quot; is the fifth of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</itunes:summary>
+   <itunes:duration>1:08</itunes:duration>
+   <itunes:keywords>john o&apos;donohue, poetry, ireland, irish, celtic, gaelic, priest, christianity, beauty, landscape, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>SOF EXTRA (audio) | [4 of 8] Poem: &quot;For the Pilgrim a Kiss: The Caha River&quot;</title>
+   <description>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;For the Pilgrim a Kiss: The Caha River&quot; is the fourth of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/john-odonohue/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_04_for-the-pilgrim1.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_04_for-the-pilgrim1.mp3</guid>
+   <pubDate>Sat, 23 Feb 2008 15:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>[4 of 10] Poem: &quot;For the Pilgrim a Kiss: The Caha River&quot;</itunes:subtitle>
+   <itunes:summary>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;For the Pilgrim a Kiss: The Caha River&quot; is the fourth of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</itunes:summary>
+   <itunes:duration>0:50</itunes:duration>
+   <itunes:keywords>john o&apos;donohue, poetry, ireland, irish, celtic, gaelic, priest, christianity, beauty, landscape, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>SOF EXTRA (audio) | [3 of 8] Poem: &quot;Beannacht&quot;</title>
+   <description>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;Beannacht&quot; is the third of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/john-odonohue/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_03_beannacht.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_03_beannacht.mp3</guid>
+   <pubDate>Sat, 23 Feb 2008 15:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>[3 of 10] Poem: &quot;Beannacht&quot;</itunes:subtitle>
+   <itunes:summary>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;Beannacht&quot; is the third of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</itunes:summary>
+   <itunes:duration>1:01</itunes:duration>
+   <itunes:keywords>john o&apos;donohue, poetry, ireland, irish, celtic, gaelic, priest, christianity, beauty, landscape, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>SOF EXTRA (audio) | [2 of 8] Poem: &quot;A Blessing for One Who Holds Power&quot;</title>
+   <description>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;A Blessing for One Who Holds Power&quot; is the second of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/john-odonohue/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_02_blessing-for-one.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_02_blessing-for-one.mp3</guid>
+   <pubDate>Sat, 23 Feb 2008 15:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>[2 of 10] Poem: &quot;A Blessing for One Who Holds Power&quot;</itunes:subtitle>
+   <itunes:summary>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;A Blessing for One Who Holds Power&quot; is the second of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</itunes:summary>
+   <itunes:duration>1:23</itunes:duration>
+   <itunes:keywords>john o&apos;donohue, poetry, ireland, irish, celtic, gaelic, priest, christianity, beauty, landscape, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>SOF EXTRA (audio) | [1 of 8] Poem: &quot;A Blessing for a Friend on the Arrival of Illness&quot;</title>
+   <description>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;A Blessing for a Friend on the Arrival of Illness&quot; is the first of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/john-odonohue/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_01_blessing-for-a-friend.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/odonohue_poems/odonohue_01_blessing-for-a-friend.mp3</guid>
+   <pubDate>Sat, 23 Feb 2008 15:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>[1 of 10] Poem: &quot;A Blessing for a Friend on the Arrival of Illness&quot;</itunes:subtitle>
+   <itunes:summary>Interviewed shortly before his death, the Irish poet John O&apos;Donohue recited several of his poems during his conversation with Krista. &quot;A Blessing for a Friend on the Arrival of Illness&quot; is the first of eight poems that provide a preview of their conversation in The Inner Landscape of Beauty.</itunes:summary>
+   <itunes:duration>2:22</itunes:duration>
+   <itunes:keywords>john o&apos;donohue, poetry, ireland, irish, celtic, gaelic, priest, christianity, beauty, landscape, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+
+		<item>
+   <title>Whale Songs and Elephant Loves (February 21, 2008)</title>
+   <description>Katy Payne is an acoustic biologist with a Quaker sensibility. In a career that has spanned the wild coast of Argentina and the rainforests of Africa, she discovered that humpback whales compose ever-changing songs; and that elephants communicate across long distances by way of sounds beyond the realm of human hearing. She reflects on life in this world through listening to two of its largest and most mysterious creatures.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/whalesongs/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080221_whalesongs.mp3" length="51245470" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080221_whalesongs.mp3</guid>
+   <pubDate>Thu, 21 Feb 2008 13:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Katy Payne on listening and humanity</itunes:subtitle>
+   <itunes:summary>Our guest, Katy Payne, is an acoustic biologist with a Quaker sensibility. In a career that has spanned the wild coast of Argentina and the rainforests of Africa, she discovered that humpback whales compose ever-changing songs; and that elephants communicate across long distances by way of sounds beyond the realm of human hearing. She reflects on life in this world through listening to two of its largest and most mysterious creatures.</itunes:summary>
+   <itunes:duration>53:00</itunes:duration>
+   <itunes:keywords>whales, elephants, humpback, africa, culling, conservation, song, quaker, christian, krista tippett, faith, radio, religion, spirituality, tippet</itunes:keywords>
+  </item>
+		
+		
+		<item>
+   <title>No More Taking Sides (February 14, 2008)</title>
+   <description>Robi Damelin lost her son David to a Palestinian sniper. Ali Abu Awwad lost his older brother Yousef to an Israeli soldier. But, instead of clinging to traditional ideologies and turning their pain into more violence, they&apos;ve decided to understand the other side -- Israeli and Palestinian -- by sharing their pain and their humanity. They tell of a gathering network of survivors who share their grief, their stories of loved ones, and their ideas for lasting peace. They don&apos;t want to be right; they want to be honest.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/nomore/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080214_nomore.mp3" length="51243008" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080214_nomore.mp3</guid>
+   <pubDate>Fri, 15 Feb 2008 06:00:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>An Israeli and a Palestinian share stories of grief, love, and solutions</itunes:subtitle>
+   <itunes:summary>Robi Damelin lost her son David to a Palestinian sniper. Ali Abu Awwad lost his older brother Yousef to an Israeli soldier. But, instead of clinging to traditional ideologies and turning their pain into more violence, they&apos;ve decided to understand the other side -- Israeli and Palestinian -- by sharing their pain and their humanity. They tell of a gathering network of survivors who share their grief, their stories of loved ones, and their ideas for lasting peace. They don&apos;t want to be right; they want to be honest.</itunes:summary>
+   <itunes:duration>53:00</itunes:duration>
+   <itunes:keywords>judaism, islam, muslim, jew, israel, palestine, robi damelin, ali abu awaad, sniper, conflict, holy land, killing, checkpoints, holocaust, south africa, christian, divestment, krista tippett, faith, radio, religion, spirituality, tippet</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>Reflections of a British Muslim Extremist (February 7, 2008)</title>
+   <description>British activist Ed Husain was seduced, at the age of 16, by revolutionary Islamist ideals that flourished at the heart of educated British culture. Yet he later shrank back from radicalism after coming close to a murder and watching people he loved become suicide bombers. He dug deeper into Islamic spirituality, and now offers a fresh and daring perspective on the way forward.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/britishradical/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080207_britishradical.mp3" length="51243008" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080207_britishradical.mp3</guid>
+   <pubDate>Thu, 7 Feb 2008 08:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Ed Husain on radical Muslim fundamentalism in the UK</itunes:subtitle>
+   <itunes:summary>British activist Ed Husain was seduced, at the age of 16, by revolutionary Islamist ideals that flourished at the heart of educated British culture. Yet he later shrank back from radicalism after coming close to a murder and watching people he loved become suicide bombers. He dug deeper into Islamic spirituality, and now offers a fresh and daring perspective on the way forward.</itunes:summary>
+   <itunes:duration>53:00</itunes:duration>
+   <itunes:keywords>muslim, extremist, fundamentalist, islam, islamism, ed husain, hizb ut-tahrir, england, great britain, terrorism, east london mosque, the islamist, muhammad, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>SOF EXTRA (video) | A Musical Evening with Krista Tippett</title>
+   <description>Krista Tippett gives a live performance on April 5, 2007 at the Fitzgerald Theater in downtown St. Paul, Minnesota. Accompanied by Dan Chouinard and Marc Anderson, she reads from her 2007 book, titled &quot;Speaking of Faith: Why Religion Matters--and How to Talk About It.&quot;
+			
+			Yes, we&apos;re a radio program, but sometimes the visual helps -- especially when trying to envision the exotic instruments in the background!</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/rememberingforward/soundseen_video-stream640.shtml</link>
+   <enclosure url="http://download.publicradio.org/video/speakingoffaith/20070607_rememberingforward-video_stream320-300.mov" length="37520505" type="video/mov"></enclosure>
+   <guid>http://download.publicradio.org/video/speakingoffaith/20070607_rememberingforward-video_stream320-300.mov</guid>
+   <pubDate>Wed, 06 Feb 2008 15:00:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Krista Tippett&apos;s live performance at the Fitzgerald Theater</itunes:subtitle>
+   <itunes:summary>Krista Tippett gives a live performance on April 5, 2007 at the Fitzgerald Theater in downtown St. Paul, Minnesota. Accompanied by Dan Chouinard and Marc Anderson, she reads from her 2007 book, titled &quot;Speaking of Faith: Why Religion Matters--and How to Talk About It.&quot;
+			
+			Yes, we&apos;re a radio program, but sometimes the visual helps -- especially when trying to envision the exotic instruments in the background!</itunes:summary>
+   <itunes:duration>59:37</itunes:duration>
+   <itunes:keywords>krista tippett, speaking of faith, religion, memoir, st. paul, fitzgerald theater, live performance</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>Remembering Forward (January 31, 2008)</title>
+   <description>Before a live audience at the Fitzgerald Theater in St. Paul, Minnesota, Krista reads from her book, &quot;Speaking of Faith.&quot; She traces the intersection of human experience and religious ideas in her own life, just as she asks her guests to do each week. Krista reflects on her adventure of conversation across the world&apos;s traditions -- and on the whole story of religion in human life, beyond the headlines of violence.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/rememberingforward/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080131_rememberingforward.mp3" length="51243008" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080131_rememberingforward.mp3</guid>
+   <pubDate>Thu, 31 Jan 2008 08:30:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Krista Tippett reflects on her conversations in a live performance</itunes:subtitle>
+   <itunes:summary>Before a live audience at the Fitzgerald Theater in St. Paul, Minnesota, Krista reads from her book, &quot;Speaking of Faith.&quot; She traces the intersection of human experience and religious ideas in her own life, just as she asks her guests to do each week. Krista reflects on her adventure of conversation across the world&apos;s traditions -- and on the whole story of religion in human life, beyond the headlines of violence.</itunes:summary>
+   <itunes:duration>53:00</itunes:duration>
+   <itunes:keywords>krista tippett, live performance, fitzgerald theater, speaking of faith, tippet, faith, radio, religion, spirituality, christianity, ethics, morality</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>SOF EXTRA (audio) | Unedited Interview with Douglas Johnston</title>
+   <description>In this edition of SOF Unheard Cuts, Krista interviewed Douglas Johnston, president and founder of the International Center for Religion and Diplomacy. We&apos;re making the entire, unedited conversation available for the first time. Here&apos;s your chance to observe the editorial process and let us know what you think.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.publicradio.org/programs/diplomacyandreligion/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080103_diplomacyandreligion_uc-johnston.mp3" length="49533875" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080103_diplomacyandreligion_uc-johnston.mp3</guid>
+   <pubDate>Wed, 30 Jan 2008 12:00:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Krista&apos;s unedited interview with Douglas Johnston on religion and diplomacy</itunes:subtitle>
+   <itunes:summary>n this edition of SOF Unheard Cuts, Krista interviewed Douglas Johnston, president and founder of the International Center for Religion and Diplomacy. We&apos;re making the entire, unedited conversation available for the first time. Here&apos;s your chance to observe the editorial process and let us know what you think.</itunes:summary>
+   <itunes:duration>1:23:34</itunes:duration>
+   <itunes:keywords>unheard cuts, religious freedom, douglas johnston, foreign policy, interfaith, iran, sudan, christian, krista tippett, faith, radio, religion, spirituality, tippet</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>Inside Mormon Faith (January 24, 2008)</title>
+   <description>Americans have been hearing about Mormonism in the context of the presidential campaign. But we&apos;re learning about this faith of 13 million people indirectly, by way of rhetoric and defense. In this program, we avoid well-trodden, controversial ground and seek an understanding of some doctrinal and spiritual basics of the Church of Jesus Christ of Latter-day Saints. Robert Millet, a leading scholar of the church and a lifelong practitioner, describes a developing young religion with distinct mystical and practical interpretations of the nature of God, family, and eternity.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/insidemormonfaith/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080124_insidemormonfaith.mp3" length="51245470" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080124_insidemormonfaith.mp3</guid>
+   <pubDate>Thu, 24 Jan 2008 12:15:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Robert Millet on Mormonism</itunes:subtitle>
+   <itunes:summary>Americans have been hearing about Mormonism in the context of the presidential campaign. But we&apos;re learning about this faith of 13 million people indirectly, by way of rhetoric and defense. In this program, we avoid well-trodden, controversial ground and seek an understanding of some doctrinal and spiritual basics of the Church of Jesus Christ of Latter-day Saints. Robert Millet, a leading scholar of the church and a lifelong practitioner, describes a developing young religion with distinct mystical and practical interpretations of the nature of God, family, and eternity.</itunes:summary>
+   <itunes:duration>53:00</itunes:duration>
+   <itunes:keywords>mormon, latter-day saints, utah, joseph smith, brigham young, christian, jesus, eternal families, god, robert millett, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>Discovering Where We Live: Reimagining Environmentalism (January 17, 2008)</title>
+   <description>Environmentalism and climate change are hot topics; yet they&apos;re still often imagined as the territory of scientists, expert activists, and those who can afford to be environmentally conscious. We discover two people who are transforming the ecology of their immediate worlds: biologist Calvin DeWitt in Dunn, Wisconsin and Majora Carter in New York&apos;s South Bronx.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/discoveringwherewelive/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080117_discoveringwherewelive.mp3" length="51245470" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080117_discoveringwherewelive.mp3</guid>
+   <pubDate>Thu, 17 Jan 2008 06:15:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Majora Carter and Calvin DeWitt on making environmentalism relevant</itunes:subtitle>
+   <itunes:summary>Environmentalism and climate change are hot topics; yet they&apos;re still often imagined as the territory of scientists, expert activists, and those who can afford to be environmentally conscious. We discover two people who are transforming the ecology of their immediate worlds: biologist Calvin DeWitt in Dunn, Wisconsin and Majora Carter in New York&apos;s South Bronx.</itunes:summary>
+   <itunes:duration>53:00</itunes:duration>
+   <itunes:keywords>environment, environmentalism, ecology, majora carter, cal dewitt, south bronx, dunn, christian, evangelical, urban heat island, marsh, reclamation, krista tippett, faith, radio, religion, spirituality, tippet</itunes:keywords>
+  </item>
+		
+		<item>
+   <title>Mathematics, Purpose, and Truth (January 10, 2008)</title>
+   <description>As a theoretical physicist, Janna Levin probes whether the universe is finite or infinite. As a novelist, she explored the separate but parallel lives of two influential 20th-century scientists: Kurt Godel and Alan Turing. Their work laid the foundations for computer intelligence while challenging fundamental notions about how we can know what is true.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/mathandtruth/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speakingoffaith/20080110_mathandtruth.mp3" length="51245470" type="audio/mpeg"></enclosure>
+   <guid>http://download.publicradio.org/podcast/speakingoffaith/20080110_mathandtruth.mp3</guid>
+   <pubDate>Thu, 10 Jan 2008 13:15:00 CST</pubDate>
+   <itunes:author>Krista Tippett, American Public Media</itunes:author>
+   <itunes:subtitle>Janna Levin on Godel, Turing, and the paradox of truth</itunes:subtitle>
+   <itunes:summary>As a theoretical physicist, Janna Levin probes whether the universe is finite or infinite. As a novelist, she explored the separate but parallel lives of two influential 20th-century scientists: Kurt Godel and Alan Turing. Their work laid the foundations for computer intelligence while challenging fundamental notions about how we can know what is true.</itunes:summary>
+   <itunes:duration>53:00</itunes:duration>
+   <itunes:keywords>janna levin, physics, logic, kurt godel, alan turing, science, truth, math, mathematics, god, speaking of faith, krista tippett, religion, faith, spirituality</itunes:keywords>
+  </item>
+
+		<item>
+   <title>Diplomacy and Religion in the 21st Century (January 3, 2008)</title>
+   <description>The greatest threat in the post-Cold War world, says Douglas Johnston, is the prospective marriage of religious extremism with weapons of mass destruction. Yet the U.S. spends most of its time, resources, and weapons fighting the symptoms of this threat, not the cause. The diplomacy of the future, he is showing, must engage religion as part of the strategic solution to global conflicts.</description>
+   <category>Public Radio</category>
+   <link>http://speakingoffaith.org/programs/diplomacyandreligion/index.shtml</link>
+   <enclosure url="http://download.publicradio.org/podcast/speaki

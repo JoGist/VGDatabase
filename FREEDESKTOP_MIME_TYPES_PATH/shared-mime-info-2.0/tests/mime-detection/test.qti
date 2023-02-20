@@ -1,0 +1,19 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	1
+<table>
+Table1	30	2	28.01.11 12:05
+geometry	0	0	445	220	active
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+</data>
+</table>
+<open>1</open>

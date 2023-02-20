@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[shared-mime-info.efault-po-shared-mime-info-pot_0]
+file_filter = po/<lang>.po
+source_file = po/shared-mime-info.pot
+source_lang = en
+

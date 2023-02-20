@@ -1,0 +1,12 @@
+@import "theme/typography";
+@import "theme/palette";
+
+.c-menu-item { display: block;
+        overflow: hidden;
+        border-radius: 15px 15px;
+        padding: 0.5em;
+        }
+.c-menu-link { color: $text;
+        text-decoration: none;
+        }
+.c-menu-link:hover { background: $primary-light; }

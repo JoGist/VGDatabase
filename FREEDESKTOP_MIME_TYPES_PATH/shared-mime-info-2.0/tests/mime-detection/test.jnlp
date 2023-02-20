@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="http://hifi.iki.fi/aq2w/" href="action.jnlp">
+  <information>
+    <title>mytitle</title>
+    <vendor>myvendor</vendor>
+    <description>mydescription</description>
+    <homepage href="http://myhomepage.com"/>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <resources>
+    <j2se version="1.6+"/>
+    <jar href="launcher.jar"/>
+  </resources>
+  <application-desc main-class="etc.etc.etc">
+    <argument>launch</argument>
+    <argument>action</argument>
+  </application-desc>
+</jnlp>

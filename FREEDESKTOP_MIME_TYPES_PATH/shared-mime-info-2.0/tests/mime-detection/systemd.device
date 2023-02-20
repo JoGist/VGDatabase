@@ -1,0 +1,14 @@
+[Install]
+Wants=something.service
+
+# Here is some long exposition so that the Unit section is a lot further
+# down the file than the Install section, so we are only relying on the
+# Install section for the magic string comparison.
+#
+# It is interesting to note that there is no Device section because we
+# cannot really set per-device options in files which are automatically
+# generated, or in ones which are shipped with applications. You learn
+# something new each day, right?
+
+[Unit]
+Description=Some random description
