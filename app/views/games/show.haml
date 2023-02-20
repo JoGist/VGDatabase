@@ -108,7 +108,7 @@
                 %span.hidden . 
                 %span.sidebar__nav__text Add to library 
             - if @games.title == "Super Mario 64"
-              %a.buttonSmall{:href => "https://froggi.es/mario/", :target => "_blank"}
+              %a.buttonSmall{:href => "https://augustberchelmann.com/mario/", :target => "_blank"}
                 %i.mdi.mdi-play
                 %span.hidden . 
                 %span.sidebar__nav__text PLAY
@@ -117,9 +117,9 @@
                 %i.mdi.mdi-amazon
                 %span.hidden . 
                 %span.sidebar__nav__text BUY
-          - if @plot.length!=0
-            .right8
-              %h5.reviewText_alt2 #{@plot}  
+          //- if @plot.length!=0
+          //  .right8
+          //    %h5.reviewText_alt2 #{@plot}  
           .right3
             .reviewHeader
               - if (@review.exists?(:user_id => @user))
