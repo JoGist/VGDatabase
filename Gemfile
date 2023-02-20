@@ -4,7 +4,8 @@ git_source(:github) do |repo_name|
   repo_name = "JoGist/VGDatabase" unless JoGist/VGDatabase.include?("/")
   "https://github.com/JoGist/VGDatabase.git"
 end
-
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem 'coffee-script-source', '1.8.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.5'
 # Use pgSql as the database for Active Record

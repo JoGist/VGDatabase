@@ -16,3 +16,8 @@ SECRET_TOKEN: '62e9c8c64b969773839129e05d6ec53e0ef2306f7258831e21c19cfb4dc2c74bb
 GOOGLE_CLIENT_ID: "872803402078-pd5jq5iufrdb5qin5pk3mohkrtq88pjq.apps.googleusercontent.com"
 GOOGLE_CLIENT_SECRET: "UiKIXUBHzHgk9KsS7T_ujDoB"
 
+maps:
+  api_key: //maps.google.com/maps/api/js?key=AIzaSyDPyLaza4pTmIuuxKeZodgrmHOxUGRbrGA
+  igdb: 'zrw3u5epljf332wimpj5dfajrk6uoa'
+  secret: 'v3vq1sxljqm268grb7rh51o4188x83'
+  access_token: 'Bearer id8usdz9rarc8xns7uqisgtwgn1bgb'

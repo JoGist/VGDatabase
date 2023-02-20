@@ -71,14 +71,16 @@
         %h6.extraMarginLeft Search results for #{@search}
         - @result.each do |game|
           -if game.keys.include?('cover') && game.keys.include?('genres') && game.keys.include?('platforms') && game.keys.include?('involved_companies')
-            -api_endpoint = 'https://api-v3.igdb.com/covers'
-            -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+            -api_endpoint = 'https://api.igdb.com/v4/covers'
+            -request_headers = { headers: { 'client-id' => Rails.application.credentials.maps[:igdb], 'authorization' => Rails.application.credentials.maps[:access_token], 'x-user-agent' => 'ruby-apicalypse'} }
+
             -api = Apicalypse.new(api_endpoint, request_headers)
             -@cover = api.fields(:url).where(:id => game.values[1]).request[0].values[1]
             -@split = @cover.split('thumb')[0]+'cover_big'+@cover.split('thumb')[1]
 
-            -api_endpoint = 'https://api-v3.igdb.com/genres'
-            -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+            -api_endpoint = 'https://api.igdb.com/v4/genres'
+            -request_headers = { headers: { 'client-id' => Rails.application.credentials.maps[:igdb], 'authorization' => Rails.application.credentials.maps[:access_token], 'x-user-agent' => 'ruby-apicalypse'} }
+
             -api = Apicalypse.new(api_endpoint, request_headers)
             -if @genre_requested == 0
               -@genres = api.fields(:name).where(:id => game.values[2][0]).request[0].values[1]
@@ -86,8 +88,9 @@
               -@genres = api.fields(:name).where(:id => @genre_requested).request[0].values[1]
 
 
-            -api_endpoint = 'https://api-v3.igdb.com/platforms'
-            -request_headers = { headers: { 'user-key' => Rails.application.credentials.maps[:igdb] } }
+            -api_endpoint = 'https://api.igdb.com/v4/platforms'
+            -request_headers = { headers: { 'client-id' => Rails.application.credentials.maps[:igdb], 'authorization' => Rails.application.credentials.maps[:access_token], 'x-user-agent' => 'ruby-apicalypse'} }
+
             -api = Apicalypse.new(api_endpoint, request_headers)
             -@platform = api.fields(:name).where(:id => game.values[5][0]).request[0].values[1]
 
