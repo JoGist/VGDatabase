@@ -291,7 +291,8 @@ skip_before_action :verify_authenticity_token
             request_headers = { headers: { 'client-id' => Rails.application.credentials.maps[:igdb], 'authorization' => Rails.application.credentials.maps[:access_token], 'x-user-agent' => 'ruby-apicalypse'} }
 
             api = Apicalypse.new(api_endpoint, request_headers)
-            api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
+            api.request
+            #api.fields(:cover,:genres,:name,:platforms,:involved_companies).search(@search).limit(12).request
             @result = api.request
             @genre_requested = 0
 
